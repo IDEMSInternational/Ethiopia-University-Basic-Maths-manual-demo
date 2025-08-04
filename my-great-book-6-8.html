@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Review of relations and functions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="BASIC MATHEMATICS FOR NATURAL SCIENCES">
+<meta property="book:author" content="">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">BASIC MATHEMATICS FOR NATURAL SCIENCES:</span> <span class="subtitle">UNDERGRADUATE STUDENT TEXTBOOK</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="my-great-book-6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="my-great-book-6.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="my-great-book-6-9.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="my-great-book-4.html" class="internal"><span class="codenumber">1</span> <span class="title">Propositional Logic and Set Theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-4-6.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Propositional Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-6.html#my-great-book-4-6-6" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Definition and examples of propositions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-6.html#my-great-book-4-6-7" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Logical connectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-6.html#my-great-book-4-6-8" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Compound (or complex) propositions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-6.html#my-great-book-4-6-9" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tautology and contradiction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-4-7.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Open propositions and quantifiers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-4-8.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Argument and Validity</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-4-9.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Set theory</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-9.html#my-great-book-4-9-6" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The concept of a set</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-4-10.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Description of sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-10.html#my-great-book-4-10-51" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Set Operations and Venn diagrams</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="my-great-book-5.html" class="internal"><span class="codenumber">2</span> <span class="title">The Real and Complex Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-5-6.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The real number System</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-6.html#my-great-book-5-6-2" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-6.html#my-great-book-5-6-3" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The set of Integers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-6.html#my-great-book-5-6-4" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The set of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-6.html#my-great-book-5-6-5" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The set of real numbers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-5-7.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The set of complex numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-10" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Plotting complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-11" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Operations on Complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-12" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Conjugate of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-13" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Modulus (Norm) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-14" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Additive and multiplicative inverses</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-15" class="internal"><span class="codenumber">2.2.6</span> <span class="title">Argument (Amplitude) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-16" class="internal"><span class="codenumber">2.2.7</span> <span class="title">Polar form of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-17" class="internal"><span class="codenumber">2.2.8</span> <span class="title">Extraction of roots</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="my-great-book-6.html" class="internal"><span class="codenumber">3</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="my-great-book-6-8.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Review of relations and functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-9.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Real Valued functions and their properties</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-10.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Types of functions and inverse of a function</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-11.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Polynomials, zeros of polynomials, rational functions and their graphs</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-12.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="my-great-book-7.html" class="internal"><span class="codenumber">4</span> <span class="title">Analytic Geometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Distance Formula and Equation of Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Distance between two points and division of segments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-equations-of-lines" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Equations of lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-a-point-and" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Distance between a point and a line</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circles.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Circles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-definition-of-a-circle" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Definition of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-equation-of-a-circle" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Equation of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-intersection-of-a-circle-with" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Intersection of a circle with a line and tangent line to a circle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-parabolas.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Parabolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parabolas.html#subsec-definition-of-a-parabola" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Definition of a Parabola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parabolas.html#subsec-equation-of-parabolas" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Equation of Parabolas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ellipses.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ellipses</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-definition-of-an-ellipse" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Definition of an Ellipse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-equation-of-an-ellipse" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Equation of an Ellipse</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyperbolas.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Hyperbolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-definition-of-a-hyperbola" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Definition of a hyperbola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-equation-of-a-hyperbola" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Equation of a hyperbola</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">The General Second Degree Equation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-rotation-of-coordinate-axes" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Rotation of Coordinate Axes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-analysis-of-the-general-second" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Analysis of the General Second Degree Equations</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="my-great-book-8.html" class="internal"><span class="codenumber">5</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="my-great-book-6-8"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.1</span><span class="space"> </span><span class="title">Review of relations and functions</span>
+</h2>
+<div class="para" id="my-great-book-6-8-2">After completing this section, the student should be able to:</div>
+<ul class="disc" id="my-great-book-6-8-3">
+<li id="my-great-book-6-8-3-1"><div class="para" id="my-great-book-6-8-3-1-1">define Cartesian product of two sets</div></li>
+<li id="my-great-book-6-8-3-2"><div class="para" id="my-great-book-6-8-3-2-1">understand the notion of relation and function</div></li>
+<li id="my-great-book-6-8-3-3"><div class="para" id="my-great-book-6-8-3-3-1">know the difference between relation and function</div></li>
+<li id="my-great-book-6-8-3-4"><div class="para" id="my-great-book-6-8-3-4-1">determine the domain and range of relations and functions</div></li>
+<li id="my-great-book-6-8-3-5"><div class="para" id="my-great-book-6-8-3-5-1">find the inverse of a relation</div></li>
+</ul>
+<div class="para" id="my-great-book-6-8-4">The student is familiar with the phrase ordered pair. In the ordered pair <span class="process-math">\((2,3),( - 2,4)\)</span> and <span class="process-math">\((a,b)\text{;}\)</span> <span class="process-math">\(2,\  - 2\)</span> and <span class="process-math">\(a\)</span> are the first coordinates while <span class="process-math">\(3,\ 4\)</span> and <span class="process-math">\(b\)</span> are the second coordinates.</div>
+<ul class="disc" id="my-great-book-6-8-5"><li id="my-great-book-6-8-5-1"><div class="para" id="my-great-book-6-8-5-1-1"><em class="alert">Cartesian Product</em></div></li></ul>
+<div class="para" id="my-great-book-6-8-6">Given sets <span class="process-math">\(A = \left\{ 3,\ 4 \right\}\)</span> and <span class="process-math">\(B = \left\{ 2,\ 4,\ 5 \right\}\text{.}\)</span> Then, the set <span class="process-math">\(\left\{ (3,2),(3,4),(3,5),(4,2),(4,4),(4,5) \right\}\)</span> is the Cartesian product of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> and it is denoted by <span class="process-math">\(A \times B\text{.}\)</span>
+</div>
+<figure class="table table-like" id="my-great-book-6-8-7"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-6-8-7-1-1-1-1">
+<em class="alert">Definition 3.1:</em> Suppose <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets. The Cartesian product of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> denoted by <span class="process-math">\(A \times B\text{,}\)</span> is the set which contains every ordered pair whose first coordinate is an element of <span class="process-math">\(A\)</span> and second coordinate is an element of <span class="process-math">\(B\text{,}\)</span> i.e.</div>
+<div class="para" id="my-great-book-6-8-7-1-1-1-2">
+<span class="process-math">\(A \times B =\)</span> and <span class="process-math">\(b \in B\text{.}\)</span>
+</div>
+</td></tr></table></div></figure><div class="para" id="my-great-book-6-8-8">
+<em class="alert">Example 3.1</em>: For <span class="process-math">\(A = \left\{ 2,\ 4 \right\}\)</span> and <span class="process-math">\(A = \left\{ - 1,\ 3 \right\}\text{,}\)</span> we have</div>
+<ol class="decimal" id="my-great-book-6-8-9">
+<li id="my-great-book-6-8-9-1"><div class="para" id="my-great-book-6-8-9-1-1">
+<span class="process-math">\(A \times B = \left\{ (2, - 1),(2,3),(4, - 1),(4,3) \right\}\text{,}\)</span> and</div></li>
+<li id="my-great-book-6-8-9-2"><div class="para" id="my-great-book-6-8-9-2-1"><span class="process-math">\(B \times A = \left\{ ( - 1,2),( - 1,4),(3,2),(3,4) \right\}\text{.}\)</span></div></li>
+</ol>
+<div class="para" id="my-great-book-6-8-10">
+<em class="alert">Example 3.2</em>: Let <span class="process-math">\(A = \left\{ 1,2,3 \right\}\)</span> and <span class="process-math">\(B = \left\{ a,b,c \right\}\text{.}\)</span> Then,</div>
+<div class="para" id="my-great-book-6-8-11"><span class="process-math">\(A \times B = \left\{ (1,a),(1,b),(1,c),(2,a),(2,b),(2,c),(3,a),(3,b),(3,c) \right\}\text{.}\)</span></div>
+<div class="para" id="my-great-book-6-8-12">From example 3.1, we can see that <span class="process-math">\(A \times B\)</span> and <span class="process-math">\(B \times A\)</span> are not equal. Recall that two sets are equal if one is a subset of the other and vice versa. To check equality of Cartesian products we need to define equality of ordered pairs.</div>
+<figure class="table table-like" id="my-great-book-6-8-13"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-6-8-13-1-1-1-1"><em class="alert">Definition 3.2: (Equality of ordered Pairs)</em></div>
+<div class="para" id="my-great-book-6-8-13-1-1-1-2">Two ordered pairs <span class="process-math">\((a,b)\)</span> and <span class="process-math">\((c,d)\)</span> are equal if and only if <span class="process-math">\(a = c\)</span> and <span class="process-math">\(b = d\text{.}\)</span>
+</div>
+</td></tr></table></div></figure><figure class="table table-like" id="my-great-book-6-8-14"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-6-8-14-1-1-1-1">
+<em class="alert">Definition 3.3: (Relation from</em> <span class="process-math">\(A\)</span> <em class="alert">into</em> <span class="process-math">\(B\)</span><em class="alert">)</em>
+</div>
+<div class="para" id="my-great-book-6-8-14-1-1-1-2">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are sets, any subset of <span class="process-math">\(A \times B\)</span> is called a relation from <em class="emphasis">A</em> into <em class="emphasis">B</em>.</div>
+</td></tr></table></div></figure><div class="para" id="my-great-book-6-8-15">Suppose <em class="emphasis">R</em> is a relation from a set <em class="emphasis">A</em> to a set <em class="emphasis">B</em>. Then, <em class="emphasis">R</em>⊆ <em class="emphasis">A</em>×<em class="emphasis">B</em> and hence for each <span class="process-math">\((a,b) \in A \times B\text{,}\)</span> we have either <span class="process-math">\((a,b) \in R\)</span> or <span class="process-math">\((a,b) \notin R\text{.}\)</span> If <span class="process-math">\((a,b) \in R\text{,}\)</span> we say “<em class="emphasis">a</em> is <em class="emphasis">R-</em>related (or simply related) to <em class="emphasis">b</em>”, and write <span class="process-math">\(\text{aRb}\text{.}\)</span> If <span class="process-math">\((a,b) \notin R\text{,}\)</span> we say that “<em class="emphasis">a</em> is not related to <em class="emphasis">b</em>”.</div>
+<div class="para" id="my-great-book-6-8-16">In particular if <em class="emphasis">R</em> is a relation from a set <em class="emphasis">A</em> to itself, then we say that <em class="emphasis">R</em> is a relation on <em class="emphasis">A</em>.</div>
+<div class="para" id="my-great-book-6-8-17">
+<em class="alert">Example 3.3</em>:</div>
+<ol class="decimal" id="my-great-book-6-8-18">
+<li id="my-great-book-6-8-18-1"><div class="para" id="my-great-book-6-8-18-1-1">Let <span class="process-math">\(A = \left\{ 1,3,5,7 \right\}\)</span> and <span class="process-math">\(B = \left\{ 6,8 \right\}\text{.}\)</span> Let <span class="process-math">\(R\)</span> be the relation “less than” from <span class="process-math">\(A\)</span> to <span class="process-math">\(B\text{.}\)</span> Then, <span class="process-math">\(R = \left\{ (1,6),(1,8),((3,6),(3,8),(5,6),(5,8),(7,8) \right\}\text{.}\)</span>
+</div></li>
+<li id="my-great-book-6-8-18-2"><div class="para" id="my-great-book-6-8-18-2-1">Let <span class="process-math">\(A = \left\{ 1,2,3,4,5 \right\}\)</span> and <span class="process-math">\(B = \left\{ a,b,c \right\}\text{.}\)</span>
+</div></li>
+</ol>
+<ol class="decimal" id="my-great-book-6-8-19"><li id="my-great-book-6-8-19-1"><div class="para" id="my-great-book-6-8-19-1-1">The following are relations from <span class="process-math">\(A\)</span> into <span class="process-math">\(B\text{;}\)</span>
+</div></li></ol>
+<ol class="decimal" id="my-great-book-6-8-20">
+<li id="my-great-book-6-8-20-1"><div class="para" id="p-derived-my-great-book-6-8-20-1"></div></li>
+<li id="my-great-book-6-8-20-2"><div class="para" id="p-derived-my-great-book-6-8-20-2"></div></li>
+<li id="my-great-book-6-8-20-3"><div class="para" id="p-derived-my-great-book-6-8-20-3"></div></li>
+</ol>
+<ol class="decimal" id="my-great-book-6-8-21"><li id="my-great-book-6-8-21-1"><div class="para" id="my-great-book-6-8-21-1-1">The following are relations from <span class="process-math">\(B\)</span> to <span class="process-math">\(A\text{;}\)</span>
+</div></li></ol>
+<ol class="decimal" id="my-great-book-6-8-22">
+<li id="my-great-book-6-8-22-1"><div class="para" id="p-derived-my-great-book-6-8-22-1"></div></li>
+<li id="my-great-book-6-8-22-2"><div class="para" id="p-derived-my-great-book-6-8-22-2"></div></li>
+<li id="my-great-book-6-8-22-3"><div class="para" id="p-derived-my-great-book-6-8-22-3"></div></li>
+</ol>
+<figure class="table table-like" id="my-great-book-6-8-23"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120"><div class="para" id="my-great-book-6-8-23-1-1-1-1">
+<em class="alert">Definition 3.4:</em> Let <span class="process-math">\(R\)</span> be a relation from <span class="process-math">\(A\)</span> into <span class="process-math">\(B\text{.}\)</span> Then,</div></td></tr></table></div></figure><div class="para" id="my-great-book-6-8-24">
+<em class="alert">Remark</em>: If <span class="process-math">\(R\)</span> is a relation from the set <span class="process-math">\(A\)</span> to the set <span class="process-math">\(B\text{,}\)</span> then the set <span class="process-math">\(B\)</span> is called the codomain of the relation <span class="process-math">\(R\text{.}\)</span> The range of relation is always a subset of the codomain.</div>
+<div class="para" id="my-great-book-6-8-25">
+<em class="alert">Example 3.4</em>:</div>
+<ol class="decimal" id="my-great-book-6-8-26">
+<li id="my-great-book-6-8-26-1"><div class="para" id="my-great-book-6-8-26-1-1">The set <span class="process-math">\(R = \left\{ (4,7),(5,8),(6,\text{10}) \right\}\)</span> is a relation from set <span class="process-math">\(A = \left\{ 1,2,3,4,5,6 \right\}\)</span> to set <span class="process-math">\(B = \left\{ 6,7,8,9,\text{10} \right\}\text{.}\)</span> The domain of <span class="process-math">\(R\)</span> is <span class="process-math">\(\left\{ 4,5,6 \right\}\text{,}\)</span> the range of <span class="process-math">\(R\)</span> is <span class="process-math">\(\left\{ 7,8,\text{10} \right\}\)</span> and the codomain of <span class="process-math">\(R\)</span> is <span class="process-math">\(\left\{ 6,7,8,9,\text{10} \right\}\text{.}\)</span>
+</div></li>
+<li id="my-great-book-6-8-26-2"><div class="para" id="my-great-book-6-8-26-2-1">The set of ordered pairs <span class="process-math">\(R = \left\{ (8,2),(6, - 3),(5,7),(5, - 3) \right\}\)</span> is a relation between the sets <span class="process-math">\(\left\{ 5,6,8 \right\}\)</span> and <span class="process-math">\(\left\{ 2, - 3,7 \right\}\text{,}\)</span> where <span class="process-math">\(\left\{ 5,6,7 \right\}\)</span> is the domain and <span class="process-math">\(\left\{ 2, - 3,7 \right\}\)</span> is the range.</div></li>
+</ol>
+<div class="para" id="my-great-book-6-8-27">
+<em class="alert">Remark</em>:</div>
+<ol class="decimal" id="my-great-book-6-8-28">
+<li id="my-great-book-6-8-28-1"><div class="para" id="my-great-book-6-8-28-1-1">If <span class="process-math">\((a,b) \in R\)</span> for a relation <span class="process-math">\(R\text{,}\)</span> we say <span class="process-math">\(a\)</span> is related to (or paired with) <span class="process-math">\(b\text{.}\)</span> Note that <span class="process-math">\(a\)</span> may also be paired with an element different from <span class="process-math">\(b\text{.}\)</span> In any case, <span class="process-math">\(b\)</span> is called the image of <span class="process-math">\(a\)</span> while <span class="process-math">\(a\)</span> is called the pimageA of <span class="process-math">\(b\)</span>under <span class="process-math">\(R\text{.}\)</span>
+</div></li>
+<li id="my-great-book-6-8-28-2"><div class="para" id="my-great-book-6-8-28-2-1">If the domain and/or range of a relation is infinite, we cannot list each element assignment, so instead we use set builder notation to describe the relation. The situation we will encounter most frequently is that of a relation defined by an equation or formula. For example,</div></li>
+</ol>
+<div class="para" id="my-great-book-6-8-29">is a relation for which the range value is 3 less than twice the domain value. Hence, <span class="process-math">\((0,\  - 3),(0\text{.}5,\  - 2)\)</span>and <span class="process-math">\(( - 2, - 7)\)</span> are examples of ordered pairs that are of the assignment.</div>
+<div class="para" id="my-great-book-6-8-30">
+<em class="alert">Example 3.5</em>:</div>
+<ol class="decimal" id="my-great-book-6-8-31"><li id="my-great-book-6-8-31-1"><div class="para" id="my-great-book-6-8-31-1-1">Let <span class="process-math">\(A = \left\{ 1,\ 2,\ 3,\ 4,\ 6 \right\}\)</span> Let <span class="process-math">\(R\)</span> be the relation on <span class="process-math">\(A\)</span> defined by <span class="process-math">\(R =\)</span>is a factor of <span class="process-math">\(b\text{.}\)</span> Find the domain and range of <span class="process-math">\(R\text{.}\)</span>
+</div></li></ol>
+<div class="para" id="my-great-book-6-8-32">
+<em class="alert">Solution</em>: We have</div>
+<div class="para" id="my-great-book-6-8-33"><span class="process-math">\(R = \left\{ (1,1),(1,2),(1,3),(1,4),(1,6),(2,2),(2,4),(2,6),(3,3),(3,6),(4,4),(6,6) \right\}\text{.}\)</span></div>
+<div class="para" id="my-great-book-6-8-34">Then, <span class="process-math">\(\text{Dom}(R) = \left\{ 1,2,3,4,6 \right\}\)</span> and <span class="process-math">\(\text{Range}(R) = \left\{ 1,2,3,4,6 \right\}\text{.}\)</span>
+</div>
+<ol class="decimal" id="my-great-book-6-8-35"><li id="my-great-book-6-8-35-1"><div class="para" id="my-great-book-6-8-35-1-1">Let <span class="process-math">\(A = \left\{ 1,2,3,4,5 \right\}\)</span> and <span class="process-math">\(B = \left\{ 1,\ 2,\ 3,\ \cdots,\ \text{67} \right\}\text{.}\)</span>
+</div></li></ol>
+<div class="para" id="my-great-book-6-8-36">Let <span class="process-math">\(R =\)</span>is cube root of<span class="process-math">\(\left. \ y \right\}\)</span> . Find a) <span class="process-math">\(R\)</span> b) <span class="process-math">\(\text{Dom}(R)\)</span> c) <span class="process-math">\(\text{Range}(R)\)</span>
+</div>
+<div class="para" id="my-great-book-6-8-37">
+<em class="alert">Solution</em>: We have <span class="process-math">\(1 = \sqrt[{3,}]{1},\ 2 = \sqrt[3]{8},\ 3 = \sqrt[3]{\text{27}},\ 4 = \sqrt[3]{\text{64}},\ 5 = \sqrt[3]{\text{125}}\)</span> and <span class="process-math">\(1,\ 8,\ \text{27}\)</span> and 64 are in <span class="process-math">\(B\)</span> whereas 125 is not in <span class="process-math">\(B\text{.}\)</span> Thus, <span class="process-math">\(R = \left\{ (1,1),(2,8),(3,\text{27}),(4,\text{64}) \right\}\text{,}\)</span> <span class="process-math">\(\text{Dom}(R) = \left\{ 1,2,3,4 \right\}\)</span> and <span class="process-math">\(R = \left\{ 1,8,\text{27},\text{64} \right\}\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-6-8-38">
+<em class="alert">Remark</em>:</div>
+<ol class="decimal" id="my-great-book-6-8-39"><li id="my-great-book-6-8-39-1"><div class="para" id="my-great-book-6-8-39-1-1">A relation <span class="process-math">\(R\)</span> on a set <span class="process-math">\(A\)</span> is called</div></li></ol>
+<ol class="decimal" id="my-great-book-6-8-40">
+<li id="my-great-book-6-8-40-1"><div class="para" id="my-great-book-6-8-40-1-1">a universal relation if <span class="process-math">\(R = A \times A\)</span>
+</div></li>
+<li id="my-great-book-6-8-40-2"><div class="para" id="my-great-book-6-8-40-2-1">identity relation if <span class="process-math">\(R = \left\{ (a,a):a \in A \right\}\)</span>
+</div></li>
+<li id="my-great-book-6-8-40-3"><div class="para" id="my-great-book-6-8-40-3-1">void or empty relation if <span class="process-math">\(R = \varphi\)</span>
+</div></li>
+</ol>
+<ol class="decimal" id="my-great-book-6-8-41"><li id="my-great-book-6-8-41-1"><div class="para" id="my-great-book-6-8-41-1-1">If <span class="process-math">\(R\)</span>is a relation from <span class="process-math">\(A\)</span> into <span class="process-math">\(B\text{,}\)</span> then the inverse relation of <span class="process-math">\(R\text{,}\)</span> denoted by <span class="process-math">\(R^{- 1}\text{,}\)</span> is a relation from <span class="process-math">\(B\)</span> to <span class="process-math">\(A\)</span> and is given by:</div></li></ol>
+<div class="para" id="my-great-book-6-8-42"><span class="process-math">\(R^{- 1} = \left\{ (y,x):(x,y) \in R \right\}\text{.}\)</span></div>
+<div class="para" id="my-great-book-6-8-43">Observe that <span class="process-math">\(\text{Dom}(R) = \text{Range}(R^{- 1})\)</span> and <span class="process-math">\(\text{Range}(R) = \text{Dom}(R^{- 1})\text{.}\)</span> For instance, if <span class="process-math">\(R = \left\{ (1,4),(9,\text{15}),(\text{10},2) \right\}\)</span> is a relation on a set <span class="process-math">\(A = \left\{ 1,2,3,\cdots,\text{20} \right\}\text{,}\)</span> then <span class="process-math">\(R^{- 1} = \left\{ (4,1),(\text{15},9),(2,\text{10}) \right\}\)</span>
+</div>
+<div class="para" id="my-great-book-6-8-44">
+<em class="alert">Example 3.6</em>: Let <span class="process-math">\(R\)</span> be a relation defined on <span class="process-math">\(\text{IN}\)</span> by <span class="process-math">\(R = \left\{ (a,b):a,b \in \text{IN},\ a + 2b = \text{11} \right\}\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-6-8-45">Find a) <span class="process-math">\(R\)</span> b) <span class="process-math">\(\text{Dom}(R)\)</span> c) <span class="process-math">\(\text{Range}(R)\)</span> d) <span class="process-math">\(R^{- 1}\)</span>
+</div>
+<div class="para" id="my-great-book-6-8-46">
+<em class="alert">Solution</em>: The smallest natural number is 1.</div>
+<div class="para" id="my-great-book-6-8-47">
+<span class="process-math">\(b = 1\)</span> <span class="process-math">\(\Rightarrow\)</span> <span class="process-math">\(a + 2(1) = \text{11}\  \Rightarrow a = 9\)</span>
+</div>
+<div class="para" id="my-great-book-6-8-48"><span class="process-math">\(b = 2\  \Rightarrow \ a + 2(2) = \text{11}\  \Rightarrow a = 7\)</span></div>
+<div class="para" id="my-great-book-6-8-49"><span class="process-math">\(b = 3\  \Rightarrow \ a + 2(3) = \text{11}\  \Rightarrow a = 5\)</span></div>
+<div class="para" id="my-great-book-6-8-50"><span class="process-math">\(b = 4\  \Rightarrow \ a + 2(4) = \text{11}\  \Rightarrow a = 3\)</span></div>
+<div class="para" id="my-great-book-6-8-51"><span class="process-math">\(b = 5\  \Rightarrow \ a + 2(5) = \text{11}\  \Rightarrow a = 1\)</span></div>
+<div class="para" id="my-great-book-6-8-52"><span class="process-math">\(b = 6\  \Rightarrow \ a + 2(6) = \text{11}\  \Rightarrow a = - 1 \notin \text{IN}\)</span></div>
+<div class="para" id="my-great-book-6-8-53">Therefore, <span class="process-math">\(R = \left\{ (9,1),(7,2),(5,3),(3,4),(1,5) \right\}\text{,}\)</span> <span class="process-math">\(\text{Dom}(R) = \left\{ 1,3,5,7,9 \right\}\text{,}\)</span> <span class="process-math">\(\text{Range}(R) = \left\{ 1,2,3,4,5 \right\}\)</span> and <span class="process-math">\(R^{- 1} = \left\{ (1,9),(2,7),(3,5),(4,3),(5,1) \right\}\text{.}\)</span>
+</div>
+<ul class="disc" id="my-great-book-6-8-54"><li id="my-great-book-6-8-54-1"><div class="para" id="my-great-book-6-8-54-1-1"><em class="alert">Functions</em></div></li></ul>
+<div class="para" id="my-great-book-6-8-55">Mathematically, it is important for us to distinguish among the relations that assign a unique range element to each domain element and those that do not.</div>
+<figure class="table table-like" id="my-great-book-6-8-56"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.5<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-6-8-56-1-1-1-1"><em class="alert">Definition 3.5: (Function)</em></div>
+<div class="para" id="my-great-book-6-8-56-1-1-1-2">A function is a relation in which each element of the domain corresponds to exactly one element of the range.</div>
+</td></tr></table></div></figure><div class="para" id="my-great-book-6-8-57">
+<em class="alert">Example 3.7</em>: Determine whether the following relations are functions.</div>
+<ol class="decimal" id="my-great-book-6-8-58"><li id="my-great-book-6-8-58-1"><div class="para" id="my-great-book-6-8-58-1-1">
+<span class="process-math">\(R = \left\{ (5, - 2),(3,5),(3,7) \right\}\)</span> b) <span class="process-math">\(R\)</span>{(2,4),(3,4),(6,-4)}</div></li></ol>
+<div class="para" id="my-great-book-6-8-59">
+<em class="alert">Solution</em>:</div>
+<ol class="decimal" id="my-great-book-6-8-60">
+<li id="my-great-book-6-8-60-1"><div class="para" id="my-great-book-6-8-60-1-1">Since the domain element 3 is assigned to two different values in the range, 5 and 7, it is not a function.</div></li>
+<li id="my-great-book-6-8-60-2"><div class="para" id="my-great-book-6-8-60-2-1">Each element in the domain, <span class="process-math">\(\left\{ 2,3,6 \right\}\text{,}\)</span> is assigned no more than one value in the range, 2 is assigned only 4, 3 is assigned only 4, and 6 is assigned only – 4. Therefore, it is a function.</div></li>
+</ol>
+<div class="para" id="my-great-book-6-8-61">
+<em class="alert">Remark</em>: Map or mapping, transformation and correspondence are synonyms for the word function. If <span class="process-math">\(f\)</span> is a function and <span class="process-math">\((x,y) \in f\text{,}\)</span> we say <em class="emphasis">x</em> is mapped to <em class="emphasis">y</em> by <em class="emphasis">f</em>.</div>
+<figure class="table table-like" id="my-great-book-6-8-62"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.1.6<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-6-8-62-1-1-1-1">
+<em class="alert">Definition 3.6</em>: A relation <span class="process-math">\(f\)</span>from <em class="emphasis">A</em> into <em class="emphasis">B</em> is called a function from <em class="emphasis">A</em> into <em class="emphasis">B</em>, denoted by</div>
+<div class="para" id="my-great-book-6-8-62-1-1-1-2">
+<span class="process-math">\(f:A \rightarrow B\)</span> or <span class="process-math">\(A\overrightarrow{f}B\)</span>
+</div>
+<div class="para" id="my-great-book-6-8-62-1-1-1-3">if and only if</div>
+</td></tr></table></div></figure><div class="para" id="my-great-book-6-8-63">
+<em class="alert">Remark</em>: 1. If to the element <em class="emphasis">x</em> of <span class="process-math">\(A\)</span> corresponds <span class="process-math">\(y\ ( \in B)\)</span> under the function <span class="process-math">\(f\text{,}\)</span> then we write <span class="process-math">\(f(x) = y\)</span> and <span class="process-math">\(y\)</span> is called the image of <em class="emphasis">x</em> under <span class="process-math">\(y\)</span> and <em class="emphasis">x</em> is called a pimageA of <span class="process-math">\(y\)</span> under <span class="process-math">\(f\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-6-8-64">2. The symbol <span class="process-math">\(f(x)\)</span> is read as “<span class="process-math">\(f\)</span> of <em class="emphasis">x</em>” but not “<span class="process-math">\(f\)</span> times <em class="emphasis">x</em>”.</div>
+<ol class="decimal" id="my-great-book-6-8-65"><li id="my-great-book-6-8-65-1"><div class="para" id="my-great-book-6-8-65-1-1">In order to show that a relation <span class="process-math">\(f\)</span> from <em class="emphasis">A</em> into <em class="emphasis">B</em> is a function, we first show that the domain of <span class="process-math">\(f\)</span> is <em class="emphasis">A</em> and next we show that <span class="process-math">\(f\)</span> well defined or single-valued, i.e. if <span class="process-math">\(x = y\)</span> in <em class="emphasis">A</em>, then <span class="process-math">\(f(x) = f(y)\)</span> in <em class="emphasis">B</em> for all <span class="process-math">\(x,y \in A\text{.}\)</span>
+</div></li></ol>
+<div class="para" id="my-great-book-6-8-66">
+<em class="alert">Example 3.8</em>:</div>
+<ol class="decimal" id="my-great-book-6-8-67"><li id="my-great-book-6-8-67-1"><div class="para" id="my-great-book-6-8-67-1-1">Let <span class="process-math">\(A = \left\{ 1,2,3,4 \right\}\)</span> and <span class="process-math">\(B = \left\{ 1,6,8,\text{11},\text{15} \right\}\text{.}\)</span> Which of the following are functions from <em class="emphasis">A</em> to <span class="process-math">\(B\text{.}\)</span>
+</div></li></ol>
+<ol class="decimal" id="my-great-book-6-8-68">
+<li id="my-great-book-6-8-68-1"><div class="para" id="my-great-book-6-8-68-1-1">
+<span class="process-math">\(f\)</span> defined by <span class="process-math">\(f(1) = 1,\ f(2) = 6,\ f(3) = 8,\ f(4) = 8\)</span>
+</div></li>
+<li id="my-great-book-6-8-68-2"><div class="para" id="my-great-book-6-8-68-2-1">
+<span class="process-math">\(f\)</span> defined by <span class="process-math">\(f(1) = 1,\ f(2) = 6,\ f(3) = \text{15}\)</span>
+</div></li>
+<li id="my-great-book-6-8-68-3"><div class="para" id="my-great-book-6-8-68-3-1">
+<span class="process-math">\(f\)</span> defined by <span class="process-math">\(f(1) = 6,\ f(2) = 6,\ f(3) = 6,\ f(4) = 6\)</span>
+</div></li>
+<li id="my-great-book-6-8-68-4"><div class="para" id="my-great-book-6-8-68-4-1">
+<span class="process-math">\(f\)</span> defined by <span class="process-math">\(f(1) = 1,\ f(2) = 6,\ f(2) = 8,\ f(3) = 8,\ f(4) = \text{11}\)</span>
+</div></li>
+<li id="my-great-book-6-8-68-5"><div class="para" id="my-great-book-6-8-68-5-1">
+<span class="process-math">\(f\)</span> defined by <span class="process-math">\(f(1) = 1,\ f(2) = 8,\ f(3) = \text{11},\ f(4) = \text{15}\)</span>
+</div></li>
+</ol>
+<div class="para" id="my-great-book-6-8-69">
+<em class="alert">Solution</em>:</div>
+<div class="para" id="my-great-book-6-8-70">a) <span class="process-math">\(f\)</span> is a function because to each element of <em class="emphasis">A</em> there corresponds exactly one element of <span class="process-math">\(B\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-6-8-71">b) <span class="process-math">\(f\)</span> is not a function because there is no element of <em class="emphasis">B</em> which correspond to <em class="emphasis">4</em>(<span class="process-math">\(\in\)</span><em class="emphasis">A</em>).</div>
+<div class="para" id="my-great-book-6-8-72">c) <span class="process-math">\(f\)</span> is a function because to each element of <em class="emphasis">A</em> there corresponds exactly one element</div>
+<div class="para" id="my-great-book-6-8-73">of <em class="emphasis">B</em>. In the given function, the images of all element of <em class="emphasis">A</em> are the same.</div>
+<div class="para" id="my-great-book-6-8-74">d)<span class="process-math">\(f\)</span> is not a function because there are two elements of <span class="process-math">\(B\)</span> which correspond to 2.</div>
+<div class="para" id="my-great-book-6-8-75">In other words, the image of 2 is not unique.</div>
+<div class="para" id="my-great-book-6-8-76">e) <span class="process-math">\(f\)</span> is a function because to each element of <span class="process-math">\(A\)</span> there corresponds exactly one element</div>
+<div class="para" id="my-great-book-6-8-77">of <span class="process-math">\(B\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-6-8-78">As with relations, we can describe a function with an equation. For example, <em class="emphasis">y=2x+1</em> is a function, since each <em class="emphasis">x</em> will produce only one <span class="process-math">\(y\text{.}\)</span>
+</div>
+<ol class="decimal" id="my-great-book-6-8-79"><li id="my-great-book-6-8-79-1"><div class="para" id="my-great-book-6-8-79-1-1">Let <span class="process-math">\(f = \left\{ (x,y):y = x^{2} \right\}\text{.}\)</span> Then, <span class="process-math">\(f\)</span> maps:</div></li></ol>
+<div class="para" id="my-great-book-6-8-80">1 to 1 -1 to 1</div>
+<div class="para" id="my-great-book-6-8-81">2 to 4 -2 to 4</div>
+<div class="para" id="my-great-book-6-8-82">3 to 9 -3 to 9</div>
+<div class="para" id="my-great-book-6-8-83">More generally any real number <em class="emphasis">x</em> is mapped to its square. As the square of a number is unique, <span class="process-math">\(f\)</span> maps every real number to a unique number. Thus, <span class="process-math">\(f\)</span> is a function from <span class="process-math">\(\Re\)</span> into <span class="process-math">\(\Re\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-6-8-84">We will find it useful to use the following vocabulary: The independent variable refers to the variable representing possible values in the domain, and the dependent variable refers to the variable representing possible values in the range. Thus, in our usual ordered pair notation <span class="process-math">\((x,y)\text{,}\)</span> <em class="emphasis">x</em> is the independent variable and <span class="process-math">\(y\)</span> is the dependent variable.</div>
+<ol class="decimal" id="my-great-book-6-8-85"><li id="my-great-book-6-8-85-1"><div class="para" id="my-great-book-6-8-85-1-1">Let <em class="emphasis">f</em> be the subset of <span class="process-math">\(Q \times Z\)</span>defined by <span class="process-math">\(f = \left\{ \left( \frac{p}{q},p \right):p,q \in Z,\ q \neq 0 \right\}\text{.}\)</span> Is <em class="emphasis">f</em> a function?</div></li></ol>
+<div class="para" id="my-great-book-6-8-86">
+<em class="alert">Solution</em>: First we note that <span class="process-math">\(\text{Dom}(f) = Q\text{.}\)</span> Then, <span class="process-math">\(f\)</span> satisfies condition (i) in the definition of a function. Now, <span class="process-math">\(\left( \frac{2}{3},2 \right) \in f\text{,}\)</span> <span class="process-math">\(\left( \frac{4}{6},4 \right) \in f\)</span> and <span class="process-math">\(\frac{2}{3} = \frac{4}{6}\)</span> but <span class="process-math">\(f\left( \frac{2}{3} \right) = 2 \neq 4 = f\left( \frac{4}{6} \right)\text{.}\)</span> Thus <span class="process-math">\(f\)</span> is not well defined. Hence, <span class="process-math">\(f\)</span> is not a function from <span class="process-math">\(Q\)</span> to <span class="process-math">\(Z\text{.}\)</span>
+</div>
+<ol class="decimal" id="my-great-book-6-8-87"><li id="my-great-book-6-8-87-1"><div class="para" id="my-great-book-6-8-87-1-1">Let <span class="process-math">\(f\)</span> be the subset of <span class="process-math">\(Z \times Z\)</span> defined by <span class="process-math">\(f = \left\{ (\text{mn},m + n):m,n \in Z \right\}\text{.}\)</span> Is <span class="process-math">\(f\)</span> a function?</div></li></ol>
+<div class="para" id="my-great-book-6-8-88">
+<em class="alert">Solution</em>: First we show that <span class="process-math">\(f\)</span> satisfies condition (i) in the definition. Let <span class="process-math">\(x\)</span> be any element of <span class="process-math">\(Z\text{.}\)</span> Then, <span class="process-math">\(x = x \cdot 1\text{.}\)</span> Hence, <span class="process-math">\((x,x + 1) = (x \cdot 1,x + 1) \in f\text{.}\)</span> This implies that<span class="process-math">\(x \in \text{Dom}(f)\text{.}\)</span> Thus, <span class="process-math">\(Z \subseteq \text{Dom}(f)\text{.}\)</span> However, <span class="process-math">\(\text{Dom}(f) \subseteq Z\)</span> and so <span class="process-math">\(\text{Dom}(f) = Z\text{.}\)</span> Now, <span class="process-math">\(\)</span> and <span class="process-math">\(4 = 4 \cdot 1 = 2 \cdot 2\text{.}\)</span> Thus, <span class="process-math">\((4 \cdot 1,4 + 1)\)</span> and <span class="process-math">\((2 \cdot 2,2 + 2)\)</span> are in <span class="process-math">\(f\text{.}\)</span> Hence we find that <span class="process-math">\(4 \cdot 1 = 2 \cdot 2\)</span> and <span class="process-math">\(f(4 \cdot 1) = 5 \neq 4 = f(2 \cdot 2)\text{.}\)</span> This implies that <span class="process-math">\(f\)</span> is not well defined, i.e, <span class="process-math">\(f\)</span> does not satisfy condition (ii). Hence, <span class="process-math">\(f\)</span> is not a function from <span class="process-math">\(Z\)</span> to <span class="process-math">\(Z\text{.}\)</span>
+</div>
+<ul class="disc" id="my-great-book-6-8-89"><li id="my-great-book-6-8-89-1"><div class="para" id="my-great-book-6-8-89-1-1"><em class="alert">Domain, codomain and range of a function</em></div></li></ul>
+<div class="para" id="my-great-book-6-8-90">For a function <span class="process-math">\(f:A \rightarrow B\)</span>
+</div>
+<ol class="decimal" id="my-great-book-6-8-91">
+<li id="my-great-book-6-8-91-1"><div class="para" id="my-great-book-6-8-91-1-1">The set <em class="emphasis">A</em> is called the domain of <span class="process-math">\(f\)</span>
+</div></li>
+<li id="my-great-book-6-8-91-2"><div class="para" id="my-great-book-6-8-91-2-1">The set <em class="emphasis">B</em> is called the codomain of <span class="process-math">\(\)</span>
+</div></li>
+<li id="my-great-book-6-8-91-3"><div class="para" id="my-great-book-6-8-91-3-1">The set <span class="process-math">\(\left\{ f(x):x \in A \right\}\)</span> of all image of elements of <em class="emphasis">A</em> is called the range of <span class="process-math">\(f\)</span>
+</div></li>
+</ol>
+<div class="para" id="my-great-book-6-8-92">
+<em class="alert">Example 3.9</em>:</div>
+<ol class="decimal" id="my-great-book-6-8-93">
+<li id="my-great-book-6-8-93-1"><div class="para" id="my-great-book-6-8-93-1-1">Let <span class="process-math">\(A = \left\{ 1,2,3 \right\}\)</span> and <span class="process-math">\(B = \left\{ 1,2,3,\cdots,\text{10} \right\}\text{.}\)</span> Let <span class="process-math">\(f:A \rightarrow B\)</span> be the correspondence which assigns to each element in <span class="process-math">\(A\text{,}\)</span> its square. Thus, we have <span class="process-math">\(f(1) = 1,\ f(2) = 4,\ f(3) = 9\text{.}\)</span> Therefore, <span class="process-math">\(f\)</span> is a function and <span class="process-math">\(\text{Dom}(f) = \left\{ 1,2,3 \right\}\text{,}\)</span> <span class="process-math">\(\text{Range}(f) = \left\{ 1,4,9 \right\}\)</span> and codomain of <span class="process-math">\(f\)</span> is <span class="process-math">\(\left\{ 1,2,3,\cdots,\text{10} \right\}\text{.}\)</span>
+</div></li>
+<li id="my-great-book-6-8-93-2"><div class="para" id="my-great-book-6-8-93-2-1">Let <span class="process-math">\(A = \left\{ 2,4,6,7,9 \right\},\ B = \text{IN}\text{.}\)</span> Let <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> represent the elements in the sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> respectively. Let <span class="process-math">\(f:A \rightarrow B\)</span> be a function defined by <span class="process-math">\(f(x) = \text{15}x + \text{17},\ x \in A\text{.}\)</span>
+</div></li>
+</ol>
+<div class="para" id="my-great-book-6-8-94">The variable <span class="process-math">\(x\)</span> can take values 2, 4, 6, 7, 9. Thus, we have</div>
+<div class="para" id="my-great-book-6-8-95"><span class="process-math">\(f(2) = \text{15}(2) + \text{17} = \text{47},\ f(4) = \text{77},\ f(6) = \text{107},\ f(7) = \text{122},\ f(9) = \text{152}\text{.}\)</span></div>
+<div class="para" id="my-great-book-6-8-96">This implies that <span class="process-math">\(\text{Dom}(f) = \left\{ 2,4,6,7,9 \right\},\ \text{Range}(f) = \left\{ \text{47},\text{77},\text{107},\text{122},\text{152} \right\}\)</span> and codomain</div>
+<div class="para" id="my-great-book-6-8-97">of <span class="process-math">\(f\)</span>is <em class="emphasis">IN</em>.</div>
+<ol class="decimal" id="my-great-book-6-8-98"><li id="my-great-book-6-8-98-1"><div class="para" id="my-great-book-6-8-98-1-1">Determine whether the following equations determine <span class="process-math">\(y\)</span> as a function of <span class="process-math">\(x\text{,}\)</span> if so, find the domain of the function.</div></li></ol>
+<ol class="decimal" id="my-great-book-6-8-99"><li id="my-great-book-6-8-99-1"><div class="para" id="my-great-book-6-8-99-1-1">
+<span class="process-math">\(y = - 3x + 5\)</span> b) <span class="process-math">\(y = \frac{2x}{3x - 5}\)</span> c) <span class="process-math">\(y^{2} = x\)</span>
+</div></li></ol>
+<div class="para" id="my-great-book-6-8-100">
+<em class="alert">Solution</em>:</div>
+<ol class="decimal" id="my-great-book-6-8-101">
+<li id="my-great-book-6-8-101-1"><div class="para" id="my-great-book-6-8-101-1-1">To determine whether <span class="process-math">\(y = - 3x + 5\)</span> gives <span class="process-math">\(y\)</span> as a function of <span class="process-math">\(x\text{,}\)</span> we need to know whether each <em class="emphasis">x-value</em> uniquely determines a <em class="emphasis">y-value</em>. Looking at the equation <span class="process-math">\(y = - 3x + 5\text{,}\)</span> we can see that once <span class="process-math">\(x\)</span> is chosen we multiply it by – 3 and then add 5. Thus, for each <em class="emphasis">x</em> there is a unique <span class="process-math">\(y\text{.}\)</span> Therefore, <span class="process-math">\(y = - 3x + 5\)</span> is a function. It domain is the set of all real numbers.</div></li>
+<li id="my-great-book-6-8-101-2"><div class="para" id="my-great-book-6-8-101-2-1">Looking at the equation <span class="process-math">\(y = \frac{2x}{3x - 5}\)</span> carefully, we can see that each <em class="emphasis">x-value</em> uniquely determines a <em class="emphasis">y-value</em> (one <em class="emphasis">x-value</em> can not produce two different <em class="emphasis">y-values</em>). Therefore, <span class="process-math">\(y = \frac{2x}{3x - 5}\)</span> is a function.</div></li>
+</ol>
+<div class="para" id="my-great-book-6-8-102">As for its domain, we ask ourselves. Are there any values of <span class="process-math">\(x\)</span> that must be excluded? Since <span class="process-math">\(y = \frac{2x}{3x - 5}\)</span> is a fractional expression, we must exclude any value of <span class="process-math">\(x\)</span> that makes the denominator equal to zero. We must have</div>
+<div class="para" id="my-great-book-6-8-103"><span class="process-math">\(3x - 5 \neq 0\  \Leftrightarrow \ x \neq \frac{5}{3}\)</span></div>
+<div class="para" id="my-great-book-6-8-104">Therefore, the domain consists of all real numbers except <span class="process-math">\(\frac{5}{3}\text{.}\)</span> Thus, <span class="process-math">\(\text{Dom}(f) =\)</span><span class="process-math">\(\left\{ x:x \neq \frac{5}{3} \right\}\text{.}\)</span>
+</div>
+<ol class="decimal" id="my-great-book-6-8-105"><li id="my-great-book-6-8-105-1"><div class="para" id="my-great-book-6-8-105-1-1">For the equation <span class="process-math">\(y^{2} = x\text{,}\)</span> if we choose <span class="process-math">\(x = 9\)</span> we get <span class="process-math">\(y^{2} = 9\text{,}\)</span> which gives <span class="process-math">\(y = \pm 3\text{.}\)</span> In other words, there are two <span class="process-math">\(y -\)</span>values associated with <span class="process-math">\(x = 9\text{.}\)</span> Therefore, <span class="process-math">\(y^{2} = x\)</span> is not a function.</div></li></ol>
+<ol class="decimal" id="my-great-book-6-8-106"><li id="my-great-book-6-8-106-1"><div class="para" id="my-great-book-6-8-106-1-1">Find the domain of the function <span class="process-math">\(y = \sqrt{3x - x}\text{.}\)</span>
+</div></li></ol>
+<div class="para" id="my-great-book-6-8-107">
+<em class="alert">Solution</em>: Since <span class="process-math">\(y\)</span> is defined and is real when the expression under the radical is non-negative, we need <span class="process-math">\(x\)</span> to satisfy the inequality</div>
+<div class="para" id="my-great-book-6-8-108"><span class="process-math">\(3x - x^{2} \geq 0\  \Leftrightarrow \ x(3 - x) \geq 0\)</span></div>
+<div class="para" id="my-great-book-6-8-109">This is a quadratic inequality, which can be solved by analyzing signs:</div>
+<div class="para" id="my-great-book-6-8-110">Sign of <span class="process-math">\(3x - x^{2}\)</span> <span class="process-math">\(\begin{matrix}
+\overrightarrow{- \  - \  - \ |\  + \  + \  + \ |\  - \  - \  -} \\
+\ 0\ 3 \\
+\end{matrix}\)</span>
+</div>
+<div class="para" id="my-great-book-6-8-111">Since we want <span class="process-math">\(3x - x^{2} = x(3 - x)\)</span> to be non-negative, the sign analysis shows us that the domain is <span class="process-math">\(\left\{ x:0 \leq x \leq 3 \right\}\)</span> or <span class="process-math">\(\lbrack 0,3\rbrack\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-6-8-112"><em class="alert">Exercise 3.1</em></div>
+<ol class="decimal" id="my-great-book-6-8-113"><li id="my-great-book-6-8-113-1"><div class="para" id="my-great-book-6-8-113-1-1">Let <em class="emphasis">R</em> be a relation on the set <span class="process-math">\(A = \left\{ 1,2,3,4,5,6 \right\}\)</span> defined by <span class="process-math">\(R = \left\{ (a,b):a + b \leq 9 \right\}\text{.}\)</span>
+</div></li></ol>
+<ol class="decimal" id="my-great-book-6-8-114">
+<li id="my-great-book-6-8-114-1"><div class="para" id="my-great-book-6-8-114-1-1">List the elements of <span class="process-math">\(R\)</span>
+</div></li>
+<li id="my-great-book-6-8-114-2"><div class="para" id="my-great-book-6-8-114-2-1">Is <span class="process-math">\(R = R^{- 1}\)</span>
+</div></li>
+</ol>
+<ol class="decimal" id="my-great-book-6-8-115"><li id="my-great-book-6-8-115-1"><div class="para" id="my-great-book-6-8-115-1-1">Let <em class="emphasis">R</em> be a relation on the set <span class="process-math">\(A = \left\{ 1,2,3,4,5,6,7 \right\}\)</span> defined by <span class="process-math">\(R =\)</span> divides <span class="process-math">\(\left. \ a - b \right\}\text{.}\)</span>
+</div></li></ol>
+<ol class="decimal" id="my-great-book-6-8-116">
+<li id="my-great-book-6-8-116-1"><div class="para" id="my-great-book-6-8-116-1-1">List the elements of <span class="process-math">\(R\)</span>
+</div></li>
+<li id="my-great-book-6-8-116-2"><div class="para" id="my-great-book-6-8-116-2-1">Find <span class="process-math">\(\text{Dom}(R)\  \land \ \text{Range}(R)\)</span>
+</div></li>
+<li id="my-great-book-6-8-116-3"><div class="para" id="my-great-book-6-8-116-3-1">Find the elements of <span class="process-math">\(R^{- 1}\)</span>
+</div></li>
+<li id="my-great-book-6-8-116-4"><div class="para" id="my-great-book-6-8-116-4-1">Find <span class="process-math">\(\text{Dom}(R^{- 1})\  \land \ \text{Range}(R^{- 1})\)</span>
+</div></li>
+</ol>
+<ol class="decimal" id="my-great-book-6-8-117">
+<li id="my-great-book-6-8-117-1"><div class="para" id="my-great-book-6-8-117-1-1">Let <span class="process-math">\(A = \left\{ 1,2,3,4,5,6 \right\}\text{.}\)</span> Define a relation on <span class="process-math">\(A\)</span> by <span class="process-math">\(R = \left\{ (x,y):y = x + 1 \right\}\text{.}\)</span> Write down the domain, codomain and range of <span class="process-math">\(R\text{.}\)</span> Find <span class="process-math">\(R^{- 1}\text{.}\)</span>
+</div></li>
+<li id="my-great-book-6-8-117-2"><div class="para" id="my-great-book-6-8-117-2-1">Find the domain and range of the relation <span class="process-math">\(\left\{ (x,y):\left| x \right| + y \geq 2 \right\}\text{.}\)</span>
+</div></li>
+<li id="my-great-book-6-8-117-3"><div class="para" id="my-great-book-6-8-117-3-1">Let <span class="process-math">\(A = \left\{ 1,2,3 \right\}\)</span> and <span class="process-math">\(B = \left\{ 3,5,6,8 \right\}\text{.}\)</span> Which of the following are functions from <span class="process-math">\(A\)</span> to <span class="process-math">\(B\text{?}\)</span>
+</div></li>
+</ol>
+<ol class="decimal" id="my-great-book-6-8-118">
+<li id="my-great-book-6-8-118-1"><div class="para" id="my-great-book-6-8-118-1-1">
+<span class="process-math">\(f = \left\{ (1,3),(2,3),(3,3) \right\}\)</span> c) <span class="process-math">\(f = \left\{ (1,8),(2,5) \right\}\)</span>
+</div></li>
+<li id="my-great-book-6-8-118-2"><div class="para" id="my-great-book-6-8-118-2-1">
+<span class="process-math">\(f = \left\{ (1,3),(2,5),(1,6) \right\}\)</span> d) <span class="process-math">\(f = \left\{ (1,6),(2,5),(3,3) \right\}\)</span>
+</div></li>
+</ol>
+<ol class="decimal" id="my-great-book-6-8-119"><li id="my-great-book-6-8-119-1"><div class="para" id="my-great-book-6-8-119-1-1">Determine the domain and range of the following relations. Which relation a function?</div></li></ol>
+<ol class="decimal" id="my-great-book-6-8-120">
+<li id="my-great-book-6-8-120-1"><div class="para" id="my-great-book-6-8-120-1-1">
+<span class="process-math">\(\left\{ ( - 4, - 3),(2, - 5),(4,6),(2,0) \right\}\)</span> d) <span class="process-math">\(\left\{ ( - \frac{1}{2},\frac{1}{6}),( - 1,1),(\frac{1}{3},\frac{1}{8}) \right\}\)</span>
+</div></li>
+<li id="my-great-book-6-8-120-2"><div class="para" id="my-great-book-6-8-120-2-1">
+<span class="process-math">\(\left\{ (8, - 2),(6, - \frac{3}{2}),( - 1,5) \right\}\)</span> e) <span class="process-math">\(\left\{ (0,5),(1,5),(2,5),(3,5),(4,5),(5,5) \right\}\)</span>
+</div></li>
+<li id="my-great-book-6-8-120-3"><div class="para" id="my-great-book-6-8-120-3-1">
+<span class="process-math">\(\left\{ ( - \sqrt{3},3),( - 1,1),(0,0),(1,1),(\sqrt{3},3) \right\}\)</span> f) {(5,0),(5,1),(5,2),(5,3),(5,4),(5,5)}</div></li>
+</ol>
+<ol class="decimal" id="my-great-book-6-8-121"><li id="my-great-book-6-8-121-1"><div class="para" id="my-great-book-6-8-121-1-1">Find the domain and range of the following functions.</div></li></ol>
+<ol class="decimal" id="my-great-book-6-8-122">
+<li id="my-great-book-6-8-122-1"><div class="para" id="my-great-book-6-8-122-1-1">
+<span class="process-math">\(f(x) = 1 + 8x - 2x^{2}\)</span> c) <span class="process-math">\(f(x) = \sqrt{x^{2} - 6x + 8}\)</span>
+</div></li>
+<li id="my-great-book-6-8-122-2"><div class="para" id="my-great-book-6-8-122-2-1">
+<span class="process-math">\(f(x) = \frac{1}{x^{2} - 5x + 6}\)</span> d) <span class="process-math">\(f(x) = \begin{matrix}
+\left\{ 3x + 4,\  - 1 \leq x &lt; 2 \middle| \right.\  \\
+\end{matrix}\)</span>
+</div></li>
+</ol>
+<ol class="decimal" id="my-great-book-6-8-123"><li id="my-great-book-6-8-123-1"><div class="para" id="my-great-book-6-8-123-1-1">Given <span class="process-math">\(f(x) = \begin{matrix}
+\left\{ 3x - 5,\ x &lt; 1 \middle| \right.\  \\
+\end{matrix}\text{.}\)</span>
+</div></li></ol>
+<div class="para" id="my-great-book-6-8-124">Find a) <span class="process-math">\(f( - 3)\)</span> b)<span class="process-math">\(f(1)\)</span> c) <span class="process-math">\(f(6)\)</span>
+</div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="my-great-book-6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="my-great-book-6-9.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

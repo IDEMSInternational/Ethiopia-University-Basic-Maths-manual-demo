@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Parabolas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="BASIC MATHEMATICS FOR NATURAL SCIENCES">
+<meta property="book:author" content="">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">BASIC MATHEMATICS FOR NATURAL SCIENCES:</span> <span class="subtitle">UNDERGRADUATE STUDENT TEXTBOOK</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="my-great-book-7-12.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="my-great-book-7.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="my-great-book-7-14.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="my-great-book-4.html" class="internal"><span class="codenumber">1</span> <span class="title">Propositional Logic and Set Theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-4-6.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Propositional Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-6.html#my-great-book-4-6-6" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Definition and examples of propositions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-6.html#my-great-book-4-6-7" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Logical connectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-6.html#my-great-book-4-6-8" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Compound (or complex) propositions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-6.html#my-great-book-4-6-9" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tautology and contradiction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-4-7.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Open propositions and quantifiers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-4-8.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Argument and Validity</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-4-9.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Set theory</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-9.html#my-great-book-4-9-6" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The concept of a set</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-4-10.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Description of sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-10.html#my-great-book-4-10-51" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Set Operations and Venn diagrams</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="my-great-book-5.html" class="internal"><span class="codenumber">2</span> <span class="title">The Real and Complex Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-5-6.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The real number System</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-6.html#my-great-book-5-6-2" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-6.html#my-great-book-5-6-3" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The set of Integers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-6.html#my-great-book-5-6-4" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The set of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-6.html#my-great-book-5-6-5" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The set of real numbers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-5-7.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The set of complex numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-10" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Plotting complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-11" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Operations on Complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-12" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Conjugate of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-13" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Modulus (Norm) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-14" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Additive and multiplicative inverses</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-15" class="internal"><span class="codenumber">2.2.6</span> <span class="title">Argument (Amplitude) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-16" class="internal"><span class="codenumber">2.2.7</span> <span class="title">Polar form of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-7.html#my-great-book-5-7-17" class="internal"><span class="codenumber">2.2.8</span> <span class="title">Extraction of roots</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="my-great-book-6.html" class="internal"><span class="codenumber">3</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-8.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Review of relations and functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-9.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Real Valued functions and their properties</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-10.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Types of functions and inverse of a function</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-11.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Polynomials, zeros of polynomials, rational functions and their graphs</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-12.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="my-great-book-7.html" class="internal"><span class="codenumber">4</span> <span class="title">Chapter 4: Analytic Geometry</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-7-11.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Distance Formula and Equation of Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-11.html#my-great-book-7-11-3" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Distance between two points and division of segments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-11.html#my-great-book-7-11-4" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Equations of lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-11.html#my-great-book-7-11-5" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Distance between a point and a line</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-7-12.html" class="internal"><span class="codenumber">4.2</span> <span class="title">4.2 Circles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-12.html#my-great-book-7-12-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Definition of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-12.html#my-great-book-7-12-4" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Equation of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-12.html#my-great-book-7-12-5" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Intersection of a circle with a line and tangent line to a circle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="my-great-book-7-13.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Parabolas</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-13.html#my-great-book-7-13-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Definition of a Parabola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-13.html#my-great-book-7-13-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Equation of Parabolas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-7-14.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ellipses</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-14.html#my-great-book-7-14-3" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Definition of an Ellipse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-14.html#my-great-book-7-14-4" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Equation of an Ellipse</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-7-15.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Hyperbolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-15.html#my-great-book-7-15-3" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Definition of a hyperbola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-15.html#my-great-book-7-15-4" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Equation of a hyperbola</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-7-16.html" class="internal"><span class="codenumber">4.6</span> <span class="title">The General Second Degree Equation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-16.html#my-great-book-7-16-7" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Rotation of Coordinate Axes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-7-16.html#my-great-book-7-16-8" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Analysis of the General Second Degree Equations</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="my-great-book-8.html" class="internal"><span class="codenumber">5</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="my-great-book-7-13"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.3</span><span class="space"> </span><span class="title">Parabolas</span>
+</h2>
+<figure class="table table-like" id="my-great-book-7-13-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.3.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120"><div class="para" id="my-great-book-7-13-2-1-1-1-1">By the end of this section, you should</div></td></tr></table></div></figure><section class="subsection" id="my-great-book-7-13-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="space"> </span><span class="title">Definition of a Parabola</span>
+</h3>
+<figure class="table table-like" id="my-great-book-7-13-3-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.3.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">
+<em class="alert">Definition 4.3:</em> Let <em class="emphasis">L</em> be a fixed line and F be a fixed point not on the line, both lying on the plane. A <em class="alert">parabola</em> is a set of points equidistant from <em class="emphasis">L</em> and F. The line <em class="emphasis">L</em> is called the <em class="alert">directrix</em> and the fixed point F is called the <em class="alert">focus</em> of the parabola.</td></tr></table></div></figure><div class="para" id="my-great-book-7-13-3-3">This definition is illustrated by Figure 4.12.</div>
+<figure class="table table-like" id="my-great-book-7-13-3-4"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.3.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="l m b0 r0 l0 t0 lines"><ul class="disc" id="my-great-book-7-13-3-4-1-1-1-1">
+<li id="my-great-book-7-13-3-4-1-1-1-1-1"><div class="para" id="my-great-book-7-13-3-4-1-1-1-1-1-1">Note that the point halfway between the focus F and directrix <em class="emphasis">L</em> is on the parabola; it is called the <em class="alert">vertex,</em> denoted by V.</div></li>
+<li id="my-great-book-7-13-3-4-1-1-1-1-2"><div class="para" id="my-great-book-7-13-3-4-1-1-1-1-2-1">
+<em class="alert">|</em>VF| is called the <em class="alert">focal length</em>.</div></li>
+<li id="my-great-book-7-13-3-4-1-1-1-1-3"><div class="para" id="my-great-book-7-13-3-4-1-1-1-1-3-1">The line through F perpendicular to the directrix is called the <em class="alert">axis</em> of the parabola. It is the line of symmetry for the parabola.</div></li>
+<li id="my-great-book-7-13-3-4-1-1-1-1-4"><div class="para" id="my-great-book-7-13-3-4-1-1-1-1-4-1">The chord BB′ through F perpendicular to the axis is called <em class="alert">latus rectum</em>.</div></li>
+<li id="my-great-book-7-13-3-4-1-1-1-1-5"><div class="para" id="my-great-book-7-13-3-4-1-1-1-1-5-1">The length of the latus rectum, i.e, <em class="alert">|</em>BB<em class="alert">′|</em>, is called <em class="alert">focal width</em>.</div></li>
+</ul></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr></table></div></figure><div class="para" id="my-great-book-7-13-3-5">Letting <em class="alert">|</em>VF <em class="alert">| =</em> <em class="emphasis">p</em><em class="alert">,</em> you may show that <em class="alert">|</em>BB<em class="alert">′|</em> = 4<em class="emphasis">p</em>; i.e., focal width is 4 times focal length.</div>
+<div class="para" id="my-great-book-7-13-3-6">If P(<em class="emphasis">x,y</em>) is any point on the parabola, then by the definition, the distance of P from the directrix is equal to the distance between P and the focus F. This is used to determine an equation of a parabola. To do this, we consider first the cases when the axis of the parabola is parallel to one of the coordinate axes.</div>
+<div class="para" id="my-great-book-7-13-3-7"><em class="alert">Exercise 4.3.1</em></div>
+<figure class="table table-like" id="my-great-book-7-13-3-8"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.3.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal"><th scope="col" class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-1">Use the definition of parabola and the given information to answer or solve each of the following problems.</div>
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-2">1. Suppose the focal length of a parabola is <em class="emphasis">p</em>, for some <em class="emphasis">p</em> &gt; 0. Then, show that the focal width (length of the latus rectum) of the parabola is 4<em class="emphasis">p</em>.</div>
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-3">2. Suppose the vertex of a parabola is the origin and its focus is F(0,1). Then,</div>
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-4">(a) What is the focal length of the parabola.</div>
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-5">(b) Find the equations of the axis and directrix of the parabola.</div>
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-6">(c) Find the endpoints of the latus rectum of the parabola.</div>
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-7">(d) Determine whether each of the following point is on the parabola or not.</div>
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-8">(i) (4, 4) (ii) (2, 2) (iii) (−4, 4) (iv) (4, −4) (v) (1, 1/4)</div>
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-9">(Note: By the definition, a point is on the parabola iff its distances from the focus and from the directrix are equal. )</div>
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-10">3. Suppose the vertex of a parabola is V(0, 1) and its directrix is the line <em class="emphasis">x</em> = −2. Then,</div>
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-11">(a) Find the equation of the axis of the parabola.</div>
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-12">(b) Find the focus of the parabola.</div>
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-13">(c) Find the length and endpoints of the latus rectum of the parabola.</div>
+<div class="para" id="my-great-book-7-13-3-8-1-1-1-14">(d) Determine whether each of the following point is on the parabola or not.</div>
+</th></tr>
+<tr><td class="l m b0 r0 l0 t0 lines">(i) (1, 0) (ii) (3, 0) (iii) (8, 9) (iv) (8, −7) (v) (8, 8)</td></tr>
+</table></div></figure></section><section class="subsection" id="my-great-book-7-13-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="space"> </span><span class="title">Equation of Parabolas</span>
+</h3>
+<div class="para" id="my-great-book-7-13-4-2">
+<em class="alert">I: Equation of a parabola whose axis is parallel to the <em class="emphasis">y</em>-axis</em>:</div>
+<div class="para" id="my-great-book-7-13-4-3">A parabola whose axis is parallel to <em class="emphasis"><em class="alert">y</em></em>-axis is called <em class="alert">vertical parabola</em>. A vertical parabola is either open upward (as in Figure 4.13 (a) ) or open downward (as in Figure 4.13 (b)).</div>
+<div class="para" id="my-great-book-7-13-4-4">Let <em class="emphasis">p</em> be the distance from vertex V(<em class="emphasis">h,k</em>) to the focus F of the parabola, i.e.,<em class="alert">|</em>VF<em class="alert">|</em> = <em class="emphasis">p</em>. Then, by the definition, F is located <em class="emphasis">p</em> units above V if the parabola opens upward and it is located <em class="emphasis">p</em> units below V if the parabola opens downward as indicated on Figure 4.13(a) and (b), respectively. To determine the desired equation, we first consider the case when the parabola opens upward.</div>
+<div class="para" id="my-great-book-7-13-4-5">Therefore, considering a vertical parabola with vertex V(<em class="emphasis">h,k</em>) that opens upward (Figure 4.13a), its focus is at F(<em class="emphasis">h, k+p</em>). ⇒ The equation of its directrix is <em class="emphasis">y = k−p.</em>
+</div>
+<div class="para" id="my-great-book-7-13-4-6">Then, for any point P(<em class="emphasis">x,y</em>) on the parabola, <em class="alert">|</em>PF<em class="alert">|</em> is equal to the distance between P and the directrix if and only if</div>
+<div class="para" id="my-great-book-7-13-4-7"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2280.svg" class="contained"></div></div>
+<div class="para" id="my-great-book-7-13-4-8">Upon simplification, this becomes</div>
+<figure class="table table-like" id="my-great-book-7-13-4-9"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.3.5<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2281.svg" class="contained"></div></td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-7-13-4-9-1-1-2-1">called standard equation of a vertical parabola,</div>
+<div class="para" id="my-great-book-7-13-4-9-1-1-2-2">vertex (<em class="emphasis">h, k</em>), focal length <em class="emphasis">p,</em> open upward.</div>
+</td>
+</tr></table></div></figure><div class="para" id="my-great-book-7-13-4-10">In particular, if the vertex of a vertical parabola is at origin, i.e., (<em class="emphasis">h, k</em>) =(0,0) and opens upward, then its equation is</div>
+<div class="para" id="my-great-book-7-13-4-11">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2282.svg" class="contained"></div> ( In this case, its focus is at F(0, <em class="emphasis">p</em>), and its directrix is <em class="emphasis">y =−p</em> )</div>
+<div class="para" id="my-great-book-7-13-4-12">If a vertical parabola with vertex V(<em class="emphasis">h, k</em>) opens downward, then its directrix is above the parabola and its focus lies below the vertex (see Figure 4.13(b). In this case,</div>
+<div class="para" id="my-great-book-7-13-4-13">the focus is at F(<em class="emphasis">h, k−p</em>), and its directrix is given by <em class="emphasis">y=k+p</em>. Moreover, following the same steps as above , the equation of this parabola becomes</div>
+<figure class="table table-like" id="my-great-book-7-13-4-14"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.3.6<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2283.svg" class="contained"></div></td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-7-13-4-14-1-1-2-1">( Standard equation of a vertical parabola,</div>
+<div class="para" id="my-great-book-7-13-4-14-1-1-2-2">open downward, vertex (<em class="emphasis">h, k</em>) , and focal length <em class="emphasis">p .</em> )</div>
+</td>
+</tr></table></div></figure><div class="para" id="my-great-book-7-13-4-15">In particular, if the vertex of a vertical parabola is at origin, i.e., (<em class="emphasis">h, k</em>) =(0,0) and opens downward, then its equation is</div>
+<div class="para" id="my-great-book-7-13-4-16">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2284.svg" class="contained"></div> ( In this case, its focus is at F(0,−<em class="emphasis">p</em>), and its directrix is <em class="emphasis">y = p</em> )</div>
+<div class="para" id="my-great-book-7-13-4-17">
+<em class="alert">Example 4.14</em>: Find the vertex, focal length, focus and directrix of the parabola <em class="emphasis">y</em> = <em class="emphasis">x</em>2.</div>
+<div class="para" id="my-great-book-7-13-4-18">
+<em class="alert">Solution:</em> The given equation, <em class="emphasis">x</em>2 = <em class="emphasis">y,</em> is the standard equation of the parabola with vertex at origin (0,0) and 4<em class="emphasis">p</em> =1 ⇒ its focal length is <em class="emphasis">p</em> = 1/4. Since the parabola opens upward, its focus is <em class="emphasis">p</em> units above its vertex ⇒ its focus is at F(0,1/4); and its directrix is horizontal line <em class="emphasis">p</em> units below its vertex ⇒ its directrix is <em class="emphasis">y</em> = −1/4. You may sketch this parabola.</div>
+<div class="para" id="my-great-book-7-13-4-19">
+<em class="alert">Example 4.15</em>: If a parabola opens upward and the endpoints of its latus rectum are at <em class="emphasis">A</em>(−4, 1) and <em class="emphasis">B</em>(2, 1), then find the equation of the parabola, its directrix and sketch it.</div>
+<div class="para" id="my-great-book-7-13-4-20">
+<em class="alert">Solution:</em> Since the focus <em class="emphasis">F</em> of the parabola is at the midpoint of its latus rectum <em class="emphasis">AB</em>, we have</div>
+<div class="para" id="my-great-book-7-13-4-21">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2285.svg" class="contained"></div>, and focal width <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2286.svg" class="contained"></div> ⇒ focal length <em class="emphasis">p</em> = 3/2. Moreover, as the parabola opens upward its vertex is <em class="emphasis">p</em> units below its focus. That is,</div>
+<div class="para" id="my-great-book-7-13-4-22">V (<em class="emphasis">h</em>, <em class="emphasis">k</em>) = ( −1, 1−3/2) = ( −1, −1/2). Therefore, the equation of the parabola is</div>
+<div class="para" id="my-great-book-7-13-4-23">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2287.svg" class="contained"></div>.</div>
+<div class="para" id="my-great-book-7-13-4-24">And its directrix is horizontal line <em class="emphasis">p</em> units below its vertex, which is <em class="emphasis">y</em> = −1/2 −3/2 = −2.</div>
+<div class="para" id="my-great-book-7-13-4-25">The parabola is sketch in the Figure 4.14 .</div>
+<div class="para" id="my-great-book-7-13-4-26"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2288.svg" class="contained"></div></div>
+<div class="para" id="my-great-book-7-13-4-27">
+<em class="alert">II: Equation of a parabola whose axis is parallel to the <em class="emphasis">x</em>-axis</em>.</div>
+<div class="para" id="my-great-book-7-13-4-28">A parabola whose axis is parallel to <em class="emphasis"><em class="alert">x</em></em>-axis is called <em class="alert">horizontal parabola</em>. Such parabola opens either to the right or to the left as shown in Figure 4.15 (a) and (b), respectively.</div>
+<div class="para" id="my-great-book-7-13-4-29">The equations of such parabolas can be obtained by interchanging the role of <em class="emphasis">x</em> and <em class="emphasis">y</em> in the equations of the parabolas discussed previously. These equations are stated below. In both cases, let the vertex of the parabola be at V(<em class="emphasis">h,k</em>).</div>
+<ul class="disc" id="my-great-book-7-13-4-30"><li id="my-great-book-7-13-4-30-1"><div class="para" id="my-great-book-7-13-4-30-1-1">If a horizontal parabola <em class="alert">opens to</em> t<em class="alert">he right (</em>as in Fig.4.15(a) ), then its focus is to the right of V at F(<em class="emphasis">h+p, k</em>), its directrix is <em class="emphasis">x =h−p</em>, and its equation is</div></li></ul>
+<figure class="table table-like" id="my-great-book-7-13-4-31"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.3.7<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2289.svg" class="contained"></div></td></tr></table></div></figure><ul class="disc" id="my-great-book-7-13-4-32"><li id="my-great-book-7-13-4-32-1"><div class="para" id="my-great-book-7-13-4-32-1-1">If a parabola <em class="alert">opens to</em> t<em class="alert">he left (</em>as in Figure 4.15 (b) ), then its focus is to the left of V at F(<em class="emphasis">h−p,k</em>), its directrix is <em class="emphasis">x=h+p</em> , and its equation is:</div></li></ul>
+<figure class="table table-like" id="my-great-book-7-13-4-33"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.3.8<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2290.svg" class="contained"></div></td></tr></table></div></figure><div class="para" id="my-great-book-7-13-4-34">If the vertices of these parabolas are at the origin (0,0), then you can obtain their corresponding equations by setting <em class="emphasis">h</em>=0 and <em class="emphasis">k</em>=0 in the above equations.</div>
+<div class="para" id="my-great-book-7-13-4-35">
+<em class="alert">Example 4.16</em>: Find the focus and directrix of the parabola <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2291.svg" class="contained"></div> and sketch its graph.</div>
+<div class="para" id="my-great-book-7-13-4-36">
+<em class="alert">Solution</em>: The equation is <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2292.svg" class="contained"></div>; and comparing this with the above equation, it is an equation of a parabola whose vertex is at (0,0), axis of symmetry is the x-axis, open to the left and 4<em class="emphasis">p</em>=10, i.e., <em class="emphasis">p</em>=5/2. Thus, the focus is F=(–5/2,0) and its directrix is <em class="emphasis">x</em> =5/2. Its graph is sketched in Figure 4.16.</div>
+<div class="para" id="my-great-book-7-13-4-37"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2291.svg" class="contained"></div></div>
+<div class="para" id="my-great-book-7-13-4-38">
+<em class="alert">Example 4.17</em>: Find the focus and directrix of the parabola <em class="emphasis">y</em>2 + 4<em class="emphasis">y</em> + 8<em class="emphasis">x</em> – 4 = 0 and sketch it.</div>
+<div class="para" id="my-great-book-7-13-4-39">
+<em class="alert">Solution:</em> The eaquation is <em class="emphasis">y</em>2 +4<em class="emphasis">y</em> = –8<em class="emphasis">x</em> +4. ( Now complete the square of <em class="emphasis">y</em>-terms)</div>
+<div class="para" id="my-great-book-7-13-4-40">⇒ <em class="emphasis">y</em>2 + 4<em class="emphasis">y+</em><em class="alert">22</em> = –8<em class="emphasis">x</em> +4+<em class="alert">4</em>
+</div>
+<div class="para" id="my-great-book-7-13-4-41">⇒ (<em class="emphasis">y</em> +2)2 = –8<em class="emphasis">x</em> +8</div>
+<div class="para" id="my-great-book-7-13-4-42">⇒ (<em class="emphasis">y</em> + 2)2 = –8(<em class="emphasis">x</em> –1)</div>
+<div class="para" id="my-great-book-7-13-4-43">This is equation of a parabola with vertex at (<em class="emphasis">h, k</em>)=(1,–2), open to the left and focal length <em class="emphasis">p</em>, where 4<em class="emphasis">p=</em>8 ⇒ <em class="emphasis">p=</em>2. Therefore, its focus is</div>
+<div class="para" id="my-great-book-7-13-4-44">F= (<em class="emphasis">h</em>–<em class="emphasis">p, k</em>) = (–1, –2), and directrix <em class="emphasis">x</em>=<em class="emphasis">h</em>+<em class="emphasis">p</em> =3. The parabola is sketched in Figure 4.17.</div>
+<figure class="table table-like" id="my-great-book-7-13-4-45"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.3.9<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-7-13-4-45-1-1-1-1">
+<em class="alert">Remark:-</em> An equation given as: A<em class="emphasis">x</em>2 + D<em class="emphasis">x</em> + E<em class="emphasis">y</em> + F = 0</div>
+<div class="para" id="my-great-book-7-13-4-45-1-1-1-2">or C<em class="emphasis">y</em>2 + D<em class="emphasis">x</em> + E<em class="emphasis">y</em> + F = 0</div>
+<div class="para" id="my-great-book-7-13-4-45-1-1-1-3">may represent a parabola whose axis is parallel to the <em class="emphasis"><em class="alert">y</em></em>-axis or parallel to the <em class="emphasis"><em class="alert">x</em></em>-axis, respectively. The vertex, focal length and focus for such parabolas can be identified after converting the equations into one of the standard forms by completing the square.</div>
+</td></tr></table></div></figure><div class="para" id="my-great-book-7-13-4-46"><em class="alert">Exercise 4.3.2</em></div>
+<figure class="table table-like" id="my-great-book-7-13-4-47"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.3.10<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-1">For questions 1 to 8, find an equation of the parabola with the given properties and sketch its graph.</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-2">1. Focus (0, 1) and directrix <em class="emphasis">y</em> = −1. 5. Vertex (3, 2 ) and Focus (3, 3).</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-3">2. Focus (−1, 2) and directrix <em class="emphasis">y</em> =−2. 6. Vertex (5, −2 ) and Focus (−5, −2).</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-4">3. Focus (3/2, 0) and directrix <em class="emphasis">x</em> = −3/2. 7. Vertex (1, 0) and directrix <em class="emphasis">x</em> = −2.</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-5">4. Focus (−1,−2) and directrix <em class="emphasis">x</em> = 0. 8. Vertex (0, 2) and directrix <em class="emphasis">y</em> = 4.</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-6">For questions 9 to 17 find the vertex, focus and directrix of the parabola and sketch it.</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-7">9. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2293.svg" class="contained"></div> 12. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2294.svg" class="contained"></div> 15. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2295.svg" class="contained"></div>
+</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-8">10 . <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2296.svg" class="contained"></div> 13. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2297.svg" class="contained"></div> 16. <em class="emphasis">y</em>2 – 2<em class="emphasis">y</em> – 4<em class="emphasis">x</em> + 9<em class="emphasis">=</em> 0</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-9">11. 4<em class="emphasis">x</em> − <em class="emphasis">y</em>2 = 0 14. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2298.svg" class="contained"></div> 17. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2299.svg" class="contained"></div>
+</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-10">18. Find an equation of the parabola that has a vertical axis, its vertex at (1, 0) and passing through (0,1).</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-11">19. The vertex and endpoints of the latus rectum of the parabola <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/svg/imageC2300.svg" class="contained"></div>forms a triangle. Find the area of the triangle.</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-12">20. P(4, 6) is a point on a parabola whose focus is at (0, 2) and directrix is parallel to <em class="emphasis">x</em>-axis. (a) Find an equation of the parabola, its vertex and directrix.</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-13">(b) Determine the distance from P to the directrix.</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-14">21. An iron wire bent in the shape of a parabola has latus rectum of length 60cm. What is its focal length?</div>
+<div class="para" id="my-great-book-7-13-4-47-1-1-1-15">22. A cross-section of a parabolic reflector is shown in the figure below. A bulb is located at the focus and the opening at the focus, AB, is 12 cm. What is the diameter of the opening, CD, 8 cm from the vertex?</div>
+</td></tr></table></div></figure></section></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="my-great-book-7-12.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="my-great-book-7-14.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

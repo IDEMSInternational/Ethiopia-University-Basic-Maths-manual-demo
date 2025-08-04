@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Propositional Logic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="BASIC MATHEMATICS FOR NATURAL SCIENCES">
+<meta property="book:author" content="">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">BASIC MATHEMATICS FOR NATURAL SCIENCES:</span> <span class="subtitle">UNDERGRADUATE STUDENT TEXTBOOK</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="my-great-book-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="my-great-book-4.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-open-propositions-and-quantifiers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="my-great-book-4.html" class="internal"><span class="codenumber">1</span> <span class="title">Propositional Logic and Set Theory</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-propositional-logic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Propositional Logic</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-propositional-logic.html#subsec-definition-and-examples-of-propositions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Definition and examples of propositions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-propositional-logic.html#subsec-logical-connectives" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Logical connectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-propositional-logic.html#subsec-compound-(or-complex)-propositions" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Compound (or complex) propositions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-propositional-logic.html#subsec-tautology-and-contradiction" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tautology and contradiction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-open-propositions-and-quantifiers.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Open propositions and quantifiers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-argument-and-validity.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Argument and Validity</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-set-theory.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Set theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set-theory.html#subsec-the-concept-of-a-set" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The concept of a set</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Description of Sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Set Operations and Venn diagrams</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-description-of-sets.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Description of sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Set Operations and Venn diagrams</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="the-real-and-complex-number-systems.html" class="internal"><span class="codenumber">2</span> <span class="title">The Real and Complex Number Systems</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The real number System</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The set of natural numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Operations on the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-oder-relation-N" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Order Relation in <span class="process-math">\(\mathbf{N}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-factors-of-a-number" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Factors of a number</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-prime-factorization" class="internal"><span class="codenumber">2.1.1.4</span> <span class="title">Prime Factorization</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-greatest-common-factor" class="internal"><span class="codenumber">2.1.1.5</span> <span class="title">Greatest Common Factor (GCF)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-lcm" class="internal"><span class="codenumber">2.1.1.6</span> <span class="title">Least Common Multiple (LCM)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-well-ordering-principle-in-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.7</span> <span class="title">Well ordering Principle in the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-principle-of-mathematical-induction" class="internal"><span class="codenumber">2.1.1.8</span> <span class="title">Principle of Mathematical Induction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-integers" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The set of Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers" class="internal"><span class="codenumber">2.1.2.1</span> <span class="title">Operations on the set of integers</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-z" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Order Relation in Z</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-sets-of-integers" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The set of rational numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.1</span> <span class="title">Operations on the set of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-q" class="internal"><span class="codenumber">2.1.3.2</span> <span class="title">Order Relation in Q</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-decimal-representation-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.3</span> <span class="title">Decimal representation of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-fraction-form-of-decimal-numbers" class="internal"><span class="codenumber">2.1.3.4</span> <span class="title">Fraction form of decimal numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-non-terminating-and-non-periodic-decimals" class="internal"><span class="codenumber">2.1.3.5</span> <span class="title">Non-terminating and non-periodic decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The set of real numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4.1</span> <span class="title">Operations on the set of real numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-the-real-number-and-the-number-line" class="internal"><span class="codenumber">2.1.4.2</span> <span class="title">The real number and the number line</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-r" class="internal"><span class="codenumber">2.1.4.3</span> <span class="title">Order Relation in R</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-intervals" class="internal"><span class="codenumber">2.1.4.4</span> <span class="title">Intervals</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-upper-bounds-and-lower-bounds" class="internal"><span class="codenumber">2.1.4.5</span> <span class="title">Upper bounds and lower bounds</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-completeness-property-of-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Completeness property of real number (R)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="my-great-book-6.html" class="internal"><span class="codenumber">3</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Review of relations and functions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html#exercises-Review-of-relations-and-functions" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Real Valued functions and their properties</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html#exercises-Real-Valued-functions-and-their-properties" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-types-of-functions-and-inverse.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Types of functions and inverse of a function</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-polynomials,-zeros-of-polynomials,-rational.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Polynomials, zeros of polynomials, rational functions and their graphs</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-definition-and-basic-properties-of.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="analytic-geometry.html" class="internal"><span class="codenumber">4</span> <span class="title">Analytic Geometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Distance Formula and Equation of Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Distance between two points and division of segments</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-equations-of-lines" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Equations of lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-a-point-and" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Distance between a point and a line</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circles.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Circles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-definition-of-a-circle" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Definition of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-equation-of-a-circle" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Equation of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-intersection-of-a-circle-with" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Intersection of a circle with a line and tangent line to a circle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-parabolas.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Parabolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parabolas.html#subsec-definition-of-a-parabola" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Definition of a Parabola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parabolas.html#subsec-equation-of-parabolas" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Equation of Parabolas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ellipses.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ellipses</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-definition-of-an-ellipse" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Definition of an Ellipse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-equation-of-an-ellipse" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Equation of an Ellipse</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyperbolas.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Hyperbolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-definition-of-a-hyperbola" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Definition of a hyperbola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-equation-of-a-hyperbola" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Equation of a hyperbola</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">The General Second Degree Equation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-rotation-of-coordinate-axes" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Rotation of Coordinate Axes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-analysis-of-the-general-second" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Analysis of the General Second Degree Equations</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="my-great-book-8.html" class="internal"><span class="codenumber">5</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-propositional-logic"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Propositional Logic</span>
+</h2>
+<section class="introduction" id="sec-propositional-logic-2"><div class="para" id="sec-propositional-logic-2-1">Mathematical or symbolic logic is an analytical theory of the art of reasoning whose goal is to systematize and codify principles of valid reasoning. It has emerged from a study of the use of language in argument and persuasion and is based on the identification and examination of those parts of language which are essential for these purposes. It is formal in the sense that it lacks reference to meaning. Thereby it achieves versatility: it may be used to judge the correctness of a chain of reasoning (in particular, a "mathematical proof") solely on the basis of the form (and not the content) of the sequence of statements which make up the chain. There is a variety of symbolic logics. We shall be concerned only with that one which encompasses most of the deductions of the sort encountered in mathematics. Within the context of logic itself, this is "classical" symbolic logic.</div>
+<div class="para" id="sec-propositional-logic-2-2"><em class="alert">Section objectives:</em></div>
+<div class="para" id="sec-propositional-logic-2-3">After completing this section, students will be able to:-</div>
+<ul class="disc" id="sec-propositional-logic-2-4">
+<li id="sec-propositional-logic-2-4-1"><div class="para" id="sec-propositional-logic-2-4-1-1">Identify the difference between proposition and sentence.</div></li>
+<li id="sec-propositional-logic-2-4-2"><div class="para" id="sec-propositional-logic-2-4-2-1">Describe the five logical connectives.</div></li>
+<li id="sec-propositional-logic-2-4-3"><div class="para" id="sec-propositional-logic-2-4-3-1">Determine the truth values of propositions using the rules of logical connectives.</div></li>
+<li id="sec-propositional-logic-2-4-4"><div class="para" id="sec-propositional-logic-2-4-4-1">Construct compound propositions using the five logical connectives.</div></li>
+<li id="sec-propositional-logic-2-4-5"><div class="para" id="sec-propositional-logic-2-4-5-1">Identify the difference between the converse and contrapositive of conditional statements.</div></li>
+<li id="sec-propositional-logic-2-4-6"><div class="para" id="sec-propositional-logic-2-4-6-1">Determine the truth values of compound propositions.</div></li>
+<li id="sec-propositional-logic-2-4-7"><div class="para" id="sec-propositional-logic-2-4-7-1">Distinguish a given compound proposition is whether tautology or contradiction.</div></li>
+</ul></section><section class="subsection" id="subsec-definition-and-examples-of-propositions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="space"> </span><span class="title">Definition and examples of propositions</span>
+</h3>
+<div class="para" id="subsec-definition-and-examples-of-propositions-2"><em class="alert">Consider the following sentences.</em></div>
+<ol class="decimal" id="subsec-definition-and-examples-of-propositions-3">
+<li id="subsec-definition-and-examples-of-propositions-3-1"><div class="para" id="subsec-definition-and-examples-of-propositions-3-1-1">2 is an even number.</div></li>
+<li id="subsec-definition-and-examples-of-propositions-3-2"><div class="para" id="subsec-definition-and-examples-of-propositions-3-2-1">A triangle has four sides.</div></li>
+<li id="subsec-definition-and-examples-of-propositions-3-3"><div class="para" id="subsec-definition-and-examples-of-propositions-3-3-1">Athlete Haile G/silassie weighed 45 kg when he was 20 years old.</div></li>
+<li id="subsec-definition-and-examples-of-propositions-3-4"><div class="para" id="subsec-definition-and-examples-of-propositions-3-4-1">May God bless you!</div></li>
+<li id="subsec-definition-and-examples-of-propositions-3-5"><div class="para" id="subsec-definition-and-examples-of-propositions-3-5-1"><em class="alert">Give me that book.</em></div></li>
+<li id="subsec-definition-and-examples-of-propositions-3-6"><div class="para" id="subsec-definition-and-examples-of-propositions-3-6-1"><em class="alert">What is your name?</em></div></li>
+</ol>
+<div class="para" id="subsec-definition-and-examples-of-propositions-4">
+<em class="alert">T</em>he first three sentences are declarative sentences. The first one is true and the second one is false. The truth value of the third sentence cannot be ascertained because of lack of historical records but it is, by its very form, either true or false but not both. On the other hand, the last three sentences have no truth value. So they are not declaratives.</div>
+<div class="para" id="subsec-definition-and-examples-of-propositions-5"><em class="alert">Now we begin by examining proposition, the building blocks of every argument. A proposition is a sentence that may be asserted or denied. Proposition in this way are different from questions, commands, and exclamations. Neither questions, which can be asked, nor exclamations, which can be uttered, can possibly be asserted or denied. Only propositions assert that something is (or is not) the case, and therefore only they can be true or false.</em></div>
+<figure class="table table-like" id="subsec-definition-and-examples-of-propositions-6"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">
+<em class="alert">Definition 1.1:</em> A proposition (or statement) is a sentence which has a truth value (either True or False but not both).</td></tr></table></div></figure><div class="para" id="subsec-definition-and-examples-of-propositions-7">The above definition does not mean that we must always know what the truth value is. For example, the sentence “The 1000th digit in the decimal expansion of <span class="process-math">\(\pi\)</span> is 7” is a proposition, but it may be necessary to find this information in a Web site on the Internet to determine whether this statement is true. Indeed, for a sentence to be a proposition (or a statement), it is not a requirement that we are able to determine its truth value.</div>
+<div class="para" id="subsec-definition-and-examples-of-propositions-8">Every proposition has a truth value, namely <em class="alert">true</em> (denoted by <span class="process-math">\(\mathbf{T}\)</span>) or <em class="alert">false</em> (denoted by <span class="process-math">\(\mathbf{F}\)</span>).</div></section><section class="subsection" id="subsec-logical-connectives"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="space"> </span><span class="title">Logical connectives</span>
+</h3>
+<div class="para" id="subsec-logical-connectives-2">In mathematical discourse and elsewhere one constantly encounters declarative sentences which have been formed by modifying a statement with the word “not” or by connecting statements with the words “and”, “or”, “if . . . then (or implies)”, and “if and only if”. These five words or combinations of words are called propositional connectives.</div>
+<div class="para" id="subsec-logical-connectives-3">
+<em class="alert">Note:</em> Letters such as <span class="process-math">\(p,q,r,s\)</span> etc. are usually used to denote propositions.</div>
+<figure class="table table-like" id="subsec-logical-connectives-4"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-logical-connectives-4-1-1-1-1"><em class="alert">Conjunction</em></div>
+<div class="para" id="subsec-logical-connectives-4-1-1-1-2">When two propositions are joined with the connective “<em class="alert">and</em>,” the proposition formed is a logical <em class="emphasis"><em class="alert">conjunction</em></em>. “and” is denoted by “<span class="process-math">\(\land\)</span>”. So, the logical conjunction of two propositions, <span class="process-math">\(p\)</span> and <span class="process-math">\(q\text{,}\)</span> is written:</div>
+<div class="para" id="subsec-logical-connectives-4-1-1-1-3">
+<span class="process-math">\(p \land q\text{,}\)</span> read as “<span class="process-math">\(p\)</span> and <span class="process-math">\(q\text{,}\)</span>” or “<span class="process-math">\(p\)</span> conjunction <span class="process-math">\(q\)</span>”.</div>
+<div class="para" id="subsec-logical-connectives-4-1-1-1-4">
+<em class="emphasis">p</em> and <em class="emphasis">q</em> are called <em class="emphasis"><em class="alert">the components of the conjunction</em></em>. <span class="process-math">\(p \land q\)</span> is true if and only if <span class="process-math">\(p\)</span> is true and <span class="process-math">\(q\)</span> is true.</div>
+</td></tr></table></div></figure><div class="para" id="subsec-logical-connectives-5">The truth table for conjunction is given as follows:</div>
+<figure class="table table-like" id="subsec-logical-connectives-6"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{q}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p} \land q
+\end{equation*}
+</div></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-6-1-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-6-1-2-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-6-1-2-1-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-6-1-2-1-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-6-1-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-6-1-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-6-1-2-2-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-6-1-2-2-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-6-1-2-3-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-6-1-2-3-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-6-1-2-3-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-6-1-2-3-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+</tr>
+</table></div></figure><div class="para" id="subsec-logical-connectives-7">
+<em class="alert">Example 1.1:</em> Consider the following propositions:</div>
+<div class="para" id="subsec-logical-connectives-8">
+<span class="process-math">\(p\text{:}\)</span> 3 is an odd number. (True)</div>
+<div class="para" id="subsec-logical-connectives-9">
+<span class="process-math">\(q\text{:}\)</span> 27 is a prime number. (False)</div>
+<div class="para" id="subsec-logical-connectives-10">
+<span class="process-math">\(r\text{:}\)</span> Addis Ababa is the capital city of Ethiopia. (True)</div>
+<ol class="decimal" id="subsec-logical-connectives-11">
+<li id="subsec-logical-connectives-11-1"><div class="para" id="subsec-logical-connectives-11-1-1">
+<span class="process-math">\(p \land q\text{:}\)</span> 3 is an odd number and 27 is a prime number. (False)</div></li>
+<li id="subsec-logical-connectives-11-2"><div class="para" id="subsec-logical-connectives-11-2-1">
+<span class="process-math">\(p \land r\text{:}\)</span> 3 is an odd number and Addis Ababa is the capital city of Ethiopia. (True)</div></li>
+</ol>
+<figure class="table table-like" id="subsec-logical-connectives-12"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-logical-connectives-12-1-1-1-1"><em class="alert">Disjunction</em></div>
+<div class="para" id="subsec-logical-connectives-12-1-1-1-2">When two propositions are joined with the connective “<em class="alert">or</em>,” the proposition formed is called a logical <em class="emphasis"><em class="alert">disjunction</em></em>. “or” is denoted by “<span class="process-math">\(\vee\)</span>”. So, the logical disjunction of two propositions, <span class="process-math">\(p\)</span> and <span class="process-math">\(q\text{,}\)</span> is written:</div>
+<div class="para" id="subsec-logical-connectives-12-1-1-1-3">
+<span class="process-math">\(p\  \vee q\)</span> read as “<span class="process-math">\(p\)</span> or <span class="process-math">\(q\)</span>” or “<span class="process-math">\(p\)</span> disjunction <span class="process-math">\(q\text{.}\)</span>”</div>
+<div class="para" id="subsec-logical-connectives-12-1-1-1-4">
+<span class="process-math">\(p \vee q\)</span> is false if and only if both <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> are false.</div>
+</td></tr></table></div></figure><div class="para" id="subsec-logical-connectives-13">The truth table for disjunction is given as follows:</div>
+<figure class="table table-like" id="subsec-logical-connectives-14"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.5<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{q}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p} \vee q
+\end{equation*}
+</div></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-14-1-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-14-1-2-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-14-1-2-1-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-14-1-2-1-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-14-1-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-14-1-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-14-1-2-2-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-14-1-2-2-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-14-1-2-3-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-14-1-2-3-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-14-1-2-3-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-14-1-2-3-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+</tr>
+</table></div></figure><div class="para" id="subsec-logical-connectives-15">
+<em class="alert">Example 1.2:</em> Consider the following propositions:</div>
+<div class="para" id="subsec-logical-connectives-16">
+<span class="process-math">\(p\text{:}\)</span> 3 is an odd number. (True)A</div>
+<div class="para" id="subsec-logical-connectives-17">
+<span class="process-math">\(q\text{:}\)</span> 27 is a prime number. (False)</div>
+<div class="para" id="subsec-logical-connectives-18">
+<span class="process-math">\(s\text{:}\)</span> Nairobi is the capital city of Ethiopia. (False)</div>
+<ol class="decimal" id="subsec-logical-connectives-19">
+<li id="subsec-logical-connectives-19-1"><div class="para" id="subsec-logical-connectives-19-1-1">
+<span class="process-math">\(p \vee q\text{:}\)</span> 3 is an odd number or 27 is a prime number. (True)</div></li>
+<li id="subsec-logical-connectives-19-2"><div class="para" id="subsec-logical-connectives-19-2-1">
+<span class="process-math">\(p \vee s\text{:}\)</span> 27 is a prime number or Nairobi is the capital city of Ethiopia. (False)</div></li>
+</ol>
+<div class="para" id="subsec-logical-connectives-20">
+<em class="alert">Note:</em> The use of “<em class="alert">or</em>” in propositional logic is rather different from its normal use in the English language. For example, if Solomon says, “I will go to the football match in the afternoon or I will go to the cinema in the afternoon,” he means he will do one thing or the other, but not both. Here “or” is used in the exclusive sense. But in propositional logic, “or” is used in the inclusive sense; that is, we allow Solomon the possibility of doing both things without him being inconsistent.</div>
+<figure class="table table-like" id="subsec-logical-connectives-21"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.6<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-logical-connectives-21-1-1-1-1"><em class="alert">Implication</em></div>
+<div class="para" id="subsec-logical-connectives-21-1-1-1-2">When two propositions are joined with the connective “<em class="alert">implies</em>,” the proposition formed is called a <em class="emphasis">logical <em class="alert">implication</em></em>. “implies” is denoted by “<span class="process-math">\(\Longrightarrow \)</span>” So, the logical implication of two propositions, <span class="process-math">\(p\)</span> and <span class="process-math">\(q\text{,}\)</span> is written:</div>
+<div class="para" id="subsec-logical-connectives-21-1-1-1-3">
+<span class="process-math">\(p \Longrightarrow q\ \)</span> read as “<span class="process-math">\(p\)</span> implies <span class="process-math">\(q\text{.}\)</span>”</div>
+<div class="para" id="subsec-logical-connectives-21-1-1-1-4">The function of the connective “implies” between two propositions is the same as the use of “If … then …” Thus <span class="process-math">\(p \Longrightarrow q\)</span> can be read as “if <span class="process-math">\(p\text{,}\)</span> then <span class="process-math">\(q\text{.}\)</span>”</div>
+<div class="para" id="subsec-logical-connectives-21-1-1-1-5">
+<span class="process-math">\(p \Longrightarrow q\ \)</span>is false if and only if <span class="process-math">\(p\)</span> is true and <span class="process-math">\(q\)</span> is false.</div>
+</td></tr></table></div></figure><div class="para" id="subsec-logical-connectives-22">This form of a proposition is common in mathematics. The proposition <span class="process-math">\(p\)</span> is called the hypothesis or the antecedent of the conditional proposition <span class="process-math">\(p \Longrightarrow q\)</span> while <span class="process-math">\(q\)</span> is called its conclusion or the consequent.</div>
+<div class="para" id="subsec-logical-connectives-23">The following is the truth table for implication.</div>
+<figure class="table table-like" id="subsec-logical-connectives-24"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.7<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+p
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{q}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p} \Longrightarrow q
+\end{equation*}
+</div></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-24-1-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-24-1-2-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-24-1-2-1-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-24-1-2-1-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-24-1-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-24-1-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-24-1-2-2-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-24-1-2-2-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-24-1-2-3-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-24-1-2-3-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-24-1-2-3-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-24-1-2-3-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+</tr>
+</table></div></figure><div class="para" id="subsec-logical-connectives-25">
+<em class="alert">Examples 1.3:</em> Consider the following propositions:</div>
+<div class="para" id="subsec-logical-connectives-26">
+<span class="process-math">\(p\text{:}\)</span> 3 is an odd number. (True)</div>
+<div class="para" id="subsec-logical-connectives-27">
+<span class="process-math">\(q\text{:}\)</span> 27 is a prime number. (False)</div>
+<div class="para" id="subsec-logical-connectives-28">
+<span class="process-math">\(r\text{:}\)</span> Addis Ababa is the capital city of Ethiopia. (True)</div>
+<div class="para" id="subsec-logical-connectives-29">
+<span class="process-math">\(p \Longrightarrow q\text{:}\)</span> If 3 is an odd number, then 27 is prime. (False)</div>
+<div class="para" id="subsec-logical-connectives-30">
+<span class="process-math">\(p \Longrightarrow r\text{:}\)</span> If 3 is an odd number, then Addis Ababa is the capital city of Ethiopia. (True)</div>
+<div class="para" id="subsec-logical-connectives-31">We have already mentioned that <span class="process-math">\(p \Longrightarrow q\)</span> can be expressed as both “If <span class="process-math">\(p\text{,}\)</span> then <span class="process-math">\(q\)</span>” and “<span class="process-math">\(p\)</span> implies <span class="process-math">\(q\text{.}\)</span> ” There are various ways of expressing the proposition <span class="process-math">\(p \Longrightarrow q\text{,}\)</span> namely:</div>
+<div class="para" id="subsec-logical-connectives-32">If <span class="process-math">\(p\text{,}\)</span> then <span class="process-math">\(q\text{.}\)</span>
+</div>
+<div class="para" id="subsec-logical-connectives-33">
+<span class="process-math">\(q\)</span> if <span class="process-math">\(p\text{.}\)</span>
+</div>
+<div class="para" id="subsec-logical-connectives-34">
+<span class="process-math">\(p\)</span> implies <span class="process-math">\(q\text{.}\)</span>
+</div>
+<div class="para" id="subsec-logical-connectives-35">
+<span class="process-math">\(p\)</span> only if <span class="process-math">\(q\text{.}\)</span>
+</div>
+<div class="para" id="subsec-logical-connectives-36">
+<span class="process-math">\(p\)</span> is sufficient for <span class="process-math">\(q\text{.}\)</span>
+</div>
+<div class="para" id="subsec-logical-connectives-37">
+<span class="process-math">\(q\)</span> is necessary for <span class="process-math">\(p\)</span>
+</div>
+<figure class="table table-like" id="subsec-logical-connectives-38"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.8<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-logical-connectives-38-1-1-1-1"><em class="alert">Bi-implication</em></div>
+<div class="para" id="subsec-logical-connectives-38-1-1-1-2">When two propositions are joined with the connective “<em class="alert">bi-implication</em>,” the proposition formed is called a <em class="emphasis">logical</em> <em class="emphasis"><em class="alert">bi-implication</em></em> or a <em class="emphasis">logical <em class="alert">equivalence</em></em>. A bi-implication is denoted by “<span class="process-math">\(\Longleftrightarrow \)</span>”. So the logical bi-implication of two propositions, <span class="process-math">\(p\)</span> and <span class="process-math">\(q\text{,}\)</span> is written:</div>
+<div class="para" id="subsec-logical-connectives-38-1-1-1-3"><span class="process-math">\(p \Longleftrightarrow q\text{.}\)</span></div>
+<div class="para" id="subsec-logical-connectives-38-1-1-1-4">
+<span class="process-math">\(p \Longleftrightarrow q\)</span> is false if and only if <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> have different truth values.</div>
+</td></tr></table></div></figure><div class="para" id="subsec-logical-connectives-39">The truth table for bi-implication is given by:</div>
+<figure class="table table-like" id="subsec-logical-connectives-40"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.9<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{q}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p} \Longleftrightarrow q
+\end{equation*}
+</div></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-40-1-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-40-1-2-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-40-1-2-1-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-40-1-2-1-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-40-1-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-40-1-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-40-1-2-2-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-40-1-2-2-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-40-1-2-3-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-40-1-2-3-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-40-1-2-3-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-40-1-2-3-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+</tr>
+</table></div></figure><div class="para" id="subsec-logical-connectives-41"><em class="alert">Examples 1.4:</em></div>
+<ol class="decimal" id="subsec-logical-connectives-42"><li id="subsec-logical-connectives-42-1"><div class="para" id="subsec-logical-connectives-42-1-1">Let <span class="process-math">\(p\text{:}\)</span> 2 is greater than 3. (False)</div></li></ol>
+<div class="para" id="subsec-logical-connectives-43">
+<span class="process-math">\(q\text{:}\)</span> 5 is greater than 4. (True)</div>
+<div class="para" id="subsec-logical-connectives-44">Then</div>
+<div class="para" id="subsec-logical-connectives-45">
+<span class="process-math">\(p \Longleftrightarrow q\text{:}\)</span> 2 is greater than 3 if and only if 5 is greater than 4. (False)</div>
+<ol class="decimal" id="subsec-logical-connectives-46"><li id="subsec-logical-connectives-46-1"><div class="para" id="subsec-logical-connectives-46-1-1">Consider the following propositions:</div></li></ol>
+<div class="para" id="subsec-logical-connectives-47">
+<span class="process-math">\(p\text{:}\)</span> 3 is an odd number. (True)</div>
+<div class="para" id="subsec-logical-connectives-48">
+<span class="process-math">\(q\text{:}\)</span> 2 is a prime number. (True)</div>
+<div class="para" id="subsec-logical-connectives-49">
+<span class="process-math">\(p \Longleftrightarrow q\text{:}\)</span> 3 is an odd number if and only if 2 is a prime number. (True)</div>
+<div class="para" id="subsec-logical-connectives-50">There are various ways of stating the proposition <span class="process-math">\(p \Longleftrightarrow q\text{.}\)</span>
+</div>
+<div class="para" id="subsec-logical-connectives-51">
+<span class="process-math">\(p\)</span> if and only if <span class="process-math">\(q\)</span> (also written as <span class="process-math">\(p\)</span> iff <span class="process-math">\(q\)</span>),</div>
+<div class="para" id="subsec-logical-connectives-52">
+<span class="process-math">\(p\)</span> implies <span class="process-math">\(q\)</span> and <span class="process-math">\(q\)</span> implies <span class="process-math">\(p\text{,}\)</span>
+</div>
+<div class="para" id="subsec-logical-connectives-53">
+<span class="process-math">\(p\)</span> is necessary and sufficient for <span class="process-math">\(q\)</span>
+</div>
+<div class="para" id="subsec-logical-connectives-54">
+<span class="process-math">\(q\)</span> is necessary and sufficient for <span class="process-math">\(p\)</span>
+</div>
+<div class="para" id="subsec-logical-connectives-55">
+<span class="process-math">\(p\)</span> is equivalent to <span class="process-math">\(q\)</span>
+</div>
+<figure class="table table-like" id="subsec-logical-connectives-56"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.10<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-logical-connectives-56-1-1-1-1"><em class="alert">Negation</em></div>
+<div class="para" id="subsec-logical-connectives-56-1-1-1-2">Given any proposition <span class="process-math">\(p\text{,}\)</span> we can form the proposition <span class="process-math">\(\neg p\)</span> called the <em class="alert">negation</em> of <span class="process-math">\(p\text{.}\)</span> The truth value of <span class="process-math">\(\neg p\)</span> is <span class="process-math">\(F\)</span> if <span class="process-math">\(p\)</span> is <span class="process-math">\(T\)</span> and <span class="process-math">\(T\)</span> if <span class="process-math">\(p\)</span> is <span class="process-math">\(F\text{.}\)</span>
+</div>
+</td></tr></table></div></figure><div class="para" id="subsec-logical-connectives-57">We can describe the relation between <span class="process-math">\(p\)</span> and <span class="process-math">\(\neg p\)</span> as follows.</div>
+<figure class="table table-like" id="subsec-logical-connectives-58"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.11<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{\neg}p
+\end{equation*}
+</div></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-58-1-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-58-1-2-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-logical-connectives-58-1-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-logical-connectives-58-1-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+</tr>
+</table></div></figure><div class="para" id="subsec-logical-connectives-59">
+<em class="alert">Example 1.5:</em> Let <span class="process-math">\(p\text{:}\)</span> Addis Ababa is the capital city of Ethiopia. (True)</div>
+<div class="para" id="subsec-logical-connectives-60">
+<span class="process-math">\(\neg p\text{:}\)</span> Addis Ababa is not the capital city of Ethiopia. (False)</div>
+<div class="para" id="subsec-logical-connectives-61"><em class="alert">Exercises</em></div>
+<figure class="table table-like" id="subsec-logical-connectives-62"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.12<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-logical-connectives-62-1-1-1-6">
+<span class="process-math">\(q\text{:}\)</span> 21 is a prime number.</div>
+<div class="para" id="subsec-logical-connectives-62-1-1-1-7">State each of the following in words, and determine the truth value of each.</div>
+</td></tr></table></div></figure></section><section class="subsection" id="subsec-compound-(or-complex)-propositions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="space"> </span><span class="title">Compound (or complex) propositions</span>
+</h3>
+<div class="para" id="subsec-compound-(or-complex)-propositions-2">So far, what we have done is simply to define the logical connectives, and express them through algebraic symbols. Now we shall learn how to form propositions involving more than one connective, and how to determine the truth values of such propositions.</div>
+<figure class="table table-like" id="subsec-compound-(or-complex)-propositions-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.15<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">
+<em class="alert">Definition 1.2:</em> The proposition formed by joining two or more proposition by connective(s) is called a compound statement.</td></tr></table></div></figure><div class="para" id="subsec-compound-(or-complex)-propositions-4">
+<em class="alert">Note:</em> We must be careful to insert the brackets in proper places, just as we do in arithmetic. For example, the expression <span class="process-math">\(p \Longrightarrow q \land r\)</span> will be meaningless unless we know which connective should apply first. It could mean <span class="process-math">\((p \Longrightarrow q) \land r\)</span> or <span class="process-math">\(p \Longrightarrow (q \land r)\text{,}\)</span> which are very different propositions. The truth value of such complicated propositions is determined by systematic applications of the rules for the connectives.</div>
+<figure class="table table-like" id="subsec-compound-(or-complex)-propositions-5"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.16<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">The possible truth values of a proposition are often listed in a table, called a <em class="alert">truth table</em>. If <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> are propositions, then there are four possible combinations of truth values for <span class="process-math">\(p\)</span> and <span class="process-math">\(q\text{.}\)</span> That is, <span class="process-math">\(\text{TT}\text{,}\)</span> <span class="process-math">\(\text{TF}\text{,}\)</span> <span class="process-math">\(\text{FT}\)</span> and <span class="process-math">\(\text{FF}\text{.}\)</span> If a third proposition <span class="process-math">\(r\)</span> is involved, then there are eight possible combinations of truth values for <span class="process-math">\(p\text{,}\)</span><span class="process-math">\(q\)</span> and <span class="process-math">\(r\text{.}\)</span> In general, a truth table involving “<span class="process-math">\(n\)</span>” propositions <span class="process-math">\(p_{1}\text{,}\)</span><span class="process-math">\(\ p_{2}\text{,}\)</span>…,<span class="process-math">\(\ p_{n}\)</span> contains <span class="process-math">\(2^{n}\)</span> possible combinations of truth values. So, we use truth tables to determine the truth value of a compound proposition based on the truth value of its constituent component propositions.</td></tr></table></div></figure><div class="para" id="subsec-compound-(or-complex)-propositions-6"><em class="alert">Examples 1.6:</em></div>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-7"><li id="subsec-compound-(or-complex)-propositions-7-1"><div class="para" id="subsec-compound-(or-complex)-propositions-7-1-1">Suppose <span class="process-math">\(p\)</span> and <span class="process-math">\(r\)</span> are true and <span class="process-math">\(q\)</span> and <span class="process-math">\(s\)</span> are false.</div></li></ol>
+<div class="para" id="subsec-compound-(or-complex)-propositions-8">What is the truth value of <span class="process-math">\(\left( p \land q \right) \Longrightarrow (r \vee s)\text{?}\)</span>
+</div>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-9">
+<li id="subsec-compound-(or-complex)-propositions-9-1"><div class="para" id="subsec-compound-(or-complex)-propositions-9-1-1">Since <span class="process-math">\(p\)</span> is true and <span class="process-math">\(q\)</span> is false, <span class="process-math">\(p \land q\)</span> is false.</div></li>
+<li id="subsec-compound-(or-complex)-propositions-9-2"><div class="para" id="subsec-compound-(or-complex)-propositions-9-2-1">Since <span class="process-math">\(r\)</span> is true and <span class="process-math">\(s\)</span> is false, <span class="process-math">\(r \vee s\)</span> is true.</div></li>
+<li id="subsec-compound-(or-complex)-propositions-9-3"><div class="para" id="subsec-compound-(or-complex)-propositions-9-3-1">Thus by applying the rule of implication, we get that <span class="process-math">\(\left( p \land q \right) \Longrightarrow (r \vee s)\)</span> is true.</div></li>
+</ol>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-10"><li id="subsec-compound-(or-complex)-propositions-10-1"><div class="para" id="subsec-compound-(or-complex)-propositions-10-1-1">Suppose that a compound proposition is symbolized by</div></li></ol>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-11"><div class="displaymath process-math">
+\begin{equation*}
+(p \vee q) \Longrightarrow (r\mathbf{\Longleftrightarrow}\neg s)
+\end{equation*}
+</div></div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-12">and that the truth values of <span class="process-math">\(p,q,r,\)</span> and <span class="process-math">\(s\)</span> are <span class="process-math">\(T,F,F,\)</span> and <span class="process-math">\(T\text{,}\)</span> respectively. Then the truth value of <span class="process-math">\(p \vee q\)</span> is <span class="process-math">\(T\text{,}\)</span> that of <span class="process-math">\(\neg s\)</span> is <span class="process-math">\(F\text{,}\)</span> that of <span class="process-math">\(r\mathbf{\Longleftrightarrow}\neg s\)</span> is <span class="process-math">\(T\text{.}\)</span> So the truth value of <span class="process-math">\((p \vee q) \Longrightarrow (r\mathbf{\Longleftrightarrow}\neg s)\)</span> is <span class="process-math">\(T\text{.}\)</span>
+</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-13">
+<em class="alert">Remark:</em> When dealing with compound propositions, we shall adopt the following convention on the use of parenthesis. Whenever “<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA8.png" class="contained"></div>” or “<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA9.png" class="contained"></div>” occur with “<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA10.png" class="contained"></div>” or “<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA11.png" class="contained"></div>”, we shall assume that “<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA8.png" class="contained"></div>” or “<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA9.png" class="contained"></div>” is applied first, and then “<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA10.png" class="contained"></div>” or “<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA11.png" class="contained"></div>” is then applied. For example,</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-14">
+<span class="process-math">\(p \land q \Longrightarrow r\)</span> means <span class="process-math">\((p \land q) \Longrightarrow r\)</span>
+</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-15">
+<span class="process-math">\(p \vee q\mathbf{\Longleftrightarrow}r\)</span> means <span class="process-math">\((p \vee q)\mathbf{\Longleftrightarrow}r\)</span>
+</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-16">
+<span class="process-math">\(\neg q \Longrightarrow \neg p\)</span> means <span class="process-math">\(\left( \neg q \right) \Longrightarrow (\neg p)\)</span>
+</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-17">
+<span class="process-math">\(\neg q \Longrightarrow p\mathbf{\Longleftrightarrow}r\)</span> means <span class="process-math">\(((\neg q) \Longrightarrow p)\mathbf{\Longleftrightarrow}r\)</span>
+</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-18">However, it is always advisable to use brackets to indicate the order of the desired operations. .</div>
+<figure class="table table-like" id="subsec-compound-(or-complex)-propositions-19"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.17<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">
+<em class="alert">Definition 1.3:</em> Two compound propositions <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span> are said to be <em class="emphasis"><em class="alert">equivalent</em></em> if they have the same truth value for all possible combinations of truth values for the component propositions occurring in both <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\text{.}\)</span> In this case we write <span class="process-math">\(P \equiv Q\text{.}\)</span>
+</td></tr></table></div></figure><div class="para" id="subsec-compound-(or-complex)-propositions-20">
+<em class="alert">Example 1.7:</em> Let <span class="process-math">\(P:p \Longrightarrow q\text{.}\)</span>
+</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-21">
+<span class="process-math">\(Q:\neg(p \land \neg q)\)</span><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA4.png" class="contained"></div>
+<span class="process-math">\(Q:\neg q \Longrightarrow \neg p\text{.}\)</span>
+</div>
+<figure class="table table-like" id="subsec-compound-(or-complex)-propositions-22"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.18<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{q}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{\neg}p
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{\neg}q
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p} \Longrightarrow q
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{\neg}q \Longrightarrow \neg p
+\end{equation*}
+</div></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-1-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-1-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-2-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-2-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-3-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-3-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-3-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-3-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-4-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-4-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-4-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-4-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-5-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-5-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-5-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-5-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-6-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-6-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-6-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-22-1-2-6-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+</tr>
+</table></div></figure><div class="para" id="subsec-compound-(or-complex)-propositions-23">Then, <span class="process-math">\(P\)</span> is equivalent to <span class="process-math">\(Q\text{,}\)</span> since columns 5 and 6 of the above table are identical.</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-24">
+<em class="alert">Example 1.8:</em> Let <span class="process-math">\(P:p \Longrightarrow q\text{.}\)</span>
+</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-25"><span class="process-math">\(Q:\neg p \Longrightarrow \neg q\text{.}\)</span></div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-26">Then</div>
+<figure class="table table-like" id="subsec-compound-(or-complex)-propositions-27"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.19<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{q}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{\neg}p
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{\neg}q
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p} \Longrightarrow q
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\neg\mathbf{p \Longrightarrow}\neg\mathbf{q}
+\end{equation*}
+</div></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-1-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-1-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-2-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-2-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-3-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-3-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-3-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-3-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-4-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-4-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-4-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-4-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-5-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-5-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-5-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-5-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-6-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-6-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-6-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-27-1-2-6-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+</tr>
+</table></div></figure><div class="para" id="subsec-compound-(or-complex)-propositions-28">Looking at columns 5 and 6 of the table we see that they are not identical. Thus <span class="process-math">\(P ≢ Q\text{.}\)</span>
+</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-29">It is useful at this point to mention the non-equivalence of certain conditional propositions. Given the conditional <span class="process-math">\(p \Longrightarrow q\text{,}\)</span> we give the related conditional propositions:-</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-30">
+<span class="process-math">\(q \Longrightarrow p\text{:}\)</span> Converse of <span class="process-math">\(p \Longrightarrow q\)</span>
+</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-31">
+<span class="process-math">\(\neg p \Longrightarrow \neg q\text{:}\)</span> Inverse of <span class="process-math">\(p \Longrightarrow q\)</span>
+</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-32">
+<span class="process-math">\(\neg q \Longrightarrow \neg p\text{:}\)</span> Contrapositive of <span class="process-math">\(p \Longrightarrow q\)</span>
+</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-33">As we observed from example 1.7, the conditional <span class="process-math">\(p \Longrightarrow q\)</span> and its contrapositve <span class="process-math">\(\neg q \Longrightarrow \neg p\)</span> are equivalent. On the other hand, <span class="process-math">\(p \Longrightarrow q ≢ q \Longrightarrow p\)</span> and <span class="process-math">\(p \Longrightarrow q ≢ \neg q \Longrightarrow \neg p\)</span><span class="process-math">\(p \Longrightarrow q ≢ \neg p \Longrightarrow \neg q\)</span> .</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-34"><em class="alert">Do not confuse the contrapositive and the converse of the conditional proposition. Here is the difference:</em></div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-35">
+<em class="alert">Converse:</em> The hypothesis of a converse statement is the conclusion of the conditional statement and the conclusion of the converse statement is the hypothesis of the conditional statement.</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-36">
+<em class="alert">Contrapositive:</em> The hypothesis of a contrapositive statement is the negation of conclusion of the conditional statement and the conclusion of the contrapositive statement is the negation of hypothesis of the conditional statement.</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-37"><em class="alert">Example 1.9:</em></div>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-38"><li id="subsec-compound-(or-complex)-propositions-38-1"><div class="para" id="subsec-compound-(or-complex)-propositions-38-1-1">If Kidist lives in Addis Ababa, then she lives in Ethiopia.</div></li></ol>
+<div class="para" id="subsec-compound-(or-complex)-propositions-39">
+<em class="alert">Converse:</em> If Kidist lives in Ethiopia, then she lives in Addis Ababa.</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-40">
+<em class="alert">Contrapositive:</em> If Kidist does not live in Ethiopia, then she does not live in Addis Ababa.</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-41">
+<em class="alert">Inverse:</em> If Kidist does not live in Addis Ababa, then she does not live in Ethiopia.</div>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-42"><li id="subsec-compound-(or-complex)-propositions-42-1"><div class="para" id="subsec-compound-(or-complex)-propositions-42-1-1">If it is morning, then the sun is in the east.</div></li></ol>
+<div class="para" id="subsec-compound-(or-complex)-propositions-43">
+<em class="alert">Converse:</em> If the sun is in the east, then it is morning.</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-44">
+<em class="alert">Contrapositive:</em> If the sun is not in the east, then it is not morning.</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-45">
+<em class="alert">Inverse:</em> If it is not morning, then the sun is not the east.</div>
+<div class="para" id="subsec-compound-(or-complex)-propositions-46">Propositions, under the relation of logical equivalence, satisfy various laws or identities, which are listed below.</div>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-47"><li id="subsec-compound-(or-complex)-propositions-47-1"><div class="para" id="subsec-compound-(or-complex)-propositions-47-1-1">Idempotent Laws</div></li></ol>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-48">
+<li id="subsec-compound-(or-complex)-propositions-48-1"><div class="para" id="subsec-compound-(or-complex)-propositions-48-1-1"><span class="process-math">\(p \equiv p \vee p\text{.}\)</span></div></li>
+<li id="subsec-compound-(or-complex)-propositions-48-2"><div class="para" id="subsec-compound-(or-complex)-propositions-48-2-1"><span class="process-math">\(p \equiv p \land p\text{.}\)</span></div></li>
+</ol>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-49"><li id="subsec-compound-(or-complex)-propositions-49-1"><div class="para" id="subsec-compound-(or-complex)-propositions-49-1-1">Commutative Laws</div></li></ol>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-50">
+<li id="subsec-compound-(or-complex)-propositions-50-1"><div class="para" id="subsec-compound-(or-complex)-propositions-50-1-1">
+<span class="process-math">\(p\  \land \ q \equiv q \land p\)</span><span class="process-math">\(p \land q \equiv q \land p\)</span> .</div></li>
+<li id="subsec-compound-(or-complex)-propositions-50-2"><div class="para" id="subsec-compound-(or-complex)-propositions-50-2-1">
+<span class="process-math">\(p\  \vee \ q \equiv q \vee p\)</span><span class="process-math">\(p \vee q \equiv q \vee p\)</span> .</div></li>
+</ol>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-51"><li id="subsec-compound-(or-complex)-propositions-51-1"><div class="para" id="subsec-compound-(or-complex)-propositions-51-1-1">Associative Laws</div></li></ol>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-52">
+<li id="subsec-compound-(or-complex)-propositions-52-1"><div class="para" id="subsec-compound-(or-complex)-propositions-52-1-1"><span class="process-math">\(p \land (q \land r) \equiv (p \land q) \land r\text{.}\)</span></div></li>
+<li id="subsec-compound-(or-complex)-propositions-52-2"><div class="para" id="subsec-compound-(or-complex)-propositions-52-2-1"><span class="process-math">\(p \vee (q \vee r) \equiv (p \vee q) \vee r\text{.}\)</span></div></li>
+</ol>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-53"><li id="subsec-compound-(or-complex)-propositions-53-1"><div class="para" id="subsec-compound-(or-complex)-propositions-53-1-1">Distributive Laws</div></li></ol>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-54">
+<li id="subsec-compound-(or-complex)-propositions-54-1"><div class="para" id="subsec-compound-(or-complex)-propositions-54-1-1"><span class="process-math">\(p \vee (q \land r) \equiv (p \vee q) \land (p \vee r)\text{.}\)</span></div></li>
+<li id="subsec-compound-(or-complex)-propositions-54-2"><div class="para" id="subsec-compound-(or-complex)-propositions-54-2-1"><span class="process-math">\(p \land (q \vee r) \equiv (p \land q) \vee (p \land r)\text{.}\)</span></div></li>
+</ol>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-55"><li id="subsec-compound-(or-complex)-propositions-55-1"><div class="para" id="subsec-compound-(or-complex)-propositions-55-1-1">De Morgan’s Laws</div></li></ol>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-56">
+<li id="subsec-compound-(or-complex)-propositions-56-1"><div class="para" id="subsec-compound-(or-complex)-propositions-56-1-1"><span class="process-math">\(\neg(p \land q) \equiv \neg p \vee \neg q\text{.}\)</span></div></li>
+<li id="subsec-compound-(or-complex)-propositions-56-2"><div class="para" id="subsec-compound-(or-complex)-propositions-56-2-1"><span class="process-math">\(\displaystyle \neg(p \vee q) \equiv \neg p \land \neg q\)</span></div></li>
+</ol>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-57"><li id="subsec-compound-(or-complex)-propositions-57-1"><div class="para" id="subsec-compound-(or-complex)-propositions-57-1-1">Law of Contrapositive</div></li></ol>
+<div class="para logical" id="subsec-compound-(or-complex)-propositions-58"><div class="displaymath process-math">
+\begin{equation*}
+p \Longrightarrow q \equiv \neg q \Longrightarrow \neg p
+\end{equation*}
+</div></div>
+<ol class="decimal" id="subsec-compound-(or-complex)-propositions-59"><li id="subsec-compound-(or-complex)-propositions-59-1"><div class="para" id="subsec-compound-(or-complex)-propositions-59-1-1">Complement Law</div></li></ol>
+<div class="para" id="subsec-compound-(or-complex)-propositions-60"><span class="process-math">\(\neg(\neg p) \equiv p\text{.}\)</span></div></section><section class="subsection" id="subsec-tautology-and-contradiction"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.4</span><span class="space"> </span><span class="title">Tautology and contradiction</span>
+</h3>
+<figure class="table table-like" id="subsec-tautology-and-contradiction-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.20<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">
+<em class="alert">Definition:</em> A compound proposition is a <em class="alert">tautology</em> if it is always true regardless of the truth values of its component propositions. If, on the other hand, a compound proposition is always false regardless of its component propositions, we say that such a proposition is a <em class="alert">contradiction</em>.</td></tr></table></div></figure><div class="para" id="subsec-tautology-and-contradiction-3">
+<em class="alert">Note:</em> A proposition that is neither a <em class="alert">tautology</em> nor a <em class="alert">contradiction</em> is called a <em class="alert">contingency.</em>
+</div>
+<div class="para" id="subsec-tautology-and-contradiction-4"><em class="alert">Examples 1.10:</em></div>
+<ol class="decimal" id="subsec-tautology-and-contradiction-5"><li id="subsec-tautology-and-contradiction-5-1"><div class="para" id="subsec-tautology-and-contradiction-5-1-1">Suppose <span class="process-math">\(p\)</span> is any proposition. Consider the compound propositions <span class="process-math">\(p \vee \neg p\)</span> and <span class="process-math">\(p \land \neg p\text{.}\)</span>
+</div></li></ol>
+<figure class="table table-like" id="subsec-tautology-and-contradiction-6"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.21<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{\neg}p
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p} \vee \neg p
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p} \land \neg p
+\end{equation*}
+</div></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-tautology-and-contradiction-6-1-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-6-1-2-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-tautology-and-contradiction-6-1-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-6-1-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-tautology-and-contradiction-6-1-2-3-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-6-1-2-3-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-tautology-and-contradiction-6-1-2-4-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-6-1-2-4-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+</tr>
+</table></div></figure><div class="para" id="subsec-tautology-and-contradiction-7">Observe that <span class="process-math">\(p \vee \neg p\)</span> is a tautology while <span class="process-math">\(p \land \neg p\)</span> is a contradiction.</div>
+<ol class="decimal" id="subsec-tautology-and-contradiction-8"><li id="subsec-tautology-and-contradiction-8-1"><div class="para" id="subsec-tautology-and-contradiction-8-1-1">For any propositions <span class="process-math">\(p\)</span> and <span class="process-math">\(q\text{.}\)</span> Consider the compound proposition <span class="process-math">\(p \Longrightarrow (q \Longrightarrow p)\text{.}\)</span> Let us make a truth table and study the situation.</div></li></ol>
+<figure class="table table-like" id="subsec-tautology-and-contradiction-9"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.22<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{q}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{q} \Longrightarrow p
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p} \Longrightarrow (q \Longrightarrow p)
+\end{equation*}
+</div></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-tautology-and-contradiction-9-1-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-9-1-2-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-9-1-2-1-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-9-1-2-1-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-tautology-and-contradiction-9-1-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-9-1-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-9-1-2-2-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-9-1-2-2-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-tautology-and-contradiction-9-1-2-3-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-9-1-2-3-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-9-1-2-3-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-9-1-2-3-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-tautology-and-contradiction-9-1-2-4-1"><em class="alert">T</em></div>
+<div class="para" id="subsec-tautology-and-contradiction-9-1-2-4-2"><em class="alert">T</em></div>
+<div class="para" id="subsec-tautology-and-contradiction-9-1-2-4-3"><em class="alert">T</em></div>
+<div class="para" id="subsec-tautology-and-contradiction-9-1-2-4-4"><em class="alert">T</em></div>
+</td>
+</tr>
+</table></div></figure><div class="para" id="subsec-tautology-and-contradiction-10">We have exhibited all the possibilities and we see that for all truth values of the constituent propositions, the proposition <span class="process-math">\(p \Longrightarrow (q \Longrightarrow p)\)</span> is always true. Thus, <span class="process-math">\(p \Longrightarrow (q \Longrightarrow p)\)</span> is a tautology.</div>
+<ol class="decimal" id="subsec-tautology-and-contradiction-11"><li id="subsec-tautology-and-contradiction-11-1"><div class="para" id="subsec-tautology-and-contradiction-11-1-1">The truth table for the compound proposition <span class="process-math">\(\left( p \Longrightarrow q \right) \Longleftrightarrow (p \land \neg q)\text{.}\)</span>
+</div></li></ol>
+<figure class="table table-like" id="subsec-tautology-and-contradiction-12"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.23<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{q}
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{\neg}q
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p} \land \neg q
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{p} \Longrightarrow q
+\end{equation*}
+</div></th>
+<th scope="col" class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math">
+\begin{equation*}
+\left( p \Longrightarrow q \right) \Longleftrightarrow (p \land \neg q)
+\end{equation*}
+</div></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-1-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-1-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-2-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-2-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-3-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-3-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-3-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-3-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-4-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-4-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-4-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-4-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-5-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-5-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-5-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-5-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{T}
+\end{equation*}
+</div></div>
+</td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-6-1"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-6-2"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-6-3"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsec-tautology-and-contradiction-12-1-2-6-4"><div class="displaymath process-math">
+\begin{equation*}
+\mathbf{F}
+\end{equation*}
+</div></div>
+</td>
+</tr>
+</table></div></figure><div class="para" id="subsec-tautology-and-contradiction-13">In example 1.10(c), the given compound proposition has a truth value <span class="process-math">\(F\)</span> for every possible combination of assignments of truth values for the component propositions <span class="process-math">\(p\)</span> and <span class="process-math">\(q\text{.}\)</span> Thus <span class="process-math">\(\left( p \Longrightarrow q \right) \Longleftrightarrow (p \land \neg q)\)</span> is a contradiction.</div>
+<div class="para" id="subsec-tautology-and-contradiction-14"><em class="alert">Remark:</em></div>
+<ol class="decimal" id="subsec-tautology-and-contradiction-15">
+<li id="subsec-tautology-and-contradiction-15-1"><div class="para" id="subsec-tautology-and-contradiction-15-1-1">In a truth table, if a proposition is a tautology, then every line in its column has <span class="process-math">\(T\)</span> as its entry; if a proposition is a contradiction, every line in its column has <span class="process-math">\(F\)</span> as its entry.</div></li>
+<li id="subsec-tautology-and-contradiction-15-2"><div class="para" id="subsec-tautology-and-contradiction-15-2-1">Two compound propositions <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span> are equivalent if and only if “<span class="process-math">\(P\mathbf{\Longleftrightarrow}Q\)</span>” is a tautology.</div></li>
+</ol>
+<div class="para" id="subsec-tautology-and-contradiction-16"><em class="alert">Exercises</em></div>
+<figure class="table table-like" id="subsec-tautology-and-contradiction-17"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.1.24<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr class="header-horizontal"><th scope="col" class="l m b0 r0 l0 t0" style="max-width:120"><div class="para" id="subsec-tautology-and-contradiction-17-1-1-1-12">b. Suppose the value of <span class="process-math">\(p\mathbf{\Longleftrightarrow}q\)</span> is <span class="process-math">\(F\text{;}\)</span> what can be said about the values of <span class="process-math">\(p\mathbf{\Longleftrightarrow}\neg q\)</span> and <span class="process-math">\(\neg p\mathbf{\Longleftrightarrow}q\text{?}\)</span>
+</div></th></tr></table></div></figure></section></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="my-great-book-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-open-propositions-and-quantifiers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

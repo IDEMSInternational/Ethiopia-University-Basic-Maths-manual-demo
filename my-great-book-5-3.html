@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The real number System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="BASIC MATHEMATICS FOR NATURAL SCIENCES">
+<meta property="book:author" content="">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">BASIC MATHEMATICS FOR NATURAL SCIENCES:</span> <span class="subtitle">UNDERGRADUATE STUDENT TEXTBOOK</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="my-great-book-5.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="my-great-book-5.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="my-great-book-5-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="my-great-book-4.html" class="internal"><span class="codenumber">1</span> <span class="title">Propositional Logic and Set Theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-4-3.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Propositional Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-3.html#my-great-book-4-3-6" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Definition and examples of propositions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-3.html#my-great-book-4-3-7" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Logical connectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-3.html#my-great-book-4-3-8" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Compound (or complex) propositions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-3.html#my-great-book-4-3-9" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tautology and contradiction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-4-4.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Open propositions and quantifiers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-4-5.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Argument and Validity</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-4-6.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Set theory</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-6.html#my-great-book-4-6-6" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The concept of a set</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-4-7.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Description of sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-4-7.html#my-great-book-4-7-51" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Set Operations and Venn diagrams</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="my-great-book-5.html" class="internal"><span class="codenumber">2</span> <span class="title">The Real and Complex Number Systems</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="my-great-book-5-3.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The real number System</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-3.html#my-great-book-5-3-2" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-3.html#my-great-book-5-3-3" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The set of Integers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-3.html#my-great-book-5-3-4" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The set of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-3.html#my-great-book-5-3-5" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The set of real numbers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="my-great-book-5-4.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The set of complex numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-4.html#my-great-book-5-4-10" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Plotting complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-4.html#my-great-book-5-4-11" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Operations on Complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-4.html#my-great-book-5-4-12" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Conjugate of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-4.html#my-great-book-5-4-13" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Modulus (Norm) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-4.html#my-great-book-5-4-14" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Additive and multiplicative inverses</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-4.html#my-great-book-5-4-15" class="internal"><span class="codenumber">2.2.6</span> <span class="title">Argument (Amplitude) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-4.html#my-great-book-5-4-16" class="internal"><span class="codenumber">2.2.7</span> <span class="title">Polar form of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="my-great-book-5-4.html#my-great-book-5-4-17" class="internal"><span class="codenumber">2.2.8</span> <span class="title">Extraction of roots</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="my-great-book-6.html" class="internal"><span class="codenumber">3</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-3.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Review of relations and functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-4.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Real Valued functions and their properties</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-5.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Types of functions and inverse of a function</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-6.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Polynomials, zeros of polynomials, rational functions and their graphs</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-6-7.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="my-great-book-7.html" class="internal"><span class="codenumber">4</span> <span class="title">Analytic Geometry</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="my-great-book-8.html" class="internal"><span class="codenumber">5</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="my-great-book-5-3"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">The real number System</span>
+</h2>
+<section class="subsection" id="my-great-book-5-3-2"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="space"> </span><span class="title">The set of natural numbers</span>
+</h3>
+<div class="para" id="my-great-book-5-3-2-2">The history of numbers indicated that the first set of numbers used by the ancient human beings for counting purpose was the set of natural (counting) numbers.</div>
+<figure class="table table-like" id="my-great-book-5-3-2-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-2-3-1-1-1-1"><em class="alert">Definition 2.1.1</em></div>
+<div class="para" id="my-great-book-5-3-2-3-1-1-1-2">The set of natural numbers is denoted by <em class="alert">N</em> and is described as <em class="alert">N</em> =<span class="process-math">\(\left\{ \ 1\ ,\ 2,\ 3,\ \ldots\  \right\}\)</span>
+</div>
+</td></tr></table></div></figure>Operations on the set of natural numbers<div class="para" id="my-great-book-5-3-2-5"><em class="alert">i) Addition (+)</em></div>
+<div class="para" id="my-great-book-5-3-2-6">If two natural numbers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> are added using the operation “+”, then the sum <em class="emphasis">a</em>+<em class="emphasis">b</em> is also a natural number. If the sum of the two natural numbers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> is denoted by <em class="emphasis">c</em>, then we can write the operation as: <em class="emphasis">c</em> = <em class="emphasis">a</em>+<em class="emphasis">b</em>, where <em class="emphasis">c</em> is called the sum and <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> are called terms.</div>
+<div class="para" id="my-great-book-5-3-2-7">Example: 3+8 = 11, here 11 is the sum whereas 3 &amp; 8 are terms.</div>
+<div class="para" id="my-great-book-5-3-2-8">
+<em class="alert">ii) Multiplication (</em><span class="process-math">\(\)</span><em class="alert">)</em>
+</div>
+<div class="para" id="my-great-book-5-3-2-9">If two natural numbers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> are multiplied using the operation “<span class="process-math">\(\)</span>”, then the product <em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">b</em> is also a natural number. If the product of the two natural numbers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> is denoted by <em class="emphasis">c</em>, then we can write the operation as: <em class="emphasis">c</em> = <em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">b</em>, where <em class="emphasis">c</em> is called the product and <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> are called factors.</div>
+<div class="para" id="my-great-book-5-3-2-10">
+<em class="alert">Example 2.1.3</em>: 3<span class="process-math">\(\)</span>4 = 12, here 12 is the product whereas 3 &amp; 4 are factors.</div>
+<div class="para" id="my-great-book-5-3-2-11"><em class="alert">Properties of addition and multiplication on the set of natural numbers</em></div>
+<div class="para" id="my-great-book-5-3-2-12">i. For any two natural numbers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em>, the sum <em class="emphasis">a</em>+<em class="emphasis">b</em> is also a natural number. For instance in the</div>
+<div class="para" id="my-great-book-5-3-2-13">above example, 3 and 8 are natural numbers, their sum 11 is also a natural number. In general, we</div>
+<div class="para" id="my-great-book-5-3-2-14">say that the set of natural numbers is closed under addition.</div>
+<div class="para" id="my-great-book-5-3-2-15">ii. For any two natural numbers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em>, <em class="emphasis">a</em> + <em class="emphasis">b</em> = <em class="emphasis">b</em> + <em class="emphasis">a</em>.</div>
+<div class="para" id="my-great-book-5-3-2-16">
+<em class="alert">Example 2.1.1</em>: 3+8 = 8+3 = 11. In general, we say that addition is commutative on the set of natural numbers.</div>
+<div class="para" id="my-great-book-5-3-2-17">iii. For any three natural numbers <em class="emphasis">a</em>, <em class="emphasis">b</em> &amp; <em class="emphasis">c</em>, (<em class="emphasis">a</em>+<em class="emphasis">b</em>)+<em class="emphasis">c</em> = <em class="emphasis">a</em> +(<em class="emphasis">b</em>+<em class="emphasis">c</em>).</div>
+<div class="para" id="my-great-book-5-3-2-18">
+<em class="alert">Example 2.1.2</em>: (3+8)+6 = 3+(8+6) = 17. In general, we say that addition is associative on the set of natural numbers.</div>
+<div class="para" id="my-great-book-5-3-2-19">iv. For any two natural numbers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em>, the product <em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">b</em> is also a natural number. For instance in the above example, 3 and 4 are natural numbers, their product 12 is also a natural number. In general, we say that the set of natural numbers is closed under multiplication.</div>
+<div class="para" id="my-great-book-5-3-2-20">v. For any two natural numbers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em>, <em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">b</em> = <em class="emphasis">b</em><span class="process-math">\(\)</span><em class="emphasis">a</em>.</div>
+<div class="para" id="my-great-book-5-3-2-21">
+<em class="alert">Example 2.1.4</em>: 3<span class="process-math">\(\)</span>4 = 4<span class="process-math">\(\)</span>3 = 12. In general, we say that multiplication is commutative on the set of natural numbers.</div>
+<div class="para" id="my-great-book-5-3-2-22">vi. For any three natural numbers <em class="emphasis">a</em>, <em class="emphasis">b</em> &amp; <em class="emphasis">c</em>, (<em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">b</em>) <span class="process-math">\(\)</span><em class="emphasis">c</em> = <em class="emphasis">a</em><span class="process-math">\(\)</span> (<em class="emphasis">b</em><span class="process-math">\(\)</span><em class="emphasis">c</em>).</div>
+<div class="para" id="my-great-book-5-3-2-23">
+<em class="alert">Example 2.1.5</em>: (2<span class="process-math">\(\)</span>4) <span class="process-math">\(\)</span>5 = 2<span class="process-math">\(\)</span> (4<span class="process-math">\(\)</span>5) = 40. In general, we say that multiplication is associative on the set of natural numbers.</div>
+<div class="para" id="my-great-book-5-3-2-24">vi. For any natural number <em class="emphasis">a</em>, it holds that <em class="emphasis">a</em><span class="process-math">\(\)</span>1 = 1<span class="process-math">\(\)</span><em class="emphasis">a</em> = <em class="emphasis">a</em>.</div>
+<div class="para" id="my-great-book-5-3-2-25">
+<em class="alert">Example 2.1.6</em>: 6<span class="process-math">\(\)</span>1 = 1<span class="process-math">\(\)</span>6 = 6. In general, we say that multiplication has an identity element on the set of natural numbers and 1 is the identity element.</div>
+<div class="para" id="my-great-book-5-3-2-26">vii. For any three natural numbers <em class="emphasis">a</em>, <em class="emphasis">b</em> &amp; <em class="emphasis">c</em>, <em class="emphasis">a</em><span class="process-math">\(\)</span><em class="alert">(</em><em class="emphasis">b</em><em class="alert">+</em><em class="emphasis">c</em>) = (<em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">b</em>)+(<em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">c</em>).</div>
+<div class="para" id="my-great-book-5-3-2-27">
+<em class="alert">Example 2.1.7</em>: 3<span class="process-math">\(\)</span>(5+7) = (3<span class="process-math">\(\)</span>5)+ (3<span class="process-math">\(\)</span>7) = 36. In general, we say that multiplication is distributive over addition on the set of natural numbers.</div>
+<figure class="table table-like" id="my-great-book-5-3-2-28"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">Note: Consider two numbers <em class="emphasis">a</em> and <em class="emphasis">b</em>, we say <em class="emphasis">a</em> is greater than <em class="emphasis">b</em> denoted by <em class="emphasis">a</em><span class="process-math">\(\)</span>b if <em class="emphasis">a</em> – <em class="emphasis">b</em> is positive.</td></tr></table></div></figure><ol class="decimal" id="my-great-book-5-3-2-29"><li id="my-great-book-5-3-2-29-1"><div class="para" id="my-great-book-5-3-2-29-1-1"><em class="alert">Order Relation in N</em></div></li></ol>
+<div class="para" id="my-great-book-5-3-2-30">i) <em class="alert">Transitive property</em>:</div>
+<div class="para" id="my-great-book-5-3-2-31">For any three natural numbers <em class="emphasis">a</em>, <em class="emphasis">b</em> &amp; <em class="emphasis">c</em>, <span class="process-math">\(a &gt; b\  \land \ b &gt; c\  \Rightarrow a &gt; c\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-2-32">ii) <em class="alert">Addition property:</em>
+</div>
+<div class="para" id="my-great-book-5-3-2-33">For any three natural numbers <em class="emphasis">a</em>, <em class="emphasis">b</em> &amp; <em class="emphasis">c</em>, <span class="process-math">\(a &gt; b\  \Rightarrow \ a + c &gt; b + c\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-2-34">iii) <em class="alert">Multiplication property</em>:</div>
+<div class="para" id="my-great-book-5-3-2-35">For any three natural numbers <em class="emphasis">a</em>, <em class="emphasis">b</em> and <em class="emphasis">c</em>, <span class="process-math">\(a &gt; b\  \Rightarrow \ \text{ac} &gt; \text{bc}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-2-36">iv) <em class="alert">Law of trichotomy</em>
+</div>
+<div class="para" id="my-great-book-5-3-2-37">For any two natural numbers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> we have <span class="process-math">\(a &gt; b\ \text{or}\ a &lt; b\ \text{or}\ a = b\text{.}\)</span>
+</div>
+<ol class="decimal" id="my-great-book-5-3-2-38"><li id="my-great-book-5-3-2-38-1"><div class="para" id="my-great-book-5-3-2-38-1-1"><em class="alert">Factors of a number</em></div></li></ol>
+<figure class="table table-like" id="my-great-book-5-3-2-39"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-2-39-1-1-1-1"><em class="alert">Definition 2.2</em></div>
+<div class="para" id="my-great-book-5-3-2-39-1-1-1-2">If <span class="process-math">\(a,\ b,\ c\  \in N\)</span> such that <span class="process-math">\(\text{ab} = c\text{,}\)</span> then <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> are factors (divisors) of <em class="emphasis">c</em> and <em class="emphasis">c</em> is called product (multiple) of <em class="emphasis">a</em> &amp; <em class="emphasis">b</em>.</div>
+</td></tr></table></div></figure><div class="para" id="my-great-book-5-3-2-40">
+<em class="alert">Example 2.8</em>: Find the factors of 15.</div>
+<div class="para" id="my-great-book-5-3-2-41">Solution: Factors of 15 are 1, 3, 5, 15. <span class="process-math">\(\text{Or}\ \text{we}\ \text{can}\ \text{write}\ \text{it}\ \text{as}:\ F_{\text{15}} = \left\{ \ 1,\ 3,\ 5,\ \text{15}\  \right\}\)</span>
+</div>
+<figure class="table table-like" id="my-great-book-5-3-2-42"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-2-42-1-1-1-1">
+<em class="alert">Definition 2.3</em> A number <span class="process-math">\(a \in N\)</span>is said to be</div>
+<div class="para" id="my-great-book-5-3-2-42-1-1-1-2">i. <em class="alert">Even</em> if it is divisible by 2.</div>
+<div class="para" id="my-great-book-5-3-2-42-1-1-1-3">ii. <em class="alert">Odd</em> if it is not divisible by 2.</div>
+<div class="para" id="my-great-book-5-3-2-42-1-1-1-4">iii. <em class="alert">Prime</em> if it has only two factors (1 and itself).</div>
+<div class="para" id="my-great-book-5-3-2-42-1-1-1-5">iv. <em class="alert">Composite</em>: if it has three or more factors.</div>
+</td></tr></table></div></figure><div class="para" id="my-great-book-5-3-2-43">
+<em class="alert">Example 2.9</em>: 2, 4, 6, . . . are even numbers</div>
+<div class="para" id="my-great-book-5-3-2-44">
+<em class="alert">Example 2.10</em>: 1, 3, 5, . . . are odd numbers</div>
+<div class="para" id="my-great-book-5-3-2-45">
+<em class="alert">Example 2.11</em>: 2, 3, 5, . . . are prime numbers</div>
+<div class="para" id="my-great-book-5-3-2-46">
+<em class="alert">Example 2.12</em>: 4, 6, 8, 9, . . . are composite numbers</div>
+<figure class="table table-like" id="my-great-book-5-3-2-47"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.5<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">Remark: 1 is neither prime nor composite.</td></tr></table></div></figure><ol class="decimal" id="my-great-book-5-3-2-48"><li id="my-great-book-5-3-2-48-1"><div class="para" id="my-great-book-5-3-2-48-1-1"><em class="alert">Prime Factorization</em></div></li></ol>
+<figure class="table table-like" id="my-great-book-5-3-2-49"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.6<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-2-49-1-1-1-1"><em class="alert">Definition 2.4</em></div>
+<div class="para" id="my-great-book-5-3-2-49-1-1-1-2">Prime factorization of a composite number is the product of all its prime factors.</div>
+</td></tr></table></div></figure><div class="para" id="my-great-book-5-3-2-50">
+<em class="alert">Example 2.9</em>:</div>
+<div class="para" id="my-great-book-5-3-2-51">
+<span class="process-math">\(a)\ 6 = 2 \times 3\)</span> <span class="process-math">\(b)\ \text{30} = 2 \times 3 \times 5\)</span> <span class="process-math">\(c)\ \text{12} = 2 \times 2 \times 3 = 2^{2} \times 3\)</span> <span class="process-math">\(d)\ 8 = 2 \times 2 \times 2 = 2^{3}\)</span> <span class="process-math">\(e)\ \text{180} = 2^{2} \times 3^{2} \times 5\)</span>
+</div>
+<figure class="table table-like" id="my-great-book-5-3-2-52"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.7<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal"><th scope="col" class="l m b0 r0 l0 t0 lines"><em class="alert">Fundamental Theorem of Arithmetic:</em></th></tr>
+<tr><td class="l m b0 r0 l0 t0 lines">Every composite number can be expressed as a product of its prime factors. This factorization is unique except the order of the factors.</td></tr>
+</table></div></figure><ol class="decimal" id="my-great-book-5-3-2-53"><li id="my-great-book-5-3-2-53-1"><div class="para" id="my-great-book-5-3-2-53-1-1"><em class="alert">Greatest Common Factor (GCF)</em></div></li></ol>
+<figure class="table table-like" id="my-great-book-5-3-2-54"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.8<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-2-54-1-1-1-1"><em class="alert">Definition 2.5</em></div>
+<div class="para" id="my-great-book-5-3-2-54-1-1-1-2">The greatest common factor (GCF) of two numbers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> is denoted by GCF (<em class="emphasis">a</em>, <em class="emphasis">b</em>) and is the greatest number which is a factor of each of the given number.</div>
+</td></tr></table></div></figure><div class="para" id="my-great-book-5-3-2-55">Note: If the GCF of two numbers is 1, then the numbers are called relatively prime.</div>
+<div class="para" id="my-great-book-5-3-2-56">
+<em class="alert">Example 2.10</em>: Consider the two numbers 24 and 60.</div>
+<div class="para" id="my-great-book-5-3-2-57">Therefore, GCF(24, 60) = 12.</div>
+<div class="para" id="my-great-book-5-3-2-58">This method of finding the GCF of two or more numbers is usually lengthy and time consuming. Hence an alternative method (Prime factorization method) is provided as below:</div>
+<div class="para" id="my-great-book-5-3-2-59">Step 1: Find the prime factorization of each of the natural numbers</div>
+<div class="para" id="my-great-book-5-3-2-60">Step 2: Form the GCF of the given numbers as the product of every factor that appears in each of the prime factorization but take the least number of times it appears.</div>
+<div class="para" id="my-great-book-5-3-2-61">
+<em class="alert">Example 2.11</em>: Consider the two numbers 24 and 60.</div>
+<div class="para" id="my-great-book-5-3-2-62">Step 2: The factors that appear in both cases are 2 and 3, but take the numbers with the least number of times.</div>
+<div class="para" id="my-great-book-5-3-2-63">
+<em class="alert">Example 2.12</em>: Consider the three numbers 20, 80 and 450.</div>
+<div class="para" id="my-great-book-5-3-2-64">Step 2: The factors that appear in all cases are 2 and 5, but take the numbers with the least number of times.</div>
+<ol class="decimal" id="my-great-book-5-3-2-65"><li id="my-great-book-5-3-2-65-1"><div class="para" id="my-great-book-5-3-2-65-1-1"><em class="alert">Least Common Multiple (LCM)</em></div></li></ol>
+<figure class="table table-like" id="my-great-book-5-3-2-66"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.9<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-2-66-1-1-1-1"><em class="alert">Definition 2.6</em></div>
+<div class="para" id="my-great-book-5-3-2-66-1-1-1-2">The least common multiple (LCM) of two numbers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> is denoted by LCM (<em class="emphasis">a</em>, <em class="emphasis">b</em>) and is the least number which is a multiple of each of the given number.</div>
+</td></tr></table></div></figure><div class="para" id="my-great-book-5-3-2-67">
+<em class="alert">Example 2.13</em>: Consider the two numbers 18 and 24.</div>
+<div class="para" id="my-great-book-5-3-2-68">Therefore, LCM (18, 24) = 72.</div>
+<div class="para" id="my-great-book-5-3-2-69">This method of finding the LCM of two or more numbers is usually lengthy and time consuming. Hence an alternative method (Prime factorization method) is provided as below:</div>
+<div class="para" id="my-great-book-5-3-2-70">Step 1: Find the prime factorization of each of the natural numbers</div>
+<div class="para" id="my-great-book-5-3-2-71">Step 2: Form the LCM of the given numbers as the product of every factor that appears in any of the prime factorization but take the highest number of times it appears.</div>
+<div class="para" id="my-great-book-5-3-2-72">
+<em class="alert">Example 2.14</em>: Consider the two numbers 18 and 24.</div>
+<div class="para" id="my-great-book-5-3-2-73">Step 2: The factors that appear in any case are 2 and 3, but take the numbers with the highest number of times.</div>
+<div class="para" id="my-great-book-5-3-2-74">
+<em class="alert">Example 2.15</em>: Consider the three numbers 20, 80 and 450.</div>
+<div class="para" id="my-great-book-5-3-2-75">Step 2: The factors that appear in any cases are 2 , 3 and 5, but take the numbers with the highest number of times.</div>
+<ol class="decimal" id="my-great-book-5-3-2-76"><li id="my-great-book-5-3-2-76-1"><div class="para" id="my-great-book-5-3-2-76-1-1"><em class="alert">Well ordering Principle in the set of natural numbers</em></div></li></ol>
+<figure class="table table-like" id="my-great-book-5-3-2-77"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.10<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-2-77-1-1-1-1"><em class="alert">Proposition 2.7</em></div>
+<div class="para" id="my-great-book-5-3-2-77-1-1-1-2">
+<em class="alert">E</em>very non-empty subset of the set of natural numbers has smallest (least) element.</div>
+</td></tr></table></div></figure><div class="para" id="my-great-book-5-3-2-78">
+<em class="alert">Example 2.16</em> <span class="process-math">\(\ A = \left\{ \ 2\ ,\ 3,\ 4,\ \cdots\  \right\}\  \subseteq \ N\text{.}\ \text{smallest}\ \text{element}\ \text{of}\ A = 2\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-2-79">
+<em class="alert">Note</em>: The set of counting numbers including zero is called the set of whole numbers and is denoted by <em class="alert">W</em>. i.e <em class="alert">W</em> = <span class="process-math">\(\left\{ \ 0,\ 1\ ,\ 2,\ 3,\ \ldots\  \right\}\)</span>
+</div>
+<figure class="table table-like" id="my-great-book-5-3-2-80"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.11<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">Principle of Mathematical Induction</td></tr></table></div></figure><div class="para" id="my-great-book-5-3-2-81">Mathematical induction is one of the most important techniques used to prove in mathematics. It is used to check conjectures about the outcome of processes that occur repeatedly according to definite patterns. We will introduce the technique with examples.</div>
+<figure class="table table-like" id="my-great-book-5-3-2-82"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.12<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-2-82-1-1-1-1">For a given assertion involving a natural number n, if</div>
+<div class="para" id="my-great-book-5-3-2-82-1-1-1-2">i. the assertion is true for n = 1 (usually).</div>
+<div class="para" id="my-great-book-5-3-2-82-1-1-1-3">ii. it is true for n = k+1, whenever it is true for n = k (k<span class="process-math">\(\)</span>1), then the assertion is true for every natural number n.</div>
+</td></tr></table></div></figure><div class="para" id="my-great-book-5-3-2-83">The method is used to prove different propositions involving positive integers using three steps:</div>
+<div class="para" id="my-great-book-5-3-2-84">Step1: Prove that <span class="process-math">\(T_{k}\)</span> (usually<span class="process-math">\(T_{1}\)</span>) holds true.</div>
+<div class="para" id="my-great-book-5-3-2-85">Step 2: Assume that <span class="process-math">\(T_{k}\)</span> for k = n is true.</div>
+<div class="para" id="my-great-book-5-3-2-86">Step 3: Show that <span class="process-math">\(T_{k}\)</span> is true for k = n+1.</div>
+<div class="para" id="my-great-book-5-3-2-87">
+<em class="alert">Example 2.17</em> Show that <span class="process-math">\(\ 1 + 3 + 5 + \cdots + (2n - 1) = n^{2}\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-2-88"><em class="alert">Proof:</em></div>
+<div class="para" id="my-great-book-5-3-2-89">
+<em class="alert">Example 2.18</em> Show that<span class="process-math">\(\ 1 + 2 + 3 + \cdots + (n) = \frac{n\ (n + 1)}{2}\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-2-90"><em class="alert">Proof:</em></div>
+<div class="para" id="my-great-book-5-3-2-91">
+<em class="alert">Example 2.19</em> Show that<span class="process-math">\(\ 5^{n} + 6^{n} &lt; 9^{n}\ \text{for}\ n \geq 2\text{.}\ \)</span>
+</div>
+<div class="para" id="my-great-book-5-3-2-92"><em class="alert">Proof:</em></div></section><section class="subsection" id="my-great-book-5-3-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="space"> </span><span class="title">The set of Integers</span>
+</h3>
+<div class="para" id="my-great-book-5-3-3-2">As the knowledge and interest of human beings increased, it was important and obligatory to extend the natural number system. For instance to solve the equation x+1= 0, the set of natural numbers was not sufficient. Hence the set of integers was developed to satisfy such extended demands.</div>
+<figure class="table table-like" id="my-great-book-5-3-3-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.13<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-3-3-1-1-1-1"><em class="alert">Definition 2.8</em></div>
+<div class="para" id="my-great-book-5-3-3-3-1-1-1-2">The set of integers is denoted by <em class="alert">Z</em> and described as <em class="alert">Z</em> = <span class="process-math">\(\left\{ \ \text{.}\ \text{.}\ \text{.}\ , - 2,\  - 1,\ 0,\ 1\ ,\ 2,\ \ldots\  \right\}\)</span>
+</div>
+</td></tr></table></div></figure><ol class="decimal" id="my-great-book-5-3-3-4"><li id="my-great-book-5-3-3-4-1"><div class="para" id="my-great-book-5-3-3-4-1-1"><em class="alert">Operations on the set of integers</em></div></li></ol>
+<div class="para" id="my-great-book-5-3-3-5"><em class="alert">i) Addition (+)</em></div>
+<div class="para" id="my-great-book-5-3-3-6">If two integers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> are added using the operation “+”, then the sum <em class="emphasis">a</em>+<em class="emphasis">b</em> is also an integer. If the sum of the two integers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> is denoted by c, then we can write the operation as: <em class="emphasis">c</em> = <em class="emphasis">a</em>+<em class="emphasis">b</em>, where <em class="emphasis">c</em> is called the sum and <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> are called terms.</div>
+<div class="para" id="my-great-book-5-3-3-7">
+<em class="alert">Example 2.20</em>: 4+9 = 13, here 13 is the sum whereas 4 &amp; 9 are terms.</div>
+<div class="para" id="my-great-book-5-3-3-8">
+<em class="alert">ii) Subtraction (</em><span class="process-math">\(-\)</span><em class="alert">)</em>
+</div>
+<div class="para" id="my-great-book-5-3-3-9">For any two integers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em>, the operation of subtracting <em class="emphasis">b</em> from <em class="emphasis">a</em>, denoted by <span class="process-math">\(a - b\)</span> is defined by <span class="process-math">\(a - b = a + ( - b)\text{.}\)</span> This means that subtracting <em class="emphasis">b</em> from <em class="emphasis">a</em> is equivalent to adding the additive inverse of <em class="emphasis">b</em> to <em class="emphasis">a</em>.</div>
+<div class="para" id="my-great-book-5-3-3-10">
+<em class="alert">Example 2.21</em>: <span class="process-math">\(7 - 5 = 7 + ( - 5) = 2\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-3-11">
+<em class="alert">iii) Multiplication (</em><span class="process-math">\(\)</span><em class="alert">)</em>
+</div>
+<div class="para" id="my-great-book-5-3-3-12">If two integers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> are multiplied using the operation “<span class="process-math">\(\)</span>”, then the product <em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">b</em> is also an integer. If the product of the two integers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> is denoted by <em class="emphasis">c</em>, then we can write the operation as: <em class="emphasis">c</em> = <em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">b</em>, where <em class="emphasis">c</em> is called the product and <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> are called factors.</div>
+<div class="para" id="my-great-book-5-3-3-13">
+<em class="alert">Example 2.22</em>: 4<span class="process-math">\(\)</span>7 = 28, here 28 is the product whereas 4 &amp; 7 are factors.</div>
+<div class="para" id="my-great-book-5-3-3-14"><em class="alert">Properties of addition and multiplication on the set of integers</em></div>
+<div class="para" id="my-great-book-5-3-3-15">i. For any two integers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em>, the sum <em class="emphasis">a</em>+<em class="emphasis">b</em> is also an integer. For instance in the above example, 4 and 9 are integers, their sum 13 is also an integer. In general, we say that the set of integers is closed under addition.</div>
+<div class="para" id="my-great-book-5-3-3-16">ii. For any two integers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em>, <em class="emphasis">a</em>+<em class="emphasis">b</em> = <em class="emphasis">b</em>+<em class="emphasis">a</em>.</div>
+<div class="para" id="my-great-book-5-3-3-17">
+<em class="alert">Example 2.23</em>: 4+9 = 9+4 = 13. In general, we say that addition is commutative on the set of integers.</div>
+<div class="para" id="my-great-book-5-3-3-18">iii. For any three integers <em class="emphasis">a</em>, <em class="emphasis">b</em> &amp; <em class="emphasis">c</em>, (<em class="emphasis">a</em>+<em class="emphasis">b</em>)+<em class="emphasis">c</em> = <em class="emphasis">a</em>+(<em class="emphasis">b</em>+<em class="emphasis">c</em>).</div>
+<div class="para" id="my-great-book-5-3-3-19">
+<em class="alert">Example 2.24</em>: (5+9)+8 = 5+(9+8) = 22. In general, we say that addition is associative on the set of integers.</div>
+<div class="para" id="my-great-book-5-3-3-20">iv. For any integer <em class="emphasis">a</em>, it holds that <em class="emphasis">a</em>+0 = 0+<em class="emphasis">a</em> = <em class="emphasis">a</em>.</div>
+<div class="para" id="my-great-book-5-3-3-21">
+<em class="alert">Example 2.25</em>: 7+0 = 0+7 = 7. In general, we say that addition has an identity element on the set of integers and 0 is the identity element.</div>
+<div class="para" id="my-great-book-5-3-3-22">v. For any integer <em class="emphasis">a</em>, it holds that <span class="process-math">\(a + ( - a) = - a + a = 0\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-3-23">
+<em class="alert">Example 2.26</em>: 4+-4 = -4+4 = 0. In general, we say that every integer <em class="emphasis">a</em> has an additive inverse denoted by<span class="process-math">\(- a\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-3-24">vi. For any two integers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em>, the product <em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">b</em> is also an integer. For instance in the above example, 4 and 7 are integers, their product 28 is also an integer. In general, we say that the set of integers is closed under multiplication.</div>
+<div class="para" id="my-great-book-5-3-3-25">vii. For any two integers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em>, <em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">b</em> = <em class="emphasis">b</em><span class="process-math">\(\)</span><em class="emphasis">a</em>.</div>
+<div class="para" id="my-great-book-5-3-3-26">
+<em class="alert">Example 2.27</em>: 4<span class="process-math">\(\)</span>7 = 7<span class="process-math">\(\)</span>4 = 28. In general, we say that multiplication is commutative on the set of integers.</div>
+<div class="para" id="my-great-book-5-3-3-27">viii. For any three integers <em class="emphasis">a</em>, <em class="emphasis">b</em> &amp; <em class="emphasis">c</em>, (<em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">b</em>) <span class="process-math">\(\)</span><em class="emphasis">c</em> = <em class="emphasis">a</em><span class="process-math">\(\)</span> (<em class="emphasis">b</em><span class="process-math">\(\)</span><em class="emphasis">c</em>).</div>
+<div class="para" id="my-great-book-5-3-3-28">
+<em class="alert">Example 2.28</em>: (3<span class="process-math">\(\)</span>5) <span class="process-math">\(\)</span>4 = 3<span class="process-math">\(\)</span> (5<span class="process-math">\(\)</span>4) = 60. In general, we say that multiplication is associative on the set of integers.</div>
+<div class="para" id="my-great-book-5-3-3-29">ix. For any integer a, it holds that <em class="emphasis">a</em><span class="process-math">\(\)</span>1 = 1<span class="process-math">\(\)</span><em class="emphasis">a</em> = <em class="emphasis">a</em>.</div>
+<div class="para" id="my-great-book-5-3-3-30">
+<em class="alert">Example 2.29</em>: 5<span class="process-math">\(\)</span>1 = 1<span class="process-math">\(\)</span>5 = 5. In general, we say that multiplication has an identity element on the set of integers and 1 is the identity element.</div>
+<div class="para" id="my-great-book-5-3-3-31">x. For any three integers <em class="emphasis">a</em>, <em class="emphasis">b</em> &amp; <em class="emphasis">c</em>, <em class="emphasis">a</em><span class="process-math">\(\)</span><em class="alert">(</em><em class="emphasis">b</em><em class="alert">+</em><em class="emphasis">c</em>) = (<em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">b</em>)+(<em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">c</em>).</div>
+<div class="para" id="my-great-book-5-3-3-32">
+<em class="alert">Example 2.30</em>: 4<span class="process-math">\(\)</span>(5+6) = (4<span class="process-math">\(\)</span>5)+ (4<span class="process-math">\(\)</span>6) = 44. In general, we say that multiplication is distributive over addition on the set of integers.</div>
+<ol class="decimal" id="my-great-book-5-3-3-33"><li id="my-great-book-5-3-3-33-1"><div class="para" id="my-great-book-5-3-3-33-1-1"><em class="alert">Order Relation in Z</em></div></li></ol>
+<div class="para" id="my-great-book-5-3-3-34">i) <em class="alert">Transitive property:</em> For any three integers <em class="emphasis">a</em>, <em class="emphasis">b</em> &amp; <em class="emphasis">c</em>, <span class="process-math">\(a &gt; b\  \land \ b &gt; c\  \Rightarrow a &gt; c\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-3-35">ii) <em class="alert">Addition property</em>: For any three integers <em class="emphasis">a</em>, <em class="emphasis">b</em> &amp; <em class="emphasis">c</em>, <span class="process-math">\(a &gt; b\  \Rightarrow \ a + c &gt; b + c\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-3-36">iii) <em class="alert">Multiplication property</em>: For any three integers <em class="emphasis">a</em>, <em class="emphasis">b</em> and <em class="emphasis">c</em>, where c&gt;0, <span class="process-math">\(a &gt; b\  \Rightarrow \ \text{ac} &gt; \text{bc}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-3-37">iv) <em class="alert">Law of trichotomy</em>: For any two integers <em class="emphasis">a</em> &amp; <em class="emphasis">b</em> we have <span class="process-math">\(a &gt; b\ \text{or}\ a &lt; b\ \text{or}\ a = b\text{.}\)</span>
+</div>
+<figure class="table table-like" id="my-great-book-5-3-3-38"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.14<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines"><em class="alert">Exercise 2.1</em></td></tr></table></div></figure><figure class="table table-like" id="my-great-book-5-3-3-39"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.15<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-3-39-1-1-1-1">1. Find an odd natural number x such that LCM (x, 40) = 1400.</div>
+<div class="para" id="my-great-book-5-3-3-39-1-1-1-2">2. There are between 50 and 60 number of eggs in a basket. When Loza counts by 3’s, there are 2 eggs left over. When she counts by 5’s, there are 4 left over. How many eggs are there in the basket?</div>
+<div class="para" id="my-great-book-5-3-3-39-1-1-1-3">3. The GCF of two numbers is 3 and their LCM is 180. If one of the numbers is 45, then find the second number.</div>
+<div class="para" id="my-great-book-5-3-3-39-1-1-1-4">4. Using Mathematical Induction, prove the following:</div>
+<div class="para" id="my-great-book-5-3-3-39-1-1-1-5">d) <span class="process-math">\(2 + 4 + 6 + \cdots + 2n = n(n + 1)\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-3-39-1-1-1-6">e) <span class="process-math">\(1^{2} + 2^{2} + 3^{2} + \cdots + n^{2} = \frac{n\ (n + 1)(2n + 1)}{6}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-3-39-1-1-1-7">f) <span class="process-math">\(1^{3} + 2^{3} + 3^{3} + \cdots + n^{3} = \frac{n^{2}\ (n + 1)^{2}}{4}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-3-39-1-1-1-8">g) <span class="process-math">\(\frac{1}{1 \times 2} + \frac{1}{2 \times 3} + \frac{1}{3 \times 4} + \cdots + \frac{1}{n(n + 1)} = \frac{n}{n + 1}\)</span>
+</div>
+</td></tr></table></div></figure></section><section class="subsection" id="my-great-book-5-3-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="space"> </span><span class="title">The set of rational numbers</span>
+</h3>
+<div class="para" id="my-great-book-5-3-4-2">As the knowledge and interest of human beings increased with time, it was again necessary to extend the set of integers. For instance to solve the equation 2<em class="emphasis">x</em>+1= 0, the set of integers was not sufficient. Hence the set of rational numbers was developed to satisfy such extended needs.</div>
+<figure class="table table-like" id="my-great-book-5-3-4-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.16<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal"><th scope="col" class="l m b0 r0 l0 t0 lines"><em class="alert">Definition 2.9</em></th></tr>
+<tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-4-3-1-2-1-1">Any number that can be expressed in the form<span class="process-math">\(\frac{a}{b}\text{,}\)</span> where a and b are integers and <span class="process-math">\(b \neq 0\text{,}\)</span> is called a rational number. The set of rational numbers denoted by Q is described by</div>
+<div class="para" id="my-great-book-5-3-4-3-1-2-1-2">Q = <span class="process-math">\(\left\{ \ \frac{a}{b}:\ a\ \text{and}\ b\ \text{are}\ \text{integers}\ \text{and}\ b \neq 0\  \right\}\)</span> .</div>
+</td></tr>
+</table></div></figure><div class="para" id="my-great-book-5-3-4-4">Notes:</div>
+<div class="para" id="my-great-book-5-3-4-5">i. From the expression <span class="process-math">\(\frac{a}{b},\ \)</span> <span class="process-math">\(a\)</span> is called numerator and <span class="process-math">\(b\)</span> is called denominator.</div>
+<div class="para" id="my-great-book-5-3-4-6">ii. A rational number <span class="process-math">\(\frac{a}{b}\)</span> is said to be in lowest form if GCF (<em class="emphasis">a</em>, <em class="emphasis">b</em>) = 1.</div>
+<div class="para" id="my-great-book-5-3-4-7"><em class="alert">2.1.3.1 Operations on the set of rational numbers</em></div>
+<div class="para" id="my-great-book-5-3-4-8"><em class="alert">i) Addition (+)</em></div>
+<div class="para" id="my-great-book-5-3-4-9">If two rational numbers <span class="process-math">\(\frac{a}{b}\)</span> and <span class="process-math">\(\frac{c}{d}\)</span> are added using the operation “+”, then the sum defined as <span class="process-math">\(\frac{a}{b} + \frac{c}{d} = \frac{\text{ad} + \text{bc}}{\text{bd}}\)</span> is also a rational number.</div>
+<div class="para" id="my-great-book-5-3-4-10">
+<em class="alert">Example 2.31</em>: <span class="process-math">\(\frac{1}{2} + \frac{3}{5} = \frac{\text{11}}{\text{10}}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-4-11">
+<em class="alert">ii) Subtraction (</em><span class="process-math">\(-\)</span><em class="alert">)</em>
+</div>
+<div class="para" id="my-great-book-5-3-4-12">For any two rational numbers <span class="process-math">\(\frac{a}{b}\)</span>&amp; <span class="process-math">\(\frac{c}{d}\text{,}\)</span> the operation of subtracting <span class="process-math">\(\frac{c}{d}\)</span> from <span class="process-math">\(\frac{a}{b}\text{,}\)</span> denoted by <span class="process-math">\(\frac{a}{b}\)</span>- <span class="process-math">\(\frac{c}{d}\)</span>is defined by <span class="process-math">\(\frac{a}{b}\)</span>-<span class="process-math">\(\frac{c}{d}\)</span> = <span class="process-math">\(\frac{a}{b}\)</span>+(-<span class="process-math">\(\frac{c}{d}\)</span>).</div>
+<div class="para" id="my-great-book-5-3-4-13">
+<em class="alert">Example 2.32</em>: <span class="process-math">\(\frac{1}{2} - \frac{3}{5} = \frac{- 1}{\text{10}}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-4-14">
+<em class="alert">iii) Multiplication (</em><span class="process-math">\(\)</span><em class="alert">)</em>
+</div>
+<div class="para" id="my-great-book-5-3-4-15">If two rational numbers <span class="process-math">\(\frac{a}{b}\)</span> and <span class="process-math">\(\frac{c}{d}\)</span> are multiplied using the operation “<span class="process-math">\(\)</span>”, then the product defined as <span class="process-math">\(\frac{a}{b} \times \frac{c}{d} = \frac{\text{ac}}{\text{bd}}\)</span> is also a rational number.</div>
+<div class="para" id="my-great-book-5-3-4-16">
+<em class="alert">Example 2.33</em>: <span class="process-math">\(\frac{1}{2} \times \frac{3}{5} = \frac{3}{\text{10}}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-4-17">
+<em class="alert">iv) Division (</em><span class="process-math">\(\)</span><em class="alert">)</em>
+</div>
+<div class="para" id="my-great-book-5-3-4-18">For any two rational numbers <span class="process-math">\(\frac{a}{b}\)</span>&amp;<span class="process-math">\(\frac{c}{d}\text{,}\)</span> dividing <span class="process-math">\(\frac{a}{b}\)</span>by <span class="process-math">\(\frac{c}{d}\)</span> is defined by</div>
+<div class="para" id="my-great-book-5-3-4-19">
+<em class="alert">Example 2.34</em>: <span class="process-math">\(\frac{1}{2} \div \frac{3}{5} = \frac{1}{2} \times \frac{5}{3} = \frac{5}{6}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-4-20"><em class="alert">Properties of addition and multiplication on the set of rational numbers</em></div>
+<div class="para" id="my-great-book-5-3-4-21">Let <span class="process-math">\(\frac{a}{b}\text{,}\)</span> <span class="process-math">\(\frac{c}{d}\)</span> and <span class="process-math">\(\frac{e}{f}\)</span> be three rational numbers, then</div>
+<div class="para" id="my-great-book-5-3-4-22">i. The set of rational numbers is closed under addition and multiplication.</div>
+<div class="para" id="my-great-book-5-3-4-23">ii. Addition and multiplication are both commutative on the set of rational numbers.</div>
+<div class="para" id="my-great-book-5-3-4-24">iii. Addition and multiplication are both associative on the set of rational numbers.</div>
+<div class="para" id="my-great-book-5-3-4-25">iv. <em class="alert">0</em> is the additive identity</div>
+<div class="para" id="my-great-book-5-3-4-26">i.e., <span class="process-math">\(\frac{a}{b}\)</span>+ <em class="alert">0</em> = <em class="alert">0</em>+<span class="process-math">\(\frac{a}{b}\)</span> = <span class="process-math">\(\frac{a}{b}\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-4-27">v. Every rational number has an additive inverse.</div>
+<div class="para" id="my-great-book-5-3-4-28">i.e., <span class="process-math">\(\frac{a}{b}\)</span>+ <span class="process-math">\(( - \frac{a}{b})\)</span> = <span class="process-math">\(\frac{- a}{b}\)</span>+<span class="process-math">\(\frac{a}{b}\)</span> = <em class="alert">0</em>.</div>
+<div class="para" id="my-great-book-5-3-4-29">vi. <em class="alert">1</em> is the multiplicative identity</div>
+<div class="para" id="my-great-book-5-3-4-30">i.e., <span class="process-math">\(\frac{a}{b}\)</span><span class="process-math">\(\)</span>1 = <em class="alert">1</em><span class="process-math">\(\)</span><span class="process-math">\(\frac{a}{b}\)</span> = <span class="process-math">\(\frac{a}{b}\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-4-31">vii. Every non-zero rational number has a multiplicative inverse.</div>
+<div class="para" id="my-great-book-5-3-4-32">i.e., <span class="process-math">\(\frac{a}{b}\)</span><span class="process-math">\(\)</span> <span class="process-math">\(\frac{b}{a}\)</span> = <span class="process-math">\(\frac{b}{a}\)</span><span class="process-math">\(\)</span><span class="process-math">\(\frac{a}{b}\)</span> = 1.</div>
+<div class="para" id="my-great-book-5-3-4-33"><em class="alert">2.1.3.2 Order Relation in Q</em></div>
+<div class="para" id="my-great-book-5-3-4-34">i) <em class="alert">Transitive property</em>
+</div>
+<div class="para" id="my-great-book-5-3-4-35">For any three rational numbers<span class="process-math">\(\frac{a}{b}\text{,}\)</span> <span class="process-math">\(\frac{c}{d}\)</span>&amp; <span class="process-math">\(\frac{e}{f}\)</span> <span class="process-math">\(\frac{a}{b} &gt; \frac{c}{d}\  \land \ \frac{c}{d} &gt; \frac{e}{f}\  \Rightarrow \frac{a}{b} &gt; \frac{e}{f}\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-4-36">ii) <em class="alert">Addition property</em>
+</div>
+<div class="para" id="my-great-book-5-3-4-37">For any three rational numbers<span class="process-math">\(\frac{a}{b}\text{,}\)</span> <span class="process-math">\(\frac{c}{d}\)</span>&amp; <span class="process-math">\(\frac{e}{f}\)</span> <span class="process-math">\(\frac{a}{b} &gt; \frac{c}{d}\  \Rightarrow \frac{a}{b} + \frac{e}{f} &gt; \frac{c}{d} + \frac{e}{f}\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-4-38">iii) <em class="alert">Multiplication property</em>
+</div>
+<div class="para" id="my-great-book-5-3-4-39">For any three rational numbers<span class="process-math">\(\frac{a}{b}\text{,}\)</span> <span class="process-math">\(\frac{c}{d}\text{,}\)</span> <span class="process-math">\(\frac{e}{f}\)</span>and <span class="process-math">\(\frac{e}{f} &gt; 0\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-4-40">iv) <em class="alert">Law of trichotomy</em>
+</div>
+<div class="para" id="my-great-book-5-3-4-41">For any two rational numbers <span class="process-math">\(\frac{a}{b}\)</span>&amp; <span class="process-math">\(\frac{c}{d}\)</span>we have <span class="process-math">\(\frac{a}{b} &gt; \frac{c}{d}\ \text{or}\ \frac{a}{b} &lt; c\frac{\ }{d}\ \text{or}\ \frac{a}{b} = \frac{c}{d}\text{.}\)</span>
+</div>Decimal representation of rational numbers<div class="para" id="my-great-book-5-3-4-43">A rational number <span class="process-math">\(\frac{a}{b}\)</span> can be written in decimal form using long division.</div>
+<div class="para" id="my-great-book-5-3-4-44">
+<em class="alert">2.1.3.3.1</em> <em class="alert">Terminating decimals</em>
+</div>
+<div class="para" id="my-great-book-5-3-4-45">
+<em class="alert">Example 2.35</em>: Express the fraction number <span class="process-math">\(\frac{\text{25}}{4}\)</span>in decimal form.</div>
+<em class="alert">Non-terminating periodic decimals</em><div class="para" id="my-great-book-5-3-4-47">
+<em class="alert">Example 2.36</em>: Express the fraction number <span class="process-math">\(\frac{\text{25}}{3}\)</span>in decimal form.</div>
+<div class="para" id="my-great-book-5-3-4-48">Now we will see how to convert decimal numbers in to their fraction forms. In earlier mathematics topics, we have seen that multiplying a decimal by 10 pushes the decimal point to the right by one position and in general, multiplying a decimal by 10n pushes the decimal point to the right by <em class="emphasis">n</em> positions. We will use this fact for the succeeding topics.</div>Fraction form of decimal numbers<div class="para" id="my-great-book-5-3-4-50">A rational number which is written in decimal form can be converted to a fraction form as <span class="process-math">\(\frac{a}{b}\)</span> in lowest (simplified) form, where <em class="emphasis">a</em> and <em class="emphasis">b</em> are relatively prime.</div>
+<em class="alert">Terminating decimals</em><figure class="table table-like" id="my-great-book-5-3-4-52"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.17<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">Consider any terminating decimal number d. Suppose d terminates n digits after the decimal point. d can be converted to its fraction form as below:</td></tr></table></div></figure><div class="para" id="my-great-book-5-3-4-53">
+<em class="alert">Example 2.37</em>: Convert the terminating decimal 3.47 to fraction form.</div>
+<em class="alert">Non-terminating periodic decimals</em><figure class="table table-like" id="my-great-book-5-3-4-55"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.18<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">Consider any non-terminating periodic decimal number d. Suppose d has <em class="alert">k</em> non-terminating digits and <em class="alert">p</em> terminating digits after the decimal point. d can be converted to its fraction form as below:</td></tr></table></div></figure><div class="para" id="my-great-book-5-3-4-56">
+<em class="alert">Example 2.38</em>: Convert the non-terminating periodic decimal<span class="process-math">\(\text{42}\text{.}5\overline{\text{38}}\)</span> to fraction form.</div>
+<div class="para" id="my-great-book-5-3-4-57">Solution: k = 1, p = 2.</div>
+<div class="para" id="my-great-book-5-3-4-58">Note: From the above two cases, we can conclude that both terminating decimals and non-terminating periodic decimals are rational numbers. (Why? Justify).</div>
+<em class="alert">Non-terminating and non-periodic decimals</em><div class="para" id="my-great-book-5-3-4-60">Some decimal numbers are neither terminating nor non-terminating periodic. Such types of numbers are called irrational numbers.</div>
+<div class="para" id="my-great-book-5-3-4-61">
+<em class="alert">Example 2.39</em>: 62.757757775….</div>
+<div class="para" id="my-great-book-5-3-4-62">
+<em class="alert">Example 2.40</em>: Show that <span class="process-math">\(\sqrt{2}\)</span> is an irrational number.</div>
+<div class="para" id="my-great-book-5-3-4-63"><em class="alert">Proof:</em></div>
+<div class="para" id="my-great-book-5-3-4-64"><span class="process-math">\(\begin{matrix}
+\ \text{Suppose}\ \sqrt{2}\ \text{is}\ a\ \text{rational}\ \text{number} \\
+\  \Rightarrow \sqrt{2} = \frac{a}{b},\ \text{where}\ \text{GCF}(a,\ b) = 1 \\
+\  \Rightarrow 2 = \frac{a^{2}}{b^{2}} \\
+\  \Rightarrow a^{2} = 2b^{2}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}( \ast ) \\
+\  \Rightarrow a^{2}\ \text{is}\ \text{even} \\
+\  \Rightarrow a\ \text{is}\ \text{even} \\
+\  \Rightarrow a\  = 2n\ \text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}(\text{**}) \\
+\end{matrix}\)</span></div>
+<div class="para" id="my-great-book-5-3-4-65"><span class="process-math">\(\begin{matrix}
+\ \text{Putting}\ \text{this}\ \text{in}\ ( \ast )\ \text{we}\ \text{get}:\  \\
+\Rightarrow 4n^{2} = 2b^{2} \\
+\Rightarrow b^{2} = 2n^{2} \\
+\Rightarrow b^{2}\ \text{is}\ \text{even} \\
+\Rightarrow b\ \text{is}\ \text{even} \\
+\Rightarrow b = 2m\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}(\text{***}) \\
+\end{matrix}\)</span></div>
+<div class="para" id="my-great-book-5-3-4-66">From (**) and (***) we get a contradiction that GCF (<em class="emphasis">a</em>, <em class="emphasis">b</em>) = 1 which implies that <span class="process-math">\(\sqrt{2\ }\)</span> is not a rational number.</div>
+<div class="para" id="my-great-book-5-3-4-67">Therefore, <span class="process-math">\(\sqrt{2\ }\)</span> is an irrational number.</div></section><section class="subsection" id="my-great-book-5-3-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="space"> </span><span class="title">The set of real numbers</span>
+</h3>
+<figure class="table table-like" id="my-great-book-5-3-5-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.19<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal"><th scope="col" class="l m b0 r0 l0 t0 lines"><em class="alert">Definition 2.10</em></th></tr>
+<tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-5-2-1-2-1-1">A number is called a real number if and only if it is either a rational number or an irrational number.</div>
+<div class="para" id="my-great-book-5-3-5-2-1-2-1-2">The set of real numbers denoted by <span class="process-math">\(\Re\)</span> can be described as the union of the set of rational and irrational numbers. i.e <span class="process-math">\(\Re\)</span>= {x : x is a rational number or an irrational number}.</div>
+</td></tr>
+</table></div></figure><div class="para" id="my-great-book-5-3-5-3">There is a 1-1 correspondence between the set of real numbers and the number line (For each point in the number line, there is a corresponding real number and vice-versa).</div>Operations on the set of real numbers<div class="para" id="my-great-book-5-3-5-5"><em class="alert">i) Addition (+)</em></div>
+<div class="para" id="my-great-book-5-3-5-6">If two real numbers are added using the operation “+”, then the sum is also a real number.</div>
+<div class="para" id="my-great-book-5-3-5-7">
+<em class="alert">ii) Subtraction (</em><span class="process-math">\(-\)</span><em class="alert">)</em>
+</div>
+<div class="para" id="my-great-book-5-3-5-8">For any two real numbers <span class="process-math">\(a\)</span>&amp; <span class="process-math">\(b\text{,}\)</span> the operation of subtracting <span class="process-math">\(b\)</span> from <span class="process-math">\(a\text{,}\)</span> denoted by <span class="process-math">\(a - b\)</span>is defined by <span class="process-math">\(a - b\)</span> = <span class="process-math">\(a\)</span>+(<span class="process-math">\(-\)</span><span class="process-math">\(b\)</span>).</div>
+<div class="para" id="my-great-book-5-3-5-9">
+<em class="alert">iii) Multiplication (</em><span class="process-math">\(\)</span><em class="alert">)</em>
+</div>
+<div class="para" id="my-great-book-5-3-5-10">If two real numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are multiplied using the operation “<span class="process-math">\(\)</span>”, then the product defined as <span class="process-math">\(a \times b = \text{ab}\)</span> is also a real number.</div>
+<div class="para" id="my-great-book-5-3-5-11">
+<em class="alert">iv) Division (</em><span class="process-math">\(\)</span><em class="alert">)</em>
+</div>
+<div class="para" id="my-great-book-5-3-5-12">For any two real numbers <span class="process-math">\(a\)</span>&amp; <span class="process-math">\(b\text{,}\)</span> dividing <span class="process-math">\(a\)</span>by <span class="process-math">\(b\)</span>is defined by <span class="process-math">\(a\  \div b = a \times \frac{1}{b},\ b \neq 0\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-5-13"><em class="alert">Properties of addition and multiplication on the set of real numbers</em></div>
+<div class="para" id="my-great-book-5-3-5-14">Let <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\)</span> and <span class="process-math">\(c\)</span> be three real numbers, then</div>
+<div class="para" id="my-great-book-5-3-5-15">i. The set of real numbers is closed under addition and multiplication.</div>
+<div class="para" id="my-great-book-5-3-5-16">ii. Addition and multiplication are commutative on the set of real numbers.</div>
+<div class="para" id="my-great-book-5-3-5-17">iii. Addition and multiplication are associative on the set of real numbers.</div>
+<div class="para" id="my-great-book-5-3-5-18">iv. <em class="alert">0</em> is the additive identity</div>
+<div class="para" id="my-great-book-5-3-5-19">i.e., <span class="process-math">\(a\)</span>+ <em class="alert">0</em> = <em class="alert">0</em>+<span class="process-math">\(a\)</span> = <span class="process-math">\(a\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-5-20">v. Every real number has an additive inverse.</div>
+<div class="para" id="my-great-book-5-3-5-21">i.e., <span class="process-math">\(a\)</span>+ <span class="process-math">\(( - a)\)</span> = <span class="process-math">\(- a\)</span>+<span class="process-math">\(a\)</span> = <em class="alert">0</em>.</div>
+<div class="para" id="my-great-book-5-3-5-22">vi. <em class="alert">1</em> is the multiplicative identity</div>
+<div class="para" id="my-great-book-5-3-5-23">i.e., <span class="process-math">\(a\)</span><span class="process-math">\(\)</span>1 = <em class="alert">1</em><span class="process-math">\(\)</span><span class="process-math">\(a\)</span> = <span class="process-math">\(a\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-5-24">vii. Every non-zero real number has a multiplicative inverse.</div>
+<div class="para" id="my-great-book-5-3-5-25">i.e., <span class="process-math">\(a\)</span><span class="process-math">\(\)</span> <span class="process-math">\(\frac{1}{a}\)</span> = <span class="process-math">\(\frac{1}{a}\)</span><span class="process-math">\(\)</span><span class="process-math">\(a\)</span> = 1.</div>The real number and the number line<div class="para" id="my-great-book-5-3-5-27">One of the most important properties of the real number is that it can be represented graphically by points on a straight line. The point 0 is termed as the origin. Points to the right of 0 are called positive real numbers and points to the left of 0 are called negative real numbers. Each point on the number line corresponds a unique real number and vice-versa.</div>
+<div class="para" id="my-great-book-5-3-5-28"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//./media/image36.png" class="contained"></div></div>
+<div class="para" id="my-great-book-5-3-5-29">Geometrically we say a is greater than b if a is located to the right of b on the number line.</div>Order Relation in R<div class="para" id="my-great-book-5-3-5-31">i) <em class="alert">Transitive property:</em> For any three real numbers<span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\)</span>&amp; <span class="process-math">\(c\text{,}\)</span> <span class="process-math">\(a &gt; \ b\  \land \ b &gt; c\  \Rightarrow a &gt; c\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-5-32">ii) <em class="alert">Addition property:</em> For any three real numbers<span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\)</span>&amp; <span class="process-math">\(c\text{,}\)</span> <span class="process-math">\(a &gt; b\  \Rightarrow a + c &gt; b + c\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-5-33">iii) <em class="alert">Multiplication property:</em> For any three real numbers<span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> <span class="process-math">\(c\)</span>and <span class="process-math">\(c &gt; 0\text{,}\)</span> we have <span class="process-math">\(a &gt; b\  \Rightarrow \text{ac} &gt; \text{bc}\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-5-34">iv) <em class="alert">Law of trichotomy:</em> For any two real numbers <span class="process-math">\(a\)</span>&amp; <span class="process-math">\(b\)</span>we have <span class="process-math">\(a &gt; b\ \text{or}\ a &lt; b\ \text{or}\ a = b\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-5-35"><em class="alert">Summary of the real number system</em></div>
+<div class="para" id="my-great-book-5-3-5-36"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//./media/png72/image37.png" class="contained"></div></div>
+<ol class="decimal" id="my-great-book-5-3-5-37"><li id="my-great-book-5-3-5-37-1"><div class="para" id="my-great-book-5-3-5-37-1-1"><em class="alert">Intervals</em></div></li></ol>
+<div class="para" id="my-great-book-5-3-5-38">Let <em class="emphasis">a</em> and <em class="emphasis">b</em> be two real numbers such that <em class="emphasis">a</em><span class="process-math">\(\)</span><em class="emphasis">b</em>, then the intervals which are subsets of <em class="alert">R</em> with end points a and b are denoted and defined as below:</div>
+<div class="para" id="my-great-book-5-3-5-39">
+<span class="process-math">\(i\text{.}\ (a,\ b)\  = \left\{ \ x:\ a &lt; x &lt; b \right\}\)</span> open interval from <em class="emphasis">a</em> to <em class="emphasis">b</em>.</div>
+<div class="para" id="my-great-book-5-3-5-40">
+<span class="process-math">\(\text{ii}\text{.}\ \lbrack a,\ b\rbrack\  = \left\{ \ x:\ a \leq x \leq b \right\}\)</span> closed interval from <em class="emphasis">a</em> to <em class="emphasis">b</em>.</div>
+<div class="para" id="my-great-book-5-3-5-41">
+<span class="process-math">\(\text{iii}\text{.}\ (a,\ b\rbrack\  = \left\{ \ x:\ a &lt; x \leq b \right\}\)</span> open-closed interval from <em class="emphasis">a</em> to <em class="emphasis">b</em>.</div>
+<div class="para" id="my-great-book-5-3-5-42">
+<span class="process-math">\(\text{iv}\text{.}\ \lbrack a,\ b)\  = \left\{ \ x:\ a \leq x &lt; b \right\}\)</span> closed-open interval from <em class="emphasis">a</em> to <em class="emphasis">b</em>.</div>
+<ol class="decimal" id="my-great-book-5-3-5-43"><li id="my-great-book-5-3-5-43-1"><div class="para" id="my-great-book-5-3-5-43-1-1"><em class="alert">Upper bounds and lower bounds</em></div></li></ol>
+<figure class="table table-like" id="my-great-book-5-3-5-44"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.20<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-5-44-1-1-1-1"><em class="alert">Definition 2.11</em></div>
+<div class="para" id="my-great-book-5-3-5-44-1-1-1-2">i. A point <span class="process-math">\(a \in R\)</span>is said to be an upper bound of A iff <span class="process-math">\(x \leq a\)</span> for all <span class="process-math">\(x \in A\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-5-44-1-1-1-3">ii. An upper bound of A is said to be least upper bound (lub) iff it is the least of all upper bounds.</div>
+<div class="para" id="my-great-book-5-3-5-44-1-1-1-4">iii. A point <span class="process-math">\(a \in R\)</span>is said to be lower bound of A iff <span class="process-math">\(x \geq a\)</span> for all <span class="process-math">\(x \in A\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-5-44-1-1-1-5">ii. A lower bound of A is said to be greatest lower bound (glb) iff it is the greatest of all lower bounds.</div>
+</td></tr></table></div></figure><div class="para" id="my-great-book-5-3-5-45">
+<em class="alert">Example 2.41</em><span class="process-math">\(\ \text{Consider}\ \text{the}\ \text{set}\ A = \lbrack 2,\ 5) \subseteq \Re\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-5-46">
+<em class="alert">Example 2.42:</em> Consider the set <em class="alert">A =</em> <span class="process-math">\(\left\{ \ \frac{1}{n}\  \right\}\)</span> for n<span class="process-math">\(\in N\text{.}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-5-47">Solution: <span class="process-math">\(A = \left\{ \ 1,\ \frac{1}{2},\ \frac{1}{3},\ \cdots \right\}\)</span>
+</div>
+<div class="para" id="my-great-book-5-3-5-48">Based on the above definitions, we can define the completeness property of real numbers as below.</div>
+<ol class="decimal" id="my-great-book-5-3-5-49"><li id="my-great-book-5-3-5-49-1"><div class="para" id="my-great-book-5-3-5-49-1-1"><em class="alert">Completeness property of real number (R)</em></div></li></ol>
+<figure class="table table-like" id="my-great-book-5-3-5-50"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.21<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">Completeness property of real numbers states that: Every non-empty subset of <span class="process-math">\(\Re\ \)</span> that has lower bounds has glb and every non-empty subset of <span class="process-math">\(\Re\ \)</span>that has upper bounds has a lub.</td></tr></table></div></figure><figure class="table table-like" id="my-great-book-5-3-5-51"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.22<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120"><div class="para" id="my-great-book-5-3-5-51-1-1-1-1"><em class="alert">Exercise 2.2</em></div></td></tr></table></div></figure><figure class="table table-like" id="my-great-book-5-3-5-52"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.23<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-1">1. Express each of the following rational numbers as decimal:</div>
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-2">2. Write each of the following as decimal and then as a fraction:</div>
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-3">a) three tenths b) four thousands</div>
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-4">3. Write each of the following in meters as a fraction and then as a decimal</div>
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-5">a) 4mm b) 6cm and 4mm c) 56cm and 4mm</div>
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-6">4. Classify each of the following as terminating or non-terminating periodic</div>
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-7">5. Convert the following decimals to fractions:</div>
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-8">6. Determine whether the following are rational or irrational:</div>
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-9">7. Which of the following statements are true and which of them are false?</div>
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-10">a) The sum of any two rational numbers is rational</div>
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-11">b) The sum of any two irrational numbers is irrational</div>
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-12">c) The product of any two rational numbers is rational</div>
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-13">d) The product of any two irrational numbers is irrational</div>
+<div class="para" id="my-great-book-5-3-5-52-1-1-1-14">11<em class="alert">.</em> Find two rational numbers between <span class="process-math">\(13\ \text{and}\ 12\text{.}\)</span>
+</div>
+</td></tr></table></div></figure></section></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="my-great-book-5.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="my-great-book-5-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

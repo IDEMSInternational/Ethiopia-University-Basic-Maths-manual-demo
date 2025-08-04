@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Open propositions and quantifiers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="BASIC MATHEMATICS FOR NATURAL SCIENCES">
+<meta property="book:author" content="">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">BASIC MATHEMATICS FOR NATURAL SCIENCES:</span> <span class="subtitle">UNDERGRADUATE STUDENT TEXTBOOK</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-propositional-logic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="my-great-book-4.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-argument-and-validity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="my-great-book-4.html" class="internal"><span class="codenumber">1</span> <span class="title">Propositional Logic and Set Theory</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-propositional-logic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Propositional Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-propositional-logic.html#subsec-definition-and-examples-of-propositions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Definition and examples of propositions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-propositional-logic.html#subsec-logical-connectives" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Logical connectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-propositional-logic.html#subsec-compound-(or-complex)-propositions" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Compound (or complex) propositions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-propositional-logic.html#subsec-tautology-and-contradiction" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tautology and contradiction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-open-propositions-and-quantifiers.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Open propositions and quantifiers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-argument-and-validity.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Argument and Validity</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-set-theory.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Set theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set-theory.html#subsec-the-concept-of-a-set" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The concept of a set</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Description of Sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Set Operations and Venn diagrams</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-description-of-sets.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Description of sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Set Operations and Venn diagrams</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="the-real-and-complex-number-systems.html" class="internal"><span class="codenumber">2</span> <span class="title">The Real and Complex Number Systems</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The real number System</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The set of natural numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Operations on the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-oder-relation-N" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Order Relation in <span class="process-math">\(\mathbf{N}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-factors-of-a-number" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Factors of a number</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-prime-factorization" class="internal"><span class="codenumber">2.1.1.4</span> <span class="title">Prime Factorization</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-greatest-common-factor" class="internal"><span class="codenumber">2.1.1.5</span> <span class="title">Greatest Common Factor (GCF)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-lcm" class="internal"><span class="codenumber">2.1.1.6</span> <span class="title">Least Common Multiple (LCM)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-well-ordering-principle-in-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.7</span> <span class="title">Well ordering Principle in the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-principle-of-mathematical-induction" class="internal"><span class="codenumber">2.1.1.8</span> <span class="title">Principle of Mathematical Induction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-integers" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The set of Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers" class="internal"><span class="codenumber">2.1.2.1</span> <span class="title">Operations on the set of integers</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-z" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Order Relation in Z</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-sets-of-integers" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The set of rational numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.1</span> <span class="title">Operations on the set of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-q" class="internal"><span class="codenumber">2.1.3.2</span> <span class="title">Order Relation in Q</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-decimal-representation-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.3</span> <span class="title">Decimal representation of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-fraction-form-of-decimal-numbers" class="internal"><span class="codenumber">2.1.3.4</span> <span class="title">Fraction form of decimal numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-non-terminating-and-non-periodic-decimals" class="internal"><span class="codenumber">2.1.3.5</span> <span class="title">Non-terminating and non-periodic decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The set of real numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4.1</span> <span class="title">Operations on the set of real numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-the-real-number-and-the-number-line" class="internal"><span class="codenumber">2.1.4.2</span> <span class="title">The real number and the number line</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-r" class="internal"><span class="codenumber">2.1.4.3</span> <span class="title">Order Relation in R</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-intervals" class="internal"><span class="codenumber">2.1.4.4</span> <span class="title">Intervals</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-upper-bounds-and-lower-bounds" class="internal"><span class="codenumber">2.1.4.5</span> <span class="title">Upper bounds and lower bounds</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-completeness-property-of-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Completeness property of real number (R)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="my-great-book-6.html" class="internal"><span class="codenumber">3</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Review of relations and functions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html#exercises-Review-of-relations-and-functions" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Real Valued functions and their properties</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html#exercises-Real-Valued-functions-and-their-properties" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-types-of-functions-and-inverse.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Types of functions and inverse of a function</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-polynomials,-zeros-of-polynomials,-rational.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Polynomials, zeros of polynomials, rational functions and their graphs</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-definition-and-basic-properties-of.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="analytic-geometry.html" class="internal"><span class="codenumber">4</span> <span class="title">Analytic Geometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Distance Formula and Equation of Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Distance between two points and division of segments</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-equations-of-lines" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Equations of lines</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-a-point-and" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Distance between a point and a line</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circles.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Circles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-definition-of-a-circle" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Definition of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-equation-of-a-circle" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Equation of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-intersection-of-a-circle-with" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Intersection of a circle with a line and tangent line to a circle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-parabolas.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Parabolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parabolas.html#subsec-definition-of-a-parabola" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Definition of a Parabola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parabolas.html#subsec-equation-of-parabolas" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Equation of Parabolas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ellipses.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ellipses</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-definition-of-an-ellipse" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Definition of an Ellipse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-equation-of-an-ellipse" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Equation of an Ellipse</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyperbolas.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Hyperbolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-definition-of-a-hyperbola" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Definition of a hyperbola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-equation-of-a-hyperbola" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Equation of a hyperbola</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">The General Second Degree Equation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-rotation-of-coordinate-axes" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Rotation of Coordinate Axes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-analysis-of-the-general-second" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Analysis of the General Second Degree Equations</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="my-great-book-8.html" class="internal"><span class="codenumber">5</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-open-propositions-and-quantifiers"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Open propositions and quantifiers</span>
+</h2>
+<section class="introduction" id="sec-open-propositions-and-quantifiers-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-1">In mathematics, one frequently comes across sentences that involve a variable. For example, <span class="process-math">\(x^{2} + 2x - 3 = 0\)</span> is one such. The truth value of this statement depends on the value we assign for the variable <span class="process-math">\(x\text{.}\)</span> For example, if <span class="process-math">\(x = 1\text{,}\)</span> then this sentence is true, whereas if <span class="process-math">\(x = - 1\text{,}\)</span> then the sentence is false.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-2"><em class="alert">Section objectives:</em></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-3">After completing this section, students will be able to:-</div>
+<ul class="disc" id="sec-open-propositions-and-quantifiers-2-4">
+<li id="sec-open-propositions-and-quantifiers-2-4-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-4-1-1">Define open proposition.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-4-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-4-2-1">Explain and exemplify the difference between proposition and open proposition.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-4-3"><div class="para" id="sec-open-propositions-and-quantifiers-2-4-3-1">Identify the two types of quantifiers.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-4-4"><div class="para" id="sec-open-propositions-and-quantifiers-2-4-4-1">Convert open propositions into propositions using quantifiers.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-4-5"><div class="para" id="sec-open-propositions-and-quantifiers-2-4-5-1">Determine the truth value of a quantified proposition.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-4-6"><div class="para" id="sec-open-propositions-and-quantifiers-2-4-6-1">Convert a quantified proposition into words and vise versa.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-4-7"><div class="para" id="sec-open-propositions-and-quantifiers-2-4-7-1">Explain the relationship between existential and universal quantifiers.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-4-8"><div class="para" id="sec-open-propositions-and-quantifiers-2-4-8-1">Analyze quantifiers occurring in combinations.</div></li>
+</ul>
+<figure class="table table-like" id="sec-open-propositions-and-quantifiers-2-5"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">
+<em class="alert">Definition 1.4:</em> An open statement (also called a predicate) is a sentence that contains one or more variables and whose truth value depends on the values assigned for the variables. We represent an open statement by a capital letter followed by the variable(s) in parenthesis, e.g., <span class="process-math">\(P\left( x \right),Q\left( x \right),\ R(x,y)\)</span> etc.</td></tr></table></div></figure><div class="para" id="sec-open-propositions-and-quantifiers-2-6">
+<em class="alert">Example 1.11:</em> Here are some open propositions:</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-7">
+<li id="sec-open-propositions-and-quantifiers-2-7-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-7-1-1">
+<span class="process-math">\(x\)</span> is the day before Sunday.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-7-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-7-2-1">
+<span class="process-math">\(y\)</span> is a city in Africa.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-7-3"><div class="para" id="sec-open-propositions-and-quantifiers-2-7-3-1">
+<span class="process-math">\(x\)</span> is greater than <span class="process-math">\(y\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-7-4"><div class="para" id="sec-open-propositions-and-quantifiers-2-7-4-1"><span class="process-math">\(x + 4 = - 9\text{.}\)</span></div></li>
+</ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-8">It is clear that each one of these examples involves variables, but is not a proposition as we cannot assign a truth value to it. However, if individuals are substituted for the variables, then each one of them is a proposition or statement. For example, we may have the following.</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-9">
+<li id="sec-open-propositions-and-quantifiers-2-9-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-9-1-1">Monday is the day before Sunday.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-9-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-9-2-1">London is a city in Africa.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-9-3"><div class="para" id="sec-open-propositions-and-quantifiers-2-9-3-1">5 is greater than 9.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-9-4"><div class="para" id="sec-open-propositions-and-quantifiers-2-9-4-1">–13 + 4= –9</div></li>
+</ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-10"><em class="alert">Remark</em></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-11">The collection of all allowable values for the variable in an open sentence is called the <em class="alert">universal set</em> (the universe of discourse) and denoted by <span class="process-math">\(\mathbf{U}\text{.}\)</span>
+</div>
+<figure class="table table-like" id="sec-open-propositions-and-quantifiers-2-12"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="sec-open-propositions-and-quantifiers-2-12-1-1-1-1">
+<em class="alert">Definition 1.5:</em> Two open proposition <span class="process-math">\(P(x)\)</span> and <span class="process-math">\(Q(x)\)</span> are said to be equivalent if and only if</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-12-1-1-1-2">
+<span class="process-math">\(P\left( a \right) = Q(a)\)</span> for all individual <span class="process-math">\(a\text{.}\)</span> Note that if the universe <span class="process-math">\(U\)</span> is specified, then <span class="process-math">\(P(x)\)</span> and <span class="process-math">\(Q(x)\)</span> are equivalent if and only if <span class="process-math">\(P\left( a \right) = Q(a)\)</span> for all <span class="process-math">\(a \in U\text{.}\)</span>
+</div>
+</td></tr></table></div></figure><div class="para" id="sec-open-propositions-and-quantifiers-2-13">
+<em class="alert">Example 1.12:</em> Let <span class="process-math">\(P\left( x \right):x^{2} - 1 = 0\text{.}\)</span>
+</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-14"><span class="process-math">\(Q\left( x \right):\left| x \right| \geq 1\text{.}\)</span></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-15">Let <span class="process-math">\(U = \{ - 1, - \frac{1}{2},0,1\}\text{.}\)</span>
+</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-16">Then for all <span class="process-math">\(a \in U\text{;}\)</span> <span class="process-math">\(P\left( a \right)\)</span> and <span class="process-math">\(Q(a)\)</span> have the same truth value.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-17">
+<span class="process-math">\(P\left( - 1 \right):{( - 1)}^{2} - 1 = 0\)</span> (<span class="process-math">\(T\)</span>) <span class="process-math">\(Q\left( - 1 \right):\left| - 1 \right| \geq 1\)</span> (<span class="process-math">\(T\)</span>)</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-18">
+<span class="process-math">\(P\left( - \frac{1}{2} \right):{( - \frac{1}{2})}^{2} - 1 = 0\)</span> (<span class="process-math">\(F\)</span>) <span class="process-math">\(Q\left( - \frac{1}{2} \right):\left| - \frac{1}{2} \right| \geq 1\)</span> (<span class="process-math">\(F\)</span>)</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-19">
+<span class="process-math">\(P\left( 0 \right):0 - 1 = 0\)</span> (<span class="process-math">\(F\)</span>) <span class="process-math">\(Q\left( 0 \right):\left| 0 \right| \geq 1\)</span> (<span class="process-math">\(F\)</span>)</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-20">
+<span class="process-math">\(P\left( 1 \right):1 - 1 = 0\)</span> (<span class="process-math">\(T\)</span>) <span class="process-math">\(Q\left( 1 \right):\left| 1 \right| \geq 1\)</span> (<span class="process-math">\(T\)</span>)</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-21">Therefore <span class="process-math">\(P\left( a \right) = Q(a)\)</span> for all <span class="process-math">\(a \in U\text{.}\)</span>
+</div>
+<figure class="table table-like" id="sec-open-propositions-and-quantifiers-2-22"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">
+<em class="alert">Definition 1.6:</em> Let <span class="process-math">\(U\)</span> be the universal set. An open proposition <span class="process-math">\(P\left( x \right)\)</span> is a tautology if and only if <span class="process-math">\(P\left( a \right)\)</span> is always true for all values of <span class="process-math">\(a \in U\text{.}\)</span>
+</td></tr></table></div></figure><div class="para" id="sec-open-propositions-and-quantifiers-2-23">
+<em class="alert">Example 1.13:</em> The open proposition <span class="process-math">\(P\left( x \right):x^{2} \geq 0\)</span> is a tautology.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-24">As we have observed in example 1.11, an open proposition can be converted into a proposition by substituting the individuals for the variables. However, there are other ways that an open proposition can be converted into a proposition, namely by a method called quantification. Let <span class="process-math">\(P(x)\)</span> be an open proposition over the domain <span class="process-math">\(S\text{.}\)</span> Adding the phrase “For every <span class="process-math">\(x \in S\)</span>” to <span class="process-math">\(P(x)\)</span> or “For some <span class="process-math">\(x \in S\)</span>” to <span class="process-math">\(P(x)\)</span> produces a statement called a quantified statement.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-25">Consider the following open propositions with universe <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA12.png" class="contained"></div>.</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-26">
+<li id="sec-open-propositions-and-quantifiers-2-26-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-26-1-1">
+<span class="process-math">\(R\left( x \right):x^{2} \geq 0\)</span> .</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-26-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-26-2-1"><span class="process-math">\(P\left( x \right):\left( x + 2 \right)\left( x - 3 \right) = 0\text{.}\)</span></div></li>
+<li id="sec-open-propositions-and-quantifiers-2-26-3"><div class="para" id="sec-open-propositions-and-quantifiers-2-26-3-1"><span class="process-math">\(Q(x):x^{2} &lt; 0\text{.}\)</span></div></li>
+</ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-27">Then <span class="process-math">\(R\left( x \right)\)</span> is always true for each <span class="process-math">\(x\mathbb{\in R}\text{,}\)</span>
+</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-28">
+<span class="process-math">\(P(x)\)</span> is true only for <span class="process-math">\(x = - 2\)</span> and <span class="process-math">\(x = 3\text{,}\)</span>
+</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-29">
+<span class="process-math">\(Q(x)\)</span> is always false for all values of <span class="process-math">\(x\mathbb{\in R}\text{.}\)</span>
+</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-30">Hence, given an open proposition <span class="process-math">\(P(x)\text{,}\)</span> with universe <span class="process-math">\(U\text{,}\)</span> we observe that there are three possibilities.</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-31">
+<li id="sec-open-propositions-and-quantifiers-2-31-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-31-1-1">
+<span class="process-math">\(P(x)\)</span> is true for all <span class="process-math">\(x \in U\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-31-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-31-2-1">
+<span class="process-math">\(P\left( x \right)\)</span> is true for some <span class="process-math">\(x \in U\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-31-3"><div class="para" id="sec-open-propositions-and-quantifiers-2-31-3-1">
+<span class="process-math">\(P(x)\)</span> is false for all <span class="process-math">\(x \in U\text{.}\)</span>
+</div></li>
+</ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-32">Now we proceed to study open propositions which are satisfied by “<em class="alert">all</em>” and “<em class="alert">some</em>” members of the given universe.</div>
+<figure class="table table-like" id="sec-open-propositions-and-quantifiers-2-33"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines"><ol class="decimal" id="sec-open-propositions-and-quantifiers-2-33-1-1-1-1">
+<li id="sec-open-propositions-and-quantifiers-2-33-1-1-1-1-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-33-1-1-1-1-1-1">The phrase "for every <span class="process-math">\(x\)</span> " is called a <em class="alert">universal quantifier</em>. We regard "for every <span class="process-math">\(x\text{,}\)</span>" "for all <span class="process-math">\(x\text{,}\)</span>" and "for each <span class="process-math">\(x\)</span> " as having the same meaning and symbolize each by “<span class="process-math">\((\forall x)\text{.}\)</span>” Think of the symbol <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA13.png" class="contained"></div> as an inverted <span class="process-math">\(A\)</span>(representing all). If <span class="process-math">\(P(x)\)</span> is an open proposition with universe <span class="process-math">\(U\text{,}\)</span> then <span class="process-math">\(\left( \forall x \right)P(x)\)</span> is a quantified proposition and is read as “every <span class="process-math">\(x \in U\)</span> has the property <span class="process-math">\(P\text{.}\)</span>”</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-33-1-1-1-1-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-33-1-1-1-1-2-1">The phrase "there exists an <span class="process-math">\(x\)</span> " is called an <em class="alert">existential quantifier</em>. We regard "there exists an <span class="process-math">\(x\text{,}\)</span>" "for some <span class="process-math">\(x\text{,}\)</span>" and "for at least one <span class="process-math">\(x\)</span> " as having the same meaning, and symbolize each by “<span class="process-math">\((\exists x)\text{.}\)</span>” Think of the symbol <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA14.png" class="contained"></div> as the backwards capital <span class="process-math">\(E\)</span>(representing exists). If <span class="process-math">\(P(x)\)</span> is an open proposition with universe <span class="process-math">\(U\text{,}\)</span> then <span class="process-math">\((\exists x)P(x)\)</span> is a quantified proposition and is read as “there exists <span class="process-math">\(x \in U\)</span> with the property <span class="process-math">\(P\text{.}\)</span>”</div></li>
+</ol></td></tr></table></div></figure><div class="para" id="sec-open-propositions-and-quantifiers-2-34">
+<em class="alert">Remarks</em>:</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-35">
+<li id="sec-open-propositions-and-quantifiers-2-35-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-35-1-1">To show that <span class="process-math">\(\left( \forall x \right)P(x)\)</span> is <span class="process-math">\(F\text{,}\)</span> it is sufficient to find at least one <span class="process-math">\(a \in U\)</span> such that <span class="process-math">\(P(a)\)</span> is <span class="process-math">\(F\text{.}\)</span> Such an element <span class="process-math">\(a \in U\)</span> is called a <em class="emphasis"><em class="alert">counter example</em></em>.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-35-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-35-2-1">
+<span class="process-math">\(\left( \exists x \right)P(x)\)</span> is <span class="process-math">\(F\)</span> if we cannot find any <span class="process-math">\(a \in U\)</span> having the property <span class="process-math">\(P\text{.}\)</span>
+</div></li>
+</ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-36"><em class="alert">Example 1.14:</em></div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-37"><li id="sec-open-propositions-and-quantifiers-2-37-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-37-1-1">Write the following statements using quantifiers.</div></li></ol>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-38"><li id="sec-open-propositions-and-quantifiers-2-38-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-38-1-1">For each real number <span class="process-math">\(x &gt; 0,x^{2} + x - 6 = 0\text{.}\)</span>
+</div></li></ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-39">Solution: <span class="process-math">\(\left( \forall x &gt; 0 \right)(x^{2} + x - 6 = 0)\text{.}\)</span>
+</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-40"><li id="sec-open-propositions-and-quantifiers-2-40-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-40-1-1">There is a real number <span class="process-math">\(x &gt; 0\)</span> such that <span class="process-math">\(x^{2} + x - 6 = 0\text{.}\)</span>
+</div></li></ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-41">Solution: <span class="process-math">\(\left( \exists x &gt; 0 \right)(x^{2} + x - 6 = 0)\text{.}\)</span>
+</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-42"><li id="sec-open-propositions-and-quantifiers-2-42-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-42-1-1">The square of any real number is nonnegative.</div></li></ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-43">Solution: <span class="process-math">\(\left( \forall x\mathbb{\in R} \right)(x^{2} \geq 0)\text{.}\)</span>
+</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-44"><li id="sec-open-propositions-and-quantifiers-2-44-1"><div class="para" id="p-derived-sec-open-propositions-and-quantifiers-2-44-1"></div></li></ol>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-45">
+<li id="sec-open-propositions-and-quantifiers-2-45-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-45-1-1">Let <span class="process-math">\(P\left( x \right):x^{2} + 1 \geq 0\text{.}\)</span> The truth value for <span class="process-math">\(\left( \forall x \right)P(x)\)</span> [i.e <span class="process-math">\(\left( \forall x \right)(x^{2} + 1 \geq 0)\)</span>] is <span class="process-math">\(T\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-45-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-45-2-1">Let <span class="process-math">\(P\left( x \right):x &lt; x^{2}\text{.}\)</span> The truth value for <span class="process-math">\(\left( \forall x \right)(x &lt; x^{2})\)</span> is <span class="process-math">\(F\text{.}\)</span> <span class="process-math">\(x = \frac{1}{2}\)</span> is a counterexample since <span class="process-math">\(\frac{1}{2}\mathbb{\in R}\)</span> but <span class="process-math">\(\frac{1}{2} &lt; \frac{1}{4}\text{.}\)</span> On the other hand, <span class="process-math">\(\left( \exists x \right)P(x)\)</span> is true, since <span class="process-math">\(- 1 \in \mathbb{R}\)</span> such that <span class="process-math">\(- 1 &lt; 1\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-45-3"><div class="para" id="sec-open-propositions-and-quantifiers-2-45-3-1">Let <span class="process-math">\(P\left( x \right):\left| x \right| = - 1\text{.}\)</span> The truth value for <span class="process-math">\(\left( \exists x \right)P(x)\)</span> is <span class="process-math">\(F\)</span> since there is no real number whose absolute value is <span class="process-math">\(- 1\text{.}\)</span>
+</div></li>
+</ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-46"><em class="alert">Relationship between the existential and universal quantifiers</em></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-47">If <span class="process-math">\(P\left( x \right)\)</span> is a formula in <span class="process-math">\(x\text{,}\)</span> consider the following four statements.</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-48">
+<li id="sec-open-propositions-and-quantifiers-2-48-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-48-1-1"><span class="process-math">\(\left( \forall x \right)P\left( x \right)\text{.}\)</span></div></li>
+<li id="sec-open-propositions-and-quantifiers-2-48-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-48-2-1"><span class="process-math">\(\left( \exists x \right)P(x)\text{.}\)</span></div></li>
+<li id="sec-open-propositions-and-quantifiers-2-48-3"><div class="para" id="sec-open-propositions-and-quantifiers-2-48-3-1">
+<span class="process-math">\(\left( \forall x \right)\text{ℸP}\left( x \right)\)</span><span class="process-math">\(\left( \forall x \right)\neg P\left( x \right)\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-48-4"><div class="para" id="sec-open-propositions-and-quantifiers-2-48-4-1">
+<span class="process-math">\(\left( \exists x \right)\daleth P(x)\)</span><span class="process-math">\(\left( \exists x \right)\neg P(x)\text{.}\)</span>
+</div></li>
+</ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-49">We might translate these into words as follows.</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-50">
+<li id="sec-open-propositions-and-quantifiers-2-50-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-50-1-1">Everything has property <span class="process-math">\(P\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-50-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-50-2-1">Something has property <span class="process-math">\(P\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-50-3"><div class="para" id="sec-open-propositions-and-quantifiers-2-50-3-1">Nothing has property <span class="process-math">\(P\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-50-4"><div class="para" id="sec-open-propositions-and-quantifiers-2-50-4-1">Something does not have property <span class="process-math">\(P\text{.}\)</span>
+</div></li>
+</ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-51">Now (d) is the denial of (a), and (c) is the denial of (b), on the basis of everyday meaning. Thus, for example, the existential quantifier may be defined in terms of the universal quantifier.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-52">Now we proceed to discuss the negation of quantifiers. Let <span class="process-math">\(P\left( x \right)\)</span> be an open proposition. Then <span class="process-math">\(\left( \forall x \right)P\left( x \right)\)</span> is false only if we can find an individual “<span class="process-math">\(a\)</span>” in the universe such that <span class="process-math">\(P\left( a \right)\)</span> is false. If we succeed in getting such an individual, then <span class="process-math">\(\left( \exists x \right)\neg P(x)\)</span> is true. Hence <span class="process-math">\(\left( \forall x \right)P\left( x \right)\)</span> will be false if <span class="process-math">\(\left( \exists x \right)\neg P(x)\)</span> is true. Therefore the negation of <span class="process-math">\(\left( \forall x \right)P\left( x \right)\)</span> is <span class="process-math">\(\left( \exists x \right)\neg P(x)\text{.}\)</span> Hence we conclude that</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-53"><span class="process-math">\(\neg\left( \forall x \right)P\left( x \right) \equiv \left( \exists x \right)\neg P(x)\text{.}\)</span></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-54">Similarly, we can easily verified that</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-55"><span class="process-math">\(\neg\left( \exists x \right)P\left( x \right) \equiv \left( \forall x \right)\neg P(x)\text{.}\)</span></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-56">
+<em class="alert">Remark:</em> To negate a statement that involves the quantifiers <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA15.png" class="contained"></div> and <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA16.png" class="contained"></div>, change each <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA15.png" class="contained"></div> to <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA16.png" class="contained"></div>, change each <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA16.png" class="contained"></div> to <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA15.png" class="contained"></div>, and negate the open statement.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-57"><em class="alert">Example 1.15:</em></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-58">Let <span class="process-math">\(U\mathbb{= R}\text{.}\)</span>
+</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-59"><li id="sec-open-propositions-and-quantifiers-2-59-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-59-1-1"><span class="process-math">\(\displaystyle \neg\left( \exists x \right)\left( x &lt; x^{2} \right) \equiv \left( \forall x \right)\neg(x &lt; x^{2})\)</span></div></li></ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-60"><span class="process-math">\(\equiv \left( \forall x \right)(x \geq x^{2})\text{.}\)</span></div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-61"><li id="sec-open-propositions-and-quantifiers-2-61-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-61-1-1"><span class="process-math">\(\displaystyle \neg\left( \forall x \right)(4x + 1 = 0) \equiv \left( \exists x \right)\neg(4x + 1 = 0)\)</span></div></li></ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-62"><span class="process-math">\(\equiv \left( \exists x \right)(4x + 1 \neq 0)\text{.}\)</span></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-63">Given propositions containing quantifiers we can form a compound proposition by joining them with connectives in the same way we form a compound proposition without quantifiers. For example, if we have <span class="process-math">\(\left( \forall x \right)P\left( x \right)\)</span> and <span class="process-math">\(\left( \exists x \right)Q(x)\)</span> we can form <span class="process-math">\(\left( \forall x \right)P\left( x \right) \Longleftrightarrow \left( \exists x \right)Q(x)\text{.}\)</span>
+</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-64">Consider the following statements involving quantifiers. Illustrations of these along with translations appear below.</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-65">
+<li id="sec-open-propositions-and-quantifiers-2-65-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-65-1-1">All rationals are reals. <span class="process-math">\(\left( \forall x \right)\mathbb{(Q(}x) \Longrightarrow \mathbb{R(}x))\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-65-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-65-2-1">No rationals are reals. <span class="process-math">\(\left( \forall x \right)\mathbb{(Q(}x) \Longrightarrow \neg\mathbb{R(}x))\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-65-3"><div class="para" id="sec-open-propositions-and-quantifiers-2-65-3-1">Some rationals are reals. <span class="process-math">\(\left( \exists x \right)\mathbb{(Q(}x\mathbb{) \land R(}x))\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-65-4"><div class="para" id="sec-open-propositions-and-quantifiers-2-65-4-1">Some rationals are not reals. <span class="process-math">\(\left( \exists x \right)\mathbb{(Q(}x) \land \neg\mathbb{R(}x))\text{.}\)</span>
+</div></li>
+</ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-66"><em class="alert">Example 1.16:</em></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-67">Let <span class="process-math">\(U =\)</span> The set of integers.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-68">Let <span class="process-math">\(P\left( x \right)\text{:}\)</span> <span class="process-math">\(x\)</span> is a prime number.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-69">
+<span class="process-math">\(Q\left( x \right)\text{:}\)</span> <span class="process-math">\(x\)</span> is an even number.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-70">
+<span class="process-math">\(R\left( x \right)\text{:}\)</span> <span class="process-math">\(x\)</span> is an odd number.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-71">Then</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-72">
+<li id="sec-open-propositions-and-quantifiers-2-72-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-72-1-1">
+<span class="process-math">\(\left( \exists x \right)\lbrack P(x) \Longrightarrow Q(x)\rbrack\)</span> is <span class="process-math">\(T\text{;}\)</span> since there is an <span class="process-math">\(x\text{,}\)</span> say 2, such that <span class="process-math">\(P(2) \Longrightarrow Q(2)\)</span> is <span class="process-math">\(T\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-72-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-72-2-1">
+<span class="process-math">\(\left( \forall x \right)\lbrack P(x) \Longrightarrow Q(x)\rbrack\)</span> is <span class="process-math">\(F\text{.}\)</span> As a counterexample take 7. Then <span class="process-math">\(P(7)\)</span> is <span class="process-math">\(T\)</span> and <span class="process-math">\(Q(7)\)</span> is <span class="process-math">\(F\text{.}\)</span> Hence <span class="process-math">\(P(7) \Longrightarrow Q(7)\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-72-3"><div class="para" id="sec-open-propositions-and-quantifiers-2-72-3-1">
+<span class="process-math">\(\left( \forall x \right)\lbrack R(x) \land P(x)\rbrack\)</span> is <span class="process-math">\(F\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-72-4"><div class="para" id="sec-open-propositions-and-quantifiers-2-72-4-1">
+<span class="process-math">\(\left( \forall x \right)\lbrack(R\left( x \right) \land P\left( x \right)) \Longrightarrow Q(x)\rbrack\)</span> is <span class="process-math">\(F\text{.}\)</span>
+</div></li>
+</ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-73"><em class="alert">Quantifiers Occurring in Combinations</em></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-74">So far, we have only considered cases in which universal and existential quantifiers appear simply. However, if we consider cases in which universal and existential quantifiers occur in combination, we are lead to essentially new logical structures. The following are the simplest forms of combinations:</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-75"><li id="sec-open-propositions-and-quantifiers-2-75-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-75-1-1"><span class="process-math">\(\displaystyle \left( \forall x \right)\left( \forall y \right)P(x,y)\)</span></div></li></ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-76">“for all <span class="process-math">\(x\)</span> and for all <span class="process-math">\(y\)</span> the relation <span class="process-math">\(P(x,y)\)</span> holds”;</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-77"><li id="sec-open-propositions-and-quantifiers-2-77-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-77-1-1"><span class="process-math">\(\displaystyle \left( \exists x \right)\left( \exists y \right)P(x,y)\)</span></div></li></ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-78">“there is an <span class="process-math">\(x\)</span> and there is a <span class="process-math">\(y\)</span> for which <span class="process-math">\(P(x,y)\)</span> holds”;</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-79"><li id="sec-open-propositions-and-quantifiers-2-79-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-79-1-1"><span class="process-math">\(\displaystyle \left( \forall x \right)\left( \exists y \right)P(x,y)\)</span></div></li></ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-80">“for every <span class="process-math">\(x\)</span> there is a <span class="process-math">\(y\)</span> such that <span class="process-math">\(P(x,y)\)</span> holds”;</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-81"><li id="sec-open-propositions-and-quantifiers-2-81-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-81-1-1"><span class="process-math">\(\displaystyle \left( \exists x \right)\left( \forall y \right)P\left( x,y \right)\)</span></div></li></ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-82">“there is an <span class="process-math">\(x\)</span> which stands to every <span class="process-math">\(y\)</span> in the relation <span class="process-math">\(P(x,y)\text{.}\)</span>”</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-83"><em class="alert">Example 1.17:</em></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-84">Let <span class="process-math">\(U\  =\)</span> The set of integers.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-85">Let <span class="process-math">\(P(x,\ y):\ x\  + \ y\  = \ 5\text{.}\)</span>
+</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-86">
+<li id="sec-open-propositions-and-quantifiers-2-86-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-86-1-1">
+<span class="process-math">\((\exists x)\ (\exists y)\ P(x,\ y)\)</span> means that there is an integer <span class="process-math">\(x\)</span> and there is an integer <span class="process-math">\(y\)</span> such that <span class="process-math">\(x\  + \ y\  = \ 5\text{.}\)</span> This statement is true when <span class="process-math">\(x\  = \ 4\)</span> and <span class="process-math">\(y\  = \ 1\text{,}\)</span> since 4 + 1 = 5. Therefore, the statement <span class="process-math">\((\exists x)\ (\exists y)\ P(x,\ y)\)</span> is always true for this universe. There are other choices of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> for which it would be true, but the symbolic statement merely says that there is at least one choice for <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> which will make the statement true, and we have demonstrated one such choice.</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-86-2"><div class="para" id="sec-open-propositions-and-quantifiers-2-86-2-1">
+<span class="process-math">\((\exists x)\ (\forall y)\ P(x,\ y)\)</span> means that there is an integer <span class="process-math">\(x_{0}\)</span> such that for every <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(x_{0}\  + \ y\  = \ 5\text{.}\)</span> This is false since no fixed value of <span class="process-math">\(x_{0}\)</span> will make this true for all <span class="process-math">\(y\)</span> in the universe; e.g. if <span class="process-math">\(x_{0}\  = \ 1\text{,}\)</span> then <span class="process-math">\(1\  + \ y\  = \ 5\)</span> is false for some <span class="process-math">\(y\text{.}\)</span>
+</div></li>
+<li id="sec-open-propositions-and-quantifiers-2-86-3"><div class="para" id="sec-open-propositions-and-quantifiers-2-86-3-1">
+<span class="process-math">\((\forall x)\ (\exists y)\ P(x,\ y)\)</span> means that for every integer <span class="process-math">\(x\text{,}\)</span> there is an integer <span class="process-math">\(y\)</span> such that</div></li>
+</ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-87">
+<span class="process-math">\(x\  + \ y\  = \ 5\text{.}\)</span> Let <span class="process-math">\(x\  = \ a\text{,}\)</span> then <span class="process-math">\(y\  = \ 5 - a\)</span> will always be an integer, so this is a true statement.</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-88"><li id="sec-open-propositions-and-quantifiers-2-88-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-88-1-1">
+<span class="process-math">\((\forall x)\ (\forall y)\ P(x,\ y)\)</span> means that for every integer <span class="process-math">\(x\)</span> and for every integer <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(x\  + \ y\  = \ 5\text{.}\)</span> This is false, for if <span class="process-math">\(x\  = \ 2\)</span> and <span class="process-math">\(y = 7\text{,}\)</span> we get <span class="process-math">\(2 + 7 = 9 \neq 5\text{.}\)</span>
+</div></li></ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-89"><em class="alert">Example 1.18:</em></div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-90"><li id="sec-open-propositions-and-quantifiers-2-90-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-90-1-1">Consider the statement</div></li></ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-91">For every two real numbers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span><span class="process-math">\(x^{2} + y^{2} \geq 0\text{.}\)</span>
+</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-92">If we let</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-93"><span class="process-math">\(P\left( x,y \right):x^{2} + y^{2} \geq 0\)</span></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-94">where the domain of both <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> is <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA12.png" class="contained"></div>, the statement can be expressed as</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-95">
+<span class="process-math">\(\left( \forall x\mathbb{\in R} \right)\left( \forall y\mathbb{\in R} \right)P(x,y)\)</span> or as <span class="process-math">\(\left( \forall x\mathbb{\in R} \right)\left( \forall y\mathbb{\in R} \right)(x^{2} + y^{2} \geq 0)\text{.}\)</span>
+</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-96">Since <span class="process-math">\(x^{2} \geq 0\)</span> and <span class="process-math">\(y^{2} \geq 0\)</span> for all real numbers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> it follows that <span class="process-math">\(x^{2} + y^{2} \geq 0\)</span> and so <span class="process-math">\(P(x,y)\)</span> is true for all real numbers <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> Thus the quantified statement is true.</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-97"><li id="sec-open-propositions-and-quantifiers-2-97-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-97-1-1">Consider the open statement</div></li></ol>
+<div class="para logical" id="sec-open-propositions-and-quantifiers-2-98"><div class="displaymath process-math">
+\begin{equation*}
+P\left( x,y \right):\left| x - 1 \right| + \left| y - 2 \right| \leq 2
+\end{equation*}
+</div></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-99">where the domain of the variable <span class="process-math">\(x\)</span> is the set <span class="process-math">\(E\)</span> of even integers and the domain of the variable <span class="process-math">\(y\)</span> is the set <span class="process-math">\(O\)</span> of odd integers. Then the quantified statement</div>
+<div class="para logical" id="sec-open-propositions-and-quantifiers-2-100"><div class="displaymath process-math">
+\begin{equation*}
+\left( \exists x \in E \right)\left( \exists y \in O \right)P(x,y)
+\end{equation*}
+</div></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-101">can be expressed in words as</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-102">There exist an even integer <span class="process-math">\(x\)</span> and an odd integer <span class="process-math">\(y\)</span> such that <span class="process-math">\(\left| x - 1 \right| + \left| y - 2 \right| \leq 2\text{.}\)</span>
+</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-103">Since <span class="process-math">\(P\left( 2,3 \right):1 + 1 \leq 2\)</span> is true, the quantified statement is true.</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-104"><li id="sec-open-propositions-and-quantifiers-2-104-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-104-1-1">Consider the open statement</div></li></ol>
+<div class="para logical" id="sec-open-propositions-and-quantifiers-2-105"><div class="displaymath process-math">
+\begin{equation*}
+P\left( x,y \right):xy = 1
+\end{equation*}
+</div></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-106">where the domain of both <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> is the set <span class="process-math">\(\mathbb{Q}^{+}\)</span> of positive rational numbers. Then the quantified statement</div>
+<div class="para logical" id="sec-open-propositions-and-quantifiers-2-107"><div class="displaymath process-math">
+\begin{equation*}
+\left( \forall x \in \mathbb{Q}^{+} \right)\left( \exists y \in \mathbb{Q}^{+} \right)P(x,y)
+\end{equation*}
+</div></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-108">can be expressed in words as</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-109">For every positive rational number <span class="process-math">\(x\text{,}\)</span> there exists a positive rational number <span class="process-math">\(y\)</span> such that <span class="process-math">\(xy = 1\text{.}\)</span>
+</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-110">It turns out that the quantified statement is true. If we replace <span class="process-math">\(\mathbb{Q}^{+}\)</span> by <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA12.png" class="contained"></div>, then we have</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-111">
+<span class="process-math">\(\left( \forall x\mathbb{\in R} \right)\left( \exists y\mathbb{\in R} \right)P(x,y)\)</span> .</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-112">Since <span class="process-math">\(x = 0\)</span> and for every real number <span class="process-math">\(y,xy = 0 \neq 1\text{,}\)</span> <span class="process-math">\(\left( \forall x\mathbb{\in R} \right)\left( \exists y\mathbb{\in R} \right)P(x,y)\)</span> is false.</div>
+<ol class="decimal" id="sec-open-propositions-and-quantifiers-2-113"><li id="sec-open-propositions-and-quantifiers-2-113-1"><div class="para" id="sec-open-propositions-and-quantifiers-2-113-1-1">Consider the open statement</div></li></ol>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-114">
+<span class="process-math">\(P\left( x,y \right):xy\)</span> is odd</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-115">where the domain of both <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> is the set <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/imageA17.png" class="contained"></div> of natural numbers. Then the quantified statement</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-116"><span class="process-math">\(\left( \exists x\mathbb{\in N} \right)\left( \forall y\mathbb{\in N} \right)P\left( x,y \right)\text{,}\)</span></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-117">expressed in words, is</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-118">There exists a natural number <span class="process-math">\(x\)</span> such that for every natural numbers <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(\text{xy}\)</span> is odd. The statement is false.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-119">In general, from the meaning of the universal quantifier it follows that in an expression <span class="process-math">\(\left( \forall x \right)\left( \forall y \right)P(x,y)\)</span> the two universal quantifiers may be interchanged without altering the sense of the sentence. This also holds for the existential quantifies in an expression such as <span class="process-math">\(\left( \exists x \right)\left( \exists y \right)P(x,y)\text{.}\)</span>
+</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-120">In the statement <span class="process-math">\(\left( \forall x \right)\left( \exists y \right)P(x,y)\)</span> , the choice of <span class="process-math">\(y\)</span> is allowed to depend on <span class="process-math">\(x\)</span> - the <span class="process-math">\(y\)</span> that works for one <span class="process-math">\(x\)</span> need not work for another <span class="process-math">\(x\text{.}\)</span> On the other hand, in the statement <span class="process-math">\(\left( \exists y \right)\left( \forall x \right)P(x,y)\text{,}\)</span> the <span class="process-math">\(y\)</span> must work for all <span class="process-math">\(x\text{,}\)</span> i.e., <span class="process-math">\(y\)</span> is independent of <span class="process-math">\(x\text{.}\)</span> For example, the expression <span class="process-math">\(\left( \forall x \right)\left( \exists y \right)(x &lt; y)\text{,}\)</span> where <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are variables referring to the domain of real numbers, constitutes a true proposition, namely, “For every number <span class="process-math">\(x\text{,}\)</span> there is a number <span class="process-math">\(y\text{,}\)</span> such that <span class="process-math">\(x\)</span> is less that <span class="process-math">\(y\text{,}\)</span>” i.e., “given any number, there is a greater number.” However, if the order of the symbol <span class="process-math">\(\left( \forall x \right)\)</span> and <span class="process-math">\(\left( \exists y \right)\)</span> is changed, in this case, we obtain: <span class="process-math">\(\left( \exists y \right)\left( \forall x \right)(x &lt; y)\text{,}\)</span> which is a false proposition, namely, “There is a number which is greater than every number.” By transposing <span class="process-math">\(\left( \forall x \right)\)</span> and <span class="process-math">\(\left( \exists y \right)\text{,}\)</span> therefore, we get a different statement.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-121">The logical situation here is:</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-122"><span class="process-math">\(\left( \exists y \right)\left( \forall x \right)P(x,y) \Longrightarrow \left( \forall x \right)\left( \exists y \right)P(x,y)\text{.}\)</span></div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-123">Finally, we conclude this section with the remark that there are no mechanical rules for translating sentences from English into the logical notation which has been introduced. In every case one must first decide on the meaning of the English sentence and then attempt to convey that same meaning in terms of predicates, quantifiers, and, possibly, individual constants.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-124"><em class="alert">Exercises</em></div>
+<figure class="table table-like" id="sec-open-propositions-and-quantifiers-2-125"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.5<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal"><th scope="col" class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="sec-open-propositions-and-quantifiers-2-125-1-1-1-10">For every <span class="process-math">\(x \in A\)</span> and <span class="process-math">\(y \in A\text{,}\)</span> <span class="process-math">\(xy - 2\)</span> is prime.</div>
+<div class="para" id="sec-open-propositions-and-quantifiers-2-125-1-1-1-11">where the domain of the variables <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> is <span class="process-math">\(A = \{ 3,5,11\}\text{.}\)</span>
+</div>
+</th></tr>
+<tr><td class="l m b0 r0 l0 t0 lines"></td></tr>
+</table></div></figure></section></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-propositional-logic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-argument-and-validity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
