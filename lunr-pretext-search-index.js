@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Propositional Logic",
-  "body": " Propositional Logic  Mathematical or symbolic logic is an analytical theory of the art of reasoning whose goal is to systematize and codify principles of valid reasoning. It has emerged from a study of the use of language in argument and persuasion and is based on the identification and examination of those parts of language which are essential for these purposes. It is formal in the sense that it lacks reference to meaning. Thereby it achieves versatility: it may be used to judge the correctness of a chain of reasoning (in particular, a \"mathematical proof\") solely on the basis of the form (and not the content) of the sequence of statements which make up the chain. There is a variety of symbolic logics. We shall be concerned only with that one which encompasses most of the deductions of the sort encountered in mathematics. Within the context of logic itself, this is \"classical\" symbolic logic.   Section objectives:   After completing this section, students will be able to:-     Identify the difference between proposition and sentence.    Describe the five logical connectives.    Determine the truth values of propositions using the rules of logical connectives.    Construct compound propositions using the five logical connectives.    Identify the difference between the converse and contrapositive of conditional statements.    Determine the truth values of compound propositions.    Distinguish a given compound proposition is whether tautology or contradiction.      Definition and examples of propositions  Consider the following sentences.     2 is an even number.    A triangle has four sides.    Athlete Haile G\/silassie weighed 45 kg when he was 20 years old.    May God bless you!    Give me that book.    What is your name?     The first three sentences are declarative sentences. The first one is true and the second one is false. The truth value of the third sentence cannot be ascertained because of lack of historical records but it is, by its very form, either true or false but not both. On the other hand, the last three sentences have no truth value. So they are not declaratives.  Now we begin by examining proposition, the building blocks of every argument. A proposition is a sentence that may be asserted or denied. Proposition in this way are different from questions, commands, and exclamations. Neither questions, which can be asked, nor exclamations, which can be uttered, can possibly be asserted or denied. Only propositions assert that something is (or is not) the case, and therefore only they can be true or false.    A proposition (or statement) is a sentence which has a truth value (either True or False but not both).    The above definition does not mean that we must always know what the truth value is. For example, the sentence “The digit in the decimal expansion of is 7” is a proposition, but it may be necessary to find this information in a Web site on the Internet to determine whether this statement is true. Indeed, for a sentence to be a proposition (or a statement), it is not a requirement that we are able to determine its truth value.  Every proposition has a truth value, namely true (denoted by T ) or false (denoted by F ).   Add review   Add review   Add review   Add review    Logical connectives  In mathematical discourse and elsewhere one constantly encounters declarative sentences which have been formed by modifying a statement with the word “not” or by connecting statements with the words “and”, “or”, “if . . . then (or implies)”, and “if and only if”. These five words or combinations of words are called propositional connectives.   Letters such as etc. are usually used to denote propositions.        Conjunction       When two propositions are joined with the connective “ and ,” the proposition formed is a logical conjunction . “and” is denoted by . So, the logical conjunction of two propositions, and , is written:      p and q are called the components of the conjunction . is true if and only if is true and is true.     The truth table for conjunction is given as follows:                               Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Addis Ababa is the capital city of Ethiopia. (True)      : 3 is an odd number and 27 is a prime number. (False)     : 3 is an odd number and Addis Ababa is the capital city of Ethiopia. (True)            Disjunction       When two propositions are joined with the connective “ or ,” the proposition formed is called a logical disjunction . “or” is denoted by “ ”. So, the logical disjunction of two propositions, and , is written:   , read as “ or ” or “ disjunction ”.   is false if and only if both and are false.     The truth table for disjunction is given as follows:                               Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Nairobi is the capital city of Ethiopia. (False)     : 3 is an odd number or 27 is a prime number. (True)    : 3 is an odd number or Nairobi is the capital city of Ethiopia. (False)        The use of “ or ” in propositional logic is rather different from its normal use in the English language. For example, if Solomon says, “I will go to the football match in the afternoon or I will go to the cinema in the afternoon,” he means he will do one thing or the other, but not both. Here “or” is used in the exclusive sense. But in propositional logic, “or” is used in the inclusive sense; that is, we allow Solomon the possibility of doing both things without him being inconsistent.      Implication     When two propositions are joined with the connective “ implies ,” the proposition formed is called a logical implication . “implies” is denoted by “ ” So, the logical implication of two propositions, and , is written:   .  The function of the connective “implies” between two propositions is the same as the use of “If … then …” Thus can be read as “if , then .”   is false if and only if is true and is false.     This form of a proposition is common in mathematics. The proposition is called the hypothesis or the antecedent of the conditional proposition while is called its conclusion or the consequent.  The following is the truth table for implication.                                Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Addis Ababa is the capital city of Ethiopia. (True)     : If 3 is an odd number, then 27 is a prime number. (False)    : If 3 is an odd number, then Addis Ababa is the capital city of Ethiopia. (True)     We have already mentioned that can be expressed as both “If , then ” and “ implies . ” There are various ways of expressing the proposition , namely:   .   .   .   .   .   .       Bi-implication     When two propositions are joined with the connective “ bi-implication ,” the proposition formed is called a logical  bi-implication or a logical equivalence . A bi-implication is denoted by “ ”. So the logical bi-implication of two propositions, and , is written:   .   is false if and only if and have different truth values.     The truth table for bi-implication is given by:                                   Let   : 2 is greater than 3. (False)  Let : 5 is greater than 4. (True)  Then   : 2 is greater than 3 if and only if 5 is greater than 4. (False)    Consider the following propositions:   : 3 is an odd number. (True)   : 2 is a prime number. (True)   : 3 is an odd number if and only if 2 is a prime number. (True)     There are various ways of stating the proposition .   if and only if (also written as iff ),   implies and implies ,   is necessary and sufficient for    is necessary and sufficient for    is equivalent to        Negation.     Given any proposition , we can form the proposition called the negation of . The truth value of is if is and if is .     We can describe the relation between and as follows.                   Let   : Addis Ababa is the capital city of Ethiopia. (True)   : Addis Ababa is not the capital city of Ethiopia. (False)     Exercises       Which of the following sentences are propositions? For those that are, indicate the truth value.   123 is a prime number.    0 is an even number.     .    Multiply by 3.    What an impossible question!            State the negation of each of the following statements.    is a rational number.    0 is not a negative integer.    111 is a prime number.         Let : 15 is an odd number.   : 21 is a prime number.  State each of the following in words, and determine the truth value of each.    .     .     .     .     .     .     .     .         Complete the following truth table.                                      Add review   Add review   Add review    Compound (or complex) propositions  So far, what we have done is simply to define the logical connectives, and express them through algebraic symbols. Now we shall learn how to form propositions involving more than one connective, and how to determine the truth values of such propositions.    The proposition formed by joining two or more proposition by connective(s) is called a compound statement.     We must be careful to insert the brackets in proper places, just as we do in arithmetic. For example, the expression will be meaningless unless we know which connective should apply first. It could mean or , which are very different propositions. The truth value of such complicated propositions is determined by systematic applications of the rules for the connectives.       The possible truth values of a proposition are often listed in a table, called a truth table . If and are propositions, then there are four possible combinations of truth values for and . That is, , , and . If a third proposition is involved, then there are eight possible combinations of truth values for , and . In general, a truth table involving “ ” propositions , ,…, contains possible combinations of truth values. So, we use truth tables to determine the truth value of a compound proposition based on the truth value of its constituent component propositions.          Suppose and are true and is false.  What is the truth value of ?   Since is true and is false, is true.    Since is true and is false, true.    Thus, by applying the rule of implication, we get that is true.       Suppose that a compound proposition is symbolized by and that the truth values of and are and , respectively. Then the truth value of is , that of is , that of is . So the truth value of is         When dealing with compound propositions, we shall adopt the following convention on the use of parenthesis. Whenever “ ” or “ ” occur with “ ” or “ ”, we shall assume that “ ” or “ ” is applied first, and then “ ” or “ ” is then applied. For example,    However, it is always advisable to use brackets to indicate the order of the desired operations.     Two compound propositions and are said to be equivalent if they have the same truth value for all possible combinations of truth values for the component propositions occurring in both and . In this case we write .      Let P : .   Q : .                                             Then, P is equivalent to Q , since columns 5 and 6 of the above table are identical.      Let P : .   Q : .                                                    Looking at columns 5 and 6 of the table we see that they are not identical. Thus . It is useful at this point to mention the non-equivalence of certain conditional propositions. Given the conditional , we give the related conditional propositions:-     As we observed from example 1.7, the conditional and its contrapositve are equivalent. On the other hand, and .     Do not confuse the contrapositive and the converse of the conditional proposition. Here is the difference:    Converse: The hypothesis of a converse statement is the conclusion of the conditional statement and the conclusion of the converse statement is the hypothesis of the conditional statement.   Contrapositive: The hypothesis of a contrapositive statement is the negation of conclusion of the conditional statement and the conclusion of the contrapositive statement is the negation of hypothesis of the conditional statement.       If Kidist lives in Ethiopia, then she lives in Addis Ababa.   Converse: If Kidist lives in Addis Ababa, then she lives in Ethiopia.   Contrapositive: If Kidist does not live in Ethiopia, then she does not live in Addis Ababa.   Inverse: If Kidist does not live in Addis Ababa, then she does not live in Ethiopia.    If it is morning, then the sun is in the east.   Converse: If the sun is in the east, then it is morning.   Contrapositive: If the sun is not in the east, then it is not morning.   Inverse: If it is not morning, then the sun is not in the east.       Propositions, under the relation of logical equivalence, satisfy various laws or identities, which are listed below.     Idempotent Laws    .     .       Commutative Laws    .     .       Associative Laws    .     .       Distributive Laws    .     .       De Morgan’s Laws    .     .       Law of Contrapositive     Complement Law .      Add review   Add review    Tautology and contradiction    A compound proposition is a tautology if it is always true regardless of the truth values of its component propositions. If, on the other hand, a compound proposition is always false regardless of its component propositions, we say that such a proposition is a contradiction .     A proposition that is neither a tautology nor a contradiction is called a contingency .        Suppose is any proposition. Consider the compound propositions and .                       Observe that is a tautology while is a contradiction.    For any propositions and . Consider the compound proposition . Let us make a truth table and study the situation.                                   We have exhibited all the possibilities and we see that for all truth values of the constituent propositions, the proposition is always true. Thus, is a tautology.    The truth table for the compound proposition .                                              In example 1.10(c), the given compound proposition has a truth value for every possible combination of assignments of truth values for the component propositions and . Thus is a contradiction.        In truth table, if a proposition is a tautology, then every line in its column has as its entry; if a proposition is a contradiction, every line in its column has as its entry.    Two compound propositions and are equivalent if and only if \" \" is a tautology.         For statements , , and , use a truth table to show that each of the following pairs of statements are logically equivalent.    and .     and .     and .     and .     and .         For statements , , and , show that the following compound statements are tautology.    .     .     .         For statements and , show that is a contradiction.      Write the contrapositive and the converse of the following conditional statements.   If it is cold, then the lake is frozen.    If Solomon is healthy, then he is happy.    If it rains, Tigist does not take a walk.         Let and be statements. Which of the following implies that is false?    is false.     is true.     is true.     is true.     is false.         Suppose that the statements and are assigned the truth values and , respectively. Find the truth value of each of the following statements.    .     .     .     .     .     .     .                             Suppose the value of is ; what can be said about the value of ?         Suppose the value of is ; what can be said about the value of  ?    Suppose the value of is ; what can be said about the value of and ?         Construct the truth table for each of the following statements.                                      For each of the following determine whether the information given is sufficient to decide the truth value of the statement. If the information is enough, state the truth value. If it is insufficient, show that both truth values are possible.    , where .     , where .     , where .     , where .     , where .     , where and .         Add review   Add review   "
+  "body": " Propositional Logic  Mathematical or symbolic logic is an analytical theory of the art of reasoning whose goal is to systematize and codify principles of valid reasoning. It has emerged from a study of the use of language in argument and persuasion and is based on the identification and examination of those parts of language which are essential for these purposes. It is formal in the sense that it lacks reference to meaning. Thereby it achieves versatility: it may be used to judge the correctness of a chain of reasoning (in particular, a \"mathematical proof\") solely on the basis of the form (and not the content) of the sequence of statements which make up the chain. There is a variety of symbolic logics. We shall be concerned only with that one which encompasses most of the deductions of the sort encountered in mathematics. Within the context of logic itself, this is \"classical\" symbolic logic.   Section objectives:   After completing this section, students will be able to:-     Identify the difference between proposition and sentence.    Describe the five logical connectives.    Determine the truth values of propositions using the rules of logical connectives.    Construct compound propositions using the five logical connectives.    Identify the difference between the converse and contrapositive of conditional statements.    Determine the truth values of compound propositions.    Distinguish a given compound proposition is whether tautology or contradiction.      Definition and examples of propositions  Consider the following sentences.     2 is an even number.    A triangle has four sides.    Athlete Haile G\/silassie weighed 45 kg when he was 20 years old.    May God bless you!    Give me that book.    What is your name?     The first three sentences are declarative sentences. The first one is true and the second one is false. The truth value of the third sentence cannot be ascertained because of lack of historical records but it is, by its very form, either true or false but not both. On the other hand, the last three sentences have no truth value. So they are not declaratives.  Now we begin by examining proposition, the building blocks of every argument. A proposition is a sentence that may be asserted or denied. Proposition in this way are different from questions, commands, and exclamations. Neither questions, which can be asked, nor exclamations, which can be uttered, can possibly be asserted or denied. Only propositions assert that something is (or is not) the case, and therefore only they can be true or false.    A proposition (or statement) is a sentence which has a truth value (either True or False but not both).    The above definition does not mean that we must always know what the truth value is. For example, the sentence “The digit in the decimal expansion of is 7” is a proposition, but it may be necessary to find this information in a Web site on the Internet to determine whether this statement is true. Indeed, for a sentence to be a proposition (or a statement), it is not a requirement that we are able to determine its truth value.  Every proposition has a truth value, namely true (denoted by T ) or false (denoted by F ).   Add review   Add review   Add review   Add review    Logical connectives  In mathematical discourse and elsewhere one constantly encounters declarative sentences which have been formed by modifying a statement with the word “not” or by connecting statements with the words “and”, “or”, “if . . . then (or implies)”, and “if and only if”. These five words or combinations of words are called propositional connectives.   Letters such as etc. are usually used to denote propositions.    Conjunction  When two propositions are joined with the connective “ and ,” the proposition formed is a logical conjunction . “and” is denoted by . So, the logical conjunction of two propositions, and , is written:      p and q are called the components of the conjunction . is true if and only if is true and is true.   The truth table for conjunction is given as follows:                               Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Addis Ababa is the capital city of Ethiopia. (True)      : 3 is an odd number and 27 is a prime number. (False)     : 3 is an odd number and Addis Ababa is the capital city of Ethiopia. (True)        Disjunction  When two propositions are joined with the connective “ or ,” the proposition formed is called a logical disjunction . “or” is denoted by “ ”. So, the logical disjunction of two propositions, and , is written:   , read as “ or ” or “ disjunction ”.   is false if and only if both and are false.   The truth table for disjunction is given as follows:                               Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Nairobi is the capital city of Ethiopia. (False)     : 3 is an odd number or 27 is a prime number. (True)    : 3 is an odd number or Nairobi is the capital city of Ethiopia. (False)        The use of “ or ” in propositional logic is rather different from its normal use in the English language. For example, if Solomon says, “I will go to the football match in the afternoon or I will go to the cinema in the afternoon,” he means he will do one thing or the other, but not both. Here “or” is used in the exclusive sense. But in propositional logic, “or” is used in the inclusive sense; that is, we allow Solomon the possibility of doing both things without him being inconsistent.    Implication  When two propositions are joined with the connective “ implies ,” the proposition formed is called a logical implication . “implies” is denoted by “ ” So, the logical implication of two propositions, and , is written:   .  The function of the connective “implies” between two propositions is the same as the use of “If … then …” Thus can be read as “if , then .”   is false if and only if is true and is false.   This form of a proposition is common in mathematics. The proposition is called the hypothesis or the antecedent of the conditional proposition while is called its conclusion or the consequent.  The following is the truth table for implication.                                Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Addis Ababa is the capital city of Ethiopia. (True)     : If 3 is an odd number, then 27 is a prime number. (False)    : If 3 is an odd number, then Addis Ababa is the capital city of Ethiopia. (True)     We have already mentioned that can be expressed as both “If , then ” and “ implies . ” There are various ways of expressing the proposition , namely:   .   .   .   .   .   .     Bi-Implication  When two propositions are joined with the connective “ bi-implication ,” the proposition formed is called a logical  bi-implication or a logical equivalence . A bi-implication is denoted by “ ”. So the logical bi-implication of two propositions, and , is written:   .   is false if and only if and have different truth values.   The truth table for bi-implication is given by:                                   Let   : 2 is greater than 3. (False)  Let : 5 is greater than 4. (True)  Then   : 2 is greater than 3 if and only if 5 is greater than 4. (False)    Consider the following propositions:   : 3 is an odd number. (True)   : 2 is a prime number. (True)   : 3 is an odd number if and only if 2 is a prime number. (True)     There are various ways of stating the proposition .   if and only if (also written as iff ),   implies and implies ,   is necessary and sufficient for    is necessary and sufficient for    is equivalent to      Negation  Given any proposition , we can form the proposition called the negation of . The truth value of is if is and if is .   We can describe the relation between and as follows.                   Let   : Addis Ababa is the capital city of Ethiopia. (True)   : Addis Ababa is not the capital city of Ethiopia. (False)     Exercises       Which of the following sentences are propositions? For those that are, indicate the truth value.   123 is a prime number.    0 is an even number.     .    Multiply by 3.    What an impossible question!            State the negation of each of the following statements.    is a rational number.    0 is not a negative integer.    111 is a prime number.         Let : 15 is an odd number.   : 21 is a prime number.  State each of the following in words, and determine the truth value of each.    .     .     .     .     .     .     .     .         Complete the following truth table.                                      Add review   Add review   Add review    Compound (or complex) propositions  So far, what we have done is simply to define the logical connectives, and express them through algebraic symbols. Now we shall learn how to form propositions involving more than one connective, and how to determine the truth values of such propositions.    The proposition formed by joining two or more proposition by connective(s) is called a compound statement.     We must be careful to insert the brackets in proper places, just as we do in arithmetic. For example, the expression will be meaningless unless we know which connective should apply first. It could mean or , which are very different propositions. The truth value of such complicated propositions is determined by systematic applications of the rules for the connectives.       The possible truth values of a proposition are often listed in a table, called a truth table . If and are propositions, then there are four possible combinations of truth values for and . That is, , , and . If a third proposition is involved, then there are eight possible combinations of truth values for , and . In general, a truth table involving “ ” propositions , ,…, contains possible combinations of truth values. So, we use truth tables to determine the truth value of a compound proposition based on the truth value of its constituent component propositions.          Suppose and are true and is false.  What is the truth value of ?   Since is true and is false, is true.    Since is true and is false, true.    Thus, by applying the rule of implication, we get that is true.       Suppose that a compound proposition is symbolized by and that the truth values of and are and , respectively. Then the truth value of is , that of is , that of is . So the truth value of is         When dealing with compound propositions, we shall adopt the following convention on the use of parenthesis. Whenever “ ” or “ ” occur with “ ” or “ ”, we shall assume that “ ” or “ ” is applied first, and then “ ” or “ ” is then applied. For example,    However, it is always advisable to use brackets to indicate the order of the desired operations.     Two compound propositions and are said to be equivalent if they have the same truth value for all possible combinations of truth values for the component propositions occurring in both and . In this case we write .      Let P : .   Q : .                                             Then, P is equivalent to Q , since columns 5 and 6 of the above table are identical.      Let P : .   Q : .                                                    Looking at columns 5 and 6 of the table we see that they are not identical. Thus . It is useful at this point to mention the non-equivalence of certain conditional propositions. Given the conditional , we give the related conditional propositions:-     As we observed from example 1.7, the conditional and its contrapositve are equivalent. On the other hand, and .     Do not confuse the contrapositive and the converse of the conditional proposition. Here is the difference:    Converse: The hypothesis of a converse statement is the conclusion of the conditional statement and the conclusion of the converse statement is the hypothesis of the conditional statement.   Contrapositive: The hypothesis of a contrapositive statement is the negation of conclusion of the conditional statement and the conclusion of the contrapositive statement is the negation of hypothesis of the conditional statement.       If Kidist lives in Ethiopia, then she lives in Addis Ababa.   Converse: If Kidist lives in Addis Ababa, then she lives in Ethiopia.   Contrapositive: If Kidist does not live in Ethiopia, then she does not live in Addis Ababa.   Inverse: If Kidist does not live in Addis Ababa, then she does not live in Ethiopia.    If it is morning, then the sun is in the east.   Converse: If the sun is in the east, then it is morning.   Contrapositive: If the sun is not in the east, then it is not morning.   Inverse: If it is not morning, then the sun is not in the east.       Propositions, under the relation of logical equivalence, satisfy various laws or identities, which are listed below.     Idempotent Laws    .     .       Commutative Laws    .     .       Associative Laws    .     .       Distributive Laws    .     .       De Morgan’s Laws    .     .       Law of Contrapositive     Complement Law .      Add review   Add review    Tautology and contradiction    A compound proposition is a tautology if it is always true regardless of the truth values of its component propositions. If, on the other hand, a compound proposition is always false regardless of its component propositions, we say that such a proposition is a contradiction .     A proposition that is neither a tautology nor a contradiction is called a contingency .        Suppose is any proposition. Consider the compound propositions and .                       Observe that is a tautology while is a contradiction.    For any propositions and . Consider the compound proposition . Let us make a truth table and study the situation.                                   We have exhibited all the possibilities and we see that for all truth values of the constituent propositions, the proposition is always true. Thus, is a tautology.    The truth table for the compound proposition .                                              In example 1.10(c), the given compound proposition has a truth value for every possible combination of assignments of truth values for the component propositions and . Thus is a contradiction.        In truth table, if a proposition is a tautology, then every line in its column has as its entry; if a proposition is a contradiction, every line in its column has as its entry.    Two compound propositions and are equivalent if and only if \" \" is a tautology.         For statements , , and , use a truth table to show that each of the following pairs of statements are logically equivalent.    and .     and .     and .     and .     and .         For statements , , and , show that the following compound statements are tautology.    .     .     .         For statements and , show that is a contradiction.      Write the contrapositive and the converse of the following conditional statements.   If it is cold, then the lake is frozen.    If Solomon is healthy, then he is happy.    If it rains, Tigist does not take a walk.         Let and be statements. Which of the following implies that is false?    is false.     is true.     is true.     is true.     is false.         Suppose that the statements and are assigned the truth values and , respectively. Find the truth value of each of the following statements.    .     .     .     .     .     .     .                             Suppose the value of is ; what can be said about the value of ?         Suppose the value of is ; what can be said about the value of  ?    Suppose the value of is ; what can be said about the value of and ?         Construct the truth table for each of the following statements.                                      For each of the following determine whether the information given is sufficient to decide the truth value of the statement. If the information is enough, state the truth value. If it is insufficient, show that both truth values are possible.    , where .     , where .     , where .     , where .     , where .     , where and .         Add review   Add review   "
 },
 {
   "id": "propositional-logic-3",
@@ -100,27 +100,18 @@ var ptx_lunr_docs = [
   "body": " Letters such as etc. are usually used to denote propositions.  "
 },
 {
-  "id": "logical-connectives-4-2-1-1",
+  "id": "assemblage-Conjunction-2",
   "level": "2",
-  "url": "propositional-logic.html#logical-connectives-4-2-1-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Conjunction "
-},
-{
-  "id": "logical-connectives-4-3-1-1",
-  "level": "2",
-  "url": "propositional-logic.html#logical-connectives-4-3-1-1",
+  "url": "propositional-logic.html#assemblage-Conjunction-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "and conjunction "
 },
 {
-  "id": "logical-connectives-4-3-1-3",
+  "id": "assemblage-Conjunction-4",
   "level": "2",
-  "url": "propositional-logic.html#logical-connectives-4-3-1-3",
+  "url": "propositional-logic.html#assemblage-Conjunction-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -136,18 +127,9 @@ var ptx_lunr_docs = [
   "body": "  Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Addis Ababa is the capital city of Ethiopia. (True)      : 3 is an odd number and 27 is a prime number. (False)     : 3 is an odd number and Addis Ababa is the capital city of Ethiopia. (True)      "
 },
 {
-  "id": "logical-connectives-8-2-1-1",
+  "id": "assemblage-Disjunction-2",
   "level": "2",
-  "url": "propositional-logic.html#logical-connectives-8-2-1-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Disjunction "
-},
-{
-  "id": "logical-connectives-8-3-1-1",
-  "level": "2",
-  "url": "propositional-logic.html#logical-connectives-8-3-1-1",
+  "url": "propositional-logic.html#assemblage-Disjunction-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -181,9 +163,9 @@ var ptx_lunr_docs = [
   "body": "  Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Addis Ababa is the capital city of Ethiopia. (True)     : If 3 is an odd number, then 27 is a prime number. (False)    : If 3 is an odd number, then Addis Ababa is the capital city of Ethiopia. (True)     We have already mentioned that can be expressed as both “If , then ” and “ implies . ” There are various ways of expressing the proposition , namely:   .   .   .   .   .   .   "
 },
 {
-  "id": "logical-connectives-18-3-1-1",
+  "id": "assemblage-Bi-Implication-2",
   "level": "2",
-  "url": "propositional-logic.html#logical-connectives-18-3-1-1",
+  "url": "propositional-logic.html#assemblage-Bi-Implication-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -889,7 +871,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Set theory",
-  "body": " Set theory   In this section, we study some part of set theory especially description of sets, Venn diagrams and operations of sets.  Section objectives:  After completing this section, students will be able to:-    Explain the concept of set.  Describe sets in different ways.  Identify operations on sets.  Illustrate sets using Venn diagrams.      The concept of a set  The term set is an undefined term, just as a point and a line are undefined terms in geometry. However, the concept of a set permeates every aspect of mathematics. Set theory underlies the language and concepts of modern mathematics. The term set refers to a well-defined collection of objects that share a certain property or certain properties. The term “ well-defined ” here means that the set is described in such a way that one can decide whether or not a given object belongs in the set. If is a set, then the objects of the collection are called the elements or members of the set . If is an element of the set , we write . If is not an element of the set , we write .  As a convention, we use capital letters to denote the names of sets and lowercase letters for elements of a set.  Note that for each objects and each set , exactly one of or but not both must be true.   Add review   Add review    Description of Sets  Sets are described or characterized by one of the following four different ways.     In this method, an ordinary English statement with minimum mathematical symbolization of the property of the elements is used to describe a set. actually, the statement could be in any language.       The set of counting numbers less than ten.    The set of letters in the word Addis Ababa.     The set of all countries in Africa.          If the elements of a set can be listed, we list them all between a pair of braces without repetion separating by commas, and without concern about the order of their appearance. Such a method of describing a set is called the rooster\/complete listing method.       The set of vowels in English alphabet may also be desribed as     The set of positive factors of is also described as              We agree on the convention that the order of writing the elements in the list is immaterial. As a result the sets contain the same elements, namely     The set contains just two distinct elements; namely hence it is the same set as We list distinct elements without repetition.          Let Elements of are   Notice that are different objects. Here but     Let The only element of is But     Let Then has four elements.     The readers are invited to write down all the elements of        In many occassions, the number of elements of a set may be too large to list them all; and in other occassions there may not be an end to the list. In such cases we look for a common property of the elements and describe the set by partially listing the elements. More precisely, if the common property is simple that it can easily be identified from a list of the first few elements, then within a pair of braces, we list these few elements followed (or preceded) by exactly three dotes and possibly by one last element. The following are such instances of describing sets by partial listing method.       The set of all counting numbers in     The set of non-positive integers is     The set of multiples of is     The set of odd integers less than is           When all the elements satisfy a common property we express the situation as an open proposition and describe the set using a method called the set-builder Method as follows:     We read it as is equal to the set of all 's is true. Here the bar | and the colon : mean such that. Notice that the letter is only a place holder and can be replaced throughout by other letters. So, for a property the set are all the same set.    The following sets are described using the set-builder method.                                   Express each of the above by using either the complete or the oartial listing method.      The set which has no elements is called the empty (or null) set and is denoted by       The set of such that is an empty set.      A set is finite if it has limited number of elements and it is called infinite if it unlimited number of elements.         Set is said to be a subset of set (or contained in ), denoted by every element of is an element of i.e.,   It follows from the definition that set is not a subset of if at least one element of is not an element of i.e., In such cases we write or      For any set and        If then and On the other hand, it is clear that and     If and then since every multiple of is even. However, while Thus     If then and On the other hand, since and             Sets and are said to be equal if they contain exactly the same elements. In this case, we write     Sets and are said to be equivalent if and only if there is a one to one correspondence among their elements. In this case, we write             The sets are all equal.              he set is said to be a proper subset of if every element is also an element in but has at least one element that is not in In this case, we write We also say is a proper set of and write It is clear that      Some authors do not use the symbol Instead they use the symbol for both subset and proper subset. In this material, we prefer to use the notations commonly used in highschool mathematics, and we continue using and differently, namely for subset and proper subset, respectively.    Let be a set. The power set of denoted by is the set whose elements are all subsets of That is,      If a set is finite with elements, then   The number of subsets of is and    The number of proper subsets of is        Let As denoted before, and are subset af Moreover, are all subsets of Therefore,     Frequently it is necessary to limit the topic of discussion to elements of a certain fixed set and regard all sets under consideration as a subset of this fixed set. We call this set the universal set or the universe and denoted by U.      Which of the following are sets?                                 Which of the following sets can be described in complete listing, partial listing and\/or set-builder methods? Describe each set by at least one of the three methods.   The set of the first letters in the English alphabet.    The set of all countries in the world.    The set of students of Addis Ababa University in the 2018\/2019 academic year.    The set of positive multiples of     The set of all horses with six legs.         Write each of the following sets by listing its elements within braces.                                 Let be the set of positive even integers less than Find the truth value of each of the following.                                                     Find the truth value of each of the following and verify your conclusion.              for any set      for any set               For any set               For each of the following set, find its power set.                            How many subsets and proper subsets do the sets that contain exactly elements have?      Is there a set with exactly the following indicated property?   Only one subset    Only one proper subset    Exactly 3 proper subsets    Exactly 4 subsets    Exactly 6 proper subse    Exactly 30 subsets    Exactly 14 proper subsets    Exactly 15 proper subsets         How many elements does contain if it has:    subsets?     proper subsets?    No proper subset?     proper subsets?         Find the truth value of each of the following.        For any set     For any set     For any set          For any three sets prove that:   If and then     If and then          Add review   Add review   Add review   Add review    Set Operations and Venn diagrams  Given two subsets and of a universal set , new sets can be formed using and in many ways, such as taking common elements or non-common elements, and putting everything together. Such processes of forming new sets are called set operations. In this section, three most important operations, namely union, intersection and complement are discussed.    The union of two sets and , denoted by , is the set of all elements that are either in or in (or in both sets). That is,     As easily seen the union operator in the theory of set id the counterpart of the logical operator     The union of two sets and , denoted by , is the set of all elements that are in That is,     As suggested by , the intersection operator in the theory of sets is the counterpart of the logical operator .   Note:- Two sets and are said to be disjoint sets if        Let Then,       Let The set of positive even integers and The set of positive multiples of 3. Then,                        The difference between two sets denoted by is all the elements in and not in this set is also called the relative complement of with respect to Symbolically,      Note:  is sometimes denoted by  are used interchangeably.    If then and      Note: The above example shows that, in general, are disjoint.    Let be a subset of a universal set The absolute complement (or simply complement ) of denoted by is defined to be the set of all elements of that are not in That is,     Notice that taking the absolute complement of is the same as finding the relative complement of with respect to the universal set That is        If and if then         and     Then,            Let Then             Find Which of these are equal?    For any two sets and each of the following holds.                                    Now we define the symmetric difference of two sets.    The symmetric difference of two sets denoted by is the set       Let be the universal set, and Then and Thus       For any three sets, each of the following holds.    a.     b.     c.     d.     e.     f.       Let us prove property e formally.                              The readers are invited to prove the rest part of the theorem      Venn diagrams   While working with sets, it is helpful to use diagrams, called Venn diagrams , to illustrate the relationships involved. A Venn diagram is a schematic or pictorial representative of the sets involved in the discussion. Usually sets are represented as interlocking circles, each of which is enclosed in a rectangle, which represents the universal set    In some occasions, we list the elements of set inside the curve representing A.       If then a Venn diagram representation of these two sets looks like the following.       Let         A Venn diagram representation of these sets is given below.            Let    The set of one digits even numbers   The set of positive prime numbers less than 10  We illustrate the sets using a Venn diagram as follows.        Illustrate by a Venn diagram       Illustrate by Venn diagram       Illustrate by using a Venn diagram          Now we illustrate intersections and unions of sets by Venn diagram.        If find       Let and Find                  Suppose The set of one digit numbers and   Describe each of the sets by complete listing method:                                                                       Let Then show that       Perform each of the following operations                            Let       Then find each of the following.         Add review   Add review   "
+  "body": " Set theory   In this section, we study some part of set theory especially description of sets, Venn diagrams and operations of sets.  Section objectives:  After completing this section, students will be able to:-    Explain the concept of set.  Describe sets in different ways.  Identify operations on sets.  Illustrate sets using Venn diagrams.      The concept of a set  The term set is an undefined term, just as a point and a line are undefined terms in geometry. However, the concept of a set permeates every aspect of mathematics. Set theory underlies the language and concepts of modern mathematics. The term set refers to a well-defined collection of objects that share a certain property or certain properties. The term “ well-defined ” here means that the set is described in such a way that one can decide whether or not a given object belongs in the set. If is a set, then the objects of the collection are called the elements or members of the set . If is an element of the set , we write . If is not an element of the set , we write .  As a convention, we use capital letters to denote the names of sets and lowercase letters for elements of a set.  Note that for each objects and each set , exactly one of or but not both must be true.   Add review   Add review    Description of Sets  Sets are described or characterized by one of the following four different ways.   1. Verbal Method   In this method, an ordinary English statement with minimum mathematical symbolization of the property of the elements is used to describe a set. actually, the statement could be in any language.       The set of counting numbers less than ten.    The set of letters in the word Addis Ababa.     The set of all countries in Africa.        2. Roster\/Complete Listing Method   If the elements of a set can be listed, we list them all between a pair of braces without repetion separating by commas, and without concern about the order of their appearance. Such a method of describing a set is called the rooster\/complete listing method.       The set of vowels in English alphabet may also be desribed as     The set of positive factors of is also described as         Remark:      We agree on the convention that the order of writing the elements in the list is immaterial. As a result the sets contain the same elements, namely     The set contains just two distinct elements; namely hence it is the same set as We list distinct elements without repetition.          Let Elements of are   Notice that are different objects. Here but     Let The only element of is But     Let Then has four elements.     The readers are invited to write down all the elements of      3. Partial Listing Method   In many occassions, the number of elements of a set may be too large to list them all; and in other occassions there may not be an end to the list. In such cases we look for a common property of the elements and describe the set by partially listing the elements. More precisely, if the common property is simple that it can easily be identified from a list of the first few elements, then within a pair of braces, we list these few elements followed (or preceded) by exactly three dotes and possibly by one last element. The following are such instances of describing sets by partial listing method.       The set of all counting numbers in     The set of non-positive integers is     The set of multiples of is     The set of odd integers less than is         4. Set-builder Method   When all the elements satisfy a common property we express the situation as an open proposition and describe the set using a method called the set-builder Method as follows:     We read it as is equal to the set of all 's is true. Here the bar | and the colon : mean such that. Notice that the letter is only a place holder and can be replaced throughout by other letters. So, for a property the set are all the same set.    The following sets are described using the set-builder method.                                   Express each of the above by using either the complete or the oartial listing method.      The set which has no elements is called the empty (or null) set and is denoted by       The set of such that is an empty set.      A set is finite if it has limited number of elements and it is called infinite if it unlimited number of elements.     Relationship between two sets     Set is said to be a subset of set (or contained in ), denoted by every element of is an element of i.e.,   It follows from the definition that set is not a subset of if at least one element of is not an element of i.e., In such cases we write or      Remarks: For any set and        If then and On the other hand, it is clear that and     If and then since every multiple of is even. However, while Thus     If then and On the other hand, since and             Sets and are said to be equal if they contain exactly the same elements. In this case, we write     Sets and are said to be equivalent if and only if there is a one to one correspondence among their elements. In this case, we write             The sets are all equal.              he set is said to be a proper subset of if every element is also an element in but has at least one element that is not in In this case, we write We also say is a proper set of and write It is clear that      Remark: Some authors do not use the symbol Instead they use the symbol for both subset and proper subset. In this material, we prefer to use the notations commonly used in highschool mathematics, and we continue using and differently, namely for subset and proper subset, respectively.    Let be a set. The power set of denoted by is the set whose elements are all subsets of That is,      Note: If a set is finite with elements, then   The number of subsets of is and    The number of proper subsets of is        Let As denoted before, and are subset af Moreover, are all subsets of Therefore,     Frequently it is necessary to limit the topic of discussion to elements of a certain fixed set and regard all sets under consideration as a subset of this fixed set. We call this set the universal set or the universe and denoted by U.      Which of the following are sets?                                 Which of the following sets can be described in complete listing, partial listing and\/or set-builder methods? Describe each set by at least one of the three methods.   The set of the first letters in the English alphabet.    The set of all countries in the world.    The set of students of Addis Ababa University in the 2018\/2019 academic year.    The set of positive multiples of     The set of all horses with six legs.         Write each of the following sets by listing its elements within braces.                                 Let be the set of positive even integers less than Find the truth value of each of the following.                                                     Find the truth value of each of the following and verify your conclusion.              for any set      for any set               For any set               For each of the following set, find its power set.                            How many subsets and proper subsets do the sets that contain exactly elements have?      Is there a set with exactly the following indicated property?   Only one subset    Only one proper subset    Exactly 3 proper subsets    Exactly 4 subsets    Exactly 6 proper subse    Exactly 30 subsets    Exactly 14 proper subsets    Exactly 15 proper subsets         How many elements does contain if it has:    subsets?     proper subsets?    No proper subset?     proper subsets?         Find the truth value of each of the following.        For any set     For any set     For any set          For any three sets prove that:   If and then     If and then          Add review   Add review   Add review   Add review    Set Operations and Venn diagrams  Given two subsets and of a universal set , new sets can be formed using and in many ways, such as taking common elements or non-common elements, and putting everything together. Such processes of forming new sets are called set operations. In this section, three most important operations, namely union, intersection and complement are discussed.    The union of two sets and , denoted by , is the set of all elements that are either in or in (or in both sets). That is,     As easily seen the union operator in the theory of set id the counterpart of the logical operator     The union of two sets and , denoted by , is the set of all elements that are in That is,     As suggested by , the intersection operator in the theory of sets is the counterpart of the logical operator .   Note:- Two sets and are said to be disjoint sets if        Let Then,       Let The set of positive even integers and The set of positive multiples of 3. Then,                        The difference between two sets denoted by is all the elements in and not in this set is also called the relative complement of with respect to Symbolically,      Note:  is sometimes denoted by  are used interchangeably.    If then and      Note: The above example shows that, in general, are disjoint.    Let be a subset of a universal set The absolute complement (or simply complement ) of denoted by is defined to be the set of all elements of that are not in That is,     Notice that taking the absolute complement of is the same as finding the relative complement of with respect to the universal set That is        If and if then         and     Then,            Let Then             Find Which of these are equal?    For any two sets and each of the following holds.                                    Now we define the symmetric difference of two sets.    The symmetric difference of two sets denoted by is the set       Let be the universal set, and Then and Thus       For any three sets, each of the following holds.    a.     b.     c.     d.     e.     f.       Let us prove property e formally.                              The readers are invited to prove the rest part of the theorem      Venn diagrams   While working with sets, it is helpful to use diagrams, called Venn diagrams , to illustrate the relationships involved. A Venn diagram is a schematic or pictorial representative of the sets involved in the discussion. Usually sets are represented as interlocking circles, each of which is enclosed in a rectangle, which represents the universal set    In some occasions, we list the elements of set inside the curve representing A.       If then a Venn diagram representation of these two sets looks like the following.       Let         A Venn diagram representation of these sets is given below.            Let    The set of one digits even numbers   The set of positive prime numbers less than 10  We illustrate the sets using a Venn diagram as follows.        Illustrate by a Venn diagram       Illustrate by Venn diagram       Illustrate by using a Venn diagram          Now we illustrate intersections and unions of sets by Venn diagram.        If find       Let and Find                  Suppose The set of one digit numbers and   Describe each of the sets by complete listing method:                                                                       Let Then show that       Perform each of the following operations                            Let       Then find each of the following.         Let    If _______________    If _______________    If _________________         Let Verify each of the following.                                 Depending on question No.9 find.                            For any two subsets of a universal set prove that:                            Draw an appropriate Venn diagram to depict each of the following sets.    The set of high scool students in Addis Ababa.   The set of female high school students in Addis Ababa.   The set of high school anti-AIDS club members students in Addis Ababa.   The set of school Nature Club members students in Addis Ababa.     The set of integers   The set of even integers.   The set of odd integers.   The set of multiples of 3.   The set of prime numbers.         Add review   Add review   "
 },
 {
   "id": "subsec-the-concept-of-a-set-5",
@@ -910,6 +892,15 @@ var ptx_lunr_docs = [
   "body": " Add review "
 },
 {
+  "id": "subsec-description-of-sets-3",
+  "level": "2",
+  "url": "sec-set-theory.html#subsec-description-of-sets-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "1. Verbal Method "
+},
+{
   "id": "subsec-description-of-sets-5",
   "level": "2",
   "url": "sec-set-theory.html#subsec-description-of-sets-5",
@@ -917,6 +908,15 @@ var ptx_lunr_docs = [
   "number": "1.4.3",
   "title": "",
   "body": "     The set of counting numbers less than ten.    The set of letters in the word Addis Ababa.     The set of all countries in Africa.      "
+},
+{
+  "id": "subsec-description-of-sets-6",
+  "level": "2",
+  "url": "sec-set-theory.html#subsec-description-of-sets-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "2. Roster\/Complete Listing Method "
 },
 {
   "id": "subsec-description-of-sets-7",
@@ -937,6 +937,15 @@ var ptx_lunr_docs = [
   "body": "     The set of vowels in English alphabet may also be desribed as     The set of positive factors of is also described as       "
 },
 {
+  "id": "subsec-description-of-sets-9",
+  "level": "2",
+  "url": "sec-set-theory.html#subsec-description-of-sets-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Remark: "
+},
+{
   "id": "subsec-description-of-sets-11",
   "level": "2",
   "url": "sec-set-theory.html#subsec-description-of-sets-11",
@@ -946,6 +955,15 @@ var ptx_lunr_docs = [
   "body": "     Let Elements of are   Notice that are different objects. Here but     Let The only element of is But     Let Then has four elements.     The readers are invited to write down all the elements of    "
 },
 {
+  "id": "subsec-description-of-sets-12",
+  "level": "2",
+  "url": "sec-set-theory.html#subsec-description-of-sets-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "3. Partial Listing Method "
+},
+{
   "id": "subsec-description-of-sets-14",
   "level": "2",
   "url": "sec-set-theory.html#subsec-description-of-sets-14",
@@ -953,6 +971,15 @@ var ptx_lunr_docs = [
   "number": "1.4.6",
   "title": "",
   "body": "     The set of all counting numbers in     The set of non-positive integers is     The set of multiples of is     The set of odd integers less than is       "
+},
+{
+  "id": "subsec-description-of-sets-15",
+  "level": "2",
+  "url": "sec-set-theory.html#subsec-description-of-sets-15",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "4. Set-builder Method "
 },
 {
   "id": "subsec-description-of-sets-16",
@@ -1009,6 +1036,15 @@ var ptx_lunr_docs = [
   "body": "  A set is finite if it has limited number of elements and it is called infinite if it unlimited number of elements.   "
 },
 {
+  "id": "subsec-description-of-sets-24",
+  "level": "2",
+  "url": "sec-set-theory.html#subsec-description-of-sets-24",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Relationship between two sets "
+},
+{
   "id": "def-description-of-sets-3",
   "level": "2",
   "url": "sec-set-theory.html#def-description-of-sets-3",
@@ -1016,6 +1052,15 @@ var ptx_lunr_docs = [
   "number": "1.4.12",
   "title": "",
   "body": "  Set is said to be a subset of set (or contained in ), denoted by every element of is an element of i.e.,   It follows from the definition that set is not a subset of if at least one element of is not an element of i.e., In such cases we write or    "
+},
+{
+  "id": "subsec-description-of-sets-26",
+  "level": "2",
+  "url": "sec-set-theory.html#subsec-description-of-sets-26",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Remarks: "
 },
 {
   "id": "subsec-description-of-sets-27",
@@ -1054,6 +1099,15 @@ var ptx_lunr_docs = [
   "body": "  he set is said to be a proper subset of if every element is also an element in but has at least one element that is not in In this case, we write We also say is a proper set of and write It is clear that    "
 },
 {
+  "id": "subsec-description-of-sets-31",
+  "level": "2",
+  "url": "sec-set-theory.html#subsec-description-of-sets-31",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Remark: "
+},
+{
   "id": "def-description-of-sets-6",
   "level": "2",
   "url": "sec-set-theory.html#def-description-of-sets-6",
@@ -1061,6 +1115,15 @@ var ptx_lunr_docs = [
   "number": "1.4.17",
   "title": "",
   "body": "  Let be a set. The power set of denoted by is the set whose elements are all subsets of That is,    "
+},
+{
+  "id": "subsec-description-of-sets-33",
+  "level": "2",
+  "url": "sec-set-theory.html#subsec-description-of-sets-33",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Note: "
 },
 {
   "id": "subsec-description-of-sets-34",
@@ -1450,6 +1513,51 @@ var ptx_lunr_docs = [
   "body": "  Let       Then find each of the following.      "
 },
 {
+  "id": "exercises-set-operations-and-venn-diagrams-8",
+  "level": "2",
+  "url": "sec-set-theory.html#exercises-set-operations-and-venn-diagrams-8",
+  "type": "Exercise",
+  "number": "1.4.3.8",
+  "title": "",
+  "body": "  Let    If _______________    If _______________    If _________________      "
+},
+{
+  "id": "exercises-set-operations-and-venn-diagrams-9",
+  "level": "2",
+  "url": "sec-set-theory.html#exercises-set-operations-and-venn-diagrams-9",
+  "type": "Exercise",
+  "number": "1.4.3.9",
+  "title": "",
+  "body": "  Let Verify each of the following.                              "
+},
+{
+  "id": "exercises-set-operations-and-venn-diagrams-10",
+  "level": "2",
+  "url": "sec-set-theory.html#exercises-set-operations-and-venn-diagrams-10",
+  "type": "Exercise",
+  "number": "1.4.3.10",
+  "title": "",
+  "body": "  Depending on question No.9 find.                         "
+},
+{
+  "id": "exercises-set-operations-and-venn-diagrams-11",
+  "level": "2",
+  "url": "sec-set-theory.html#exercises-set-operations-and-venn-diagrams-11",
+  "type": "Exercise",
+  "number": "1.4.3.11",
+  "title": "",
+  "body": "  For any two subsets of a universal set prove that:                         "
+},
+{
+  "id": "exercises-set-operations-and-venn-diagrams-12",
+  "level": "2",
+  "url": "sec-set-theory.html#exercises-set-operations-and-venn-diagrams-12",
+  "type": "Exercise",
+  "number": "1.4.3.12",
+  "title": "",
+  "body": "  Draw an appropriate Venn diagram to depict each of the following sets.    The set of high scool students in Addis Ababa.   The set of female high school students in Addis Ababa.   The set of high school anti-AIDS club members students in Addis Ababa.   The set of school Nature Club members students in Addis Ababa.     The set of integers   The set of even integers.   The set of odd integers.   The set of multiples of 3.   The set of prime numbers.      "
+},
+{
   "id": "subsec-set-operations-and-venn-diagrams-35",
   "level": "2",
   "url": "sec-set-theory.html#subsec-set-operations-and-venn-diagrams-35",
@@ -1468,166 +1576,13 @@ var ptx_lunr_docs = [
   "body": " Add review "
 },
 {
-  "id": "sec-description-of-sets",
-  "level": "1",
-  "url": "sec-description-of-sets.html",
-  "type": "Section",
-  "number": "1.5",
-  "title": "Description of sets",
-  "body": " Description of sets   Sets are described or characterized by one of the following four different ways.   Verbal Method   In this method, an ordinary English statement with minimum mathematical symbolization of the property of the elements is used to describe a set. Actually, the statement could be in any language.  Example 1.23:  a. The set of counting numbers less than ten.  b. The set of letters in the word “Addis Ababa.”  c. The set of all countries in Africa.  2. Roster\/Complete Listing Method  If the elements of a set can all be listed, we list them all between a pair of braces without repetition separating by commas, and without concern about the order of their appearance. Such a method of describing a set is called the roster\/complete listing method.  Examples 1.24:    The set of vowels in English alphabet may also be described as .    b. The set of positive factors of 24 is also described as .  Remark:   We agree on the convention that the order of writing the elements in the list is immaterial. As a result the sets and contain the same elements, namely and   The set contains just two distinct elements; namely and , hence it is the same set as We list distinct elements without repetition.    Example 1.25:   Let Elements of are and   Notice that and are different objects. Here but .    Let . The only element of is . But .    Let Then C has four elements. The readers are invited to write down all the elements of C.     Partial Listing Method   In many occasions, the number of elements of a set may be too large to list them all; and in other occasions there may not be an end to the list. In such cases we look for a common property of the elements and describe the set by partially listing the elements. More precisely, if the common property is simple that it can easily be identified from a list of the first few elements, then with in a pair of braces, we list these few elements followed (or preceded) by exactly three dotes and possibly by one last element. The following are such instances of describing sets by partial listing method.  Example 1.26:   The set of all counting numbers is .  The set of non-positive integers is .  The set of multiples of 5 is .  The set of odd integers less than 100 is     Set-builder Method    When all the elements satisfy a common property , we express the situation as an open proposition and describe the set using a method called the Set-builder Method as follows:   We read it as “ is equal to the set of all ’s such that is true.” Here the bar and the colon “ ” mean “such that.” Notice that the letter is only a place holder and can be replaced throughout by other letters. So, for a property , the set { and are all the same set.  Example 1.27: The following sets are described using the set-builder method.    .                Exercise: Express each of the above by using either the complete or the partial listing method.     Definition 1.10: The set which has no element is called the empty (or null) set and is denoted by or .     Example 1.28: The set of such that is an empty set.     Definition 1.11: A set is finite if it has limited number of elements and it is called infinite if it has unlimited number of elements.     Relationships between two sets     Definition 1.12: Set is said to be a subset of set (or is contained in ), denoted by , if every element of is an element of , i.e.,  .  It follows from the definition that set is not a subset of set if at least one element of is not an element of . i.e., . In such cases we write or .     Remarks: For any set and .  Example 1.29:    If , and , then and On the other hand, it is clear that: , and .    If and , then since every multiple of 6 is even. However, while . Thus .    If then and . On the other hand, since , , and .       Definition 1.13:   Sets and are said to be equal if they contain exactly the same elements. In this case, we write . That is, .  Sets and are said to be equivalent if and only if there is a one to one correspondence among their elements. In this case, we write .      Example 1.30:   The sets are all equal.       Definition 1.14: Set is said to be a proper subset of set if every element of is also an element of , but has at least one element that is not in . In this case, we write . We also say is a proper super set of A, and write . It is clear that  .     Remark : Some authors do not use the symbol . Instead they use the symbol  for both subset and proper subset. In this material, we prefer to use the notations commonly used in high school mathematics, and we continue using  and  differently, namely for subset and proper subset, respectively.     Definition 1.15: Let be a set. The power set of , dented by , is the set whose elements are all subsets of . That is,  .     Note: If a set is finite with elements, then    The number of subsets of is and    The number proper subsets of is .    Example 1.31: Let . As noted before, and are subset of . Moreover, and are also subsets of . Therefore,  .  Frequently it is necessary to limit the topic of discussion to elements of a certain fixed set and regard all sets under consideration as a subset of this fixed set. We call this set the universal set or the universe and denoted by .  Exercises      Which of the following are sets?    1,2,3    {1,2},3    {{1},2},3    {1,{2},3}    {1,2,a,b}.    Which of the following sets can be described in complete listing, partial listing and\/or set-builder methods? Describe each set by at least one of the three methods.    The set of the first 10 letters in the English alphabet.  The set of all countries in the world.  The set of students of Addis Ababa University in the 2018\/2019 academic year.  The set of positive multiples of 5.  The set of all horses with six legs.    Write each of the following sets by listing its elements within braces.                .    Let be the set of positive even integers less than 15. Find the truth value of each of the following.               Find the truth value of each of the following and justify your conclusion.        for any set A  , for any set A    For any set     For each of the following set, find its power set.          How many subsets and proper subsets do the sets that contain exactly and elements have?  Is there a set A with exactly the following indicated property?    Only one subset  Only one proper subset  Exactly 3 proper subsets  Exactly 4 subsets  Exactly 6 proper subsets  Exactly 30 subsets  Exactly 14 proper subsets  Exactly 15 proper subsets    How many elements does A contain if it has:    64 subsets?  31 proper subsets?  No proper subset?  255 proper subsets?    Find the truth value of each of the following.      For any set  For any set    For any three sets , and , prove that:    If and , then .  If and , then .        Set Operations and Venn diagrams  Given two subsets and of a universal set , new sets can be formed using and in many ways, such as taking common elements or non-common elements, and putting everything together. Such processes of forming new sets are called set operations . In this section, three most important operations, namely union, intersection and complement are discussed.     Definition 1.16: The union of two sets and , denoted by , is the set of all elements that are either in or in (or in both sets). That is,  .     As easily seen the union operator “ ” in the theory of set is the counterpart of the logical operator “ ”.     Definition 1.17: The intersection of two sets and , denoted by , is the set of all elements that are in and . That is,  .     As suggested by definition 1.17, the intersection operator “ ” in the theory of sets is the counterpart of the logical operator “ ”.  Note: - Two sets and are said to be disjoint sets if .  Example 1.32:    Let and . Then,  and .   Let = The set of positive even integers, and  = The set of positive multiples of 3. Then,        Definition 1.18: The difference between two sets and , denoted by , is the of all elements in and not in ; this set is also called the relative complement of with respect to . Symbolically,  .     Note:  is sometimes denoted by . and are used interchangeably.  Example 1.33: If , , then and .  Note: The above example shows that, in general, are disjoint.     Definition 1.19: Let be a subset of a universal set . The absolute complement (or simply complement ) of , denoted by (or or , is defined to be the set of all elements of that are not in . That is,  or .     Notice that taking the absolute complement of is the same as finding the relative complement of with respect to the universal set . That is,  .  Example 1.34:   If , and if , then .  Let  and . Then, , ,  , ,  , and  Let and  . Then  , , ,  , and .   Find , , . Which of these are equal?     Theorem 1.1: For any two sets and , each of the following holds.    .   .  .   .    .    .       Now we define the symmetric difference of two sets.     Definition 1.20: The symmetric difference of two sets and , denoted by , is the set  .     Example 1.35: Let be the universal set, and . Then and . Thus .     Theorem 1.2: For any three sets , and , each of the following holds.    . (  is commutative)    . (  is commutative)    . (  is associative)    . (  is associative)    . (  is distributive over )   . (  is distributive over )      Let us prove property “e” formally.  (definition of )   (definition of  )                               (  is distributive over )                              ) (definition of )                                                               (definition of ) Therefore, we have .  The readers are invited to prove the rest part of theorem (1.2).  Venn diagrams  While working with sets, it is helpful to use diagrams, called Venn diagrams, to illustrate the relationships involved. A Venn diagram is a schematic or pictorial representative of the sets involved in the discussion. Usually sets are represented as interlocking circles, each of which is enclosed in a rectangle, which represents the universal set .   In some occasions, we list the elements of set inside the closed curve representing .  Example 1.36:   If and , then a Venn diagram representation of these two sets looks like the following.      Example 1.37: Let U = The set of one digits numbers  A = The set of one digits even numbers  B = The set of positive prime numbers less than 10  We illustrate the sets using a Venn diagram as follows.    Illustrate by a Venn diagram      Illustrate A’ by a Venn diagram   Illustrate A\\B by using a Venn diagram    Now we illustrate intersections and unions of sets by Venn diagram.     Cases  Shaded is  Shaded    Only some common elements           No common element       Exercises      If , and , find .  Let ,   and  { or }. Find   .  Is ?    Suppose The set of one digit numbers and   { is an even natural number less than or equal to 9}  Describe each of the sets by complete listing method:   .  .  .   .      Suppose The set of one digit numbers and   { is an even natural number less than or equal to 9}  Describe each of the sets by complete listing method:   .  .  .   .      Use Venn diagram to illustrate the following statements:    .  .  If , then .  .    Let and . Then show that .  Perform each of the following operations.          Let  { is a positive prime factor of 66}   {  is composite number } and . Then find each of the following.    Let and .    , then  , then  , then    Let  and . Verify each of the following.    .  .       Depending on question No. 10 find.    .  .  .     For any two subsets and of a universal set , prove that:    .  .  .  .    Draw an appropriate Venn diagram to depict each of the following sets.    U = The set of high school students in Addis Ababa.  A = The set of female high school students in Addis Ababa.   B = The set of high school anti-AIDS club member students in Addis Ababa.  C = The set of high school Nature Club member students in Addis Ababa.   U = The set of integers.  A = The set of even integers.  B = The set of odd integers. C = The set of multiples of 3.  D = The set of prime numbers.       "
-},
-{
-  "id": "sec-description-of-sets-2-29",
-  "level": "2",
-  "url": "sec-description-of-sets.html#sec-description-of-sets-2-29",
-  "type": "Table",
-  "number": "1.5.1",
-  "title": "",
-  "body": "   Definition 1.10: The set which has no element is called the empty (or null) set and is denoted by or .    "
-},
-{
-  "id": "sec-description-of-sets-2-31",
-  "level": "2",
-  "url": "sec-description-of-sets.html#sec-description-of-sets-2-31",
-  "type": "Table",
-  "number": "1.5.2",
-  "title": "",
-  "body": "   Definition 1.11: A set is finite if it has limited number of elements and it is called infinite if it has unlimited number of elements.    "
-},
-{
-  "id": "sec-description-of-sets-2-33",
-  "level": "2",
-  "url": "sec-description-of-sets.html#sec-description-of-sets-2-33",
-  "type": "Table",
-  "number": "1.5.3",
-  "title": "",
-  "body": "   Definition 1.12: Set is said to be a subset of set (or is contained in ), denoted by , if every element of is an element of , i.e.,  .  It follows from the definition that set is not a subset of set if at least one element of is not an element of . i.e., . In such cases we write or .    "
-},
-{
-  "id": "sec-description-of-sets-2-37",
-  "level": "2",
-  "url": "sec-description-of-sets.html#sec-description-of-sets-2-37",
-  "type": "Table",
-  "number": "1.5.4",
-  "title": "",
-  "body": "   Definition 1.13:   Sets and are said to be equal if they contain exactly the same elements. In this case, we write . That is, .  Sets and are said to be equivalent if and only if there is a one to one correspondence among their elements. In this case, we write .     "
-},
-{
-  "id": "sec-description-of-sets-2-40",
-  "level": "2",
-  "url": "sec-description-of-sets.html#sec-description-of-sets-2-40",
-  "type": "Table",
-  "number": "1.5.5",
-  "title": "",
-  "body": "   Definition 1.14: Set is said to be a proper subset of set if every element of is also an element of , but has at least one element that is not in . In this case, we write . We also say is a proper super set of A, and write . It is clear that  .    "
-},
-{
-  "id": "sec-description-of-sets-2-42",
-  "level": "2",
-  "url": "sec-description-of-sets.html#sec-description-of-sets-2-42",
-  "type": "Table",
-  "number": "1.5.6",
-  "title": "",
-  "body": "   Definition 1.15: Let be a set. The power set of , dented by , is the set whose elements are all subsets of . That is,  .    "
-},
-{
-  "id": "sec-description-of-sets-2-49",
-  "level": "2",
-  "url": "sec-description-of-sets.html#sec-description-of-sets-2-49",
-  "type": "Table",
-  "number": "1.5.7",
-  "title": "",
-  "body": "    Which of the following are sets?    1,2,3    {1,2},3    {{1},2},3    {1,{2},3}    {1,2,a,b}.    Which of the following sets can be described in complete listing, partial listing and\/or set-builder methods? Describe each set by at least one of the three methods.    The set of the first 10 letters in the English alphabet.  The set of all countries in the world.  The set of students of Addis Ababa University in the 2018\/2019 academic year.  The set of positive multiples of 5.  The set of all horses with six legs.    Write each of the following sets by listing its elements within braces.                .    Let be the set of positive even integers less than 15. Find the truth value of each of the following.               Find the truth value of each of the following and justify your conclusion.        for any set A  , for any set A    For any set     For each of the following set, find its power set.          How many subsets and proper subsets do the sets that contain exactly and elements have?  Is there a set A with exactly the following indicated property?    Only one subset  Only one proper subset  Exactly 3 proper subsets  Exactly 4 subsets  Exactly 6 proper subsets  Exactly 30 subsets  Exactly 14 proper subsets  Exactly 15 proper subsets    How many elements does A contain if it has:    64 subsets?  31 proper subsets?  No proper subset?  255 proper subsets?    Find the truth value of each of the following.      For any set  For any set    For any three sets , and , prove that:    If and , then .  If and , then .     "
-},
-{
-  "id": "subsec-set-operations-and-venn-diagrams-3",
-  "level": "2",
-  "url": "sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams-3",
-  "type": "Table",
-  "number": "1.5.8",
-  "title": "",
-  "body": "   Definition 1.16: The union of two sets and , denoted by , is the set of all elements that are either in or in (or in both sets). That is,  .    "
-},
-{
-  "id": "subsec-set-operations-and-venn-diagrams-5",
-  "level": "2",
-  "url": "sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams-5",
-  "type": "Table",
-  "number": "1.5.9",
-  "title": "",
-  "body": "   Definition 1.17: The intersection of two sets and , denoted by , is the set of all elements that are in and . That is,  .    "
-},
-{
-  "id": "subsec-set-operations-and-venn-diagrams-12",
-  "level": "2",
-  "url": "sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams-12",
-  "type": "Table",
-  "number": "1.5.10",
-  "title": "",
-  "body": "   Definition 1.18: The difference between two sets and , denoted by , is the of all elements in and not in ; this set is also called the relative complement of with respect to . Symbolically,  .    "
-},
-{
-  "id": "subsec-set-operations-and-venn-diagrams-16",
-  "level": "2",
-  "url": "sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams-16",
-  "type": "Table",
-  "number": "1.5.11",
-  "title": "",
-  "body": "   Definition 1.19: Let be a subset of a universal set . The absolute complement (or simply complement ) of , denoted by (or or , is defined to be the set of all elements of that are not in . That is,  or .    "
-},
-{
-  "id": "subsec-set-operations-and-venn-diagrams-22",
-  "level": "2",
-  "url": "sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams-22",
-  "type": "Table",
-  "number": "1.5.12",
-  "title": "",
-  "body": "   Theorem 1.1: For any two sets and , each of the following holds.    .   .  .   .    .    .      "
-},
-{
-  "id": "subsec-set-operations-and-venn-diagrams-24",
-  "level": "2",
-  "url": "sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams-24",
-  "type": "Table",
-  "number": "1.5.13",
-  "title": "",
-  "body": "   Definition 1.20: The symmetric difference of two sets and , denoted by , is the set  .    "
-},
-{
-  "id": "subsec-set-operations-and-venn-diagrams-26",
-  "level": "2",
-  "url": "sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams-26",
-  "type": "Table",
-  "number": "1.5.14",
-  "title": "",
-  "body": "   Theorem 1.2: For any three sets , and , each of the following holds.    . (  is commutative)    . (  is commutative)    . (  is associative)    . (  is associative)    . (  is distributive over )   . (  is distributive over )     "
-},
-{
-  "id": "subsec-set-operations-and-venn-diagrams-49",
-  "level": "2",
-  "url": "sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams-49",
-  "type": "Table",
-  "number": "1.5.15",
-  "title": "",
-  "body": "   Cases  Shaded is  Shaded    Only some common elements           No common element      "
-},
-{
-  "id": "subsec-set-operations-and-venn-diagrams-51",
-  "level": "2",
-  "url": "sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams-51",
-  "type": "Table",
-  "number": "1.5.16",
-  "title": "",
-  "body": "    If , and , find .  Let ,   and  { or }. Find   .  Is ?    Suppose The set of one digit numbers and   { is an even natural number less than or equal to 9}  Describe each of the sets by complete listing method:   .  .  .   .      Suppose The set of one digit numbers and   { is an even natural number less than or equal to 9}  Describe each of the sets by complete listing method:   .  .  .   .      Use Venn diagram to illustrate the following statements:    .  .  If , then .  .    Let and . Then show that .  Perform each of the following operations.          Let  { is a positive prime factor of 66}   {  is composite number } and . Then find each of the following.    Let and .    , then  , then  , then    Let  and . Verify each of the following.    .  .       Depending on question No. 10 find.    .  .  .     For any two subsets and of a universal set , prove that:    .  .  .  .    Draw an appropriate Venn diagram to depict each of the following sets.    U = The set of high school students in Addis Ababa.  A = The set of female high school students in Addis Ababa.   B = The set of high school anti-AIDS club member students in Addis Ababa.  C = The set of high school Nature Club member students in Addis Ababa.   U = The set of integers.  A = The set of even integers.  B = The set of odd integers. C = The set of multiples of 3.  D = The set of prime numbers.     "
-},
-{
   "id": "sec-the-real-number-system",
   "level": "1",
   "url": "sec-the-real-number-system.html",
   "type": "Section",
   "number": "2.1",
   "title": "The real number System",
-  "body": " The real number System       The set of natural numbers   The history of numbers indicated that the first set of numbers used by the ancient human beings for counting purpose was the set of natural (counting) numbers.    The set of natural numbers is denoted by and is described as       Operations on the set of natural numbers     If two natural numbers a & b are added using the operation “+”, then the sum a + b is also a natural number. If the sum of the two natural numbers a & b is denoted by c , then we can write the operation as: c = a + b , where c is called the sum and a & b are called terms.  Example: 3+8 = 11, here 11 is the sum whereas 3 & 8 are terms.     If two natural numbers a & b are multiplied using the operation “ ”, then the product a b is also a natural number. If the product of the two natural numbers a & b is denoted by c , then we can write the operation as: c = a b , where c is called the product and a & b are called factors.     , here is the product whereas & are factors.       i. For any two natural numbers a & b , the sum a + b is also a natural number. For instance in the above example, and are natural numbers, their sum is also a natural number. In general, we say that the set of natural numbers is closed under addition.  ii. For any two natural numbers a & b , a + b = b + a .     . In general, we say that addition is commutative on the set of natural numbers.    iii. For any three natural numbers a , b & c , ( a + b )+ c = a +( b + c ).    (3+8)+6 = 3+(8+6) = 17. In general, we say that addition is associative on the set of natural numbers.    iv. For any two natural numbers a & b , the product a b is also a natural number. For instance in the above example, and are natural numbers, their product is also a natural number. In general, we say that the set of natural numbers is closed under multiplication.  v. For any two natural numbers a & b , a b = b a .    3 4 = 4 3 = 12. In general, we say that multiplication is commutative on the set of natural numbers.    vi. For any three natural numbers a , b & c , ( a b ) c = a ( b c ).    (2 4) 5 = 2 (4 5) = 40. In general, we say that multiplication is associative on the set of natural numbers.    vii. For any natural number a , it holds that a 1 = 1 a = a .    6 1 = 1 6 = 6. In general, we say that multiplication has an identity element on the set of natural numbers and is the identity element.    For any three natural numbers a , b & c , a ( b + c ) = ( a b )+( a c ).    3 (5+7) = (3 5)+ (3 7) 36. In general, we say that multiplication is distributive over addition on the set of natural numbers.     Consider two numbers a and b , we say a is greater than b denoted by a > b if a – b is positive.     Order Relation in      Transitive property:  For any three natural numbers a , b & c ,     Addition property:  For any three natural numbers a , b & c ,     Multiplication property:  For any three natural numbers a , b and c ,     Law of trichotomy  For any two natural numbers a & b we have .       Factors of a number    If such that , then a & b are factors (divisors) of c and c is called product (multiple) of a & b .      Find the factors of .    Factors of 15 are 1, 3, 5, 15.       A number is said to be    Even if it is divisible by .     Odd if it is not divisible by .     Prime if it has only two factors ( and itself).     Composite : if it has three or more factors.          are even numbers       are odd numbers       are prime numbers       are composite numbers      is neither prime nor composite.     Prime Factorization    Prime factorization of a composite number is the product of all its prime factors.                                        Fundamental Theorem of Arithmetic:     Every composite number can be expressed as a product of its prime factors. This factorization is unique except the order of the factors.       Greatest Common Factor (GCF)    The greatest common factor (GCF) of two numbers a & b is denoted by GCF ( a , b ) and is the greatest number which is a factor of each of the given number.     Note: If the GCF of two numbers is 1, then the numbers are called relatively prime.     Consider the two numbers and .    Now, and   Next, from which is greatest  Therefore, GCF .  This method of finding the GCF of two or more numbers is usually lengthy and time consuming. Hence an alternative method (Prime factorization method) is provided as below:  Step 1: Find the prime factorization of each of the natural numbers  Step 2: Form the GCF of the given numbers as the product of every factor that appears in each of the prime factorization but take the least number of times it appears.      Consider the two numbers and .    Step 1:   Step 2: The factors that appear in both cases are 2 and 3, but take the numbers with the least number of times.      Consider the three numbers and .    Step 1:   Step 2: The factors that appear in all cases are 2 and 5, but take the numbers with the least number of times.         Least Common Multiple (LCM)    The least common multiple (LCM) of two numbers a & b is denoted by LCM ( a , b ) and is the least number which is a multiple of each of the given number.      Consider the two numbers 18 and 24.    Now, and   Next, from which is least   Therefore, LCM (18, 24) = 72.  This method of finding the LCM of two or more numbers is usually lengthy and time consuming. Hence an alternative method (Prime factorization method) is provided as below:  Step 1: Find the prime factorization of each of the natural numbers  Step 2: Form the LCM of the given numbers as the product of every factor that appears in any of the prime factorization but take the highest number of times it appears.      Consider the two numbers and .    Step 1:   Step 2: The factors that appear in any case are 2 and 3, but take the numbers with the highest number of times.         Consider the three numbers 20, 80 and 450.    Step 1:   Step 2: The factors that appear in any cases are 2 , 3 and 5, but take the numbers with the highest number of times.         Well ordering Principle in the set of natural numbers    Every non-empty subset of the set of natural numbers has smallest (least) element.            The set of counting numbers including zero is called the set of whole numbers and is denoted by W . i.e W =      Principle of Mathematical Induction  Mathematical induction is one of the most important techniques used to prove in mathematics. It is used to check conjectures about the outcome of processes that occur repeatedly according to definite patterns. We will introduce the technique with examples.      For a given assertion involving a natural number , if         the assertion is true for (usually).    it is true for , whenever it is true for ( ), then the assertion is true for every natural number .        The method is used to prove different propositions involving positive integers using three steps:  Step1: Prove that (usually ) holds true.  Step 2: Assume that for is true.  Step 3: Show that is true for .    Show that .     Step1. For which is true.  Step2. Assume that it is true for   i.e   Step3.We should show that it is true for   Claim:       It is true for any natural number        Show that        Step1. For which is true.  Step2. Assume that it is true for   i.e.   Step3. We should show that it is true for   Claim:   Now       which is the required result.   It is true for any natural number .       Show that      Step1. For , which is true  Step2. Assume that it is true for .  i.e. .  We should show that it is true for   Claim: .  Now                It is true for any natural number .       Add review   Add review   Add review    The set of Integers   As the knowledge and interest of human beings increased, it was important and obligatory to extend the natural number system. For instance to solve the equation x+1= 0, the set of natural numbers was not sufficient. Hence the set of integers was developed to satisfy such extended demands.    The set of integers is denoted by Z and described as =       Operations on the set of integers     If two integers a & b are added using the operation “+”, then the sum a + b is also an integer. If the sum of the two integers a & b is denoted by c, then we can write the operation as: c = a + b , where c is called the sum and a & b are called terms.     , here is the sum whereas & are terms.       For any two integers a & b , the operation of subtracting b from a , denoted by is defined by . This means that subtracting b from a is equivalent to adding the additive inverse of b to a .            If two integers a & b are multiplied using the operation “ ”, then the product a b is also an integer. If the product of the two integers a & b is denoted by c , then we can write the operation as: c = a b , where c is called the product and a & b are called factors.     , here is the product whereas & are factors.       i) For any two integers a & b , the sum a + b is also an integer. For instance in the above example, 4 and 9 are integers, their sum 13 is also an integer. In general, we say that the set of integers is closed under addition.  ii) For any two integers a & b , a + b = b + a .     . In general, we say that addition is commutative on the set of integers.    iii) For any three integers a , b & c , ( a + b )+ c = a +( b + c ).     . In general, we say that addition is associative on the set of integers.    iv) For any integer a , it holds that a +0 = 0+ a = a .     . In general, we say that addition has an identity element on the set of integers and is the identity element.    v) For any integer a , it holds that .     . In general, we say that every integer a has an additive inverse denoted by .    vi) For any two integers a & b , the product a b is also an integer. For instance in the above example, and are integers, their product is also an integer. In general, we say that the set of integers is closed under multiplication.  vii) For any two integers a & b , a b = b a .     . In general, we say that multiplication is commutative on the set of integers.    viii) For any three integers a , b & c , ( a b ) c = a ( b c ).     . In general, we say that multiplication is associative on the set of integers.    ix) For any integer a, it holds that a 1 = 1 a = a .     . In general, we say that multiplication has an identity element on the set of integers and 1 is the identity element.    x) For any three integers a , b & c , a ( b + c ) = ( a b )+( a c ).     . In general, we say that multiplication is distributive over addition on the set of integers.      Order Relation in Z      Transitive property: For any three integers a , b & c ,      Addition property : For any three integers a , b & c ,      Multiplication property : For any three integers a , b and c , where c>0,      Law of trichotomy : For any two integers a & b we have .        Find an odd natural number x such that LCM (x, 40) = 1400.      There are between and number of eggs in a basket. When Loza counts by 3’s, there are eggs left over. When she counts by 5’s, there are left over. How many eggs are there in the basket?      The GCF of two numbers is and their LCM is . If one of the numbers is , then find the second number.      Using Mathematical Induction, prove the following:      is divisible by , for .     for      is divisible by for odd natural number                               Add review   Add review    The set of rational numbers   As the knowledge and interest of human beings increased with time, it was again necessary to extend the set of integers. For instance to solve the equation , the set of integers was not sufficient. Hence the set of rational numbers was developed to satisfy such extended needs.    Any number that can be expressed in the form , where and are integers and , is called a rational number. The set of rational numbers denoted by is described by       Notes:   From the expression  is called numerator and is called denominator.    A rational number is said to be in lowest form if GCF .       Operations on the set of rational numbers     If two rational numbers and are added using the operation “+”, then the sum defined as is also a rational number.            For any two rational numbers & , the operation of subtracting from , denoted by is defined by .            If two rational numbers and are multiplied using the operation “ ”, then the product defined as is also a rational number.            For any two rational numbers & , dividing by is defined by               Let , and be three rational numbers, then     The set of rational numbers is closed under addition and multiplication.    Addition and multiplication are both commutative on the set of rational numbers.    Addition and multiplication are both associative on the set of rational numbers.     is the additive identity  i.e., .    Every rational number has an additive inverse.  i.e., .     is the multiplicative identity  i.e., .    Every non-zero rational number has a multiplicative inverse.  i.e., .       Order Relation in Q        For any three rational numbers , &         For any three rational numbers , &  .       For any three rational numbers , , and .       For any two rational numbers & we have .       Decimal representation of rational numbers  A rational number can be written in decimal form using long division.   Terminating decimals    Express the fraction number in decimal form.           Non-terminating periodic decimals    Express the fraction number in decimal form.          Now we will see how to convert decimal numbers in to their fraction forms. In earlier mathematics topics, we have seen that multiplying a decimal by pushes the decimal point to the right by one position and in general, multiplying a decimal by pushes the decimal point to the right by positions. We will use this fact for the succeeding topics.    Fraction form of decimal numbers  A rational number which is written in decimal form can be converted to a fraction form as in lowest (simplified) form, where and are relatively prime.   Terminating decimals  Consider any terminating decimal number . Suppose terminates digits after the decimal point. can be converted to its fraction form as below:   .    Convert the terminating decimal to fraction form.     .      Non-terminating periodic decimals  Consider any non-terminating periodic decimal number . Suppose d has non-terminating digits and terminating digits after the decimal point. can be converted to its fraction form as below:       Convert the non-terminating periodic decimal to fraction form.    Solution: .        From the above two cases, we can conclude that both terminating decimals and non-terminating periodic decimals are rational numbers. (Why? Justify).      Non-terminating and non-periodic decimals  Some decimal numbers are neither terminating nor non-terminating periodic. Such types of numbers are called irrational numbers.           Show that is an irrational number.           From (**) and (***) we get a contradiction that GCF ( a , b ) = 1 which implies that is not a rational number.  Therefore, is an irrational number.       Add review   Add review    The set of real numbers     A number is called a real number if and only if it is either a rational number or an irrational number.  The set of real numbers denoted by can be described as the union of the set of rational and irrational numbers. i.e { is a rational number or an irrational number}.    There is a 1-1 correspondence between the set of real numbers and the number line (For each point in the number line, there is a corresponding real number and vice-versa).    Operations on the set of real numbers     i) Addition ( )  If two real numbers are added using the operation “+”, then the sum is also a real number.    ii) Subtraction ( )  For any two real numbers & , the operation of subtracting from , denoted by is defined by .    iii) Multiplication ( )  If two real numbers and are multiplied using the operation , then the product defined as is also a real number.    iv) Division ( )  For any two real numbers & , dividing by is defined by .    Properties of addition and multiplication on the set of real numbers  Let , and be three real numbers, then     The set of real numbers is closed under addition and multiplication.    Addition and multiplication are commutative on the set of real numbers.    Addition and multiplication are associative on the set of real numbers.     is the additive identity.  i.e., .    Every real number has an additive inverse.  i.e.,      is the multiplicative identity.   .    Every non-zero real number has a multiplicative inverse.           The real number and the number line  One of the most important properties of the real number is that it can be represented graphically by points on a straight line. The point is termed as the origin. Points to the right of are called positive real numbers and points to the left of are called negative real numbers. Each point on the number line corresponds a unique real number and vice-versa.      Geometrically we say is greater than if is located to the right of on the number line.    Order Relation in R      Transitive property: For any three real numbers , & , .     Addition property: For any three real numbers , & , .     Multiplication property: For any three real numbers , , and , we have .     Law of trichotomy: For any two real numbers & we have .      Summary of the real number system        Intervals  Let and be two real numbers such that , then the intervals which are subsets of R with end points a and b are denoted and defined as below:      open interval from a to b .     closed interval from a to b .     open-closed interval from a to b .     closed-open interval from a to b .       Upper bounds and lower bounds    Let be non - empty and  .     A point is said to be an upper bound of A iff for all .    An upper bound of A is said to be least upper bound (lub) iff it is the least of all upper bounds.    A point is said to be lower bound of A iff for all .    A lower bound of A is said to be greatest lower bound (glb) iff it is the greatest of all lower bounds.         Consider the set .       lower bounds are   Here the greatest element is .   glb     upper bonds are   Here the least element is .   lub .         Consider the set for .          lower bounds are   Here the greatest element is . Thus, glb     upper bounds are   Here the least element is . Thus, lub .     Based on the above definitions, we can define the completeness property of real numbers as below.      Completeness property of real number (R)  Completeness property of real numbers states that: Every non-empty subset of that has lower bounds has glb and every non-empty subset of that has upper bounds has a lub.     Express each of the following rational numbers as decimal:                                   Write each of the following as decimal and then as a fraction:     three tenths    four thousands         Write each of the following in meters as a fraction and then as a decimal      mm     cm and mm     cm and mm         Classify each of the following as terminating or non-terminating periodic                                   Convert the following decimals to fractions:                         Determine whether the following are rational or irrational:                         Which of the following statements are true and which of them are false?     The sum of any two rational numbers is rational    The sum of any two irrational numbers is irrational    The product of any two rational numbers is rational    The product of any two irrational numbers is irrational         Find two rational numbers between .       Add review   Add review   Add review   Add review   "
+  "body": " The real number System       The set of natural numbers   The history of numbers indicated that the first set of numbers used by the ancient human beings for counting purpose was the set of natural (counting) numbers.    The set of natural numbers is denoted by and is described as       Operations on the set of natural numbers   i) Addition (+)  If two natural numbers & are added using the operation “+”, then the sum is also a natural number. If the sum of the two natural numbers & is denoted by , then we can write the operation as: , where is called the sum and & are called terms.     , here is the sum whereas & are terms.      ii) Multiplication  If two natural numbers & are multiplied using the operation “ ”, then the product is also a natural number. If the product of the two natural numbers & is denoted by , then we can write the operation as: , where is called the product and & are called factors.     , here is the product whereas & are factors.      Properties of addition and multiplication on the set of natural numbers  i. For any two natural numbers & , the sum is also a natural number. For instance in the above example, and are natural numbers, their sum is also a natural number. In general, we say that the set of natural numbers is closed under addition.  ii. For any two natural numbers & , .     . In general, we say that addition is commutative on the set of natural numbers.    iii. For any three natural numbers , & , .     . In general, we say that addition is associative on the set of natural numbers.    iv. For any two natural numbers & , the product is also a natural number. For instance in the above example, and are natural numbers, their product is also a natural number. In general, we say that the set of natural numbers is closed under multiplication.  v. For any two natural numbers & , .     In general, we say that multiplication is commutative on the set of natural numbers.    vi. For any three natural numbers , & , .     . In general, we say that multiplication is associative on the set of natural numbers.    vii. For any natural number , it holds that .     In general, we say that multiplication has an identity element on the set of natural numbers and is the identity element.    For any three natural numbers , & , .     . In general, we say that multiplication is distributive over addition on the set of natural numbers.      Consider two numbers and , we say is greater than denoted by > if is positive.     Order Relation in       Transitive property :  For any three natural numbers , & ,      Addition property :  For any three natural numbers , & ,      Multiplication property :  For any three natural numbers , and ,      Law of trichotomy   For any two natural numbers & we have .       Factors of a number    If such that , then & are factors (divisors) of and is called product (multiple) of & .      Find the factors of .    Factors of are .       A number is said to be    Even if it is divisible by .     Odd if it is not divisible by .     Prime if it has only two factors ( and itself).     Composite : if it has three or more factors.          are even numbers       are odd numbers       are prime numbers       are composite numbers      is neither prime nor composite.     Prime Factorization    Prime factorization of a composite number is the product of all its prime factors.                                        Fundamental Theorem of Arithmetic:     Every composite number can be expressed as a product of its prime factors. This factorization is unique except the order of the factors.       Greatest Common Factor (GCF)    The greatest common factor (GCF) of two numbers & is denoted by GCF ( , ) and is the greatest number which is a factor of each of the given number.     Note: If the GCF of two numbers is , then the numbers are called relatively prime.     Consider the two numbers and .    Now and   Next from which is greatest  Therefore, GCF .  This method of finding the GCF of two or more numbers is usually lengthy and time consuming. Hence an alternative method (Prime factorization method) is provided as below:  Step 1: Find the prime factorization of each of the natural numbers  Step 2: Form the GCF of the given numbers as the product of every factor that appears in each of the prime factorization but take the least number of times it appears.      Consider the two numbers and .    Step 1:   Step 2: The factors that appear in both cases are and , but take the numbers with the least number of times.         Consider the three numbers and .    Step 1:   Step 2: The factors that appear in all cases are and , but take the numbers with the least number of times.         Least Common Multiple (LCM)    The least common multiple (LCM) of two numbers & is denoted by LCM ( , ) and is the least number which is a multiple of each of the given number.      Consider the two numbers and .    Now, and   Next, from which is least   Therefore, LCM .  This method of finding the LCM of two or more numbers is usually lengthy and time consuming. Hence an alternative method (Prime factorization method) is provided as below:  Step 1: Find the prime factorization of each of the natural numbers  Step 2: Form the LCM of the given numbers as the product of every factor that appears in any of the prime factorization but take the highest number of times it appears.      Consider the two numbers and .    Step 1:   Step 2: The factors that appear in any case are and , but take the numbers with the highest number of times.         Consider the three numbers and .    Step 1:   Step 2: The factors that appear in any cases are and , but take the numbers with the highest number of times.         Well ordering Principle in the set of natural numbers    Every non-empty subset of the set of natural numbers has smallest (least) element.            The set of counting numbers including zero is called the set of whole numbers and is denoted by W . i.e      Principle of Mathematical Induction  Mathematical induction is one of the most important techniques used to prove in mathematics. It is used to check conjectures about the outcome of processes that occur repeatedly according to definite patterns. We will introduce the technique with examples.      For a given assertion involving a natural number , if   the assertion is true for (usually).    it is true for , whenever it is true for ( ), then the assertion is true for every natural number .        The method is used to prove different propositions involving positive integers using three steps:  Step1: Prove that (usually ) holds true.  Step 2: Assume that for is true.  Step 3: Show that is true for .    Show that .     Step1. For which is true.  Step2. Assume that it is true for   i.e   Step3.We should show that it is true for   Claim:       It is true for any natural number        Show that        Step1. For which is true.  Step2. Assume that it is true for   i.e.   Step3. We should show that it is true for   Claim:   Now       which is the required result.   It is true for any natural number .       Show that      Step1. For , which is true  Step2. Assume that it is true for .  i.e. .  We should show that it is true for   Claim: .  Now                It is true for any natural number .       Add review   Add review   Add review    The set of Integers   As the knowledge and interest of human beings increased, it was important and obligatory to extend the natural number system. For instance to solve the equation , the set of natural numbers was not sufficient. Hence the set of integers was developed to satisfy such extended demands.    The set of integers is denoted by Z and described as       Operations on the set of integers   i) Addition  If two integers & are added using the operation , then the sum is also an integer. If the sum of the two integers & is denoted by , then we can write the operation as: , where is called the sum and & are called terms.     , here is the sum whereas & are terms.      ii) Subtraction  For any two integers & , the operation of subtracting from , denoted by is defined by . This means that subtracting from is equivalent to adding the additive inverse of to .           iii) Multiplication ( )  If two integers & are multiplied using the operation “ ”, then the product is also an integer. If the product of the two integers & is denoted by , then we can write the operation as: , where is called the product and & are called factors.     , here is the product whereas & are factors.      Properties of addition and multiplication on the set of integers  i) For any two integers & , the sum is also an integer. For instance in the above example, and are integers, their sum is also an integer. In general, we say that the set of integers is closed under addition.  ii) For any two integers & , .     . In general, we say that addition is commutative on the set of integers.    iii) For any three integers , & , .     . In general, we say that addition is associative on the set of integers.    iv) For any integer , it holds that .     . In general, we say that addition has an identity element on the set of integers and is the identity element.    v) For any integer , it holds that .     . In general, we say that every integer has an additive inverse denoted by .    vi) For any two integers & , the product is also an integer. For instance in the above example, and are integers, their product is also an integer. In general, we say that the set of integers is closed under multiplication.  vii) For any two integers & , .     . In general, we say that multiplication is commutative on the set of integers.    viii) For any three integers , & , .     . In general, we say that multiplication is associative on the set of integers.    ix) For any integer , it holds that .     . In general, we say that multiplication has an identity element on the set of integers and is the identity element.    x) For any three integers , & , .     . In general, we say that multiplication is distributive over addition on the set of integers.       Order Relation in Z      Transitive property: For any three integers , & ,      Addition property : For any three integers , & ,      Multiplication property : For any three integers , and , where > ,      Law of trichotomy : For any two integers & we have .        Find an odd natural number such that LCM .      There are between and number of eggs in a basket. When Loza counts by 3’s, there are eggs left over. When she counts by 5’s, there are left over. How many eggs are there in the basket?      The GCF of two numbers is and their LCM is . If one of the numbers is , then find the second number.      Using Mathematical Induction, prove the following:      is divisible by , for .     for      is divisible by for odd natural number                               Add review   Add review    The set of rational numbers   As the knowledge and interest of human beings increased with time, it was again necessary to extend the set of integers. For instance to solve the equation , the set of integers was not sufficient. Hence the set of rational numbers was developed to satisfy such extended needs.    Any number that can be expressed in the form , where and are integers and , is called a rational number. The set of rational numbers denoted by is described by       Notes:   From the expression  is called numerator and is called denominator.    A rational number is said to be in lowest form if GCF .       Operations on the set of rational numbers   i) Addition  If two rational numbers and are added using the operation “+”, then the sum defined as is also a rational number.           ii) Subtraction  For any two rational numbers & , the operation of subtracting from , denoted by is defined by .           iii) Multiplication  If two rational numbers and are multiplied using the operation , then the product defined as is also a rational number.           iv) Division  For any two rational numbers & , dividing by is defined by              Properties of addition and multiplication on the set of rational numbers  Let , and be three rational numbers, then     The set of rational numbers is closed under addition and multiplication.    Addition and multiplication are both commutative on the set of rational numbers.    Addition and multiplication are both associative on the set of rational numbers.     is the additive identity  i.e., .    Every rational number has an additive inverse.  i.e., .     is the multiplicative identity  i.e., .    Every non-zero rational number has a multiplicative inverse.  i.e., .        Order Relation in Q        For any three rational numbers , &         For any three rational numbers , &  .       For any three rational numbers , , and .       For any two rational numbers & we have .       Decimal representation of rational numbers  A rational number can be written in decimal form using long division.   Terminating decimals    Express the fraction number in decimal form.           Non-terminating periodic decimals    Express the fraction number in decimal form.          Now we will see how to convert decimal numbers in to their fraction forms. In earlier mathematics topics, we have seen that multiplying a decimal by pushes the decimal point to the right by one position and in general, multiplying a decimal by pushes the decimal point to the right by positions. We will use this fact for the succeeding topics.    Fraction form of decimal numbers  A rational number which is written in decimal form can be converted to a fraction form as in lowest (simplified) form, where and are relatively prime.   Terminating decimals  Consider any terminating decimal number . Suppose terminates digits after the decimal point. can be converted to its fraction form as below:   .    Convert the terminating decimal to fraction form.     .      Non-terminating periodic decimals  Consider any non-terminating periodic decimal number . Suppose has non-terminating digits and terminating digits after the decimal point. can be converted to its fraction form as below:       Convert the non-terminating periodic decimal to fraction form.    Solution: .        From the above two cases, we can conclude that both terminating decimals and non-terminating periodic decimals are rational numbers. (Why? Justify).      Non-terminating and non-periodic decimals  Some decimal numbers are neither terminating nor non-terminating periodic. Such types of numbers are called irrational numbers.           Show that is an irrational number.           From (**) and (***) we get a contradiction that GCF ( , ) which implies that is not a rational number.  Therefore, is an irrational number.       Add review   Add review    The set of real numbers     A number is called a real number if and only if it is either a rational number or an irrational number.  The set of real numbers denoted by can be described as the union of the set of rational and irrational numbers. i.e { is a rational number or an irrational number}.    There is a correspondence between the set of real numbers and the number line (For each point in the number line, there is a corresponding real number and vice-versa).    Operations on the set of real numbers     i) Addition ( )  If two real numbers are added using the operation , then the sum is also a real number.    ii) Subtraction ( )  For any two real numbers & , the operation of subtracting from , denoted by is defined by .    iii) Multiplication ( )  If two real numbers and are multiplied using the operation , then the product defined as is also a real number.    iv) Division ( )  For any two real numbers & , dividing by is defined by .    Properties of addition and multiplication on the set of real numbers  Let , and be three real numbers, then     The set of real numbers is closed under addition and multiplication.    Addition and multiplication are commutative on the set of real numbers.    Addition and multiplication are associative on the set of real numbers.     is the additive identity.  i.e., .    Every real number has an additive inverse.  i.e.,      is the multiplicative identity.   .    Every non-zero real number has a multiplicative inverse.           The real number and the number line  One of the most important properties of the real number is that it can be represented graphically by points on a straight line. The point is termed as the origin. Points to the right of are called positive real numbers and points to the left of are called negative real numbers. Each point on the number line corresponds a unique real number and vice-versa.      Geometrically we say is greater than if is located to the right of on the number line.    Order Relation in R      Transitive property: For any three real numbers , & , .     Addition property: For any three real numbers , & , .     Multiplication property: For any three real numbers , , and , we have .     Law of trichotomy: For any two real numbers & we have .      Summary of the real number system        Intervals  Let and be two real numbers such that , then the intervals which are subsets of R with end points and are denoted and defined as below:      open interval from to .     closed interval from to .     open-closed interval from to .     closed-open interval from to .       Upper bounds and lower bounds    Let be non - empty and  .     A point is said to be an upper bound of iff for all .    An upper bound of is said to be least upper bound (lub) iff it is the least of all upper bounds.    A point is said to be lower bound of iff for all .    A lower bound of is said to be greatest lower bound (glb) iff it is the greatest of all lower bounds.         Consider the set .       lower bounds are   Here the greatest element is .   glb     upper bonds are   Here the least element is .   lub .         Consider the set for .          lower bounds are   Here the greatest element is . Thus, glb     upper bounds are   Here the least element is . Thus, lub .     Based on the above definitions, we can define the completeness property of real numbers as below.      Completeness property of real number (R)  Completeness property of real numbers states that: Every non-empty subset of that has lower bounds has glb and every non-empty subset of that has upper bounds has a lub.     Express each of the following rational numbers as decimal:                                   Write each of the following as decimal and then as a fraction:     three tenths    four thousands         Write each of the following in meters as a fraction and then as a decimal      mm     cm and mm     cm and mm         Classify each of the following as terminating or non-terminating periodic                                   Convert the following decimals to fractions:                         Determine whether the following are rational or irrational:                         Which of the following statements are true and which of them are false?     The sum of any two rational numbers is rational    The sum of any two irrational numbers is irrational    The product of any two rational numbers is rational    The product of any two irrational numbers is irrational         Find two rational numbers between .       Add review   Add review   Add review   Add review   "
 },
 {
   "id": "def-natural-numbers",
@@ -1639,101 +1594,110 @@ var ptx_lunr_docs = [
   "body": "  The set of natural numbers is denoted by and is described as    "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-natural-numbers-7",
+  "id": "subsubsec-operations-on-the-set-of-natural-numbers-2-3",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-7",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-2-3",
   "type": "Example",
   "number": "2.1.2",
+  "title": "",
+  "body": "   , here is the sum whereas & are terms.   "
+},
+{
+  "id": "subsubsec-operations-on-the-set-of-natural-numbers-3-3",
+  "level": "2",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-3-3",
+  "type": "Example",
+  "number": "2.1.3",
   "title": "",
   "body": "   , here is the product whereas & are factors.   "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-natural-numbers-11",
+  "id": "subsubsec-operations-on-the-set-of-natural-numbers-4-4",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-11",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-4-4",
   "type": "Example",
-  "number": "2.1.3",
+  "number": "2.1.4",
   "title": "",
   "body": "   . In general, we say that addition is commutative on the set of natural numbers.   "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-natural-numbers-13",
+  "id": "subsubsec-operations-on-the-set-of-natural-numbers-4-6",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-13",
-  "type": "Example",
-  "number": "2.1.4",
-  "title": "",
-  "body": "  (3+8)+6 = 3+(8+6) = 17. In general, we say that addition is associative on the set of natural numbers.   "
-},
-{
-  "id": "subsubsec-operations-on-the-set-of-natural-numbers-16",
-  "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-16",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-4-6",
   "type": "Example",
   "number": "2.1.5",
   "title": "",
-  "body": "  3 4 = 4 3 = 12. In general, we say that multiplication is commutative on the set of natural numbers.   "
+  "body": "   . In general, we say that addition is associative on the set of natural numbers.   "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-natural-numbers-18",
+  "id": "subsubsec-operations-on-the-set-of-natural-numbers-4-9",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-18",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-4-9",
   "type": "Example",
   "number": "2.1.6",
   "title": "",
-  "body": "  (2 4) 5 = 2 (4 5) = 40. In general, we say that multiplication is associative on the set of natural numbers.   "
+  "body": "   In general, we say that multiplication is commutative on the set of natural numbers.   "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-natural-numbers-20",
+  "id": "subsubsec-operations-on-the-set-of-natural-numbers-4-11",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-20",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-4-11",
   "type": "Example",
   "number": "2.1.7",
   "title": "",
-  "body": "  6 1 = 1 6 = 6. In general, we say that multiplication has an identity element on the set of natural numbers and is the identity element.   "
+  "body": "   . In general, we say that multiplication is associative on the set of natural numbers.   "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-natural-numbers-22",
+  "id": "subsubsec-operations-on-the-set-of-natural-numbers-4-13",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-22",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-4-13",
   "type": "Example",
   "number": "2.1.8",
   "title": "",
-  "body": "  3 (5+7) = (3 5)+ (3 7) 36. In general, we say that multiplication is distributive over addition on the set of natural numbers.   "
+  "body": "   In general, we say that multiplication has an identity element on the set of natural numbers and is the identity element.   "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-natural-numbers-23",
+  "id": "subsubsec-operations-on-the-set-of-natural-numbers-4-15",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-23",
-  "type": "Note",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-4-15",
+  "type": "Example",
   "number": "2.1.9",
   "title": "",
-  "body": " Consider two numbers a and b , we say a is greater than b denoted by a > b if a – b is positive.  "
+  "body": "   . In general, we say that multiplication is distributive over addition on the set of natural numbers.   "
+},
+{
+  "id": "subsubsec-operations-on-the-set-of-natural-numbers-5",
+  "level": "2",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers-5",
+  "type": "Note",
+  "number": "2.1.10",
+  "title": "",
+  "body": " Consider two numbers and , we say is greater than denoted by > if is positive.  "
 },
 {
   "id": "def-factors-of-a-number",
   "level": "2",
   "url": "sec-the-real-number-system.html#def-factors-of-a-number",
   "type": "Definition",
-  "number": "2.1.10",
+  "number": "2.1.11",
   "title": "",
-  "body": "  If such that , then a & b are factors (divisors) of c and c is called product (multiple) of a & b .   "
+  "body": "  If such that , then & are factors (divisors) of and is called product (multiple) of & .   "
 },
 {
   "id": "subsubsec-factors-of-a-number-3",
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-factors-of-a-number-3",
   "type": "Example",
-  "number": "2.1.11",
+  "number": "2.1.12",
   "title": "",
-  "body": "  Find the factors of .    Factors of 15 are 1, 3, 5, 15.    "
+  "body": "  Find the factors of .    Factors of are .    "
 },
 {
   "id": "def-a",
   "level": "2",
   "url": "sec-the-real-number-system.html#def-a",
   "type": "Definition",
-  "number": "2.1.12",
+  "number": "2.1.13",
   "title": "",
   "body": "  A number is said to be    Even if it is divisible by .     Odd if it is not divisible by .     Prime if it has only two factors ( and itself).     Composite : if it has three or more factors.      "
 },
@@ -1742,7 +1706,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-factors-of-a-number-5",
   "type": "Example",
-  "number": "2.1.13",
+  "number": "2.1.14",
   "title": "",
   "body": "   are even numbers   "
 },
@@ -1751,7 +1715,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-factors-of-a-number-6",
   "type": "Example",
-  "number": "2.1.14",
+  "number": "2.1.15",
   "title": "",
   "body": "   are odd numbers   "
 },
@@ -1760,7 +1724,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-factors-of-a-number-7",
   "type": "Example",
-  "number": "2.1.15",
+  "number": "2.1.16",
   "title": "",
   "body": "   are prime numbers   "
 },
@@ -1769,7 +1733,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-factors-of-a-number-8",
   "type": "Example",
-  "number": "2.1.16",
+  "number": "2.1.17",
   "title": "",
   "body": "   are composite numbers   "
 },
@@ -1778,7 +1742,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-factors-of-a-number-9",
   "type": "Remark",
-  "number": "2.1.17",
+  "number": "2.1.18",
   "title": "",
   "body": "  is neither prime nor composite.  "
 },
@@ -1787,7 +1751,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#def-prime-factorization",
   "type": "Definition",
-  "number": "2.1.18",
+  "number": "2.1.19",
   "title": "",
   "body": "  Prime factorization of a composite number is the product of all its prime factors.   "
 },
@@ -1796,7 +1760,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-prime-factorization-3",
   "type": "Example",
-  "number": "2.1.19",
+  "number": "2.1.20",
   "title": "",
   "body": "                                "
 },
@@ -1805,88 +1769,88 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#def-gcd",
   "type": "Definition",
-  "number": "2.1.20",
+  "number": "2.1.21",
   "title": "",
-  "body": "  The greatest common factor (GCF) of two numbers a & b is denoted by GCF ( a , b ) and is the greatest number which is a factor of each of the given number.   "
+  "body": "  The greatest common factor (GCF) of two numbers & is denoted by GCF ( , ) and is the greatest number which is a factor of each of the given number.   "
 },
 {
   "id": "subsubsec-greatest-common-factor-3",
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-greatest-common-factor-3",
   "type": "Note",
-  "number": "2.1.21",
+  "number": "2.1.22",
   "title": "",
-  "body": " Note: If the GCF of two numbers is 1, then the numbers are called relatively prime.  "
+  "body": " Note: If the GCF of two numbers is , then the numbers are called relatively prime.  "
 },
 {
   "id": "subsubsec-greatest-common-factor-4",
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-greatest-common-factor-4",
   "type": "Example",
-  "number": "2.1.22",
+  "number": "2.1.23",
   "title": "",
-  "body": "  Consider the two numbers and .    Now, and   Next, from which is greatest  Therefore, GCF .  This method of finding the GCF of two or more numbers is usually lengthy and time consuming. Hence an alternative method (Prime factorization method) is provided as below:  Step 1: Find the prime factorization of each of the natural numbers  Step 2: Form the GCF of the given numbers as the product of every factor that appears in each of the prime factorization but take the least number of times it appears.   "
+  "body": "  Consider the two numbers and .    Now and   Next from which is greatest  Therefore, GCF .  This method of finding the GCF of two or more numbers is usually lengthy and time consuming. Hence an alternative method (Prime factorization method) is provided as below:  Step 1: Find the prime factorization of each of the natural numbers  Step 2: Form the GCF of the given numbers as the product of every factor that appears in each of the prime factorization but take the least number of times it appears.   "
 },
 {
   "id": "subsubsec-greatest-common-factor-5",
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-greatest-common-factor-5",
   "type": "Example",
-  "number": "2.1.23",
+  "number": "2.1.24",
   "title": "",
-  "body": "  Consider the two numbers and .    Step 1:   Step 2: The factors that appear in both cases are 2 and 3, but take the numbers with the least number of times.   "
+  "body": "  Consider the two numbers and .    Step 1:   Step 2: The factors that appear in both cases are and , but take the numbers with the least number of times.      "
 },
 {
   "id": "subsubsec-greatest-common-factor-6",
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-greatest-common-factor-6",
   "type": "Example",
-  "number": "2.1.24",
+  "number": "2.1.25",
   "title": "",
-  "body": "  Consider the three numbers and .    Step 1:   Step 2: The factors that appear in all cases are 2 and 5, but take the numbers with the least number of times.      "
+  "body": "  Consider the three numbers and .    Step 1:   Step 2: The factors that appear in all cases are and , but take the numbers with the least number of times.      "
 },
 {
   "id": "def-lcm",
   "level": "2",
   "url": "sec-the-real-number-system.html#def-lcm",
   "type": "Definition",
-  "number": "2.1.25",
+  "number": "2.1.26",
   "title": "",
-  "body": "  The least common multiple (LCM) of two numbers a & b is denoted by LCM ( a , b ) and is the least number which is a multiple of each of the given number.   "
+  "body": "  The least common multiple (LCM) of two numbers & is denoted by LCM ( , ) and is the least number which is a multiple of each of the given number.   "
 },
 {
   "id": "subsubsec-lcm-3",
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-lcm-3",
   "type": "Example",
-  "number": "2.1.26",
+  "number": "2.1.27",
   "title": "",
-  "body": "  Consider the two numbers 18 and 24.    Now, and   Next, from which is least   Therefore, LCM (18, 24) = 72.  This method of finding the LCM of two or more numbers is usually lengthy and time consuming. Hence an alternative method (Prime factorization method) is provided as below:  Step 1: Find the prime factorization of each of the natural numbers  Step 2: Form the LCM of the given numbers as the product of every factor that appears in any of the prime factorization but take the highest number of times it appears.   "
+  "body": "  Consider the two numbers and .    Now, and   Next, from which is least   Therefore, LCM .  This method of finding the LCM of two or more numbers is usually lengthy and time consuming. Hence an alternative method (Prime factorization method) is provided as below:  Step 1: Find the prime factorization of each of the natural numbers  Step 2: Form the LCM of the given numbers as the product of every factor that appears in any of the prime factorization but take the highest number of times it appears.   "
 },
 {
   "id": "subsubsec-lcm-4",
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-lcm-4",
   "type": "Example",
-  "number": "2.1.27",
+  "number": "2.1.28",
   "title": "",
-  "body": "  Consider the two numbers and .    Step 1:   Step 2: The factors that appear in any case are 2 and 3, but take the numbers with the highest number of times.      "
+  "body": "  Consider the two numbers and .    Step 1:   Step 2: The factors that appear in any case are and , but take the numbers with the highest number of times.      "
 },
 {
   "id": "subsubsec-lcm-5",
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-lcm-5",
   "type": "Example",
-  "number": "2.1.28",
+  "number": "2.1.29",
   "title": "",
-  "body": "  Consider the three numbers 20, 80 and 450.    Step 1:   Step 2: The factors that appear in any cases are 2 , 3 and 5, but take the numbers with the highest number of times.      "
+  "body": "  Consider the three numbers and .    Step 1:   Step 2: The factors that appear in any cases are and , but take the numbers with the highest number of times.      "
 },
 {
   "id": "prop-non-empty-set",
   "level": "2",
   "url": "sec-the-real-number-system.html#prop-non-empty-set",
   "type": "Proposition",
-  "number": "2.1.29",
+  "number": "2.1.30",
   "title": "",
   "body": "  Every non-empty subset of the set of natural numbers has smallest (least) element.   "
 },
@@ -1895,7 +1859,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-well-ordering-principle-in-the-set-of-natural-numbers-3",
   "type": "Example",
-  "number": "2.1.30",
+  "number": "2.1.31",
   "title": "",
   "body": "      "
 },
@@ -1904,16 +1868,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-well-ordering-principle-in-the-set-of-natural-numbers-4",
   "type": "Note",
-  "number": "2.1.31",
+  "number": "2.1.32",
   "title": "",
-  "body": " The set of counting numbers including zero is called the set of whole numbers and is denoted by W . i.e W =   "
+  "body": " The set of counting numbers including zero is called the set of whole numbers and is denoted by W . i.e   "
 },
 {
   "id": "subsubsec-principle-of-mathematical-induction-8",
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-principle-of-mathematical-induction-8",
   "type": "Example",
-  "number": "2.1.32",
+  "number": "2.1.33",
   "title": "",
   "body": "  Show that .     Step1. For which is true.  Step2. Assume that it is true for   i.e   Step3.We should show that it is true for   Claim:       It is true for any natural number     "
 },
@@ -1922,7 +1886,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-principle-of-mathematical-induction-9",
   "type": "Example",
-  "number": "2.1.33",
+  "number": "2.1.34",
   "title": "",
   "body": "  Show that        Step1. For which is true.  Step2. Assume that it is true for   i.e.   Step3. We should show that it is true for   Claim:   Now       which is the required result.   It is true for any natural number .    "
 },
@@ -1931,7 +1895,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-principle-of-mathematical-induction-10",
   "type": "Example",
-  "number": "2.1.34",
+  "number": "2.1.35",
   "title": "",
   "body": "  Show that      Step1. For , which is true  Step2. Assume that it is true for .  i.e. .  We should show that it is true for   Claim: .  Now                It is true for any natural number .    "
 },
@@ -1940,7 +1904,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsec-the-set-of-natural-numbers-11",
   "type": "Checkpoint",
-  "number": "2.1.35",
+  "number": "2.1.36",
   "title": "",
   "body": " Add review "
 },
@@ -1949,7 +1913,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsec-the-set-of-natural-numbers-12",
   "type": "Checkpoint",
-  "number": "2.1.36",
+  "number": "2.1.37",
   "title": "",
   "body": " Add review "
 },
@@ -1958,7 +1922,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsec-the-set-of-natural-numbers-13",
   "type": "Checkpoint",
-  "number": "2.1.37",
+  "number": "2.1.38",
   "title": "",
   "body": " Add review "
 },
@@ -1967,106 +1931,106 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#def-set-of-integers",
   "type": "Definition",
-  "number": "2.1.38",
+  "number": "2.1.39",
   "title": "",
-  "body": "  The set of integers is denoted by Z and described as =    "
+  "body": "  The set of integers is denoted by Z and described as    "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-integers-4",
+  "id": "subsubsec-operations-on-the-set-of-integers-2-3",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-4",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-2-3",
   "type": "Example",
-  "number": "2.1.39",
+  "number": "2.1.40",
   "title": "",
   "body": "   , here is the sum whereas & are terms.   "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-integers-7",
+  "id": "subsubsec-operations-on-the-set-of-integers-3-3",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-7",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-3-3",
   "type": "Example",
-  "number": "2.1.40",
+  "number": "2.1.41",
   "title": "",
   "body": "      "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-integers-10",
+  "id": "subsubsec-operations-on-the-set-of-integers-4-3",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-10",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-4-3",
   "type": "Example",
-  "number": "2.1.41",
+  "number": "2.1.42",
   "title": "",
   "body": "   , here is the product whereas & are factors.   "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-integers-14",
+  "id": "subsubsec-operations-on-the-set-of-integers-5-4",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-14",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-5-4",
   "type": "Example",
-  "number": "2.1.42",
+  "number": "2.1.43",
   "title": "",
   "body": "   . In general, we say that addition is commutative on the set of integers.   "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-integers-16",
+  "id": "subsubsec-operations-on-the-set-of-integers-5-6",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-16",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-5-6",
   "type": "Example",
-  "number": "2.1.43",
+  "number": "2.1.44",
   "title": "",
   "body": "   . In general, we say that addition is associative on the set of integers.   "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-integers-18",
+  "id": "subsubsec-operations-on-the-set-of-integers-5-8",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-18",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-5-8",
   "type": "Example",
-  "number": "2.1.44",
+  "number": "2.1.45",
   "title": "",
   "body": "   . In general, we say that addition has an identity element on the set of integers and is the identity element.   "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-integers-20",
+  "id": "subsubsec-operations-on-the-set-of-integers-5-10",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-20",
-  "type": "Example",
-  "number": "2.1.45",
-  "title": "",
-  "body": "   . In general, we say that every integer a has an additive inverse denoted by .   "
-},
-{
-  "id": "subsubsec-operations-on-the-set-of-integers-23",
-  "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-23",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-5-10",
   "type": "Example",
   "number": "2.1.46",
+  "title": "",
+  "body": "   . In general, we say that every integer has an additive inverse denoted by .   "
+},
+{
+  "id": "subsubsec-operations-on-the-set-of-integers-5-13",
+  "level": "2",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-5-13",
+  "type": "Example",
+  "number": "2.1.47",
   "title": "",
   "body": "   . In general, we say that multiplication is commutative on the set of integers.   "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-integers-25",
+  "id": "subsubsec-operations-on-the-set-of-integers-5-15",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-25",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-5-15",
   "type": "Example",
-  "number": "2.1.47",
+  "number": "2.1.48",
   "title": "",
   "body": "   . In general, we say that multiplication is associative on the set of integers.   "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-integers-27",
+  "id": "subsubsec-operations-on-the-set-of-integers-5-17",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-27",
-  "type": "Example",
-  "number": "2.1.48",
-  "title": "",
-  "body": "   . In general, we say that multiplication has an identity element on the set of integers and 1 is the identity element.   "
-},
-{
-  "id": "subsubsec-operations-on-the-set-of-integers-29",
-  "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-29",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-5-17",
   "type": "Example",
   "number": "2.1.49",
+  "title": "",
+  "body": "   . In general, we say that multiplication has an identity element on the set of integers and is the identity element.   "
+},
+{
+  "id": "subsubsec-operations-on-the-set-of-integers-5-19",
+  "level": "2",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers-5-19",
+  "type": "Example",
+  "number": "2.1.50",
   "title": "",
   "body": "   . In general, we say that multiplication is distributive over addition on the set of integers.   "
 },
@@ -2077,7 +2041,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.1.2.2.1",
   "title": "",
-  "body": "  Find an odd natural number x such that LCM (x, 40) = 1400.   "
+  "body": "  Find an odd natural number such that LCM .   "
 },
 {
   "id": "exercises-sets-of-integers-2",
@@ -2111,7 +2075,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsec-the-set-of-integers-5",
   "type": "Checkpoint",
-  "number": "2.1.50",
+  "number": "2.1.51",
   "title": "",
   "body": " Add review "
 },
@@ -2120,7 +2084,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsec-the-set-of-integers-6",
   "type": "Checkpoint",
-  "number": "2.1.51",
+  "number": "2.1.52",
   "title": "",
   "body": " Add review "
 },
@@ -2129,43 +2093,43 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#def-rational-number",
   "type": "Definition",
-  "number": "2.1.52",
+  "number": "2.1.53",
   "title": "",
   "body": "  Any number that can be expressed in the form , where and are integers and , is called a rational number. The set of rational numbers denoted by is described by      "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-rational-numbers-4",
+  "id": "subsubsec-operations-on-the-set-of-rational-numbers-2-3",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers-4",
-  "type": "Example",
-  "number": "2.1.53",
-  "title": "",
-  "body": "      "
-},
-{
-  "id": "subsubsec-operations-on-the-set-of-rational-numbers-7",
-  "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers-7",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers-2-3",
   "type": "Example",
   "number": "2.1.54",
   "title": "",
   "body": "      "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-rational-numbers-10",
+  "id": "subsubsec-operations-on-the-set-of-rational-numbers-3-3",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers-10",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers-3-3",
   "type": "Example",
   "number": "2.1.55",
   "title": "",
   "body": "      "
 },
 {
-  "id": "subsubsec-operations-on-the-set-of-rational-numbers-14",
+  "id": "subsubsec-operations-on-the-set-of-rational-numbers-4-3",
   "level": "2",
-  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers-14",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers-4-3",
   "type": "Example",
   "number": "2.1.56",
+  "title": "",
+  "body": "      "
+},
+{
+  "id": "subsubsec-operations-on-the-set-of-rational-numbers-5-4",
+  "level": "2",
+  "url": "sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers-5-4",
+  "type": "Example",
+  "number": "2.1.57",
   "title": "",
   "body": "      "
 },
@@ -2174,7 +2138,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-decimal-representation-of-rational-numbers-3-2",
   "type": "Example",
-  "number": "2.1.57",
+  "number": "2.1.58",
   "title": "",
   "body": "  Express the fraction number in decimal form.        "
 },
@@ -2183,7 +2147,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-decimal-representation-of-rational-numbers-4-2",
   "type": "Example",
-  "number": "2.1.58",
+  "number": "2.1.59",
   "title": "",
   "body": "  Express the fraction number in decimal form.        "
 },
@@ -2192,7 +2156,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-fraction-form-of-decimal-numbers-3-4",
   "type": "Example",
-  "number": "2.1.59",
+  "number": "2.1.60",
   "title": "",
   "body": "  Convert the terminating decimal to fraction form.     .   "
 },
@@ -2201,7 +2165,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-fraction-form-of-decimal-numbers-4-4",
   "type": "Example",
-  "number": "2.1.60",
+  "number": "2.1.61",
   "title": "",
   "body": "  Convert the non-terminating periodic decimal to fraction form.    Solution: .      "
 },
@@ -2210,7 +2174,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-fraction-form-of-decimal-numbers-4-5",
   "type": "Note",
-  "number": "2.1.61",
+  "number": "2.1.62",
   "title": "",
   "body": " From the above two cases, we can conclude that both terminating decimals and non-terminating periodic decimals are rational numbers. (Why? Justify).  "
 },
@@ -2219,7 +2183,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-non-terminating-and-non-periodic-decimals-3",
   "type": "Example",
-  "number": "2.1.62",
+  "number": "2.1.63",
   "title": "",
   "body": "      "
 },
@@ -2228,16 +2192,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-non-terminating-and-non-periodic-decimals-4",
   "type": "Example",
-  "number": "2.1.63",
+  "number": "2.1.64",
   "title": "",
-  "body": "  Show that is an irrational number.           From (**) and (***) we get a contradiction that GCF ( a , b ) = 1 which implies that is not a rational number.  Therefore, is an irrational number.    "
+  "body": "  Show that is an irrational number.           From (**) and (***) we get a contradiction that GCF ( , ) which implies that is not a rational number.  Therefore, is an irrational number.    "
 },
 {
   "id": "subsec-the-set-of-rational-numbers-8",
   "level": "2",
   "url": "sec-the-real-number-system.html#subsec-the-set-of-rational-numbers-8",
   "type": "Checkpoint",
-  "number": "2.1.64",
+  "number": "2.1.65",
   "title": "",
   "body": " Add review "
 },
@@ -2246,7 +2210,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsec-the-set-of-rational-numbers-9",
   "type": "Checkpoint",
-  "number": "2.1.65",
+  "number": "2.1.66",
   "title": "",
   "body": " Add review "
 },
@@ -2255,7 +2219,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#def-set-of-real-numbers",
   "type": "Definition",
-  "number": "2.1.66",
+  "number": "2.1.67",
   "title": "",
   "body": "  A number is called a real number if and only if it is either a rational number or an irrational number.  The set of real numbers denoted by can be described as the union of the set of rational and irrational numbers. i.e { is a rational number or an irrational number}.   "
 },
@@ -2264,16 +2228,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#def-upper-bounds-lower-bounds",
   "type": "Definition",
-  "number": "2.1.67",
+  "number": "2.1.68",
   "title": "",
-  "body": "  Let be non - empty and  .     A point is said to be an upper bound of A iff for all .    An upper bound of A is said to be least upper bound (lub) iff it is the least of all upper bounds.    A point is said to be lower bound of A iff for all .    A lower bound of A is said to be greatest lower bound (glb) iff it is the greatest of all lower bounds.      "
+  "body": "  Let be non - empty and  .     A point is said to be an upper bound of iff for all .    An upper bound of is said to be least upper bound (lub) iff it is the least of all upper bounds.    A point is said to be lower bound of iff for all .    A lower bound of is said to be greatest lower bound (glb) iff it is the greatest of all lower bounds.      "
 },
 {
   "id": "subsubsec-upper-bounds-and-lower-bounds-3",
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-upper-bounds-and-lower-bounds-3",
   "type": "Example",
-  "number": "2.1.68",
+  "number": "2.1.69",
   "title": "",
   "body": "  Consider the set .       lower bounds are   Here the greatest element is .   glb     upper bonds are   Here the least element is .   lub .      "
 },
@@ -2282,7 +2246,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsubsec-upper-bounds-and-lower-bounds-4",
   "type": "Example",
-  "number": "2.1.69",
+  "number": "2.1.70",
   "title": "",
   "body": "  Consider the set for .          lower bounds are   Here the greatest element is . Thus, glb     upper bounds are   Here the least element is . Thus, lub .     Based on the above definitions, we can define the completeness property of real numbers as below.   "
 },
@@ -2363,7 +2327,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsec-the-set-of-real-numbers-9",
   "type": "Checkpoint",
-  "number": "2.1.70",
+  "number": "2.1.71",
   "title": "",
   "body": " Add review "
 },
@@ -2372,7 +2336,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsec-the-set-of-real-numbers-10",
   "type": "Checkpoint",
-  "number": "2.1.71",
+  "number": "2.1.72",
   "title": "",
   "body": " Add review "
 },
@@ -2381,7 +2345,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsec-the-set-of-real-numbers-11",
   "type": "Checkpoint",
-  "number": "2.1.72",
+  "number": "2.1.73",
   "title": "",
   "body": " Add review "
 },
@@ -2390,7 +2354,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-real-number-system.html#subsec-the-set-of-real-numbers-12",
   "type": "Checkpoint",
-  "number": "2.1.73",
+  "number": "2.1.74",
   "title": "",
   "body": " Add review "
 },
@@ -2761,7 +2725,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Review of relations and functions",
-  "body": " Review of relations and functions  After completing this section, the student should be able to:    define Cartesian product of two sets  understand the notion of relation and function  know the difference between relation and function  determine the domain and range of relations and functions  find the inverse of a relation    The student is familiar with the phrase ordered pair. In the ordered pair and ; and are the first coordinates while and are the second coordinates.       Given sets and . Then, the set is the Cartesian product of and , and it is denoted by .    Suppose and are sets. The Cartesian product of and , denoted by , is the set which contains every ordered pair whose first coordinate is an element of and second coordinate is an element of , i.e.  and .      For and , we have      , and  .      Let and . Then,    .  From example 3.1, we can see that and are not equal. Recall that two sets are equal if one is a subset of the other and vice versa. To check equality of Cartesian products we need to define equality of ordered pairs.    Two ordered pairs and are equal if and only if and .      If and are sets, any subset of is called a relation from A into B .    Suppose R is a relation from a set A to a set B . Then, R ⊆ A × B and hence for each , we have either or . If , we say “ a is R- related (or simply related) to b ”, and write . If , we say that “ a is not related to b ”.  In particular if R is a relation from a set A to itself, then we say that R is a relation on A .    Let and . Let be the relation “less than” from to . Then, .  Let and .      The following are relations from into ;                            The following are relations from to ;                            Let be a relation from into . Then,     the domain of , denoted by , is the set of first coordinates of the elements of , i.e       the range of , denoted by , is the set of second coordinates of elements of , i.e           : If is a relation from the set to the set , then the set is called the codomain of the relation . The range of relation is always a subset of the codomain.       The set is a relation from set to set . The domain of is , the range of is and the codomain of is .    The set of ordered pairs is a relation between the sets and , where is the domain and is the range.             If for a relation , we say is related to (or paired with) . Note that may also be paired with an element different from . In any case, is called the image of while is called the pimageA of under .    If the domain and\/or range of a relation is infinite, we cannot list each element assignment, so instead we use set builder notation to describe the relation. The situation we will encounter most frequently is that of a relation defined by an equation or formula. For example,     is a relation for which the range value is 3 less than twice the domain value. Hence, and are examples of ordered pairs that are of the assignment.          Let Let be the relation on defined by is a factor of . Find the domain and range of .    Let and .  Let Find   (a)   (b)   (c)            We have   .  Then, and .    We have   and and 64 are in whereas 125 is not in . Thus, , and .             A relation on a set is called       a universal relation if     identity relation if     void or empty relation if        If is a relation from into , then the inverse relation of , denoted by , is a relation from to and is given by:   .  Observe that and . For instance, if is a relation on a set , then        Let be a relation defined on by .Find   (a)   (b)   (c)   (d)      The smallest natural number is           Therefore, , , and .             Mathematically, it is important for us to distinguish among the relations that assign a unique range element to each domain element and those that do not.    A function is a relation in which each element of the domain corresponds to exactly one element of the range.      Determine whether the following relations are functions.   (a)   (b)         Since the domain element 3 is assigned to two different values in the range, 5 and 7, it is not a function.    Each element in the domain, , is assigned no more than one value in the range, 2 is assigned only 4, 3 is assigned only 4, and 6 is assigned only . Therefore, it is a function.        Map or mapping, transformation and correspondence are synonyms for the word function. If is a function and , we say x is mapped to y by f .    A relation from A into B is called a function from A into B , denoted by   or   if and only if          No element of A is mapped by to more than one element in B , i.e. if and , then .             If to the element x of corresponds under the function , then we write and is called the image of x under and x is called a pimageA of under .    The symbol is read as “ of x ” but not “ times x ”.    In order to show that a relation from A into B is a function, we first show that the domain of is A and next we show that well defined or single-valued, i.e. if in A , then in B for all .       Let and . Which of the following are functions from A to .    defined by  defined by  defined by  defined by  defined by          is a function because to each element of A there corresponds exactly one element of .     is not a function because there is no element of B which correspond to 4 ( A ).     is a function because to each element of A there corresponds exactly one element of B . In the given function, the images of all element of A are the same.     is not a function because there are two elements of which correspond to .In other words, the image of is not unique.     is a function because to each element of there corresponds exactly one element of .       As with relations, we can describe a function with an equation. For example, y=2x+1 is a function, since each x will produce only one .    Let . Then, maps:             More generally any real number x is mapped to its square. As the square of a number is unique, maps every real number to a unique number. Thus, is a function from into .  We will find it useful to use the following vocabulary: The independent variable refers to the variable representing possible values in the domain, and the dependent variable refers to the variable representing possible values in the range. Thus, in our usual ordered pair notation , x is the independent variable and is the dependent variable.    Let f be the subset of defined by . Is f a function?    First we note that . Then, satisfies condition (i) in the definition of a function. Now, , and but . Thus is not well defined. Hence, is not a function from to .      Let be the subset of defined by . Is a function?    First we show that satisfies condition (i) in the definition. Let be any element of . Then, . Hence, . This implies that . Thus, . However, and so . Now, and . Thus, and are in . Hence we find that and . This implies that is not well defined, i.e, does not satisfy condition (ii). Hence, is not a function from to .             For a function      The set A is called the domain of     The set B is called the codomain of     The set of all image of elements of A is called the range of              Let and . Let be the correspondence which assigns to each element in , its square. Thus, we have . Therefore, is a function and , and codomain of is .      Let . Let and represent the elements in the sets and , respectively. Let be a function defined by .  The variable can take values Thus, we have   .  This implies that and codomain of is IN .      Determine whether the following equations determine as a function of , if so, find the domain of the function.                            To determine whether gives as a function of , we need to know whether each x-value uniquely determines a y-value . Looking at the equation , we can see that once is chosen we multiply it by – 3 and then add 5. Thus, for each x there is a unique . Therefore, is a function. It domain is the set of all real numbers.    Looking at the equation carefully, we can see that each x-value uniquely determines a y-value (one x-value can not produce two different y-values ). Therefore, is a function.  As for its domain, we ask ourselves. Are there any values of that must be excluded? Since is a fractional expression, we must exclude any value of that makes the denominator equal to zero. We must have     Therefore, the domain consists of all real numbers except . Thus, .    For the equation , if we choose we get , which gives . In other words, there are two values associated with . Therefore, is not a function.         Find the domain of the function .    Since is defined and is real when the expression under the radical is non-negative, we need to satisfy the inequality     This is a quadratic inequality, which can be solved by analyzing signs:  Sign of    Since we want to be non-negative, the sign analysis shows us that the domain is or .       Let R be a relation on the set defined by .     List the elements of     Is          Let R be a relation on the set defined by divides .     List the elements of     Find     Find the elements of     Find          Let . Define a relation on by . Write down the domain, codomain and range of . Find .      Find the domain and range of the relation .      Let and . Which of the following are functions from to ?                              Determine the domain and range of the following relations. Which relation a function?                                        Find the domain and range of the following functions.                              Given .  Find                           Add review   Add review   Add review   Add review  "
+  "body": " Review of relations and functions  After completing this section, the student should be able to:    define Cartesian product of two sets  understand the notion of relation and function  know the difference between relation and function  determine the domain and range of relations and functions  find the inverse of a relation    The student is familiar with the phrase ordered pair. In the ordered pair and ; and are the first coordinates while and are the second coordinates.       Given sets and . Then, the set is the Cartesian product of and , and it is denoted by .    Suppose and are sets. The Cartesian product of and , denoted by , is the set which contains every ordered pair whose first coordinate is an element of and second coordinate is an element of , i.e.  and .      For and , we have      , and  .      Let and . Then,    .  From example 3.1, we can see that and are not equal. Recall that two sets are equal if one is a subset of the other and vice versa. To check equality of Cartesian products we need to define equality of ordered pairs.    Two ordered pairs and are equal if and only if and .      If and are sets, any subset of is called a relation from A into B .    Suppose R is a relation from a set A to a set B . Then, R ⊆ A × B and hence for each , we have either or . If , we say “ a is R- related (or simply related) to b ”, and write . If , we say that “ a is not related to b ”.  In particular if R is a relation from a set A to itself, then we say that R is a relation on A .       Let and . Let be the relation “less than” from to . Then, .    Let and .  (a) The following are relations from into ;  (i)   (ii)   (iii)   (b) The following are relations from to ;  (i)   (ii)   (iii)          Let be a relation from into . Then,     the domain of , denoted by , is the set of first coordinates of the elements of , i.e       the range of , denoted by , is the set of second coordinates of elements of , i.e           : If is a relation from the set to the set , then the set is called the codomain of the relation . The range of relation is always a subset of the codomain.       The set is a relation from set to set . The domain of is , the range of is and the codomain of is .    The set of ordered pairs is a relation between the sets and , where is the domain and is the range.             If for a relation , we say is related to (or paired with) . Note that may also be paired with an element different from . In any case, is called the image of while is called the pimageA of under .    If the domain and\/or range of a relation is infinite, we cannot list each element assignment, so instead we use set builder notation to describe the relation. The situation we will encounter most frequently is that of a relation defined by an equation or formula. For example,     is a relation for which the range value is 3 less than twice the domain value. Hence, and are examples of ordered pairs that are of the assignment.          Let Let be the relation on defined by is a factor of . Find the domain and range of .    Let and .  Let Find   (a)   (b)   (c)            We have   .  Then, and .    We have   and and 64 are in whereas 125 is not in . Thus, , and .             A relation on a set is called  (i) a universal relation if   (ii) identity relation if   (iii) void or empty relation if     If is a relation from into , then the inverse relation of , denoted by , is a relation from to and is given by:   .  Observe that and . For instance, if is a relation on a set , then        Let be a relation defined on by .Find   (a)   (b)   (c)   (d)      The smallest natural number is           Therefore, , , and .             Mathematically, it is important for us to distinguish among the relations that assign a unique range element to each domain element and those that do not.    A function is a relation in which each element of the domain corresponds to exactly one element of the range.      Determine whether the following relations are functions.   (a)   (b)         Since the domain element is assigned to two different values in the range, and , it is not a function.    Each element in the domain, , is assigned no more than one value in the range, 2 is assigned only 4, 3 is assigned only 4, and 6 is assigned only . Therefore, it is a function.        Map or mapping, transformation and correspondence are synonyms for the word function. If is a function and , we say is mapped to by .    A relation from A into B is called a function from A into B , denoted by   or   if and only if          No element of A is mapped by to more than one element in B , i.e. if and , then .             If to the element of corresponds under the function , then we write and is called the image of x under and x is called a preimage of under .    The symbol is read as “ of ” but not “ times ”.    In order to show that a relation from into is a function, we first show that the domain of is and next we show that well defined or single-valued, i.e. if in , then in for all .       Let and . Which of the following are functions from A to .    defined by  defined by  defined by  defined by  defined by          is a function because to each element of there corresponds exactly one element of .     is not a function because there is no element of which correspond to ( ).     is a function because to each element of there corresponds exactly one element of . In the given function, the images of all element of are the same.     is not a function because there are two elements of which correspond to .In other words, the image of is not unique.     is a function because to each element of there corresponds exactly one element of .       As with relations, we can describe a function with an equation. For example, is a function, since each will produce only one .    Let . Then, maps:             More generally any real number is mapped to its square. As the square of a number is unique, maps every real number to a unique number. Thus, is a function from into .  We will find it useful to use the following vocabulary: The independent variable refers to the variable representing possible values in the domain, and the dependent variable refers to the variable representing possible values in the range. Thus, in our usual ordered pair notation , is the independent variable and is the dependent variable.    Let be the subset of defined by . Is a function?    First we note that . Then, satisfies condition (i) in the definition of a function. Now, , and but . Thus is not well defined. Hence, is not a function from to .      Let be the subset of defined by . Is a function?    First we show that satisfies condition (i) in the definition. Let be any element of . Then, . Hence, . This implies that . Thus, . However, and so . Now, and . Thus, and are in . Hence we find that and . This implies that is not well defined, i.e, does not satisfy condition (ii). Hence, is not a function from to .             For a function      The set A is called the domain of     The set B is called the codomain of     The set of all image of elements of A is called the range of        Let and . Let be the correspondence which assigns to each element in , its square. Thus, we have . Therefore, is a function and , and codomain of is .      Let . Let and represent the elements in the sets and , respectively. Let be a function defined by .  The variable can take values Thus, we have   .  This implies that and codomain of is IN .      Determine whether the following equations determine as a function of , if so, find the domain of the function.                            To determine whether gives as a function of , we need to know whether each x-value uniquely determines a y-value . Looking at the equation , we can see that once is chosen we multiply it by – 3 and then add 5. Thus, for each x there is a unique . Therefore, is a function. It domain is the set of all real numbers.    Looking at the equation carefully, we can see that each uniquely determines a (one can not produce two different ). Therefore, is a function.  As for its domain, we ask ourselves. Are there any values of that must be excluded? Since is a fractional expression, we must exclude any value of that makes the denominator equal to zero. We must have     Therefore, the domain consists of all real numbers except . Thus, .    For the equation , if we choose we get , which gives . In other words, there are two values associated with . Therefore, is not a function.         Find the domain of the function .    Since is defined and is real when the expression under the radical is non-negative, we need to satisfy the inequality     This is a quadratic inequality, which can be solved by analyzing signs:  Sign of    Since we want to be non-negative, the sign analysis shows us that the domain is or .       Let R be a relation on the set defined by .     List the elements of     Is          Let be a relation on the set defined by divides .     List the elements of     Find &     Find the elements of     Find &          Let . Define a relation on by . Write down the domain, codomain and range of . Find .      Find the domain and range of the relation .      Let and . Which of the following are functions from to ?                              Determine the domain and range of the following relations. Which relation a function?                                        Find the domain and range of the following functions.                              Given .  Find                           Add review   Add review   Add review   Add review  "
 },
 {
   "id": "def-Cartesian-product",
@@ -2809,11 +2773,20 @@ var ptx_lunr_docs = [
   "body": "  If and are sets, any subset of is called a relation from A into B .   "
 },
 {
+  "id": "sec-review-of-relations-and-functions-17",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-17",
+  "type": "Example",
+  "number": "3.1.6",
+  "title": "",
+  "body": "     Let and . Let be the relation “less than” from to . Then, .    Let and .  (a) The following are relations from into ;  (i)   (ii)   (iii)   (b) The following are relations from to ;  (i)   (ii)   (iii)       "
+},
+{
   "id": "def-relation-from-A-B",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#def-relation-from-A-B",
   "type": "Definition",
-  "number": "3.1.6",
+  "number": "3.1.7",
   "title": "",
   "body": "  Let be a relation from into . Then,     the domain of , denoted by , is the set of first coordinates of the elements of , i.e       the range of , denoted by , is the set of second coordinates of elements of , i.e         "
 },
@@ -2822,7 +2795,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-20",
   "type": "Example",
-  "number": "3.1.7",
+  "number": "3.1.8",
   "title": "",
   "body": "     The set is a relation from set to set . The domain of is , the range of is and the codomain of is .    The set of ordered pairs is a relation between the sets and , where is the domain and is the range.      "
 },
@@ -2831,7 +2804,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-23",
   "type": "Example",
-  "number": "3.1.8",
+  "number": "3.1.9",
   "title": "",
   "body": "     Let Let be the relation on defined by is a factor of . Find the domain and range of .    Let and .  Let Find   (a)   (b)   (c)            We have   .  Then, and .    We have   and and 64 are in whereas 125 is not in . Thus, , and .      "
 },
@@ -2840,7 +2813,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-26",
   "type": "Example",
-  "number": "3.1.9",
+  "number": "3.1.10",
   "title": "",
   "body": "  Let be a relation defined on by .Find   (a)   (b)   (c)   (d)      The smallest natural number is           Therefore, , , and .   "
 },
@@ -2849,7 +2822,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#def-Function",
   "type": "Definition",
-  "number": "3.1.10",
+  "number": "3.1.11",
   "title": "",
   "body": "  A function is a relation in which each element of the domain corresponds to exactly one element of the range.   "
 },
@@ -2858,16 +2831,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-30",
   "type": "Example",
-  "number": "3.1.11",
+  "number": "3.1.12",
   "title": "",
-  "body": "  Determine whether the following relations are functions.   (a)   (b)         Since the domain element 3 is assigned to two different values in the range, 5 and 7, it is not a function.    Each element in the domain, , is assigned no more than one value in the range, 2 is assigned only 4, 3 is assigned only 4, and 6 is assigned only . Therefore, it is a function.      "
+  "body": "  Determine whether the following relations are functions.   (a)   (b)         Since the domain element is assigned to two different values in the range, and , it is not a function.    Each element in the domain, , is assigned no more than one value in the range, 2 is assigned only 4, 3 is assigned only 4, and 6 is assigned only . Therefore, it is a function.      "
 },
 {
   "id": "def-mapping-transformation-correspondence",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#def-mapping-transformation-correspondence",
   "type": "Definition",
-  "number": "3.1.12",
+  "number": "3.1.13",
   "title": "",
   "body": "  A relation from A into B is called a function from A into B , denoted by   or   if and only if          No element of A is mapped by to more than one element in B , i.e. if and , then .      "
 },
@@ -2876,16 +2849,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-35",
   "type": "Example",
-  "number": "3.1.13",
+  "number": "3.1.14",
   "title": "",
-  "body": "  Let and . Which of the following are functions from A to .    defined by  defined by  defined by  defined by  defined by          is a function because to each element of A there corresponds exactly one element of .     is not a function because there is no element of B which correspond to 4 ( A ).     is a function because to each element of A there corresponds exactly one element of B . In the given function, the images of all element of A are the same.     is not a function because there are two elements of which correspond to .In other words, the image of is not unique.     is a function because to each element of there corresponds exactly one element of .      "
+  "body": "  Let and . Which of the following are functions from A to .    defined by  defined by  defined by  defined by  defined by          is a function because to each element of there corresponds exactly one element of .     is not a function because there is no element of which correspond to ( ).     is a function because to each element of there corresponds exactly one element of . In the given function, the images of all element of are the same.     is not a function because there are two elements of which correspond to .In other words, the image of is not unique.     is a function because to each element of there corresponds exactly one element of .      "
 },
 {
   "id": "sec-review-of-relations-and-functions-37",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-37",
   "type": "Example",
-  "number": "3.1.14",
+  "number": "3.1.15",
   "title": "",
   "body": "  Let . Then, maps:            "
 },
@@ -2894,16 +2867,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-40",
   "type": "Example",
-  "number": "3.1.15",
+  "number": "3.1.16",
   "title": "",
-  "body": "  Let f be the subset of defined by . Is f a function?    First we note that . Then, satisfies condition (i) in the definition of a function. Now, , and but . Thus is not well defined. Hence, is not a function from to .   "
+  "body": "  Let be the subset of defined by . Is a function?    First we note that . Then, satisfies condition (i) in the definition of a function. Now, , and but . Thus is not well defined. Hence, is not a function from to .   "
 },
 {
   "id": "sec-review-of-relations-and-functions-41",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-41",
   "type": "Example",
-  "number": "3.1.16",
+  "number": "3.1.17",
   "title": "",
   "body": "  Let be the subset of defined by . Is a function?    First we show that satisfies condition (i) in the definition. Let be any element of . Then, . Hence, . This implies that . Thus, . However, and so . Now, and . Thus, and are in . Hence we find that and . This implies that is not well defined, i.e, does not satisfy condition (ii). Hence, is not a function from to .   "
 },
@@ -2912,41 +2885,32 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-45",
   "type": "Example",
-  "number": "3.1.17",
+  "number": "3.1.18",
   "title": "",
-  "body": "     "
+  "body": "  Let and . Let be the correspondence which assigns to each element in , its square. Thus, we have . Therefore, is a function and , and codomain of is .   "
 },
 {
   "id": "sec-review-of-relations-and-functions-46",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-46",
   "type": "Example",
-  "number": "3.1.18",
+  "number": "3.1.19",
   "title": "",
-  "body": "  Let and . Let be the correspondence which assigns to each element in , its square. Thus, we have . Therefore, is a function and , and codomain of is .   "
+  "body": "  Let . Let and represent the elements in the sets and , respectively. Let be a function defined by .  The variable can take values Thus, we have   .  This implies that and codomain of is IN .   "
 },
 {
   "id": "sec-review-of-relations-and-functions-47",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-47",
   "type": "Example",
-  "number": "3.1.19",
+  "number": "3.1.20",
   "title": "",
-  "body": "  Let . Let and represent the elements in the sets and , respectively. Let be a function defined by .  The variable can take values Thus, we have   .  This implies that and codomain of is IN .   "
+  "body": "  Determine whether the following equations determine as a function of , if so, find the domain of the function.                            To determine whether gives as a function of , we need to know whether each x-value uniquely determines a y-value . Looking at the equation , we can see that once is chosen we multiply it by – 3 and then add 5. Thus, for each x there is a unique . Therefore, is a function. It domain is the set of all real numbers.    Looking at the equation carefully, we can see that each uniquely determines a (one can not produce two different ). Therefore, is a function.  As for its domain, we ask ourselves. Are there any values of that must be excluded? Since is a fractional expression, we must exclude any value of that makes the denominator equal to zero. We must have     Therefore, the domain consists of all real numbers except . Thus, .    For the equation , if we choose we get , which gives . In other words, there are two values associated with . Therefore, is not a function.      "
 },
 {
   "id": "sec-review-of-relations-and-functions-48",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-48",
-  "type": "Example",
-  "number": "3.1.20",
-  "title": "",
-  "body": "  Determine whether the following equations determine as a function of , if so, find the domain of the function.                            To determine whether gives as a function of , we need to know whether each x-value uniquely determines a y-value . Looking at the equation , we can see that once is chosen we multiply it by – 3 and then add 5. Thus, for each x there is a unique . Therefore, is a function. It domain is the set of all real numbers.    Looking at the equation carefully, we can see that each x-value uniquely determines a y-value (one x-value can not produce two different y-values ). Therefore, is a function.  As for its domain, we ask ourselves. Are there any values of that must be excluded? Since is a fractional expression, we must exclude any value of that makes the denominator equal to zero. We must have     Therefore, the domain consists of all real numbers except . Thus, .    For the equation , if we choose we get , which gives . In other words, there are two values associated with . Therefore, is not a function.      "
-},
-{
-  "id": "sec-review-of-relations-and-functions-49",
-  "level": "2",
-  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-49",
   "type": "Example",
   "number": "3.1.21",
   "title": "",
@@ -2968,7 +2932,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.1.2",
   "title": "",
-  "body": "  Let R be a relation on the set defined by divides .     List the elements of     Find     Find the elements of     Find       "
+  "body": "  Let be a relation on the set defined by divides .     List the elements of     Find &     Find the elements of     Find &       "
 },
 {
   "id": "exercises-Review-of-relations-and-functions-3",
@@ -3025,11 +2989,20 @@ var ptx_lunr_docs = [
   "body": "  Given .  Find                        "
 },
 {
+  "id": "sec-review-of-relations-and-functions-50",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-50",
+  "type": "Checkpoint",
+  "number": "3.1.22",
+  "title": "",
+  "body": " Add review "
+},
+{
   "id": "sec-review-of-relations-and-functions-51",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-51",
   "type": "Checkpoint",
-  "number": "3.1.22",
+  "number": "3.1.23",
   "title": "",
   "body": " Add review "
 },
@@ -3038,7 +3011,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-52",
   "type": "Checkpoint",
-  "number": "3.1.23",
+  "number": "3.1.24",
   "title": "",
   "body": " Add review "
 },
@@ -3046,15 +3019,6 @@ var ptx_lunr_docs = [
   "id": "sec-review-of-relations-and-functions-53",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-53",
-  "type": "Checkpoint",
-  "number": "3.1.24",
-  "title": "",
-  "body": " Add review "
-},
-{
-  "id": "sec-review-of-relations-and-functions-54",
-  "level": "2",
-  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-54",
   "type": "Checkpoint",
   "number": "3.1.25",
   "title": "",
@@ -3067,7 +3031,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Real Valued functions and their properties",
-  "body": " Real Valued functions and their properties  After completing this section, the student should be able to:    perform the four fundamental operations on polynomials  compose functions to get a new function  determine the domain of the sum, difference, product and quotient of two functions  define equality of two functions    Let be a function from set to set . If is a subset of the set of real numbers , then is called a real valued function, and in particular if is also a subset of , then is called a real function.       The function defined by , is a real function.    The function defined as is also a real valued function.                Functions are not numbers. But just as two numbers and can be added to produce a new number , so two functions and can be added to produce a new function . This is just one of the several operations on functions that we will describe in this section.  Consider functions and defined by and . We can make a new function by having it assign to the value , that is,  .    Let and be two functions. We define the following four functions:    The sum of the two functions  The difference of the two functions  The product of the two functions  The quotient of the two functions (provided    Since an value must be an input into both and , the domain of is the set of all common to the domain of and . This is usually written as . Similar statements hold for the domains of the difference and product of two functions. In the case of the quotient, we must impose the additional restriction that all elements in the domain of for which are excluded.      Let and . Find each of the following and its domain                                          Let and , with respective domains and . Find formulas for and and give their domains.     There is yet another way of producing a new function from two given functions.      Given two functions and , the composition of the two functions is denoted by and is defined by:   .   is read as composed with of . The domain of consists of those s in the domain of whose range values are in the domain of , i.e. those s for which is in the domain of .      Suppose and . The function is found by taking elements in the domain of and evaluating as follows:   ,   If we attempt to find we get , but 5 is not in the domain of and so we cannot find . Hence, . The figure below illustrates this situation.      Given and , find                                …… First evaluate            …….First evaluate            ……. But               ……. But                   Given and , find       and its domain     and its domain            . Thus, .     . Since must first be an input into and so must be in the domain of , we see that .         Let and . Find and and its domain.    We have .   .  The domain of is .  We now explore the meaning of equality of two functions. Let and be two functions. Then, and are subsets of . Suppose . Let be any element of . Then, and thus . Since is a function and , we must have Conversely, assume that for all . Let . Then, . Thus, , which implies that . Similarly, we can show that . It now follows that . Thus two functions and are equal if and only if for all . In general we have the following definition.      Two functions are said to be equal if and only if the following two conditions hold:     The functions have the same domain;    Their functional values are equal at each element of the domain.            Let and be defined by and . Now, for all , . Thus, .    Let , and . The function and are not equal because           For and , find each value:                                          If and , find a formula for each of the following and state its domain.                              Let and .     Find and its domain.    Find and its domain    Are and the same functions? Explain.         Let . Find so that .      Let Find so that .      If is a real function defined by . Show that .      Find two functions and so that the given function , where                              Let and . Find                                        Add review   Add review   Add review   Add review  "
+  "body": " Real Valued functions and their properties  After completing this section, the student should be able to:    perform the four fundamental operations on polynomials  compose functions to get a new function  determine the domain of the sum, difference, product and quotient of two functions  define equality of two functions    Let be a function from set to set . If is a subset of the set of real numbers , then is called a real valued function, and in particular if is also a subset of , then is called a real function.       The function defined by , is a real function.    The function defined as is also a real valued function.                Functions are not numbers. But just as two numbers and can be added to produce a new number , so two functions and can be added to produce a new function . This is just one of the several operations on functions that we will describe in this section.  Consider functions and defined by and . We can make a new function by having it assign to the value , that is,  .    Let and be two functions. We define the following four functions:    The sum of the two functions  The difference of the two functions  The product of the two functions  The quotient of the two functions (provided    Since an value must be an input into both and , the domain of is the set of all common to the domain of and . This is usually written as . Similar statements hold for the domains of the difference and product of two functions. In the case of the quotient, we must impose the additional restriction that all elements in the domain of for which are excluded.      Let and . Find each of the following and its domain                                      We have            Let and , with respective domains and . Find formulas for and and give their domains.      Formula  Domain                            There is yet another way of producing a new function from two given functions.      Given two functions and , the composition of the two functions is denoted by and is defined by:   .   is read as composed with of . The domain of consists of those s in the domain of whose range values are in the domain of , i.e. those s for which is in the domain of .      Suppose and . The function is found by taking elements in the domain of and evaluating as follows:   ,   If we attempt to find we get , but is not in the domain of and so we cannot find . Hence, . The figure below illustrates this situation.          Given and , find                                …… First evaluate            …….First evaluate            ……. But               ……. But                   Given and , find       and its domain     and its domain            . Thus, .     . Since must first be an input into and so must be in the domain of , we see that .         Let and . Find and and its domain.    We have .   .  The domain of is .  We now explore the meaning of equality of two functions. Let and be two functions. Then, and are subsets of . Suppose . Let be any element of . Then, and thus . Since is a function and , we must have Conversely, assume that for all . Let . Then, . Thus, , which implies that . Similarly, we can show that . It now follows that . Thus two functions and are equal if and only if for all . In general we have the following definition.      Two functions are said to be equal if and only if the following two conditions hold:     The functions have the same domain;    Their functional values are equal at each element of the domain.            Let and be defined by and . Now, for all , . Thus, .    Let , and . The function and are not equal because           For and , find each value:                                          If and , find a formula for each of the following and state its domain.                              Let and .     Find and its domain.    Find and its domain    Are and the same functions? Explain.         Let . Find so that .      Let Find so that .      If is a real function defined by . Show that .      Find two functions and so that the given function , where                              Let and . Find                                        Add review   Add review   Add review   Add review  "
 },
 {
   "id": "sec-real-valued-functions-and-their-5",
@@ -3094,7 +3058,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.2.3",
   "title": "",
-  "body": "  Let and . Find each of the following and its domain                                       "
+  "body": "  Let and . Find each of the following and its domain                                      We have         "
 },
 {
   "id": "sec-real-valued-functions-and-their-12",
@@ -3103,7 +3067,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.2.4",
   "title": "",
-  "body": "  Let and , with respective domains and . Find formulas for and and give their domains.     There is yet another way of producing a new function from two given functions.   "
+  "body": "  Let and , with respective domains and . Find formulas for and and give their domains.      Formula  Domain                            There is yet another way of producing a new function from two given functions.   "
 },
 {
   "id": "def-Composition-of-functions",
@@ -3121,7 +3085,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.2.6",
   "title": "",
-  "body": "  Suppose and . The function is found by taking elements in the domain of and evaluating as follows:   ,   If we attempt to find we get , but 5 is not in the domain of and so we cannot find . Hence, . The figure below illustrates this situation.   "
+  "body": "  Suppose and . The function is found by taking elements in the domain of and evaluating as follows:   ,   If we attempt to find we get , but is not in the domain of and so we cannot find . Hence, . The figure below illustrates this situation.       "
 },
 {
   "id": "sec-real-valued-functions-and-their-15",
@@ -3508,7 +3472,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.5",
   "title": "Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs",
-  "body": " Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs   After completing this section, the student should be able to:    define exponential, logarithmic, trigonometric and hyperbolic functions  understand the relationship of the exponential and logarithmic functions  define the hyperbolic functions and be familiar with their properties  sketch the graph of exponential, logarithmic, trigonometric and hyperbolic functions  use basic properties of logarithmic, exponential, hyperbolic and trigonometric functions to solve problems           For a natural number   and a real number  , the power  , read “ the   power of  ” or “ r raised to  ”, is defined as follows:   In the symbol  ,  is called the base and   is called the exponent.    For example, .  Based of the definition of , must be a natural number. It does not make sense for to be negative or zero. However, we can extend the definition of exponents to include 0 and negative exponents.        Note: is undefined.    As a result of the above definition, we have . We have the following rules of exponents for integer exponents:    Rules for Integer Exponents             Next we extend the definition of exponents even further to include rational number exponents. To do this, we assume that we want the rules for integer exponents also to apply to rational exponents and then use the rules to show us to define a rational exponent. For example, how do we define ? Consider .  If we apply rule 2 and square , we get . Thus, is a number that, when squared, yields 9. There are two possible answers: 3 and – 3, since squaring either number will yield 9. To avoid ambiguity, we define (called the principal square root of ) as the non-negative quantity that, when squared, yield . Thus, .  We will arrive at the definition of in the same way as we did for . For example, if we cube , we get . Thus, is the number that, when cubed, yields 8. Since we have . Similarly, . Thus, we define (called the cube root of ) as the quantity that, when cubed yields .      If is an odd positive integer, then if and only if  If is an even positive integer and , then if and only if    We call the principal root of . Hence, is the real number (nonnegative when is even) that, when raised to the power, yields . Therefore,       Thus far, we have defined , where is a natural number. With the help of the second rule for exponent, we can define the expression , where and are natural numbers and is reduced to lowest terms.      If is a real number, then (i.e. the root of a raised to the power)    We can also define negative rational exponents:       Evaluate the following           We have                       Radical notation is an alternative way of writing an expression with rational exponents. We define for real number , the root of as follows:     (  root of  ):  = , where is a positive integer.    The number is also called the principal root of . If the root of exists, we have:        For example, .       In the previous sections we examined functions of the form , where is a constant. How is this function different from .    A function of the form , where and , is called an exponential function.     The functions , and are examples of exponential functions.  As usual the first question raised when we encounter a new function is its domain. Since rational exponents are well defined, we know that any rational number will be in the domain of an exponential function. For example, let . Then as takes on the rational values – 2 , and , we have      Note that even though we do not know the exact values of and , we do know exactly what they mean. However, what about for irrational values of ? For instance,  We have not defined the meaning of irrational exponents. In fact, a precise formal definition of where is irrational requires the ideas of calculus. However, we can get an idea of what should be by using successive rational approximations to . For example, we have   Thus, it would seem reasonable to expect that . Since 1.414 and 1.415 are rational numbers, and are well defined, even though we cannot compute their values by hand. Using a calculator, we get . If we use better approximations to , we get . Using a calculator again, we get . Computing directly on a calculator gives . This numerical evidence suggests that as approaches , the values of approach a unique real number that we designate by , and so we will accept without proof, the fact that the domain of the exponential function is the set of real numbers.    The exponential function , where and , is defined for all real values of . In addition all the rules for rational exponents hold for real number exponents as well.    Before we state some general facts about exponential functions , let’s see if we can determine what the graph of an exponential function will look like.        Sketch the graph of the function and identify its domain and range.    Sketch the graph of .                 -3                                 With these points in hand, we draw a smooth curve through the points obtaining the graph appearing above. Observe that the domain of is , the graph has no intercepts, as  , the values are increasing very rapidly, whereas as , the values are getting closer and closer to 0. Thus, is a horizontal asymptote, the intercept is 1 and the range of is the set of positive real numbers.    It would be instructive to compute a table of values as we did in example 1 above (you are urged to do so). However, we will take a different approach. We note that . If , then . Thus by the graphing principle for , we can obtain the graph of by reflecting the graph of about the .     Here again the is a horizontal asymptote, there is no intercept, 1 is intercept and the range is the set of positive real numbers. However, the graph is now decreasing rather than increasing.  The following box summarizes the important facts about exponential functions and their graphs.    The Exponential function        The domain of the exponential function is the set of real numbers  The range of the exponential function is the set of positive real numbers  The graph of exhibits exponential growth if or exponential decay if .  The intercept is 1.  The intercept is a horizontal asymptote  The exponential function is 1 – 1. Algebraically if , then              Sketch the graph of each of the following. Find the domain, range, intercepts, and asymptotes.  a)          To get the graph of . We start with the graph of , which is the basic exponential growth graph, and shift it up 1 unit.         From the graph we see that    Dom( f )  Range( f )  The intercept is 2  The line is a horizontal asymptote         To get the graph of , we start with the graph of , and shift 1 unit to the left.         From the graph we see that    Dom( f )  Range( f )  The intercept is 3  The line is a horizontal asymptote         To get the graph of , we start with the basic exponential decay . We then reflect it with respect to the , which gives the graph of . Finally, we shift this graph up 3 units to get the required graph of .   Basic exponential decay   From the graph of , we can see that , , the line is a horizontal asymptote, 2 is the intercept and is the intercept.  : When the base of the exponential function equals to the number , where , we call the exponential function the natural exponential function.            In the previous subsection we noted that the exponential function (where and ) is one to one. Thus, the exponential function has an inverse function. What is the inverse of ?  To find the inverse of , let’s review the process for finding an inverse function by comparing the process for the polynomial function and the exponential function . Keep in mind that is our independent variable and is the dependent variable and so whenever possible we want a function solved explicitly for .          Interchange and  solve for  Interchange and  solve for    There is no algebraic procedure we can use to solve for . By introducing radical notations we could express the inverse of explicitly in the form . In words, and both mean exactly the same thing: is the number whose cube is . Similarly, if we want to express explicitly as a function of , we need to invent a special notation for this. The key idea is to take the equation and express it verbally.     We introduce the following notation, which expresses this idea in a much more compact form.    For and , we write to mean is the exponent to which must be raised to yield . In other words, .    We read as “ equals the logarithm of to the base ”.    is an alternative way of writing   When an expression is written in the form , it is said to be in exponential form. When an expression is written in the form , it is said to be in logarithmic form. The table below illustrates the equivalence of the exponential and logarithmic forms.    Exponential form  Logarithmic form                       Write each of the following in exponential form.                  Write each of the following in logarithmic form.                  Evaluate each of the following.                        We have      means   and     means        We have      means      means           To evaluate , we let , and then rewrite the equation in exponential form, . Now, if we can express both sides in terms of the same base, we can solve the resulting exponential equation, as follows:  Let      Therefore, .    We apply the same procedure as in part (a).  Let      Therefore, .          As was pointed out at the beginning of this subsection, logarithm notation was invented to express the inverse of the exponential function. Thus, is a function of . We usually write rather than writing and use parenthesis only when needed to clarify the input to the log function. For example,  If , then , whereas if , then , which is undefined.    Given f , find                 (since )     (since )     is not defined (what power of will yield 0?). We say that is not in the domain of .     is not defined (what power of will yield a negative number?). We say that is not in the domain of .       Acknowledging that the logarithmic and exponential functions are inverses, we can derive a great deal of information about the logarithmic function and its graph from the exponential function and its graph.    Sketch the graph of the following functions. Find the domain and range of each.                Since is the inverse of , we can obtain the graph of by reflecting the graph of about the line , as shown below.   The first graph     To get the graph of , we reflect the graph of about the line as shown below.   The second graph        Taking note of the features of the two graphs we have the following important informations about the graph of the log function:           Its domain is the set of positive real numbers  Its range is the set of real numbers.  Its graph exhibits logarithmic growth if and logarithmic decay if .  The is . There is no .  The is a vertical asymptote.            Sketch the graph of . Find the domain, range, asymptote and intercepts.    Find the inverse function for                   We can obtain the graph of by applying the graphing principle to shift the basic logarithmic growth graph units to the right and 1 unit up.     We have Dom , Range and the graph has the line as a vertical asymptote. To find the intercept, we set and solve for . Setting and solving for , we will obtain . Thus, the intercept is .    Following the procedure for finding an inverse function, we have                     The following table contains the basic properties of logarithm:         Assume that , and are positive and . Then           In words, logarithm of a product is equal to the sum of the logs of the factors.       In words, the log of a quotient is the log of the numerator minus the log of the denominator.       In words, the log of a power is the exponent times the log.               if a is positive and .        The following table contains the basic properties of logarithm:    Express in terms of simpler logarithms.          Show that .                  Examining the properties of logarithms, we can see that they deal with log of a product, quotient and power. Thus, which is the log of a sum cannot be simplified using log properties.    We have                  The logarithmic function was introduced without stressing the particular base chosen. However, there are two bases of special importance in science and mathematics, namely, and .     is called the common logarithm function. We write .    The inverse of the natural exponential function is called the natural logarithmic function and has its own special notation.     is called the natural logarithm function. We write .         Evaluate .    Find the inverse function of .          Evaluate .  Let . Then , .     Let            For the functions we have encountered so far, namely polynomial, rational and exponential functions, as the independent variable goes to infinity the graph of each of these three functions either goes to infinity(very quickly) for exponential functions or approaches a finite horizontal asymptote. None of these functions can model the regular periodic patterns that play an important role in the social, biological, and physical sciences: business cycles, agricultural seasons, heart rhythms, and hormone level fluctuations, and tides and planetary motions. The basic functions for studying regular periodic behaviour are the trigonometric functions. The domain of the trigonometric functions is more naturally the set of all geometric angles.   Angle Measurement    An angle is the figure formed by two half-lines or rays with a common end point. The common end point is called the vertex of the angle.     In forming the angle, one side remains fixed and the other side rotates. The fixed side is called the initial side and the side that rotates is called the terminal side. If the terminal side rotates in a counter clockwise direction, we call the angle positive angle, and if the terminal side rotates in a clockwise direction, we call the angle negative angle.          What attribute of an angle are we trying to measure when we measure the size of an angle? A moment of thought will lead us to the conclusion that when we measure an angle we are trying to answer the question: Through what part of a complete rotation has the terminal side rotated?  We will use degree (°) as the unit of measurement for angles. Recall that the measure of a full round angle (full circle) is 360°, straight angle is 180°, and right angle is 90°.  An alternative unit of measure for angles which will indicate their size is the radian measure. To see the connection between the degree measure and radian measure of an angle, let us consider an angle and draw a circle of radius with the vertex of at its center . Let represent the length of the arc of the circle intercepted by (as shown below).     Basic geometry tells us that the central angle will be the same fractional part of one complete rotation as will be of the circumference of the circle. For example, is of a complete rotation, then will be of the circumference of the circle. In other words, we can set up the following proportion:     Thus, we have the following conversion formula:        Convert each of the following radian measures to degrees.             Convert to radian measures                      By the conversion formula, we have , which implies that .    Again using the conversion formula, we have , which implies that .          Let represent the radian measure of . Using the conversion formula, we obtain: , which implies that .    Rather than using the conversion formula, we notice that . In part (a) we found that , and so we have .          To define the trigonometric functions, we will view all angles in the context of a Cartesian coordinate system: that is, given an angle , we begin by putting in standard position, meaning that the vertex of is placed at the origin and initial side of is placed along the positive x-axis . Thus the location of the terminal side of will, of course, depend on the size of .          We then locate a point (other than the origin) on the terminal side of and identify its coordinates and its distance to the origin, denoted by . Then, is positive.  With in standard position, we define the six trigonometric functions of as follows:           Sine      Cosine      Tangent      Cosecant      Secant      Cotangent        Recall that the radian measure of an angle is defined as , where is the length of the arc intercepted by and is the length of the radius Since and are both lengths, the quotient is a pure number without any units attached. Thus, any angle can be interpreted as a real number. Conversely, any real number can be interpreted as an angle. Thus, we can describe the domains of the trigonometric functions in the frame work of the real number systems. If we let , the domain consists of all real numbers for which is defined. Since and are never equal to zero, the domain for is the set of all real numbers. Similarly, the domain of is also the set of all real numbers.        To analyze , we keep in mind that once we choose a real number , we draw the angle, in standard position, that corresponds to . To simplify our analysis, we choose the point on the terminal side so that . That is, is a point on the unit circle .  Note that .     As the terminal side of moves through the first quadrant, increases from (when ) to (when ). Thus, as increases from to , steadily increases from to . As increases from to , decreases from to . A similar analysis reveals that as increases from to , decreases from to ; and as increases from to , increases from to .  Based on this analysis, we have the graph of in the interval as show below.     Since the values of depend only on the position of the terminal side, adding or subtracting multiples of to will leave the unchanged. Thus, the value of will repeat every units. The complete graph of appears below.     The graph of , which is called the basic sine curve.           Applying the same type of analysis to , we will able to get a good idea of what its graph looks like. The figure below shows the angle corresponding to as it increases through quadrant I, II, III and IV.  Keeping in mind that , we have the following:     As increases from 0 to , decreases from 1 to 0.    As increases from to , decreases from 0 to -1.    As increases from to , increases from -1 to 0.    As increases from to , increases from 0 to 1.     Based on this analysis, we have the graph of f (\\theta ) = cos\\theta as shown below:        since is undefined whenever , is undefined whenever the terminal side of the angle corresponding to falls on the - axis . This happens for , to which we can add or subtract any multiple of that will again bring the terminal side back to the - axis . Thus, domain of is { : } , where is an integer.     As increases from 0 to , decreases from 1 to 0 and increases from 0 to 1; therefore, increases from 0 to .    As increases from to , decreases from 0 to -1 and decreases from 1 to 0; therefore, increases from to 0.    As increases from to , increases from -1 to 0 and decreases from 0 to -1; therefore, increases from 0 to .    As increases from to , increases from 0 to 1 and increases from -1 to 0; therefore, increases from to .     You may want to add some more specific values to this analysis. In any case, we get the following as the graph of the tangent function.   The tangent curve      A function is called periodic if there exists a number such that for all in the domain of . The smallest such number is called the period of the function.    A periodic function keeps repeating the same set of - values over and over again. The graph of a periodic function shows the same basic segment of its graph being repeated. In the case of sine and cosine functions, the period is . The period of the tangent function is .    The amplitude of a periodic function f ( x ) is       Thus, the amplitude of the basic sine and cosine function is . The portion of the graph of a sine or cosine function over one period is called a complete cycle of the graph. In other words, the minimal portion of a sine or cosine graph that keeps repeating itself is called a complete cycle of the graph.    The number of complete cycles a sine or cosine graph makes on an interval of length equal to is called its frequency.    The frequency of the basic sine curve and the basic cosine curve is , because each graph makes complete cycle in the interval .  If a sine function has period of (see the figure below), then the number of complete cycles its graph will make in an interval of length is .   A sine graph of period and frequency 4   A sine graph of period and frequency   Thus if a sine function has a period of , its frequency is and its graph will make complete cycles in an interval of length .    Sketch the graph of and find its amplitude, period and frequency.    We can obtain this graph by applying our knowledge of the basic sine graph. For the basic curve, we have     These quadrantal values serve as guide points, which help us draw the graph. To obtain similar guide points for , we ask for what values of is   and we get     Thus, will have the values at , respectively. The graph of will thus complete one cycle in the interval , and will repeat the same values in the interval .   The graph of y = sin 2x   From this graph we see that has an amplitude of 1, a period , and a frequency of 2.    For convenience we summarize our discussion on the domains of the trigonometric functions in the table.                 Domain = All real numbers  Domain = All real numbers  Domain  Domain  Domain  Domain where is an integer     In the course of our discussion of the trigonometric functions, we have discussed two types of trigonometric relationships: the reciprocal and quotient relationships. These relationships are examples of trigonometric identities. In the table below we list identities that are satisfied by the trigonometric functions.   The reciprocal Identities                       The quotient Identities                  The Pythagorean Identities                       The addition formula                                                    The double angle formula                       The half-angle formula                           The hyperbolic functions are certain combinations of exponential functions, that occur in various applications, with properties similar to those of the trigonometric functions. Among many other applications they are used to describe the formation of satellite rings around the planets, to describe the shape of a rope hanging from two points, and have application in relativity theory. The two basic hyperbolic functions are the hyperbolic sine and hyperbolic cosine functions. They are defined as follows:    Definition 3.27 :      The hyperbolic sine function is defined by:    The domain of is .   The hyperbolic cosine function is defined by:    The domain of is also    Remark :  1. is pronounced and is pronounced as .  2. Since for all , we see that for every .  3. If , then . Thus, is an even  function.  4. is an odd function.  3. In contrast to sine and cosine, the hyperbolic functions are not periodic.  Example 3.28 : Using the above definitions, show that       Solution :   We have           Left as an exercise.    The graph of    Since is an even function, its graph is symmetric about the . Its intercept is , because . As tends to infinity, tends to infinity because goes to infinity and approaches to 0. When is a large negative number acts like , because gets close to 0. Thus the graph of looks like:   This graph can also be obtained by geometrically adding the two curves and , and taking half of each resulting . Observe that range of is .   The graph of    Since is an odd function, its graph is symmetric about the origin. The graph passes through the origin because . As gets large acts like and when is a large negative number, acts like . Thus, the graph of looks like:   The remaining four hyperbolic functions are defined in terms of and by  analogy with trigonometry.     (The domain of is .  (The domain of is )  (The domain of is )  (The domain of is )     You may sketch the graphs of these four hyperbolic functions (see exercise 19).  The trigonometric terminology and notation for the hyperbolic functions stem from the fact that they satisfy a list of identities that much resemble the familiar trigonometric identities, apart from an occasional difference of sign.     (1)  (2)  (3)  (4)  (5)     The trigonometric functions are sometimes called circular functions because the point lies on the circle for all . Similarly, identity (1) tells us that the point lies on the hyperbola , and this is the reason for the name hyperbolic functions.  Exercise 3.5   Find the domain of the given function.    b) c) d)    Sketch the graph of the given function. Identify the domain, range, intercepts, and asymptotes.    b) c) d)    Solve the given exponential equation.    b) c) d)    Let . Show that .  Let . Show that .  Let . Show that .  Evaluate the given logarithmic expression (where it is defined).    c) e)  d) f)    If , find and the domain of .  If , find and the domain of .  Show that  Sketch the graph of the given function and identify the domain, range, intercepts and asymptotes.    b) c) d)    Find the inverse of .  Let . Find a function so that .  Convert the given angle from radians to degrees    b) c)    Convert the given angle from degrees to radians    b) c)    Sketch the graph of    c) e)  d) f)    Verify the following identities:        Given and , find .  Sketch the graphs of    c)  d)    Prove the identities (2) and (3).  Find the exact numerical value of    b) c)    Prove the following identities:         Add review   Add review   Add review   Add review  "
+  "body": " Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs   After completing this section, the student should be able to:    define exponential, logarithmic, trigonometric and hyperbolic functions  understand the relationship of the exponential and logarithmic functions  define the hyperbolic functions and be familiar with their properties  sketch the graph of exponential, logarithmic, trigonometric and hyperbolic functions  use basic properties of logarithmic, exponential, hyperbolic and trigonometric functions to solve problems           For a natural number and a real number , the power , read “ the power of ” or “ raised to ”, is defined as follows:   In the symbol , is called the base and is called the exponent.    For example, .  Based of the definition of , must be a natural number. It does not make sense for to be negative or zero. However, we can extend the definition of exponents to include 0 and negative exponents.                 As a result of the above definition, we have . We have the following rules of exponents for integer exponents:                  Next we extend the definition of exponents even further to include rational number exponents. To do this, we assume that we want the rules for integer exponents also to apply to rational exponents and then use the rules to show us to define a rational exponent. For example, how do we define ? Consider .  If we apply rule 2 and square , we get . Thus, is a number that, when squared, yields 9. There are two possible answers: 3 and – 3, since squaring either number will yield 9. To avoid ambiguity, we define (called the principal square root of ) as the non-negative quantity that, when squared, yield . Thus, .  We will arrive at the definition of in the same way as we did for . For example, if we cube , we get . Thus, is the number that, when cubed, yields 8. Since we have . Similarly, . Thus, we define (called the cube root of ) as the quantity that, when cubed yields .     If is an odd positive integer, then if and only if  If is an even positive integer and , then if and only if    We call the principal root of . Hence, is the real number (nonnegative when is even) that, when raised to the power, yields . Therefore,       Thus far, we have defined , where is a natural number. With the help of the second rule for exponent, we can define the expression , where and are natural numbers and is reduced to lowest terms.     If is a real number, then (i.e. the root of a raised to the power)    We can also define negative rational exponents:       Evaluate the following           We have                       Radical notation is an alternative way of writing an expression with rational exponents. We define for real number , the root of as follows:     (   ):  = , where is a positive integer.    The number is also called the principal root of . If the root of exists, we have:        For example, .       In the previous sections we examined functions of the form , where is a constant. How is this function different from .    A function of the form , where and , is called an exponential function.     The functions , and are examples of exponential functions.  As usual the first question raised when we encounter a new function is its domain. Since rational exponents are well defined, we know that any rational number will be in the domain of an exponential function. For example, let . Then as takes on the rational values – 2 , and , we have      Note that even though we do not know the exact values of and , we do know exactly what they mean. However, what about for irrational values of ? For instance,  We have not defined the meaning of irrational exponents. In fact, a precise formal definition of where is irrational requires the ideas of calculus. However, we can get an idea of what should be by using successive rational approximations to . For example, we have   Thus, it would seem reasonable to expect that . Since 1.414 and 1.415 are rational numbers, and are well defined, even though we cannot compute their values by hand. Using a calculator, we get . If we use better approximations to , we get . Using a calculator again, we get . Computing directly on a calculator gives . This numerical evidence suggests that as approaches , the values of approach a unique real number that we designate by , and so we will accept without proof, the fact that the domain of the exponential function is the set of real numbers.       , where   ,  .   Before we state some general facts about exponential functions , let’s see if we can determine what the graph of an exponential function will look like.        Sketch the graph of the function and identify its domain and range.    Sketch the graph of .          To aid in our analysis, we set up a short table of values to give us a frame of reference.          -3                                 With these points in hand, we draw a smooth curve through the points obtaining the graph appearing above. Observe that the domain of is , the graph has no intercepts, as  , the values are increasing very rapidly, whereas as , the values are getting closer and closer to 0. Thus, is a horizontal asymptote, the intercept is 1 and the range of is the set of positive real numbers.    It would be instructive to compute a table of values as we did in example 1 above (you are urged to do so). However, we will take a different approach. We note that . If , then . Thus by the graphing principle for , we can obtain the graph of by reflecting the graph of about the .     Here again the is a horizontal asymptote, there is no intercept, 1 is intercept and the range is the set of positive real numbers. However, the graph is now decreasing rather than increasing.  The following box summarizes the important facts about exponential functions and their graphs.            The domain of the exponential function is the set of real numbers  The range of the exponential function is the set of positive real numbers  The graph of exhibits exponential growth if or exponential decay if .  The intercept is 1.  The intercept is a horizontal asymptote  The exponential function is 1 – 1. Algebraically if , then              Sketch the graph of each of the following. Find the domain, range, intercepts, and asymptotes.  a)          To get the graph of . We start with the graph of , which is the basic exponential growth graph, and shift it up 1 unit.          From the graph we see that    Dom( f )  Range( f )  The intercept is 2  The line is a horizontal asymptote         To get the graph of , we start with the graph of , and shift 1 unit to the left.          From the graph we see that    Dom( f )  Range( f )  The intercept is 3  The line is a horizontal asymptote         To get the graph of , we start with the basic exponential decay . We then reflect it with respect to the , which gives the graph of . Finally, we shift this graph up 3 units to get the required graph of .   Basic exponential decay   From the graph of , we can see that , , the line is a horizontal asymptote, 2 is the intercept and is the intercept.  : When the base of the exponential function equals to the number , where , we call the exponential function the natural exponential function.            In the previous subsection we noted that the exponential function (where and ) is one to one. Thus, the exponential function has an inverse function. What is the inverse of ?  To find the inverse of , let’s review the process for finding an inverse function by comparing the process for the polynomial function and the exponential function . Keep in mind that is our independent variable and is the dependent variable and so whenever possible we want a function solved explicitly for .            and     and          There is no algebraic procedure we can use to solve for . By introducing radical notations we could express the inverse of explicitly in the form . In words, and both mean exactly the same thing: is the number whose cube is . Similarly, if we want to express explicitly as a function of , we need to invent a special notation for this. The key idea is to take the equation and express it verbally.     We introduce the following notation, which expresses this idea in a much more compact form.    For and , we write to mean is the exponent to which must be raised to yield . In other words, .    We read as “ equals the logarithm of to the base ”.    is an alternative way of writing   When an expression is written in the form , it is said to be in exponential form. When an expression is written in the form , it is said to be in logarithmic form. The table below illustrates the equivalence of the exponential and logarithmic forms.     Exponential form  Logarithmic form                       Write each of the following in exponential form.                  Write each of the following in logarithmic form.                  Evaluate each of the following.                        We have      means   and     means        We have      means      means           To evaluate , we let , and then rewrite the equation in exponential form, . Now, if we can express both sides in terms of the same base, we can solve the resulting exponential equation, as follows:  Let     Therefore, .    We apply the same procedure as in part (a).  Let     Therefore, .          As was pointed out at the beginning of this subsection, logarithm notation was invented to express the inverse of the exponential function. Thus, is a function of . We usually write rather than writing and use parenthesis only when needed to clarify the input to the log function. For example,  If , then , whereas if , then , which is undefined.    Given f , find                 (since )     (since )     is not defined (what power of will yield 0?). We say that is not in the domain of .     is not defined (what power of will yield a negative number?). We say that is not in the domain of .       Acknowledging that the logarithmic and exponential functions are inverses, we can derive a great deal of information about the logarithmic function and its graph from the exponential function and its graph.    Sketch the graph of the following functions. Find the domain and range of each.                Since is the inverse of , we can obtain the graph of by reflecting the graph of about the line , as shown below.   The first graph     To get the graph of , we reflect the graph of about the line as shown below.   The second graph        Taking note of the features of the two graphs we have the following important informations about the graph of the log function:            Its domain is the set of positive real numbers  Its range is the set of real numbers.  Its graph exhibits logarithmic growth if and logarithmic decay if .  The intercept is . There is no .  The axisis a vertical asymptote.            Sketch the graph of . Find the domain, range, asymptote and intercepts.    Find the inverse function for                   We can obtain the graph of by applying the graphing principle to shift the basic logarithmic growth graph units to the right and 1 unit up.     We have Dom  , Range and the graph has the line as a vertical asymptote. To find the intercept, we set and solve for . Setting and solving for , we will obtain . Thus, the intercept is .    Following the procedure for finding an inverse function, we have     We have       We have             The following table contains the basic properties of logarithm:          Assume that , and are positive and . Then           In words, logarithm of a product is equal to the sum of the logs of the factors.       In words, the log of a quotient is the log of the numerator minus the log of the denominator.       In words, the log of a power is the exponent times the log.               if a is positive and .        The following table contains the basic properties of logarithm:    Express in terms of simpler logarithms.                Show that .                  Examining the properties of logarithms, we can see that they deal with log of a product, quotient and power. Thus, which is the log of a sum cannot be simplified using log properties.    We have                  The logarithmic function was introduced without stressing the particular base chosen. However, there are two bases of special importance in science and mathematics, namely, and .        is called the common logarithm function. We write .    The inverse of the natural exponential function is called the natural logarithmic function and has its own special notation.        is called the natural logarithm function. We write .         Evaluate .    Find the inverse function of .          Evaluate .  Let . Then , .     Let            For the functions we have encountered so far, namely polynomial, rational and exponential functions, as the independent variable goes to infinity the graph of each of these three functions either goes to infinity(very quickly) for exponential functions or approaches a finite horizontal asymptote. None of these functions can model the regular periodic patterns that play an important role in the social, biological, and physical sciences: business cycles, agricultural seasons, heart rhythms, and hormone level fluctuations, and tides and planetary motions. The basic functions for studying regular periodic behaviour are the trigonometric functions. The domain of the trigonometric functions is more naturally the set of all geometric angles.   Angle Measurement    An angle is the figure formed by two half-lines or rays with a common end point. The common end point is called the vertex of the angle.     In forming the angle, one side remains fixed and the other side rotates. The fixed side is called the initial side and the side that rotates is called the terminal side. If the terminal side rotates in a counter clockwise direction, we call the angle positive angle, and if the terminal side rotates in a clockwise direction, we call the angle negative angle.          What attribute of an angle are we trying to measure when we measure the size of an angle? A moment of thought will lead us to the conclusion that when we measure an angle we are trying to answer the question: Through what part of a complete rotation has the terminal side rotated?  We will use degree (°) as the unit of measurement for angles. Recall that the measure of a full round angle (full circle) is 360°, straight angle is 180°, and right angle is 90°.  An alternative unit of measure for angles which will indicate their size is the radian measure. To see the connection between the degree measure and radian measure of an angle, let us consider an angle and draw a circle of radius with the vertex of at its center . Let represent the length of the arc of the circle intercepted by (as shown below).     Basic geometry tells us that the central angle will be the same fractional part of one complete rotation as will be of the circumference of the circle. For example, is of a complete rotation, then will be of the circumference of the circle. In other words, we can set up the following proportion:     Thus, we have the following conversion formula:        Convert each of the following radian measures to degrees.             Convert to radian measures                      By the conversion formula, we have , which implies that .    Again using the conversion formula, we get , which implies that .          Let represent the radian measure of . Using the conversion formula, we obtain: , which implies that .    Rather than using the conversion formula, we notice that . In part (a) we found that , and so we have .          To define the trigonometric functions, we will view all angles in the context of a Cartesian coordinate system: that is, given an angle , we begin by putting in standard position, meaning that the vertex of is placed at the origin and initial side of is placed along the positive x-axis . Thus the location of the terminal side of will, of course, depend on the size of .          We then locate a point (other than the origin) on the terminal side of and identify its coordinates and its distance to the origin, denoted by . Then, is positive.  With in standard position, we define the six trigonometric functions of as follows:            Sine      Cosine      Tangent      Cosecant      Secant      Cotangent        Recall that the radian measure of an angle is defined as , where is the length of the arc intercepted by and is the length of the radius Since and are both lengths, the quotient is a pure number without any units attached. Thus, any angle can be interpreted as a real number. Conversely, any real number can be interpreted as an angle. Thus, we can describe the domains of the trigonometric functions in the frame work of the real number systems. If we let , the domain consists of all real numbers for which is defined. Since and are never equal to zero, the domain for is the set of all real numbers. Similarly, the domain of is also the set of all real numbers.        To analyze , we keep in mind that once we choose a real number , we draw the angle, in standard position, that corresponds to . To simplify our analysis, we choose the point on the terminal side so that . That is, is a point on the unit circle .  Note that .     As the terminal side of moves through the first quadrant, increases from (when ) to (when ). Thus, as increases from to , steadily increases from to . As increases from to , decreases from to . A similar analysis reveals that as increases from to , decreases from to ; and as increases from to , increases from to .  Based on this analysis, we have the graph of in the interval as show below.     Since the values of depend only on the position of the terminal side, adding or subtracting multiples of to will leave the unchanged. Thus, the value of will repeat every units. The complete graph of appears below.     The graph of , which is called the basic sine curve.           Applying the same type of analysis to , we will able to get a good idea of what its graph looks like. The figure below shows the angle corresponding to as it increases through quadrant I, II, III and IV.  Keeping in mind that , we have the following:     As increases from 0 to , decreases from 1 to 0.    As increases from to , decreases from 0 to -1.    As increases from to , increases from -1 to 0.    As increases from to , increases from 0 to 1.     Based on this analysis, we have the graph of f (\\theta ) = cos\\theta as shown below:        since is undefined whenever , is undefined whenever the terminal side of the angle corresponding to falls on the - axis . This happens for , to which we can add or subtract any multiple of that will again bring the terminal side back to the - axis . Thus, domain of is { : } , where is an integer.     As increases from 0 to , decreases from 1 to 0 and increases from 0 to 1; therefore, increases from 0 to .    As increases from to , decreases from 0 to -1 and decreases from 1 to 0; therefore, increases from to 0.    As increases from to , increases from -1 to 0 and decreases from 0 to -1; therefore, increases from 0 to .    As increases from to , increases from 0 to 1 and increases from -1 to 0; therefore, increases from to .     You may want to add some more specific values to this analysis. In any case, we get the following as the graph of the tangent function.   The tangent curve         A function is called periodic if there exists a number such that for all in the domain of . The smallest such number is called the period of the function.    A periodic function keeps repeating the same set of - values over and over again. The graph of a periodic function shows the same basic segment of its graph being repeated. In the case of sine and cosine functions, the period is . The period of the tangent function is .       The amplitude of a periodic function f ( x ) is       Thus, the amplitude of the basic sine and cosine function is . The portion of the graph of a sine or cosine function over one period is called a complete cycle of the graph. In other words, the minimal portion of a sine or cosine graph that keeps repeating itself is called a complete cycle of the graph.       The number of complete cycles a sine or cosine graph makes on an interval of length equal to is called its frequency.    The frequency of the basic sine curve and the basic cosine curve is , because each graph makes complete cycle in the interval .  If a sine function has period of (see the figure below), then the number of complete cycles its graph will make in an interval of length is .   A sine graph of period and frequency 4   A sine graph of period and frequency   Thus if a sine function has a period of , its frequency is and its graph will make complete cycles in an interval of length .    Sketch the graph of and find its amplitude, period and frequency.    We can obtain this graph by applying our knowledge of the basic sine graph. For the basic curve, we have     These quadrantal values serve as guide points, which help us draw the graph. To obtain similar guide points for , we ask for what values of is   and we get     Thus, will have the values at , respectively. The graph of will thus complete one cycle in the interval , and will repeat the same values in the interval .   The graph of y = sin 2x   From this graph we see that has an amplitude of 1, a period , and a frequency of 2.    For convenience we summarize our discussion on the domains of the trigonometric functions in the table.     1.  Domain = All real numbers    2.  Domain = All real numbers    3.  Domain     4.  Domain    5.  Domain    6.  Domain      where is an integer    In the course of our discussion of the trigonometric functions, we have discussed two types of trigonometric relationships: the reciprocal and quotient relationships. These relationships are examples of trigonometric identities. In the table below we list identities that are satisfied by the trigonometric functions.   The reciprocal Identities                       The quotient Identities                  The Pythagorean Identities                       The addition formula                                                    The double angle formula                       The half-angle formula                           The hyperbolic functions are certain combinations of exponential functions, that occur in various applications, with properties similar to those of the trigonometric functions. Among many other applications they are used to describe the formation of satellite rings around the planets, to describe the shape of a rope hanging from two points, and have application in relativity theory. The two basic hyperbolic functions are the hyperbolic sine and hyperbolic cosine functions. They are defined as follows:       The function is defined by:     The domain of is .    The function is defined by:     The domain of is .        Remark:      is pronounced \" kosh\" x and is pronounced as \" cinch \" .    Since for all , we see that for every .    If , then . Thus, is an even     is an odd function.    In contrast to sine and cosine, the hyperbolic functions are not periodic.                                We have            Left as an exercise.                Since is an even function, its graph is symmetric about the y-axis . Its intercept is , because . As tends to infinity, tends to infinity because goes to infinity and approaches to 0. When is a large negative number acts like , because gets close to . Thus the graph of looks like:     This graph can also be obtained by geometrically adding the two curves and , and taking half of each resulting -value. Observe that range of is .           Since is an odd function, its graph is symmetric about the origin. The graph passes through the origin because . As gets large, acts like and when is a large negative number, acts like . Thus, the graph of looks like:     The remaining four hyperbolic functions are defined in terms of cosh x and sinh x by analogy with trigonometry.   (The domain of is ).   (The domain of is ).   (The domain of is ).   (The domain of is ).  You may sketch the graphs of these four hyperbolic functions (see exercise ).  The trigonometric terminology and notation for the hyperbolic functions stem from the fact that they satisfy a list of identities that much resemble the familiar trigonometric identities, apart from an occasional difference of sign.                          The trigonometric functions are sometimes called circular functions because the point ( ) lies on the circle for all . Similarly, identity (1) tells us that the point ( ) lies on the hyperbola , and this is the reason for the name hyperbolic functions.     Find the domain of the given function.             Sketch the graph of the given function. Identify the domain, range, intercepts, and asymptotes               Solve the given exponential equation.               Let . Show that .      Let . Show that .      Let .Show that       Evaluate the given logarithmic expression (where it is defined).                    If , find and the domain of .      If , find and the domain of .      Show that       Sketch the graph of the given function and identify the domain, range, intercepts and asymptotes.               Find the inverse of       Let . Find a function so that .      Convert the given angle from radians to degrees               Convert the given angle from degrees to radians               Sketch the graph of                    Verify the following identities:                    Given and , find .      Sketch the graphs of                    Prove the identities (2) and (3).      Find the exact numerical value of                 Prove the following identities:                     Add review   Add review   Add review   Add review  "
 },
 {
   "id": "def-exponents-and-radicals",
@@ -3517,7 +3481,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.5.1",
   "title": "",
-  "body": "  For a natural number   and a real number  , the power  , read “ the   power of  ” or “ r raised to  ”, is defined as follows:   In the symbol  ,  is called the base and   is called the exponent.   "
+  "body": "  For a natural number and a real number , the power , read “ the power of ” or “ raised to ”, is defined as follows:   In the symbol , is called the base and is called the exponent.   "
 },
 {
   "id": "def-zero-and-negative-exponents",
@@ -3526,7 +3490,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.5.2",
   "title": "",
-  "body": "      Note: is undefined.   "
+  "body": "              "
 },
 {
   "id": "def-rational-exponent",
@@ -3535,7 +3499,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.5.3",
   "title": "",
-  "body": "    If is an odd positive integer, then if and only if  If is an even positive integer and , then if and only if   "
+  "body": "   If is an odd positive integer, then if and only if  If is an even positive integer and , then if and only if   "
 },
 {
   "id": "def-rational-exponent-2",
@@ -3544,7 +3508,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.5.4",
   "title": "",
-  "body": "    If is a real number, then (i.e. the root of a raised to the power)   "
+  "body": "   If is a real number, then (i.e. the root of a raised to the power)   "
 },
 {
   "id": "sec-definition-and-basic-properties-of-25",
@@ -3562,7 +3526,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.5.6",
   "title": "",
-  "body": "   (  root of  ):  = , where is a positive integer.   "
+  "body": "   (   ):  = , where is a positive integer.   "
 },
 {
   "id": "def-exponential-function",
@@ -3580,7 +3544,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.5.8",
   "title": "",
-  "body": " The functions , and are examples of exponential functions.  As usual the first question raised when we encounter a new function is its domain. Since rational exponents are well defined, we know that any rational number will be in the domain of an exponential function. For example, let . Then as takes on the rational values – 2 , and , we have      Note that even though we do not know the exact values of and , we do know exactly what they mean. However, what about for irrational values of ? For instance,  We have not defined the meaning of irrational exponents. In fact, a precise formal definition of where is irrational requires the ideas of calculus. However, we can get an idea of what should be by using successive rational approximations to . For example, we have   Thus, it would seem reasonable to expect that . Since 1.414 and 1.415 are rational numbers, and are well defined, even though we cannot compute their values by hand. Using a calculator, we get . If we use better approximations to , we get . Using a calculator again, we get . Computing directly on a calculator gives . This numerical evidence suggests that as approaches , the values of approach a unique real number that we designate by , and so we will accept without proof, the fact that the domain of the exponential function is the set of real numbers.    The exponential function , where and , is defined for all real values of . In addition all the rules for rational exponents hold for real number exponents as well.    Before we state some general facts about exponential functions , let’s see if we can determine what the graph of an exponential function will look like.  "
+  "body": " The functions , and are examples of exponential functions.  As usual the first question raised when we encounter a new function is its domain. Since rational exponents are well defined, we know that any rational number will be in the domain of an exponential function. For example, let . Then as takes on the rational values – 2 , and , we have      Note that even though we do not know the exact values of and , we do know exactly what they mean. However, what about for irrational values of ? For instance,  We have not defined the meaning of irrational exponents. In fact, a precise formal definition of where is irrational requires the ideas of calculus. However, we can get an idea of what should be by using successive rational approximations to . For example, we have   Thus, it would seem reasonable to expect that . Since 1.414 and 1.415 are rational numbers, and are well defined, even though we cannot compute their values by hand. Using a calculator, we get . If we use better approximations to , we get . Using a calculator again, we get . Computing directly on a calculator gives . This numerical evidence suggests that as approaches , the values of approach a unique real number that we designate by , and so we will accept without proof, the fact that the domain of the exponential function is the set of real numbers.       , where   ,  .   Before we state some general facts about exponential functions , let’s see if we can determine what the graph of an exponential function will look like.  "
 },
 {
   "id": "sec-definition-and-basic-properties-of-36",
@@ -3589,7 +3553,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.5.9",
   "title": "",
-  "body": "     Sketch the graph of the function and identify its domain and range.    Sketch the graph of .                 -3                                 With these points in hand, we draw a smooth curve through the points obtaining the graph appearing above. Observe that the domain of is , the graph has no intercepts, as  , the values are increasing very rapidly, whereas as , the values are getting closer and closer to 0. Thus, is a horizontal asymptote, the intercept is 1 and the range of is the set of positive real numbers.    It would be instructive to compute a table of values as we did in example 1 above (you are urged to do so). However, we will take a different approach. We note that . If , then . Thus by the graphing principle for , we can obtain the graph of by reflecting the graph of about the .     Here again the is a horizontal asymptote, there is no intercept, 1 is intercept and the range is the set of positive real numbers. However, the graph is now decreasing rather than increasing.  The following box summarizes the important facts about exponential functions and their graphs.    The Exponential function        The domain of the exponential function is the set of real numbers  The range of the exponential function is the set of positive real numbers  The graph of exhibits exponential growth if or exponential decay if .  The intercept is 1.  The intercept is a horizontal asymptote  The exponential function is 1 – 1. Algebraically if , then           "
+  "body": "     Sketch the graph of the function and identify its domain and range.    Sketch the graph of .          To aid in our analysis, we set up a short table of values to give us a frame of reference.          -3                                 With these points in hand, we draw a smooth curve through the points obtaining the graph appearing above. Observe that the domain of is , the graph has no intercepts, as  , the values are increasing very rapidly, whereas as , the values are getting closer and closer to 0. Thus, is a horizontal asymptote, the intercept is 1 and the range of is the set of positive real numbers.    It would be instructive to compute a table of values as we did in example 1 above (you are urged to do so). However, we will take a different approach. We note that . If , then . Thus by the graphing principle for , we can obtain the graph of by reflecting the graph of about the .     Here again the is a horizontal asymptote, there is no intercept, 1 is intercept and the range is the set of positive real numbers. However, the graph is now decreasing rather than increasing.  The following box summarizes the important facts about exponential functions and their graphs.            The domain of the exponential function is the set of real numbers  The range of the exponential function is the set of positive real numbers  The graph of exhibits exponential growth if or exponential decay if .  The intercept is 1.  The intercept is a horizontal asymptote  The exponential function is 1 – 1. Algebraically if , then           "
 },
 {
   "id": "sec-definition-and-basic-properties-of-37",
@@ -3598,7 +3562,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.5.10",
   "title": "",
-  "body": "  Sketch the graph of each of the following. Find the domain, range, intercepts, and asymptotes.  a)          To get the graph of . We start with the graph of , which is the basic exponential growth graph, and shift it up 1 unit.         From the graph we see that    Dom( f )  Range( f )  The intercept is 2  The line is a horizontal asymptote         To get the graph of , we start with the graph of , and shift 1 unit to the left.         From the graph we see that    Dom( f )  Range( f )  The intercept is 3  The line is a horizontal asymptote         To get the graph of , we start with the basic exponential decay . We then reflect it with respect to the , which gives the graph of . Finally, we shift this graph up 3 units to get the required graph of .   Basic exponential decay   From the graph of , we can see that , , the line is a horizontal asymptote, 2 is the intercept and is the intercept.  : When the base of the exponential function equals to the number , where , we call the exponential function the natural exponential function.      "
+  "body": "  Sketch the graph of each of the following. Find the domain, range, intercepts, and asymptotes.  a)          To get the graph of . We start with the graph of , which is the basic exponential growth graph, and shift it up 1 unit.          From the graph we see that    Dom( f )  Range( f )  The intercept is 2  The line is a horizontal asymptote         To get the graph of , we start with the graph of , and shift 1 unit to the left.          From the graph we see that    Dom( f )  Range( f )  The intercept is 3  The line is a horizontal asymptote         To get the graph of , we start with the basic exponential decay . We then reflect it with respect to the , which gives the graph of . Finally, we shift this graph up 3 units to get the required graph of .   Basic exponential decay   From the graph of , we can see that , , the line is a horizontal asymptote, 2 is the intercept and is the intercept.  : When the base of the exponential function equals to the number , where , we call the exponential function the natural exponential function.      "
 },
 {
   "id": "def-compacts",
@@ -3616,7 +3580,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.5.12",
   "title": "",
-  "body": "     Write each of the following in exponential form.                  Write each of the following in logarithmic form.                  Evaluate each of the following.                        We have      means   and     means        We have      means      means           To evaluate , we let , and then rewrite the equation in exponential form, . Now, if we can express both sides in terms of the same base, we can solve the resulting exponential equation, as follows:  Let      Therefore, .    We apply the same procedure as in part (a).  Let      Therefore, .         "
+  "body": "     Write each of the following in exponential form.                  Write each of the following in logarithmic form.                  Evaluate each of the following.                        We have      means   and     means        We have      means      means           To evaluate , we let , and then rewrite the equation in exponential form, . Now, if we can express both sides in terms of the same base, we can solve the resulting exponential equation, as follows:  Let     Therefore, .    We apply the same procedure as in part (a).  Let     Therefore, .         "
 },
 {
   "id": "sec-definition-and-basic-properties-of-53",
@@ -3643,7 +3607,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.5.15",
   "title": "",
-  "body": "     Sketch the graph of . Find the domain, range, asymptote and intercepts.    Find the inverse function for                   We can obtain the graph of by applying the graphing principle to shift the basic logarithmic growth graph units to the right and 1 unit up.     We have Dom , Range and the graph has the line as a vertical asymptote. To find the intercept, we set and solve for . Setting and solving for , we will obtain . Thus, the intercept is .    Following the procedure for finding an inverse function, we have                    "
+  "body": "     Sketch the graph of . Find the domain, range, asymptote and intercepts.    Find the inverse function for                   We can obtain the graph of by applying the graphing principle to shift the basic logarithmic growth graph units to the right and 1 unit up.     We have Dom  , Range and the graph has the line as a vertical asymptote. To find the intercept, we set and solve for . Setting and solving for , we will obtain . Thus, the intercept is .    Following the procedure for finding an inverse function, we have     We have       We have            "
 },
 {
   "id": "sec-definition-and-basic-properties-of-62",
@@ -3652,7 +3616,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.5.16",
   "title": "",
-  "body": "  Express in terms of simpler logarithms.          Show that .                  Examining the properties of logarithms, we can see that they deal with log of a product, quotient and power. Thus, which is the log of a sum cannot be simplified using log properties.    We have                 "
+  "body": "  Express in terms of simpler logarithms.                Show that .                  Examining the properties of logarithms, we can see that they deal with log of a product, quotient and power. Thus, which is the log of a sum cannot be simplified using log properties.    We have                 "
 },
 {
   "id": "def-common-logarithm",
@@ -3661,7 +3625,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.5.17",
   "title": "",
-  "body": "   is called the common logarithm function. We write .   "
+  "body": "      is called the common logarithm function. We write .   "
 },
 {
   "id": "def-natural-logarithm",
@@ -3670,7 +3634,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.5.18",
   "title": "",
-  "body": "   is called the natural logarithm function. We write .   "
+  "body": "      is called the natural logarithm function. We write .   "
 },
 {
   "id": "sec-definition-and-basic-properties-of-67",
@@ -3688,7 +3652,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.5.20",
   "title": "",
-  "body": "     Convert each of the following radian measures to degrees.             Convert to radian measures                      By the conversion formula, we have , which implies that .    Again using the conversion formula, we have , which implies that .          Let represent the radian measure of . Using the conversion formula, we obtain: , which implies that .    Rather than using the conversion formula, we notice that . In part (a) we found that , and so we have .         "
+  "body": "     Convert each of the following radian measures to degrees.             Convert to radian measures                      By the conversion formula, we have , which implies that .    Again using the conversion formula, we get , which implies that .          Let represent the radian measure of . Using the conversion formula, we obtain: , which implies that .    Rather than using the conversion formula, we notice that . In part (a) we found that , and so we have .         "
 },
 {
   "id": "def-trigonometric-functions",
@@ -3697,7 +3661,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.5.21",
   "title": "",
-  "body": "         Sine      Cosine      Tangent      Cosecant      Secant      Cotangent       "
+  "body": "          Sine      Cosine      Tangent      Cosecant      Secant      Cotangent       "
 },
 {
   "id": "def-periodic-function",
@@ -3706,7 +3670,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.5.22",
   "title": "",
-  "body": "  A function is called periodic if there exists a number such that for all in the domain of . The smallest such number is called the period of the function.   "
+  "body": "     A function is called periodic if there exists a number such that for all in the domain of . The smallest such number is called the period of the function.   "
 },
 {
   "id": "def-amplitude",
@@ -3715,7 +3679,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.5.23",
   "title": "",
-  "body": "  The amplitude of a periodic function f ( x ) is      "
+  "body": "     The amplitude of a periodic function f ( x ) is      "
 },
 {
   "id": "def-frequency",
@@ -3724,7 +3688,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.5.24",
   "title": "",
-  "body": "  The number of complete cycles a sine or cosine graph makes on an interval of length equal to is called its frequency.   "
+  "body": "     The number of complete cycles a sine or cosine graph makes on an interval of length equal to is called its frequency.   "
 },
 {
   "id": "sec-definition-and-basic-properties-of-81",
@@ -3736,54 +3700,252 @@ var ptx_lunr_docs = [
   "body": "  Sketch the graph of and find its amplitude, period and frequency.    We can obtain this graph by applying our knowledge of the basic sine graph. For the basic curve, we have     These quadrantal values serve as guide points, which help us draw the graph. To obtain similar guide points for , we ask for what values of is   and we get     Thus, will have the values at , respectively. The graph of will thus complete one cycle in the interval , and will repeat the same values in the interval .   The graph of y = sin 2x   From this graph we see that has an amplitude of 1, a period , and a frequency of 2.   "
 },
 {
-  "id": "sec-definition-and-basic-properties-of-120",
+  "id": "def-hyperbolic-functions",
   "level": "2",
-  "url": "sec-definition-and-basic-properties-of.html#sec-definition-and-basic-properties-of-120",
-  "type": "Table",
+  "url": "sec-definition-and-basic-properties-of.html#def-hyperbolic-functions",
+  "type": "Definition",
   "number": "3.5.26",
   "title": "",
-  "body": "   (The domain of is .  (The domain of is )  (The domain of is )  (The domain of is )    "
+  "body": "     The function is defined by:     The domain of is .    The function is defined by:     The domain of is .      "
 },
 {
-  "id": "sec-definition-and-basic-properties-of-123",
+  "id": "sec-definition-and-basic-properties-of-95",
   "level": "2",
-  "url": "sec-definition-and-basic-properties-of.html#sec-definition-and-basic-properties-of-123",
-  "type": "Table",
+  "url": "sec-definition-and-basic-properties-of.html#sec-definition-and-basic-properties-of-95",
+  "type": "Example",
   "number": "3.5.27",
   "title": "",
-  "body": "   (1)  (2)  (3)  (4)  (5)    "
+  "body": "                          We have            Left as an exercise.      "
 },
 {
-  "id": "sec-definition-and-basic-properties-of-150",
+  "id": "exercises-Basic-properties-of-functions-1",
   "level": "2",
-  "url": "sec-definition-and-basic-properties-of.html#sec-definition-and-basic-properties-of-150",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-1",
+  "type": "Exercise",
+  "number": "3.5.1",
+  "title": "",
+  "body": "  Find the domain of the given function.          "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-2",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-2",
+  "type": "Exercise",
+  "number": "3.5.2",
+  "title": "",
+  "body": "  Sketch the graph of the given function. Identify the domain, range, intercepts, and asymptotes            "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-3",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-3",
+  "type": "Exercise",
+  "number": "3.5.3",
+  "title": "",
+  "body": "  Solve the given exponential equation.            "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-4",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-4",
+  "type": "Exercise",
+  "number": "3.5.4",
+  "title": "",
+  "body": "  Let . Show that .   "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-5",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-5",
+  "type": "Exercise",
+  "number": "3.5.5",
+  "title": "",
+  "body": "  Let . Show that .   "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-6",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-6",
+  "type": "Exercise",
+  "number": "3.5.6",
+  "title": "",
+  "body": "  Let .Show that    "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-7",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-7",
+  "type": "Exercise",
+  "number": "3.5.7",
+  "title": "",
+  "body": "  Evaluate the given logarithmic expression (where it is defined).                 "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-8",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-8",
+  "type": "Exercise",
+  "number": "3.5.8",
+  "title": "",
+  "body": "  If , find and the domain of .   "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-9",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-9",
+  "type": "Exercise",
+  "number": "3.5.9",
+  "title": "",
+  "body": "  If , find and the domain of .   "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-10",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-10",
+  "type": "Exercise",
+  "number": "3.5.10",
+  "title": "",
+  "body": "  Show that    "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-11",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-11",
+  "type": "Exercise",
+  "number": "3.5.11",
+  "title": "",
+  "body": "  Sketch the graph of the given function and identify the domain, range, intercepts and asymptotes.            "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-12",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-12",
+  "type": "Exercise",
+  "number": "3.5.12",
+  "title": "",
+  "body": "  Find the inverse of    "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-13",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-13",
+  "type": "Exercise",
+  "number": "3.5.13",
+  "title": "",
+  "body": "  Let . Find a function so that .   "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-14",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-14",
+  "type": "Exercise",
+  "number": "3.5.14",
+  "title": "",
+  "body": "  Convert the given angle from radians to degrees            "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-15",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-15",
+  "type": "Exercise",
+  "number": "3.5.15",
+  "title": "",
+  "body": "  Convert the given angle from degrees to radians            "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-16",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-16",
+  "type": "Exercise",
+  "number": "3.5.16",
+  "title": "",
+  "body": "  Sketch the graph of                 "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-17",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-17",
+  "type": "Exercise",
+  "number": "3.5.17",
+  "title": "",
+  "body": "  Verify the following identities:                 "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-18",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-18",
+  "type": "Exercise",
+  "number": "3.5.18",
+  "title": "",
+  "body": "  Given and , find .   "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-19",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-19",
+  "type": "Exercise",
+  "number": "3.5.19",
+  "title": "",
+  "body": "  Sketch the graphs of                 "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-20",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-20",
+  "type": "Exercise",
+  "number": "3.5.20",
+  "title": "",
+  "body": "  Prove the identities (2) and (3).   "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-21",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-21",
+  "type": "Exercise",
+  "number": "3.5.21",
+  "title": "",
+  "body": "  Find the exact numerical value of              "
+},
+{
+  "id": "exercises-Basic-properties-of-functions-22",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions-22",
+  "type": "Exercise",
+  "number": "3.5.22",
+  "title": "",
+  "body": "  Prove the following identities:                 "
+},
+{
+  "id": "sec-definition-and-basic-properties-of-113",
+  "level": "2",
+  "url": "sec-definition-and-basic-properties-of.html#sec-definition-and-basic-properties-of-113",
   "type": "Checkpoint",
   "number": "3.5.28",
   "title": "",
   "body": " Add review "
 },
 {
-  "id": "sec-definition-and-basic-properties-of-151",
+  "id": "sec-definition-and-basic-properties-of-114",
   "level": "2",
-  "url": "sec-definition-and-basic-properties-of.html#sec-definition-and-basic-properties-of-151",
+  "url": "sec-definition-and-basic-properties-of.html#sec-definition-and-basic-properties-of-114",
   "type": "Checkpoint",
   "number": "3.5.29",
   "title": "",
   "body": " Add review "
 },
 {
-  "id": "sec-definition-and-basic-properties-of-152",
+  "id": "sec-definition-and-basic-properties-of-115",
   "level": "2",
-  "url": "sec-definition-and-basic-properties-of.html#sec-definition-and-basic-properties-of-152",
+  "url": "sec-definition-and-basic-properties-of.html#sec-definition-and-basic-properties-of-115",
   "type": "Checkpoint",
   "number": "3.5.30",
   "title": "",
   "body": " Add review "
 },
 {
-  "id": "sec-definition-and-basic-properties-of-153",
+  "id": "sec-definition-and-basic-properties-of-116",
   "level": "2",
-  "url": "sec-definition-and-basic-properties-of.html#sec-definition-and-basic-properties-of-153",
+  "url": "sec-definition-and-basic-properties-of.html#sec-definition-and-basic-properties-of-116",
   "type": "Checkpoint",
   "number": "3.5.31",
   "title": "",
