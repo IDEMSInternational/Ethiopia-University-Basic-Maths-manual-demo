@@ -367,7 +367,7 @@ function createIframes (iframes) {
 // Replace feedback tags in some text with an approproately named HTML div.
 function replaceFeedbackTags(text, qprefix) {
   let result = text;
-  const feedbackTags = text.match(/\[\[feedback:.*\]\]/g);
+  const feedbackTags = text.match(/\[\[feedback:.*?\]\]/g);
   if (feedbackTags) {
     for (const tag of feedbackTags) {
       // Part name is between '[[feedback:' and ']]'.
