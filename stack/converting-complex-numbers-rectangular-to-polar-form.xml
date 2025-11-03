@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+                <quiz xmlns="http://stack-assessment.org/2025/moodle-question" xmlns:xi="http://www.w3.org/2001/XInclude" xml:base="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Polar-form-of-a-complex-number/Converting-Complex-Numbers-Rectangular-to-Polar-Form.xml">
+  <question type="stack">
+    <name>
+      <text>Converting Complex Numbers: Rectangular to Polar Form</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Find the polar form of  {@x@} + {@y*i@}&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: \({@%i @}\) can be typed as &lt;code&gt;%i&lt;/code&gt; .&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;\(z = \)[[input:ans1]] [[validation:ans1]][[feedback:prt1]]&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Worked Solution&lt;/h3&gt;
+&lt;p&gt;The given complex number is \({@x@}{@y@}i\)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; We calculate the modulus (magnitude) of the complex number using the formula: \(|z| = \sqrt{a^2 + b^2}\) for any complex number \(z= a+b.i \)&lt;/p&gt;
+&lt;p&gt;So, for our complex number the modulus is: \(\displaystyle r=\sqrt{({@x@}^2)+({@y@}^2)}\)&lt;/p&gt;
+&lt;p&gt;Modulus r={@r@}&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; The argument \( \theta \) of a complex number can be found using the formula:&lt;/p&gt;
+&lt;p&gt;\( \displaystyle \theta =tan^-1 \left( \frac{b}{a}\right) \implies tan^-1 \left( \frac{{@y@}}{{@x@}}\right) \) (Note: The angle needs to be in radians.) &lt;/p&gt;
+&lt;p&gt;\(\theta ={@arg@}\) &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; The polar form of the complex number is given by \(z=r(\cos\theta+i\,\sin\theta)\)&lt;/p&gt;
+&lt;p&gt;Substituting the values of \(r\) and \(\theta\) into the formula: \( z = {@r@}\left(\cos{@arg@}+i\, \sin {@arg@}\right)\)&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2025012100</text>
+    </stackversion>
+    <questionvariables>
+      <text>a: 1+rand(10);
+b: a*sqrt(3);
+z: -1*a-b*%i;
+x:realpart(z);
+y:imagpart(z);
+r:  cabs(z);
+az: atan(y/x);
+arg: %pi +  carg(z);
+pz: r*%e^(%i*arg);
+ta: pz;
+simp:false;
+ta2: r*(cos(arg)+%i*sin(arg));</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text>&lt;p&gt;The polar form of \({@x@} + {@y*i@}= {@ta2@}\)&lt;/p&gt;</text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text>&lt;p&gt;Correct answer, well done.&lt;/p&gt;</text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text>&lt;p&gt;Your answer is partially correct.&lt;/p&gt;</text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text>&lt;p&gt;Incorrect answer.&lt;/p&gt;</text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <isbroken>0</isbroken>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1912013912</deployedseed>
+    <deployedseed>1125764606</deployedseed>
+    <deployedseed>1701091609</deployedseed>
+    <deployedseed>1668289592</deployedseed>
+    <deployedseed>2118584545</deployedseed>
+    <deployedseed>74989755</deployedseed>
+    <deployedseed>632173788</deployedseed>
+    <deployedseed>29124653</deployedseed>
+    <deployedseed>1518193910</deployedseed>
+    <deployedseed>377763937</deployedseed>
+    <deployedseed>306667378</deployedseed>
+    <deployedseed>893090357</deployedseed>
+    <deployedseed>375776404</deployedseed>
+    <deployedseed>53857358</deployedseed>
+    <deployedseed>867173448</deployedseed>
+    <deployedseed>1326390859</deployedseed>
+    <deployedseed>1525761722</deployedseed>
+    <deployedseed>1328163466</deployedseed>
+    <deployedseed>1865957691</deployedseed>
+    <deployedseed>948263489</deployedseed>
+    <deployedseed>1714196178</deployedseed>
+    <deployedseed>1316951267</deployedseed>
+    <deployedseed>314560621</deployedseed>
+    <deployedseed>876536788</deployedseed>
+    <deployedseed>596741899</deployedseed>
+    <deployedseed>2052794007</deployedseed>
+    <deployedseed>1438590095</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
+            

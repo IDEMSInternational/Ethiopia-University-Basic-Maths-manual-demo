@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+                <quiz xmlns="http://stack-assessment.org/2025/moodle-question" xmlns:xi="http://www.w3.org/2001/XInclude" xml:base="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Analyzing-Set-Properties-Identifying-Exceptions.xml">
+  <question type="stack">
+    <name>
+      <text>Analyzing Set Properties: Identifying Exceptions</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>&lt;p&gt;Which one of the following does &lt;b&gt;NOT&lt;/b&gt; apply to sets?&lt;/p&gt;
+&lt;p&gt;[[input:ans1]] [[validation:ans1]][[feedback:prt1]]&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text>&lt;h3&gt;Worked Solution&lt;/h3&gt;
+[[ if test="member(1, ta_index)" ]]
+&lt;p&gt;The correct answer is &lt;i&gt;Independence&lt;/i&gt;  &lt;/p&gt;
+&lt;p&gt; Independence is a concept that is often associated with events or random variables, rather than sets. &lt;/p&gt;
+[[/ if ]]
+
+[[ if test="member(2, ta_index)" ]]
+&lt;p&gt;The correct answer is &lt;i&gt;Substitution property&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Substitution property is not typically associated with set theory. It's more commonly used in logic and algebra.&lt;/p&gt;
+[[/ if ]]
+
+[[ if test="member(3, ta_index)" ]]
+&lt;p&gt;The correct answer is &lt;i&gt;Inverse elements&lt;/i&gt;
+&lt;/p&gt;
+&lt;p&gt;The concept of inverse elements typically applies to algebraic structures, particularly groups.&lt;/p&gt;
+[[/ if ]]
+
+[[ if test="member(4, ta_index)" ]]
+&lt;p&gt;The correct answer is &lt;i&gt;Identity property&lt;/i&gt;
+&lt;/p&gt;
+&lt;p&gt;This property is mostly used in algebraic structure, it refers to an element that, when combined with another element using a certain operation, leaves the other element unchanged.&lt;/p&gt;
+[[/ if ]]</text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>correct_answer:rand_selection([
+[1, true, "Independence
+"],
+[2, true, "Substitution property
+"],
+[3, true, "Inverse element
+"],[4,true, "Identity property"]
+],1);
+incorrect_answers:rand_selection([
+[5, false, "Distributive law"],
+[6, false, "Associative law"],
+[7, false, "Commutative law"],
+[8, false, "Union"]], 3);
+ta: random_permutation(append(correct_answer,incorrect_answers));
+
+ta_index: sort(makelist(x[1], x, ta));
+ta_largest: last(ta_index);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text>&lt;p&gt;Which one of the following does &lt;b&gt;NOT&lt;/b&gt; apply to sets?&lt;/p&gt;
+&lt;p&gt;{@ta@}&lt;/p&gt;
+
+[[ if test="member(1, ta_index)" ]]
+&lt;p&gt; Independence&lt;/p&gt;
+[[/ if ]]
+
+[[ if test="member(2, ta_index)" ]]
+&lt;p&gt;Substitution property.&lt;/p&gt;
+[[/ if ]]
+
+[[ if test="member(3, ta_index)" ]]
+&lt;p&gt; Inverse elements &lt;/p&gt;
+[[/ if ]]
+
+[[ if test="member(4, ta_index)" ]]
+&lt;p&gt;Identity property&lt;/p&gt;
+[[/ if ]]</text>
+    </questionnote>
+    <questiondescription format="html">
+      <text>&lt;p id="author"&gt;Mary Sayuni&lt;p&gt;
+&lt;p id="concept"&gt;https://docs.google.com/document/d/1NY_EeD7OFo11qF-HfbIkylQfSvyuB0qoCLWUqnVHaKE/edit#heading=h.vy8x1tbmoha9&lt;/p&gt;
+&lt;p id="reviewer"&gt;Emmaculate Odhiambo&lt;/p&gt;
+&lt;p id="reviewer"&gt;Santiago Borio&lt;/p&gt;
+&lt;p id="description"&gt;The question focuses on identifying laws or properties of sets &lt;/p&gt;</text>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <isbroken>0</isbroken>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>radio</type>
+      <tans>ta</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options>nonotanswered</options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>checks for the correct option</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mcq_correct(ta)[1]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>748735601</deployedseed>
+    <deployedseed>762803166</deployedseed>
+    <deployedseed>31517001</deployedseed>
+    <deployedseed>1563755506</deployedseed>
+    <deployedseed>1341518066</deployedseed>
+    <deployedseed>1576222310</deployedseed>
+    <deployedseed>1525958927</deployedseed>
+    <deployedseed>207918191</deployedseed>
+    <deployedseed>574768215</deployedseed>
+    <deployedseed>833165546</deployedseed>
+    <deployedseed>1310289439</deployedseed>
+    <deployedseed>1824893154</deployedseed>
+    <deployedseed>826983554</deployedseed>
+    <deployedseed>228331109</deployedseed>
+    <deployedseed>487581663</deployedseed>
+    <deployedseed>1164082268</deployedseed>
+    <deployedseed>1693531133</deployedseed>
+    <deployedseed>1553534886</deployedseed>
+    <deployedseed>1436312700</deployedseed>
+    <deployedseed>100847251</deployedseed>
+    <deployedseed>244662992</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>first(mcq_correct(ta))</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
+            

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+                <quiz xmlns="" xmlns:xi="http://www.w3.org/2001/XInclude" xml:base="stack/top/Default-for-Typing-Answers-Quiz/Information-4.xml">
+  <question type="description">
+    <name>
+      <text>Information 4</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;There are other input types, such as for multiple choice questions or tables of inputs. You may also be asked to input lists or sets.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sets are enclosed by curly brackets \( \{a,b,c\} \) is entered &lt;code&gt;{a,b,c}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Lists are enclosed by square brackets \( [a,b,c] \) is entered &lt;code&gt;[a,b,c]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text/>
+    </generalfeedback>
+    <defaultgrade>0</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+  </question>
+</quiz>
+            

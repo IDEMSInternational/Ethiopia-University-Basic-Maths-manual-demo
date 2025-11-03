@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+                    <quiz xmlns="http://stack-assessment.org/2025/moodle-question" xmlns:xi="http://www.w3.org/2001/XInclude" xml:base="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Set-operations-and-Venn-diagrams/35-1-4-7-Complement-of-union,-intersection.xml">&gt;
+  <question type="multichoice">
+    <name>
+      <text>35.1.4.7 Complement of union, intersection</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Given 2 sets \(A, B\) and a universal set \(S\), recall that the complement of \(A\) is denoted by 
+\(A'\) and the complement of \(B\) is denoted by \(B'\). Which of the following statements are true?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;p&gt;To see that these 2 statements are true, use definitions of complement, union, intersection. Alternatively, draw Venn diagrams representing the sets in question.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="50" format="html">
+      <text>&lt;p&gt;\( (A \cap B)' = A' \cup B' \)&lt;/p&gt;</text>
+      <feedback format="html">
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text>&lt;p&gt;\( (A \cup B)' = A' \cap B' \)&lt;/p&gt;</text>
+      <feedback format="html">
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="-5" format="html">
+      <text>&lt;p&gt;\( (A \cap B)' = A' \cap B' \)&lt;/p&gt;</text>
+      <feedback format="html">
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="-5" format="html">
+      <text>&lt;p&gt;\( (A \cup B)' = A' \cup B' \)&lt;/p&gt;</text>
+      <feedback format="html">
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="-5" format="html">
+      <text>&lt;p&gt;\(A \cup B = A' \cup B'\)&lt;/p&gt;</text>
+      <feedback format="html">
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+</quiz>
+                

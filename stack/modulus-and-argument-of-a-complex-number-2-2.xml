@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+                    <quiz xmlns="http://stack-assessment.org/2025/moodle-question" xmlns:xi="http://www.w3.org/2001/XInclude" xml:base="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Modulus-(norm)-of-a-complex-number/Modulus-and-Argument-of-a-Complex-Number_2.xml">&gt;
+  <question type="stack">
+    <name>
+      <text>Modulus and Argument of a Complex Number</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Find the modulus \(r\) and argument \(\theta \) of \({@aa@}{@sigb@}{@bbi@}\).&lt;/p&gt; 
+&lt;p&gt;Give your answers in exact form (in terms of square roots and \(\pi\)).&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; \(\sqrt{a}\) is entered as &lt;b&gt;sqrt(a)&lt;/b&gt; and \(\pi\) is entered as &lt;b&gt;%pi&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;\(r = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]&lt;/p&gt;
+&lt;p&gt;\(\theta = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;h3&gt;Worked Solution:&lt;/h3&gt;
+&lt;p&gt;The complex number in question is \({@aa@}{@sigb@}{@bbi@}\). If we consider it in the form \(a + b\cdot i\), then \(a = {@aa@}\) and \(b = {@bb/i@}\). So, the modulus will be;&lt;/p&gt;
+&lt;p&gt;\( r = \left| {@aa@}{@sigb@}{@bbi@}\right| = \sqrt{a^2 + b^2}\)&lt;/p&gt;
+&lt;p&gt;\(\quad = \sqrt{\left( {@aa@}\right) ^2 + \left( {@bb/i@}\right) ^2}\)&lt;/p&gt;
+&lt;p&gt;\( \quad= \sqrt{ {@aa^2@} + {@(bb/i)^2@}}\)&lt;/p&gt;
+&lt;p&gt;\( \quad= \sqrt{{@aa^2+(bb/i)^2@}}\)&lt;/p&gt;
+&lt;p&gt;\( \quad= {@ta1@}\)&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;The complex number in question is \({@aa@}{@sigb@}{@bbi@}\). If we consider it in the form \(a + b\cdot i\), then \(a = {@aa@}\) and \(b = {@bb/i@}\).&lt;/p&gt; 
+&lt;p&gt;We first note that, in the Argand Diagram, \({@aa@}{@sigb@}{@bbi@}\) lies in quadrant number {@quad@}, which means that the argument \(\theta \) is within the range \({@lb@}&amp;lt;\theta &amp;lt; {@ub@}\).&lt;/p&gt;
+&lt;p&gt;So, in order to find the argument of \({@aa@}{@sigb@}{@bbi@}\), we consider the argument of \({@abs(aa) + abs(bb/i)@}\cdot i\), where \(a = {@abs(aa)@}\) and \(b = {@abs(bb/i)@}\) and then use the symmetry of the unit circle to find the value of \(\theta\) within the correct range.&lt;/p&gt;
+&lt;p&gt;In the case of \({@abs(aa) + abs(bb/i)@}\cdot i\), \(\theta = \tan^{-1}\left( \frac{{@abs(bb/i)@}}{{@abs(aa)@}}\right) \)&lt;/p&gt;
+&lt;p&gt; \(= \tan^{-1}\left( {@abs(bb/i)/abs(aa)@}\right) \)&lt;/p&gt;
+&lt;p&gt; \(= {@atan(abs(bb/i)/aa)@}\)&lt;/p&gt;
+&lt;p&gt;So, considering the symmetry of the unit circle, for \({@aa@}{@sigb@}{@bbi@}\), \(\theta = {@ta2@}\).&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>tt:rand([3,4,6]);
+dumset:{};
+for i:1 thru 2*tt do if gcd(i,tt)=1 then dumset:adjoin(i,dumset);
+dumlist:listify(dumset);
+pp:rand(dumlist);
+arg:pp*%pi/tt;
+mod:if tt=4 then rand([1,2,6,10,sqrt(2),2*sqrt(2),3*sqrt(2)/*,sqrt(6),sqrt(3)*/]) else rand([1,2,4,5,7,sqrt(3),2*sqrt(3),4*sqrt(3)/*,sqrt(2),sqrt(6)*/]);
+cc:cos(arg);
+ss:sin(arg);
+aa:mod*cc;
+bb:mod*ss*i;
+sigb:if mod*ss&lt;0 then "-" else "+";
+bbi:if cabs(bb)=i then "i" else cabs(bb)*i;
+ta1:mod;
+ta2:if arg&gt;%pi then arg-2*%pi else arg;
+
+
+/*other variables*/
+lba:if aa&lt;0 then "(" else "";
+rba:if aa&lt;0 then ")" else "";
+lbb:if bb/i&lt;0 then "(" else "";
+rbb:if bb/i&lt;0 then ")" else "";
+
+quad:if aa&gt;0 then if bb/i&gt;0 then 1 else 4 else if bb/i&gt;0 then 2 else 3;
+if quad = 1 then (lb:0,ub:%pi/2) elseif quad = 2 then (lb:%pi/2,ub:%pi) elseif quad=3 then (lb:-%pi,ub:%pi/2) else (lb:%pi/2,ub:0);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text>&lt;p&gt;Complex number: \({@aa@}{@sigb@}{@bbi@}\)&lt;/p&gt;
+&lt;p&gt; \(r={@ta1@}\) &lt;/p&gt;
+&lt;p&gt;\(\theta={@ta2@} \) &lt;/p&gt;</text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text>&lt;p id="author"&gt;Emmaculate Odhiambo&lt;/p&gt;
+&lt;p id="concept"&gt;NA&lt;/p&gt;
+&lt;p id="reviewer"&gt;Nixson Kiplagat&lt;/p&gt;
+&lt;p id="reviewer"&gt;&lt;/p&gt;
+&lt;p id="description"&gt;This question involves finding the modulus \(r\) and argument \(\theta\) of a complex number represented as \(a + bi\). You need to provide the answers in exact form, using square roots and \(\pi\) where necessary &lt;/p&gt;</text>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <isbroken>0</isbroken>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>8</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>8</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>checks for correct answer</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>checks for correct answer</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description>check for correct answer but not in the conventional argument range.</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>arg</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text>&lt;p&gt;Your answer is correct but not in the conventional argument range of \(-\pi &amp;lt; \theta \leq \pi\).&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description>check for incorrect answer</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>quad</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>912581424</deployedseed>
+    <deployedseed>904079113</deployedseed>
+    <deployedseed>935980817</deployedseed>
+    <deployedseed>23964943</deployedseed>
+    <deployedseed>1081162710</deployedseed>
+    <deployedseed>1639018472</deployedseed>
+    <deployedseed>2091657698</deployedseed>
+    <deployedseed>1517928522</deployedseed>
+    <deployedseed>733446259</deployedseed>
+    <deployedseed>1951644331</deployedseed>
+    <deployedseed>806916105</deployedseed>
+    <deployedseed>869269579</deployedseed>
+    <deployedseed>1271338032</deployedseed>
+    <deployedseed>1822392912</deployedseed>
+    <deployedseed>338378249</deployedseed>
+    <deployedseed>999332784</deployedseed>
+    <deployedseed>1833274442</deployedseed>
+    <deployedseed>1190763983</deployedseed>
+    <deployedseed>1459417496</deployedseed>
+    <deployedseed>627757653</deployedseed>
+    <deployedseed>1406233343</deployedseed>
+    <deployedseed>985606198</deployedseed>
+    <deployedseed>182978641</deployedseed>
+    <deployedseed>536053904</deployedseed>
+    <deployedseed>1259378851</deployedseed>
+    <deployedseed>1184540010</deployedseed>
+    <deployedseed>585561713</deployedseed>
+    <deployedseed>1724435928</deployedseed>
+    <deployedseed>1562181055</deployedseed>
+    <deployedseed>1084235360</deployedseed>
+    <deployedseed>2088880424</deployedseed>
+    <deployedseed>959223323</deployedseed>
+    <deployedseed>1995488982</deployedseed>
+    <deployedseed>380538144</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-3-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
+                

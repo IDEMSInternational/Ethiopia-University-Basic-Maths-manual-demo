@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+                <quiz xmlns="" xmlns:xi="http://www.w3.org/2001/XInclude" xml:base="stack/top/Default-for-Typing-Answers-Quiz/Information-3.xml">
+  <question type="description">
+    <name>
+      <text>Information 3</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Functions always have their arguments in brackets. For example:&lt;/p&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;\(\cos x\) or \(\ln x\) have to be typed as &lt;code&gt;cos(x)&lt;/code&gt; or &lt;code&gt;ln(x)&lt;/code&gt;.&lt;/li&gt;
+
+&lt;li&gt;\(e^x\) can be typed as &lt;code&gt;e^x&lt;/code&gt; or &lt;code&gt;exp(x)&lt;/code&gt;.&lt;/li&gt;
+
+&lt;li&gt;Square roots \(\sqrt{x}\) are typed as &lt;code&gt;sqrt(x)&lt;/code&gt;, though you can also use &lt;code&gt;x^(1/2)&lt;/code&gt;.&lt;/li&gt;
+
+&lt;li&gt;Greek letters have to be typed using their English names, e.g. \(\alpha\) is typed as &lt;code&gt;alpha&lt;/code&gt;.&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;p&gt;Below is the full list of Greek letters.&lt;/p&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;\(\alpha\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;alpha&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\beta\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;beta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\gamma\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;gamma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\delta\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;delta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\epsilon\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;epsilon&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\zeta\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;zeta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\eta\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;eta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\theta\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;theta&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\iota\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;iota&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\kappa\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;kappa&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\lambda\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;lambda&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\mu\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;mu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\nu\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;nu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\xi\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;xi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\omicron\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;omicron&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\pi\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;pi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\rho\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;rho&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\sigma\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;sigma&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\tau\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;tau&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\upsilon\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;upsilon&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\phi\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;phi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\chi\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;chi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\psi\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;psi&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\(\omega\)&lt;/td&gt;&lt;td&gt;&lt;code&gt;omega&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text/>
+    </generalfeedback>
+    <defaultgrade>0</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+  </question>
+</quiz>
+            

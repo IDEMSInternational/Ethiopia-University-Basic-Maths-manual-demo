@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+                <quiz xmlns="" xmlns:xi="http://www.w3.org/2001/XInclude" xml:base="stack/top/Default-for-Typing-Answers-Quiz/Information.xml">
+  <question type="description">
+    <name>
+      <text>Information</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;div&gt;&lt;p&gt;In STACK you 
+often need to enter an answer which is an algebraic expression. You 
+should type in your answers using the same syntax as that used in the 
+symbolic mathematics package Maxima.&lt;/p&gt;
+&lt;p&gt;The syntax is broadly similar to 
+the syntax used for mathematical formulae in graphical calculators, 
+general programming languages such as Maple, Java, C and Basic and in 
+spreadsheet programs, so you will find it useful to master it.&lt;/p&gt;&lt;/div&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text/>
+    </generalfeedback>
+    <defaultgrade>0</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+  </question>
+</quiz>
+            
